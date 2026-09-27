@@ -10,7 +10,7 @@ with sync_playwright() as p:
     br=p.chromium.launch(executable_path='/opt/pw-browsers/chromium')
     pg=br.new_page(viewport={'width':1280,'height':720})
     pg.goto('file://'+os.path.abspath('film_built.html'))
-    cv=pg.locator('canvas')
+    cv=pg.locator('canvas'); pg.evaluate(f'renderAt({a/FPS})')
     for f in range(a,b):
         pg.evaluate(f'renderAt({f/FPS})')
         ff.stdin.write(cv.screenshot(type='jpeg',quality=92))

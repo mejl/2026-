@@ -1,7 +1,7 @@
 import json,subprocess,re,os
 from gtts import gTTS
 from concurrent.futures import ThreadPoolExecutor
-AF='asetrate=24000*0.88,aresample=44100,atempo=1.02,aecho=0.8:0.7:60|120:0.25|0.15,volume=1.6'
+AF='highpass=f=70,lowshelf=g=3:f=180,equalizer=f=3000:t=q:w=1:g=2,acompressor=threshold=-18dB:ratio=3:attack=10:release=200,aecho=0.8:0.5:40|75:0.12|0.08,volume=1.3'
 GAP=0.4
 def dur(f): return float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f],capture_output=True,text=True).stdout)
 os.makedirs('sent',exist_ok=True)
@@ -12,17 +12,15 @@ for ci,c in enumerate(d):
     for si,s in enumerate(c['shots']):
         s['key']=f"s{len(shots):02d}"; s['chi']=ci; s['first']=(si==0); shots.append(s)
 def tts(job):
-    key,i,text=job; mp3=f'sent/{key}_{i}.mp3'; wav=f'sent/{key}_{i}.wav'
-    for attempt in range(4):
-        try: gTTS(text,tld='co.uk').save(mp3); break
-        except Exception as e: import time; time.sleep(2*(attempt+1))
-    subprocess.run(['ffmpeg','-y','-loglevel','error','-i',mp3,'-af','silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,'+AF,'-ar','44100','-ac','2',wav],check=True)
+    key,i,text=job; raw=f'sent/{key}_{i}_raw.wav'; wav=f'sent/{key}_{i}.wav'
+    subprocess.run(['piper','-m','voices/en_US-ryan-high.onnx','--length_scale','1.1','-f',raw],input=text.encode(),check=True,capture_output=True)
+    subprocess.run(['ffmpeg','-y','-loglevel','error','-i',raw,'-af','silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,'+AF,'-ar','44100','-ac','2',wav],check=True)
     return wav
 jobs=[]
 for s in shots:
     s['sents']=[x.strip() for x in re.findall(r'[^.!?]+[.!?]+',s['say'])]
     jobs+=[(s['key'],i,t) for i,t in enumerate(s['sents'])]
-with ThreadPoolExecutor(6) as ex: list(ex.map(tts,jobs))
+with ThreadPoolExecutor(4) as ex: list(ex.map(tts,jobs))
 for s in shots:
     t=0; caps=[]; files=[]
     for i,sent in enumerate(s['sents']):

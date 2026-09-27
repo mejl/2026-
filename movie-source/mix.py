@@ -6,7 +6,7 @@ ins=[];flt=[]
 for i,s in enumerate(vo):
     ins+=['-i',f"v_{s['id']}.wav"]; ms=int(round(s['vo']*1000)); flt.append(f"[{i}:a]adelay={ms}|{ms}[d{i}]")
 n=len(vo)
-flt+=[''.join(f'[d{i}]' for i in range(n))+f"amix=inputs={n}:normalize=0,apad[voice]",f"[{n}:a]volume=0.9[mus]","[voice]asplit=2[vk][vm]",
- "[mus][vk]sidechaincompress=threshold=0.03:ratio=6:attack=80:release=700[duck]","[duck][vm]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-15:TP=-1.5:LRA=11[out]"]
+flt+=[''.join(f'[d{i}]' for i in range(n))+f"amix=inputs={n}:normalize=0,apad[voice]",f"[{n}:a]volume=0.8[mus]","[voice]asplit=2[vk][vm]",
+ "[mus][vk]sidechaincompress=threshold=0.05:ratio=4:attack=60:release=900[duck]","[duck][vm]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-15:TP=-1.5:LRA=11[out]"]
 subprocess.run(['ffmpeg','-y','-loglevel','error',*ins,'-i','score.wav','-filter_complex',';'.join(flt),'-map','[out]','-t',str(sch['total']),'-ar','44100','mix.wav'],check=True)
 print('mixed')
