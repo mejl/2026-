@@ -699,6 +699,10 @@ camFor=function(s,u){
   return {s:sc,tx:W/2-cx,ty:H/2-cy};
 };
 
+// ===== calm camera: one slow, gentle drift per shot, no cuts or punch-in zooms =====
+camFor=function(s,u){ const e=ease(clamp(u)), id=parseInt((s.id||'s0').slice(1))||0, dir=hash(id*7+1)>.5?1:-1;
+  return {s:lerp(1.04,1.09,e), tx:dir*lerp(-28,28,e), ty:lerp(6,-6,e)}; };
+
 window.renderAt = function(t){ window.__t=t; window.__heroPrev=window.__heroCur.h?window.__heroCur:window.__heroPrev; window.__heroCur={h:0,x:W/2,y:H*.6};
   const s = SCH.scenes.find(s=>t>=s.start&&t<s.end) || SCH.scenes[SCH.scenes.length-1];
   const lt = t - s.start;
@@ -706,7 +710,7 @@ window.renderAt = function(t){ window.__t=t; window.__heroPrev=window.__heroCur.
   if (s.ch && lt < s.card) { chapterCard(s, lt); }
   else {
     const body = lt - s.card, d = s.end - s.start - s.card;
-    window.__shotDur=d; window.CAM=camFor(s,body/d); window.CAM.tx+=Math.sin(t*.7)*3; window.CAM.ty+=Math.cos(t*.53)*2;
+    window.__shotDur=d; window.CAM=camFor(s,body/d); 
     X.save(); applyCam(1);
     const pr=s.p||[0,1], D=d/(pr[1]-pr[0]); (SCENES[s.scene]||SCENES[s.id])(pr[0]*D+body, D);
     X.restore();

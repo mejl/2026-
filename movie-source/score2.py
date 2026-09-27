@@ -121,24 +121,20 @@ for s in scenes:
 def noise(n): return rng.standard_normal(n).astype(np.float32)
 def fx(kind, n):
     t = np.arange(n) / SR
-    if kind == 'rain': return lp(hp(noise(n), 1200), 7000) * .06
+    if kind == 'rain': return lp(hp(noise(n), 900), 4000) * .05
     if kind == 'wind': return hp(lp(noise(n), 700), 120) * (.5 + .5 * np.sin(2 * np.pi * .07 * t + rng.random() * 6)) * .08
     if kind == 'sea':  return lp(noise(n), 700) * (.3 + .7 * np.clip(np.sin(2 * np.pi * .11 * t), 0, 1) ** 2) * .16
     if kind == 'fire':
         x = lp(noise(n), 900) * .04
         for _ in range(int(n / SR * 18)):
-            i = rng.integers(0, max(1, n - 600)); x[i:i + 300] += hp(noise(300), 2500) * np.exp(-np.arange(300) / 50) * rng.uniform(.05, .25)
+            i = rng.integers(0, max(1, n - 600)); x[i:i + 300] += lp(hp(noise(300), 1200), 3500) * np.exp(-np.arange(300) / 50) * rng.uniform(.04, .15)
         return x
     if kind == 'crowd':
         x = np.zeros(n, np.float32)
         for f in (320, 520, 850): x += sosfilt(butter(2, [f * .8, f * 1.25], 'band', fs=SR, output='sos'), noise(n)) * (.5 + .5 * np.sin(2 * np.pi * rng.uniform(1.5, 3) * t + rng.random() * 6))
         return x * .025
     if kind == 'birds':
-        x = fx('wind', n) * .5; tt = np.arange(int(.15 * SR)) / SR
-        for _ in range(int(n / SR)):
-            i = rng.integers(0, max(1, n - len(tt))); f0 = rng.uniform(2800, 4200)
-            x[i:i + len(tt)] += np.sin(2 * np.pi * (f0 + 1200 * np.sin(2 * np.pi * 16 * tt)) * tt) * np.sin(np.pi * tt / tt[-1]) * .02
-        return x
+        return fx('wind', n) * .6
     return np.zeros(n, np.float32)
 def thunder():
     n = int(5 * SR); t = np.arange(n) / SR
@@ -148,6 +144,7 @@ sfx_bus = np.zeros((N, 2), np.float32)
 def addfx(sig, t0, pan):
     i = int(t0 * SR); sig = sig[:N - i]
     sfx_bus[i:i + len(sig), 0] += sig * np.sqrt(.5 * (1 - pan)); sfx_bus[i:i + len(sig), 1] += sig * np.sqrt(.5 * (1 + pan))
+sfx_done = False
 for s in scenes:
     k = s.get('sfx'); t0 = s['start']; n = int((s['end'] - t0) * SR)
     if not k: continue
@@ -158,6 +155,7 @@ for s in scenes:
     e = np.ones(n, np.float32); r = int(.8 * SR); e[:r] = np.linspace(0, 1, r); e[-r:] = np.linspace(1, 0, r)
     addfx(y * e * 1.4, t0, rng.uniform(-.25, .25))
 
+sfx_bus = lp(sfx_bus.T, 5000).T.astype(np.float32)
 # ---- concert hall reverb (synthetic stereo impulse response) ----
 irn = int(3.2 * SR); t = np.arange(irn) / SR
 ir = np.stack([lp(rng.standard_normal(irn), 5000) * np.exp(-t * 2.1), lp(rng.standard_normal(irn), 5000) * np.exp(-t * 2.1)], 1)
