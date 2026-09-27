@@ -1,5 +1,5 @@
 {
- "total": 514.64839,
+ "total": 476.2414059999998,
  "scenes": [
   {
    "id": "presents",
@@ -14,12 +14,39 @@
    "title": "",
    "sub": "",
    "say": "Before the mountains were born. Before the first dawn. There was God. And this is his story. From the first man, to the day the King returns.",
-   "dur": 13.408549,
+   "dur": 12.550204,
+   "caps": [
+    {
+     "text": "Before the mountains were born.",
+     "start": 5.5,
+     "end": 7.659
+    },
+    {
+     "text": "Before the first dawn.",
+     "start": 8.009,
+     "end": 9.921
+    },
+    {
+     "text": "There was God.",
+     "start": 10.271,
+     "end": 11.464
+    },
+    {
+     "text": "And this is his story.",
+     "start": 11.814,
+     "end": 13.739
+    },
+    {
+     "text": "From the first man, to the day the King returns.",
+     "start": 14.089,
+     "end": 18.05
+    }
+   ],
    "start": 5.0,
    "card": 0.5,
    "vo": 5.5,
-   "vodur": 13.408549,
-   "end": 20.108549
+   "vodur": 12.550204,
+   "end": 19.250204
   },
   {
    "id": "eden",
@@ -27,12 +54,69 @@
    "title": "EDEN",
    "sub": "Genesis 1 to 3",
    "say": "Chapter one. Eden. God spoke, and light broke through the darkness. He formed the man, Adam, from the dust of the ground, and breathed into him the breath of life. From Adam's side, he made the woman, Eve. They walked with God in a perfect garden. But the serpent whispered. They ate the forbidden fruit, and sin entered the world. Yet even then, God promised that one day, a child of the woman would crush the serpent's head.",
-   "dur": 39.526893,
-   "start": 20.108549,
+   "dur": 34.966054,
+   "caps": [
+    {
+     "text": "Chapter one.",
+     "start": 22.250204,
+     "end": 23.604204
+    },
+    {
+     "text": "Eden.",
+     "start": 23.954204,
+     "end": 24.717204
+    },
+    {
+     "text": "God spoke, and light broke through the darkness.",
+     "start": 25.067204,
+     "end": 28.671204
+    },
+    {
+     "text": "He formed the man, Adam, from the dust of the ground,",
+     "start": 29.021204,
+     "end": 32.953204
+    },
+    {
+     "text": "and breathed into him the breath of life.",
+     "start": 32.953204,
+     "end": 35.996204
+    },
+    {
+     "text": "From Adam's side, he made the woman, Eve.",
+     "start": 36.346204,
+     "end": 39.956204
+    },
+    {
+     "text": "They walked with God in a perfect garden.",
+     "start": 40.306204,
+     "end": 43.149204
+    },
+    {
+     "text": "But the serpent whispered.",
+     "start": 43.499204,
+     "end": 45.450204
+    },
+    {
+     "text": "They ate the forbidden fruit, and sin entered the world.",
+     "start": 45.800204,
+     "end": 49.740204
+    },
+    {
+     "text": "Yet even then, God promised that one day,",
+     "start": 50.090204,
+     "end": 53.232203999999996
+    },
+    {
+     "text": "a child of the woman would crush the serpent's head.",
+     "start": 53.232203999999996,
+     "end": 57.216204000000005
+    }
+   ],
+   "start": 19.250204,
    "card": 3.0,
-   "vo": 23.108549,
-   "vodur": 39.526893,
-   "end": 63.835442
+   "vo": 22.250204,
+   "vodur": 34.966054,
+   "end": 58.416258
   },
   {
    "id": "flood",
@@ -40,12 +124,54 @@
    "title": "THE FLOOD",
    "sub": "Genesis 6 to 9",
    "say": "Chapter two. The flood. The earth filled with violence. But Noah found grace in the eyes of the Lord. He built an ark, and the rain fell for forty days and forty nights. When the waters fell back, God set his rainbow in the clouds, a promise that never again would a flood destroy the earth.",
-   "dur": 25.199274,
-   "start": 63.835442,
+   "dur": 23.891088,
+   "caps": [
+    {
+     "text": "Chapter two.",
+     "start": 61.416258,
+     "end": 62.661258
+    },
+    {
+     "text": "The flood.",
+     "start": 63.011258,
+     "end": 63.907258
+    },
+    {
+     "text": "The earth filled with violence.",
+     "start": 64.257258,
+     "end": 66.569258
+    },
+    {
+     "text": "But Noah found grace in the eyes of the Lord.",
+     "start": 66.919258,
+     "end": 70.491258
+    },
+    {
+     "text": "He built an ark, and the rain fell for forty days and forty nights.",
+     "start": 70.841258,
+     "end": 75.701258
+    },
+    {
+     "text": "When the waters fell back,",
+     "start": 76.051258,
+     "end": 78.073258
+    },
+    {
+     "text": "God set his rainbow in the clouds,",
+     "start": 78.073258,
+     "end": 80.71825799999999
+    },
+    {
+     "text": "a promise that never again would a flood destroy the earth.",
+     "start": 80.71825799999999,
+     "end": 85.30725799999999
+    }
+   ],
+   "start": 58.416258,
    "card": 3.0,
-   "vo": 66.835442,
-   "vodur": 25.199274,
-   "end": 93.234716
+   "vo": 61.416258,
+   "vodur": 23.891088,
+   "end": 86.507346
   },
   {
    "id": "abraham",
@@ -53,12 +179,54 @@
    "title": "THE PROMISE",
    "sub": "Genesis 12 to 50",
    "say": "Chapter three. The promise. God called Abraham to leave his homeland. Look up at the stars, God said. So shall your descendants be. Through you, all the families of the earth will be blessed. The promise passed to Isaac, then to Jacob, whose twelve sons became the tribes of Israel.",
-   "dur": 25.543424,
-   "start": 93.234716,
+   "dur": 23.938005,
+   "caps": [
+    {
+     "text": "Chapter three.",
+     "start": 89.507346,
+     "end": 90.807346
+    },
+    {
+     "text": "The promise.",
+     "start": 91.157346,
+     "end": 92.34534599999999
+    },
+    {
+     "text": "God called Abraham to leave his homeland.",
+     "start": 92.695346,
+     "end": 95.894346
+    },
+    {
+     "text": "Look up at the stars, God said.",
+     "start": 96.244346,
+     "end": 99.072346
+    },
+    {
+     "text": "So shall your descendants be.",
+     "start": 99.422346,
+     "end": 101.957346
+    },
+    {
+     "text": "Through you, all the families of the earth will be blessed.",
+     "start": 102.307346,
+     "end": 106.382346
+    },
+    {
+     "text": "The promise passed to Isaac, then to Jacob,",
+     "start": 106.732346,
+     "end": 109.975346
+    },
+    {
+     "text": "whose twelve sons became the tribes of Israel.",
+     "start": 109.975346,
+     "end": 113.445346
+    }
+   ],
+   "start": 86.507346,
    "card": 3.0,
-   "vo": 96.234716,
-   "vodur": 25.543424,
-   "end": 122.97814000000001
+   "vo": 89.507346,
+   "vodur": 23.938005,
+   "end": 114.645351
   },
   {
    "id": "exodus",
@@ -66,12 +234,54 @@
    "title": "EXODUS",
    "sub": "Exodus",
    "say": "Chapter four. Exodus. Israel became slaves in Egypt. God raised up Moses, and spoke to him from a burning bush. Let my people go. Ten plagues struck Egypt. The Red Sea parted, and Israel walked through on dry ground. At Mount Sinai, God gave them his law.",
-   "dur": 26.240227,
-   "start": 122.97814000000001,
+   "dur": 24.028095,
+   "caps": [
+    {
+     "text": "Chapter four.",
+     "start": 117.645351,
+     "end": 118.906351
+    },
+    {
+     "text": "Exodus.",
+     "start": 119.25635100000001,
+     "end": 120.335351
+    },
+    {
+     "text": "Israel became slaves in Egypt.",
+     "start": 120.68535100000001,
+     "end": 123.559351
+    },
+    {
+     "text": "God raised up Moses, and spoke to him from a burning bush.",
+     "start": 123.909351,
+     "end": 128.599351
+    },
+    {
+     "text": "Let my people go.",
+     "start": 128.949351,
+     "end": 130.656351
+    },
+    {
+     "text": "Ten plagues struck Egypt.",
+     "start": 131.006351,
+     "end": 133.20135100000002
+    },
+    {
+     "text": "The Red Sea parted, and Israel walked through on dry ground.",
+     "start": 133.551351,
+     "end": 138.01635100000001
+    },
+    {
+     "text": "At Mount Sinai, God gave them his law.",
+     "start": 138.366351,
+     "end": 141.673351
+    }
+   ],
+   "start": 114.645351,
    "card": 3.0,
-   "vo": 125.97814000000001,
-   "vodur": 26.240227,
-   "end": 153.418367
+   "vo": 117.645351,
+   "vodur": 24.028095,
+   "end": 142.873446
   },
   {
    "id": "king",
@@ -79,12 +289,54 @@
    "title": "THE KING",
    "sub": "1 and 2 Samuel",
    "say": "Chapter five. The king. A shepherd boy named David faced the giant Goliath, with only a sling and his faith in God. The giant fell. David became king, and God promised him that his throne would be established forever. His son Solomon built the temple in Jerusalem.",
-   "dur": 23.248526,
-   "start": 153.418367,
+   "dur": 21.924376,
+   "caps": [
+    {
+     "text": "Chapter five.",
+     "start": 145.873446,
+     "end": 147.251446
+    },
+    {
+     "text": "The king.",
+     "start": 147.601446,
+     "end": 148.517446
+    },
+    {
+     "text": "A shepherd boy named David faced the giant Goliath,",
+     "start": 148.867446,
+     "end": 152.859446
+    },
+    {
+     "text": "with only a sling and his faith in God.",
+     "start": 152.859446,
+     "end": 155.911446
+    },
+    {
+     "text": "The giant fell.",
+     "start": 156.261446,
+     "end": 157.601446
+    },
+    {
+     "text": "David became king,",
+     "start": 157.951446,
+     "end": 159.238446
+    },
+    {
+     "text": "and God promised him that his throne would be established forever.",
+     "start": 159.238446,
+     "end": 163.955446
+    },
+    {
+     "text": "His son Solomon built the temple in Jerusalem.",
+     "start": 164.305446,
+     "end": 167.797446
+    }
+   ],
+   "start": 142.873446,
    "card": 3.0,
-   "vo": 156.418367,
-   "vodur": 23.248526,
-   "end": 180.86689299999998
+   "vo": 145.873446,
+   "vodur": 21.924376,
+   "end": 168.99782199999999
   },
   {
    "id": "exile",
@@ -92,12 +344,44 @@
    "title": "EXILE",
    "sub": "Kings, Daniel, Ezra",
    "say": "Chapter six. Exile. The people turned away from God, and Babylon destroyed Jerusalem. In captivity, Daniel stayed faithful, even in the lions' den. After seventy years, they returned and rebuilt the temple. And the prophets spoke of a coming Messiah.",
-   "dur": 24.983787,
-   "start": 180.86689299999998,
+   "dur": 22.032948,
+   "caps": [
+    {
+     "text": "Chapter six.",
+     "start": 171.99782199999999,
+     "end": 173.43582199999997
+    },
+    {
+     "text": "Exile.",
+     "start": 173.785822,
+     "end": 174.784822
+    },
+    {
+     "text": "The people turned away from God, and Babylon destroyed Jerusalem.",
+     "start": 175.13482199999999,
+     "end": 180.06782199999998
+    },
+    {
+     "text": "In captivity, Daniel stayed faithful, even in the lions' den.",
+     "start": 180.41782199999997,
+     "end": 185.713822
+    },
+    {
+     "text": "After seventy years, they returned and rebuilt the temple.",
+     "start": 186.063822,
+     "end": 190.59682199999997
+    },
+    {
+     "text": "And the prophets spoke of a coming Messiah.",
+     "start": 190.946822,
+     "end": 194.030822
+    }
+   ],
+   "start": 168.99782199999999,
    "card": 3.0,
-   "vo": 183.86689299999998,
-   "vodur": 24.983787,
-   "end": 210.05067999999997
+   "vo": 171.99782199999999,
+   "vodur": 22.032948,
+   "end": 195.23076999999998
   },
   {
    "id": "jesus",
@@ -105,12 +389,49 @@
    "title": "THE SAVIOR",
    "sub": "The Gospels",
    "say": "Chapter seven. The savior. In Bethlehem, a virgin gave birth to a son, Jesus, the Word made flesh. He healed the sick. He calmed the storm. He raised the dead. And he said, I am the way, the truth, and the life.",
-   "dur": 22.475624,
-   "start": 210.05067999999997,
+   "dur": 20.785918,
+   "caps": [
+    {
+     "text": "Chapter seven.",
+     "start": 198.23076999999998,
+     "end": 199.62776999999997
+    },
+    {
+     "text": "The savior.",
+     "start": 199.97777,
+     "end": 201.07676999999998
+    },
+    {
+     "text": "In Bethlehem, a virgin gave birth to a son, Jesus, the Word made flesh.",
+     "start": 201.42676999999998,
+     "end": 207.76976999999997
+    },
+    {
+     "text": "He healed the sick.",
+     "start": 208.11977,
+     "end": 209.63276999999997
+    },
+    {
+     "text": "He calmed the storm.",
+     "start": 209.98277,
+     "end": 211.80076999999997
+    },
+    {
+     "text": "He raised the dead.",
+     "start": 212.15076999999997,
+     "end": 213.70076999999998
+    },
+    {
+     "text": "And he said, I am the way, the truth, and the life.",
+     "start": 214.05076999999997,
+     "end": 219.01676999999998
+    }
+   ],
+   "start": 195.23076999999998,
    "card": 3.0,
-   "vo": 213.05067999999997,
-   "vodur": 22.475624,
-   "end": 236.72630399999997
+   "vo": 198.23076999999998,
+   "vodur": 20.785918,
+   "end": 220.21668799999998
   },
   {
    "id": "cross",
@@ -118,12 +439,59 @@
    "title": "THE CROSS",
    "sub": "About AD 30 to 33",
    "say": "Chapter eight. The cross. Jesus was betrayed, and crucified outside Jerusalem. He died for the sins of the world. It is finished. But on the third day, the tomb was empty. He is risen. Forty days later, he ascended into heaven, and angels said, this same Jesus will come back.",
-   "dur": 28.245238,
-   "start": 236.72630399999997,
+   "dur": 24.892676,
+   "caps": [
+    {
+     "text": "Chapter eight.",
+     "start": 223.21668799999998,
+     "end": 224.54268799999997
+    },
+    {
+     "text": "The cross.",
+     "start": 224.89268799999996,
+     "end": 225.92368799999997
+    },
+    {
+     "text": "Jesus was betrayed, and crucified outside Jerusalem.",
+     "start": 226.27368799999996,
+     "end": 230.69168799999997
+    },
+    {
+     "text": "He died for the sins of the world.",
+     "start": 231.04168799999997,
+     "end": 233.50268799999998
+    },
+    {
+     "text": "It is finished.",
+     "start": 233.85268799999997,
+     "end": 235.06768799999998
+    },
+    {
+     "text": "But on the third day, the tomb was empty.",
+     "start": 235.41768799999997,
+     "end": 238.76968799999997
+    },
+    {
+     "text": "He is risen.",
+     "start": 239.11968799999997,
+     "end": 240.27768799999998
+    },
+    {
+     "text": "Forty days later, he ascended into heaven, and angels said,",
+     "start": 240.62768799999998,
+     "end": 245.53268799999998
+    },
+    {
+     "text": "this same Jesus will come back.",
+     "start": 245.53268799999998,
+     "end": 248.10968799999998
+    }
+   ],
+   "start": 220.21668799999998,
    "card": 3.0,
-   "vo": 239.72630399999997,
-   "vodur": 28.245238,
-   "end": 269.171542
+   "vo": 223.21668799999998,
+   "vodur": 24.892676,
+   "end": 249.30936399999996
   },
   {
    "id": "church",
@@ -131,12 +499,44 @@
    "title": "FIRE",
    "sub": "Acts, Letters, Revelation",
    "say": "Chapter nine. Fire. At Pentecost, the Holy Spirit came like tongues of fire. The apostles preached boldly. Saul, who persecuted believers, met the risen Jesus and became the apostle Paul. And on the island of Patmos, John wrote down the vision of Revelation.",
-   "dur": 25.377075,
-   "start": 269.171542,
+   "dur": 22.743265,
+   "caps": [
+    {
+     "text": "Chapter nine.",
+     "start": 252.30936399999996,
+     "end": 253.73536399999995
+    },
+    {
+     "text": "Fire.",
+     "start": 254.08536399999997,
+     "end": 254.92536399999997
+    },
+    {
+     "text": "At Pentecost, the Holy Spirit came like tongues of fire.",
+     "start": 255.27536399999997,
+     "end": 259.72536399999996
+    },
+    {
+     "text": "The apostles preached boldly.",
+     "start": 260.075364,
+     "end": 262.60936399999997
+    },
+    {
+     "text": "Saul, who persecuted believers, met the risen Jesus and became the apostle Paul.",
+     "start": 262.95936399999994,
+     "end": 269.38836399999997
+    },
+    {
+     "text": "And on the island of Patmos, John wrote down the vision of Revelation.",
+     "start": 269.73836399999993,
+     "end": 275.05236399999995
+    }
+   ],
+   "start": 249.30936399999996,
    "card": 3.0,
-   "vo": 272.171542,
-   "vodur": 25.377075,
-   "end": 298.74861699999997
+   "vo": 252.30936399999996,
+   "vodur": 22.743265,
+   "end": 276.25262899999996
   },
   {
    "id": "martyrs",
@@ -144,12 +544,54 @@
    "title": "BLOOD AND FAITH",
    "sub": "AD 64 to 381",
    "say": "Chapter ten. Blood and faith. The Roman Empire hunted Christians. Under Nero, believers were put to death. Yet the church kept growing. In the year three thirteen, the Edict of Milan made Christianity legal. At the councils of Nicaea and Constantinople, the church confessed that Jesus is truly God.",
-   "dur": 28.189025,
-   "start": 298.74861699999997,
+   "dur": 25.500907,
+   "caps": [
+    {
+     "text": "Chapter ten.",
+     "start": 279.25262899999996,
+     "end": 280.42562899999996
+    },
+    {
+     "text": "Blood and faith.",
+     "start": 280.775629,
+     "end": 281.90662899999995
+    },
+    {
+     "text": "The Roman Empire hunted Christians.",
+     "start": 282.256629,
+     "end": 285.26962899999995
+    },
+    {
+     "text": "Under Nero, believers were put to death.",
+     "start": 285.619629,
+     "end": 288.69462899999996
+    },
+    {
+     "text": "Yet the church kept growing.",
+     "start": 289.04462899999993,
+     "end": 291.18162899999993
+    },
+    {
+     "text": "In the year three thirteen, the Edict of Milan made Christianity legal.",
+     "start": 291.53162899999995,
+     "end": 297.107629
+    },
+    {
+     "text": "At the councils of Nicaea and Constantinople,",
+     "start": 297.45762899999994,
+     "end": 301.10562899999996
+    },
+    {
+     "text": "the church confessed that Jesus is truly God.",
+     "start": 301.10562899999996,
+     "end": 304.75362899999993
+    }
+   ],
+   "start": 276.25262899999996,
    "card": 3.0,
-   "vo": 301.74861699999997,
-   "vodur": 28.189025,
-   "end": 331.13764199999997
+   "vo": 279.25262899999996,
+   "vodur": 25.500907,
+   "end": 305.95353599999993
   },
   {
    "id": "middle",
@@ -157,12 +599,54 @@
    "title": "CANDLES IN THE DARK",
    "sub": "AD 400 to 1400",
    "say": "Chapter eleven. Candles in the dark. Empires collapsed. But in quiet monasteries, monks copied the Scriptures by hand, word by word, for a thousand years. Missionaries carried the gospel across Europe. In ten fifty four, the church split between East and West.",
-   "dur": 24.878707,
-   "start": 331.13764199999997,
+   "dur": 23.401701,
+   "caps": [
+    {
+     "text": "Chapter eleven.",
+     "start": 308.95353599999993,
+     "end": 310.4665359999999
+    },
+    {
+     "text": "Candles in the dark.",
+     "start": 310.8165359999999,
+     "end": 312.72253599999993
+    },
+    {
+     "text": "Empires collapsed.",
+     "start": 313.0725359999999,
+     "end": 314.7885359999999
+    },
+    {
+     "text": "But in quiet monasteries,",
+     "start": 315.13853599999993,
+     "end": 317.3315359999999
+    },
+    {
+     "text": "monks copied the Scriptures by hand, word by word,",
+     "start": 317.3315359999999,
+     "end": 321.71753599999994
+    },
+    {
+     "text": "for a thousand years.",
+     "start": 321.71753599999994,
+     "end": 323.56053599999996
+    },
+    {
+     "text": "Missionaries carried the gospel across Europe.",
+     "start": 323.9105359999999,
+     "end": 327.0485359999999
+    },
+    {
+     "text": "In ten fifty four, the church split between East and West.",
+     "start": 327.3985359999999,
+     "end": 332.3555359999999
+    }
+   ],
+   "start": 305.95353599999993,
    "card": 3.0,
-   "vo": 334.13764199999997,
-   "vodur": 24.878707,
-   "end": 360.216349
+   "vo": 308.95353599999993,
+   "vodur": 23.401701,
+   "end": 333.5552369999999
   },
   {
    "id": "reform",
@@ -170,12 +654,54 @@
    "title": "REFORMATION",
    "sub": "AD 1450 to 1600",
    "say": "Chapter twelve. Reformation. Gutenberg's printing press made the Bible one of the first printed books. In fifteen seventeen, Martin Luther posted his ninety five theses, calling the church back to Scripture, and to salvation by grace through faith. Soon, ordinary people could read the Bible in their own language.",
-   "dur": 27.735873,
-   "start": 360.216349,
+   "dur": 26.978277,
+   "caps": [
+    {
+     "text": "Chapter twelve.",
+     "start": 336.5552369999999,
+     "end": 337.92723699999993
+    },
+    {
+     "text": "Reformation.",
+     "start": 338.2772369999999,
+     "end": 339.5532369999999
+    },
+    {
+     "text": "Gutenberg's printing press made the Bible one of the first printed books.",
+     "start": 339.90323699999993,
+     "end": 345.2312369999999
+    },
+    {
+     "text": "In fifteen seventeen,",
+     "start": 345.58123699999993,
+     "end": 347.4302369999999
+    },
+    {
+     "text": "Martin Luther posted his ninety five theses,",
+     "start": 347.4302369999999,
+     "end": 351.3052369999999
+    },
+    {
+     "text": "calling the church back to Scripture,",
+     "start": 351.3052369999999,
+     "end": 354.56423699999993
+    },
+    {
+     "text": "and to salvation by grace through faith.",
+     "start": 354.56423699999993,
+     "end": 358.0862369999999
+    },
+    {
+     "text": "Soon, ordinary people could read the Bible in their own language.",
+     "start": 358.4362369999999,
+     "end": 363.53323699999993
+    }
+   ],
+   "start": 333.5552369999999,
    "card": 3.0,
-   "vo": 363.216349,
-   "vodur": 27.735873,
-   "end": 392.152222
+   "vo": 336.5552369999999,
+   "vodur": 26.978277,
+   "end": 364.7335139999999
   },
   {
    "id": "missions",
@@ -183,12 +709,49 @@
    "title": "TO THE ENDS OF THE EARTH",
    "sub": "AD 1700 to 2000",
    "say": "Chapter thirteen. To the ends of the earth. Great revivals swept across nations. Missionaries sailed to Africa, Asia, and the Americas, and many gave their lives. The Bible was translated into language after language, and the church grew on every continent.",
-   "dur": 24.156145,
-   "start": 392.152222,
+   "dur": 21.001497,
+   "caps": [
+    {
+     "text": "Chapter thirteen.",
+     "start": 367.7335139999999,
+     "end": 369.4785139999999
+    },
+    {
+     "text": "To the ends of the earth.",
+     "start": 369.8285139999999,
+     "end": 371.3945139999999
+    },
+    {
+     "text": "Great revivals swept across nations.",
+     "start": 371.7445139999999,
+     "end": 374.9165139999999
+    },
+    {
+     "text": "Missionaries sailed to Africa, Asia, and the Americas,",
+     "start": 375.2665139999999,
+     "end": 379.8365139999999
+    },
+    {
+     "text": "and many gave their lives.",
+     "start": 379.8365139999999,
+     "end": 382.0375139999999
+    },
+    {
+     "text": "The Bible was translated into language after language,",
+     "start": 382.3875139999999,
+     "end": 386.0735139999999
+    },
+    {
+     "text": "and the church grew on every continent.",
+     "start": 386.0735139999999,
+     "end": 388.7345139999999
+    }
+   ],
+   "start": 364.7335139999999,
    "card": 3.0,
-   "vo": 395.152222,
-   "vodur": 24.156145,
-   "end": 420.50836699999996
+   "vo": 367.7335139999999,
+   "vodur": 21.001497,
+   "end": 389.93501099999986
   },
   {
    "id": "today",
@@ -196,12 +759,54 @@
    "title": "2026",
    "sub": "Today",
    "say": "Chapter fourteen. Twenty twenty six. Today, the Bible is translated in whole into more than seven hundred languages, and parts of it into thousands more. Believers gather in cities, villages, and secret house churches around the world. And the gospel is still going out, just as Jesus said, to every nation.",
-   "dur": 28.622245,
-   "start": 420.50836699999996,
+   "dur": 26.311542,
+   "caps": [
+    {
+     "text": "Chapter fourteen.",
+     "start": 392.93501099999986,
+     "end": 394.68601099999984
+    },
+    {
+     "text": "Twenty twenty six.",
+     "start": 395.03601099999986,
+     "end": 396.87701099999987
+    },
+    {
+     "text": "Today,",
+     "start": 397.22701099999983,
+     "end": 397.72101099999986
+    },
+    {
+     "text": "the Bible is translated in whole into more than seven hundred languages,",
+     "start": 397.72101099999986,
+     "end": 403.65101099999987
+    },
+    {
+     "text": "and parts of it into thousands more.",
+     "start": 403.65101099999987,
+     "end": 406.61601099999984
+    },
+    {
+     "text": "Believers gather in cities, villages,",
+     "start": 406.96601099999987,
+     "end": 409.7780109999999
+    },
+    {
+     "text": "and secret house churches around the world.",
+     "start": 409.7780109999999,
+     "end": 413.0450109999999
+    },
+    {
+     "text": "And the gospel is still going out, just as Jesus said, to every nation.",
+     "start": 413.39501099999984,
+     "end": 419.2470109999999
+    }
+   ],
+   "start": 389.93501099999986,
    "card": 3.0,
-   "vo": 423.50836699999996,
-   "vodur": 28.622245,
-   "end": 453.330612
+   "vo": 392.93501099999986,
+   "vodur": 26.311542,
+   "end": 420.4465529999998
   },
   {
    "id": "return",
@@ -209,12 +814,69 @@
    "title": "THE RETURN",
    "sub": "The day no one knows",
    "say": "Chapter fifteen. The return. Of that day and hour, no one knows, not the angels, only the Father. But he is coming. The trumpet will sound. Every eye will see him, coming on the clouds with power and great glory. The dead in Christ will rise. And God will make all things new. A new heaven, and a new earth, where there will be no more death, no more tears, and no more pain.",
-   "dur": 36.18483,
-   "start": 453.330612,
+   "dur": 32.511973,
+   "caps": [
+    {
+     "text": "Chapter fifteen.",
+     "start": 423.4465529999998,
+     "end": 425.09055299999983
+    },
+    {
+     "text": "The return.",
+     "start": 425.44055299999985,
+     "end": 426.60655299999985
+    },
+    {
+     "text": "Of that day and hour, no one knows, not the angels, only the Father.",
+     "start": 426.9565529999998,
+     "end": 433.0315529999998
+    },
+    {
+     "text": "But he is coming.",
+     "start": 433.3815529999998,
+     "end": 434.81655299999983
+    },
+    {
+     "text": "The trumpet will sound.",
+     "start": 435.16655299999985,
+     "end": 437.0915529999998
+    },
+    {
+     "text": "Every eye will see him, coming on the clouds with power and great glory.",
+     "start": 437.44155299999983,
+     "end": 442.6275529999998
+    },
+    {
+     "text": "The dead in Christ will rise.",
+     "start": 442.97755299999983,
+     "end": 445.1775529999998
+    },
+    {
+     "text": "And God will make all things new.",
+     "start": 445.52755299999984,
+     "end": 447.9665529999998
+    },
+    {
+     "text": "A new heaven, and a new earth,",
+     "start": 448.31655299999983,
+     "end": 450.7045529999998
+    },
+    {
+     "text": "where there will be no more death, no more tears,",
+     "start": 450.7045529999998,
+     "end": 454.6055529999998
+    },
+    {
+     "text": "and no more pain.",
+     "start": 454.6055529999998,
+     "end": 455.9585529999998
+    }
+   ],
+   "start": 420.4465529999998,
    "card": 3.0,
-   "vo": 456.330612,
-   "vodur": 36.18483,
-   "end": 493.71544199999994
+   "vo": 423.4465529999998,
+   "vodur": 32.511973,
+   "end": 457.1585259999998
   },
   {
    "id": "outro",
@@ -222,12 +884,34 @@
    "title": "",
    "sub": "",
    "say": "From Eden, to eternity. He who testifies to these things says, surely I am coming soon. Amen. Come, Lord Jesus.",
-   "dur": 13.432948,
-   "start": 493.71544199999994,
+   "dur": 11.58288,
+   "caps": [
+    {
+     "text": "From Eden, to eternity.",
+     "start": 457.6585259999998,
+     "end": 460.2005259999998
+    },
+    {
+     "text": "He who testifies to these things says, surely I am coming soon.",
+     "start": 460.5505259999998,
+     "end": 465.67652599999985
+    },
+    {
+     "text": "Amen.",
+     "start": 466.0265259999998,
+     "end": 466.8075259999998
+    },
+    {
+     "text": "Come, Lord Jesus.",
+     "start": 467.15752599999985,
+     "end": 469.24152599999985
+    }
+   ],
+   "start": 457.1585259999998,
    "card": 0.5,
-   "vo": 494.21544199999994,
-   "vodur": 13.432948,
-   "end": 514.64839
+   "vo": 457.6585259999998,
+   "vodur": 11.58288,
+   "end": 476.2414059999998
   }
  ]
 }
