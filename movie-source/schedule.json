@@ -1,0 +1,2424 @@
+{
+ "total": 1176.902787,
+ "scenes": [
+  {
+   "id": "presents",
+   "scene": "presents",
+   "start": 0,
+   "card": 0,
+   "vo": null,
+   "end": 5.0,
+   "sfx": "wind"
+  },
+  {
+   "id": "s00",
+   "scene": "intro",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "",
+   "sub": "",
+   "say": "Before the mountains were born. Before the first dawn. There was God, who has no beginning and no end. This is his story. The story of a broken world, a promise that never failed, and a King who is coming back.",
+   "start": 5.0,
+   "card": 0.6,
+   "vo": 5.6,
+   "vodur": 17.952154,
+   "end": 24.552154,
+   "caps": [
+    {
+     "text": "Before the mountains were born.",
+     "start": 5.6,
+     "end": 7.759
+    },
+    {
+     "text": "Before the first dawn.",
+     "start": 8.159,
+     "end": 10.071
+    },
+    {
+     "text": "There was God, who has no beginning and no end.",
+     "start": 10.471,
+     "end": 14.094
+    },
+    {
+     "text": "This is his story.",
+     "start": 14.494,
+     "end": 16.232
+    },
+    {
+     "text": "The story of a broken world, a promise that never failed,",
+     "start": 16.632,
+     "end": 21.166
+    },
+    {
+     "text": "and a King who is coming back.",
+     "start": 21.166,
+     "end": 23.552
+    }
+   ]
+  },
+  {
+   "id": "s01",
+   "scene": "c1",
+   "p": [
+    0,
+    0.45
+   ],
+   "sfx": "wind",
+   "ch": "I",
+   "title": "IN THE BEGINNING",
+   "sub": "Genesis 1 to 4",
+   "say": "In the beginning, God created the heavens and the earth. The earth was without form, and void, and darkness was over the deep. And God said, let there be light. And there was light. In six days he made the sky, the seas, the land, the sun, the moon and the stars, every living creature, and it was good.",
+   "start": 24.552154,
+   "card": 3.0,
+   "vo": 27.552154,
+   "vodur": 27.788662,
+   "end": 56.340816000000004,
+   "caps": [
+    {
+     "text": "In the beginning, God created the heavens and the earth.",
+     "start": 27.552,
+     "end": 31.488
+    },
+    {
+     "text": "The earth was without form, and void, and darkness was over the deep.",
+     "start": 31.888,
+     "end": 37.226
+    },
+    {
+     "text": "And God said, let there be light.",
+     "start": 37.626,
+     "end": 40.589
+    },
+    {
+     "text": "And there was light.",
+     "start": 40.989,
+     "end": 42.357
+    },
+    {
+     "text": "In six days he made the sky, the seas, the land, the sun,",
+     "start": 42.757,
+     "end": 48.785
+    },
+    {
+     "text": "the moon and the stars, every living creature,",
+     "start": 48.785,
+     "end": 53.649
+    },
+    {
+     "text": "and it was good.",
+     "start": 53.649,
+     "end": 55.341
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "scene": "eden",
+   "p": [
+    0.3,
+    0.72
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "IN THE BEGINNING",
+   "sub": "Genesis 1 to 4",
+   "say": "Then God formed man from the dust of the ground, and breathed into his nostrils the breath of life. He placed Adam in the garden of Eden. From Adam's rib he made the woman, Eve. They walked with God in the cool of the day, and they were not ashamed.",
+   "start": 56.340816000000004,
+   "card": 0.6,
+   "vo": 56.940816000000005,
+   "vodur": 18.91356,
+   "end": 76.854376,
+   "caps": [
+    {
+     "text": "Then God formed man from the dust of the ground,",
+     "start": 56.941,
+     "end": 60.268
+    },
+    {
+     "text": "and breathed into his nostrils the breath of life.",
+     "start": 60.268,
+     "end": 63.735
+    },
+    {
+     "text": "He placed Adam in the garden of Eden.",
+     "start": 64.135,
+     "end": 66.913
+    },
+    {
+     "text": "From Adam's rib he made the woman, Eve.",
+     "start": 67.313,
+     "end": 70.696
+    },
+    {
+     "text": "They walked with God in the cool of the day, and they were not ashamed.",
+     "start": 71.096,
+     "end": 75.854
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "scene": "eden",
+   "p": [
+    0.72,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "IN THE BEGINNING",
+   "sub": "Genesis 1 to 4",
+   "say": "But the serpent, more cunning than any beast, said to the woman, did God really say? She ate the fruit, and gave it to her husband, and he ate. Their eyes were opened, and they hid from God. Sin and death entered the world.",
+   "start": 76.854376,
+   "card": 0.6,
+   "vo": 77.454376,
+   "vodur": 18.42542,
+   "end": 96.879796,
+   "caps": [
+    {
+     "text": "But the serpent, more cunning than any beast,",
+     "start": 77.454,
+     "end": 80.981
+    },
+    {
+     "text": "said to the woman, did God really say?",
+     "start": 80.981,
+     "end": 83.959
+    },
+    {
+     "text": "She ate the fruit, and gave it to her husband, and he ate.",
+     "start": 84.359,
+     "end": 89.115
+    },
+    {
+     "text": "Their eyes were opened, and they hid from God.",
+     "start": 89.515,
+     "end": 93.212
+    },
+    {
+     "text": "Sin and death entered the world.",
+     "start": 93.612,
+     "end": 95.88
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "scene": "expel",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "fire",
+   "ch": "",
+   "title": "IN THE BEGINNING",
+   "sub": "Genesis 1 to 4",
+   "say": "God drove them out of the garden, and placed cherubim with a flaming sword to guard the way to the tree of life. Yet he clothed them with garments of skin, and promised that the offspring of the woman would one day crush the serpent's head.",
+   "start": 96.879796,
+   "card": 0.6,
+   "vo": 97.479796,
+   "vodur": 16.619705,
+   "end": 115.09950099999999,
+   "caps": [
+    {
+     "text": "God drove them out of the garden,",
+     "start": 97.48,
+     "end": 99.731
+    },
+    {
+     "text": "and placed cherubim with a flaming sword to guard the way to the tree of life.",
+     "start": 99.731,
+     "end": 105.052
+    },
+    {
+     "text": "Yet he clothed them with garments of skin,",
+     "start": 105.452,
+     "end": 108.335
+    },
+    {
+     "text": "and promised that the offspring of the woman would one day crush the serpent's head.",
+     "start": 108.335,
+     "end": 114.1
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "scene": "cain",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "IN THE BEGINNING",
+   "sub": "Genesis 1 to 4",
+   "say": "Outside Eden, their sons Cain and Abel brought offerings to the Lord. God accepted Abel's offering, but not Cain's. In jealousy and anger, Cain rose up against his brother and killed him. The blood of Abel cried out from the ground.",
+   "start": 115.09950099999999,
+   "card": 0.6,
+   "vo": 115.69950099999998,
+   "vodur": 18.479206,
+   "end": 135.17870699999997,
+   "caps": [
+    {
+     "text": "Outside Eden, their sons Cain and Abel brought offerings to the Lord.",
+     "start": 115.7,
+     "end": 121.068
+    },
+    {
+     "text": "God accepted Abel's offering, but not Cain's.",
+     "start": 121.468,
+     "end": 125.367
+    },
+    {
+     "text": "In jealousy and anger, Cain rose up against his brother and killed him.",
+     "start": 125.767,
+     "end": 130.772
+    },
+    {
+     "text": "The blood of Abel cried out from the ground.",
+     "start": 131.172,
+     "end": 134.179
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "scene": "flood",
+   "p": [
+    0,
+    0.4
+   ],
+   "sfx": "rain",
+   "ch": "II",
+   "title": "THE FLOOD",
+   "sub": "Genesis 6 to 11",
+   "say": "Generations passed, and the earth was filled with violence. God saw that every intention of man's heart was only evil continually. But Noah found grace in the eyes of the Lord. God told him, build an ark of gopher wood.",
+   "start": 135.17870699999997,
+   "card": 3.0,
+   "vo": 138.17870699999997,
+   "vodur": 17.999274,
+   "end": 157.177981,
+   "caps": [
+    {
+     "text": "Generations passed, and the earth was filled with violence.",
+     "start": 138.179,
+     "end": 142.564
+    },
+    {
+     "text": "God saw that every intention of man's heart was only evil continually.",
+     "start": 142.964,
+     "end": 148.152
+    },
+    {
+     "text": "But Noah found grace in the eyes of the Lord.",
+     "start": 148.552,
+     "end": 152.124
+    },
+    {
+     "text": "God told him, build an ark of gopher wood.",
+     "start": 152.524,
+     "end": 156.178
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "scene": "flood",
+   "p": [
+    0.4,
+    0.72
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "THE FLOOD",
+   "sub": "Genesis 6 to 11",
+   "say": "The fountains of the great deep burst open, and the windows of heaven were opened. For forty days and forty nights the rain fell. The waters covered even the highest mountains. Only Noah, his family, and the animals in the ark survived.",
+   "start": 157.177981,
+   "card": 0.6,
+   "vo": 157.77798099999998,
+   "vodur": 18.594989,
+   "end": 177.37296999999998,
+   "caps": [
+    {
+     "text": "The fountains of the great deep burst open,",
+     "start": 157.778,
+     "end": 160.843
+    },
+    {
+     "text": "and the windows of heaven were opened.",
+     "start": 160.843,
+     "end": 163.552
+    },
+    {
+     "text": "For forty days and forty nights the rain fell.",
+     "start": 163.952,
+     "end": 167.291
+    },
+    {
+     "text": "The waters covered even the highest mountains.",
+     "start": 167.691,
+     "end": 170.983
+    },
+    {
+     "text": "Only Noah, his family, and the animals in the ark survived.",
+     "start": 171.383,
+     "end": 176.373
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "scene": "flood",
+   "p": [
+    0.72,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "THE FLOOD",
+   "sub": "Genesis 6 to 11",
+   "say": "God remembered Noah. The waters went down, and the ark rested on the mountains of Ararat. Noah built an altar, and God set his rainbow in the clouds, a sign of his covenant that never again would a flood destroy the earth.",
+   "start": 177.37296999999998,
+   "card": 0.6,
+   "vo": 177.97296999999998,
+   "vodur": 17.900771,
+   "end": 196.87374099999997,
+   "caps": [
+    {
+     "text": "God remembered Noah.",
+     "start": 177.973,
+     "end": 179.647
+    },
+    {
+     "text": "The waters went down, and the ark rested on the mountains of Ararat.",
+     "start": 180.047,
+     "end": 185.322
+    },
+    {
+     "text": "Noah built an altar, and God set his rainbow in the clouds,",
+     "start": 185.722,
+     "end": 190.294
+    },
+    {
+     "text": "a sign of his covenant that never again would a flood destroy the earth.",
+     "start": 190.294,
+     "end": 195.874
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "scene": "babel",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "",
+   "title": "THE FLOOD",
+   "sub": "Genesis 6 to 11",
+   "say": "Noah's descendants spoke one language. On the plain of Shinar they said, come, let us build a city, and a tower with its top in the heavens, and make a name for ourselves. But the Lord confused their language, and scattered them over the face of the earth.",
+   "start": 196.87374099999997,
+   "card": 0.6,
+   "vo": 197.47374099999996,
+   "vodur": 20.725102,
+   "end": 219.19884299999995,
+   "caps": [
+    {
+     "text": "Noah's descendants spoke one language.",
+     "start": 197.474,
+     "end": 200.782
+    },
+    {
+     "text": "On the plain of Shinar they said, come, let us build a city,",
+     "start": 201.182,
+     "end": 206.385
+    },
+    {
+     "text": "and a tower with its top in the heavens,",
+     "start": 206.385,
+     "end": 209.854
+    },
+    {
+     "text": "and make a name for ourselves.",
+     "start": 209.854,
+     "end": 212.455
+    },
+    {
+     "text": "But the Lord confused their language,",
+     "start": 212.855,
+     "end": 215.237
+    },
+    {
+     "text": "and scattered them over the face of the earth.",
+     "start": 215.237,
+     "end": 218.199
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "scene": "c2",
+   "p": [
+    0,
+    0.6
+   ],
+   "sfx": "wind",
+   "ch": "III",
+   "title": "THE PROMISE",
+   "sub": "Genesis 12 to 50",
+   "say": "God called Abram out of Ur. Go to the land I will show you. I will make you a great nation, and in you all the families of the earth shall be blessed. God brought him outside and said, look toward heaven and count the stars. So shall your offspring be. And Abram believed the Lord.",
+   "start": 219.19884299999995,
+   "card": 3.0,
+   "vo": 222.19884299999995,
+   "vodur": 22.62458,
+   "end": 245.82342299999996,
+   "caps": [
+    {
+     "text": "God called Abram out of Ur.",
+     "start": 222.199,
+     "end": 224.479
+    },
+    {
+     "text": "Go to the land I will show you.",
+     "start": 224.879,
+     "end": 227.169
+    },
+    {
+     "text": "I will make you a great nation,",
+     "start": 227.569,
+     "end": 229.712
+    },
+    {
+     "text": "and in you all the families of the earth shall be blessed.",
+     "start": 229.712,
+     "end": 233.722
+    },
+    {
+     "text": "God brought him outside and said, look toward heaven and count the stars.",
+     "start": 234.122,
+     "end": 239.601
+    },
+    {
+     "text": "So shall your offspring be.",
+     "start": 240.001,
+     "end": 242.28
+    },
+    {
+     "text": "And Abram believed the Lord.",
+     "start": 242.68,
+     "end": 244.823
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "scene": "c2",
+   "p": [
+    0.6,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "",
+   "title": "THE PROMISE",
+   "sub": "Genesis 12 to 50",
+   "say": "In their old age, Abraham and Sarah had a son, Isaac. Isaac's son Jacob wrestled with God and was given a new name, Israel. His twelve sons became the twelve tribes of Israel.",
+   "start": 245.82342299999996,
+   "card": 0.6,
+   "vo": 246.42342299999996,
+   "vodur": 14.954671,
+   "end": 262.378094,
+   "caps": [
+    {
+     "text": "In their old age, Abraham and Sarah had a son, Isaac.",
+     "start": 246.423,
+     "end": 251.498
+    },
+    {
+     "text": "Isaac's son Jacob wrestled with God and was given a new name, Israel.",
+     "start": 251.898,
+     "end": 257.371
+    },
+    {
+     "text": "His twelve sons became the twelve tribes of Israel.",
+     "start": 257.771,
+     "end": 261.378
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "scene": "joseph",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "",
+   "title": "THE PROMISE",
+   "sub": "Genesis 12 to 50",
+   "say": "Jacob loved his son Joseph, and gave him a robe of many colors. His jealous brothers sold him as a slave into Egypt. But God was with Joseph. He interpreted Pharaoh's dreams, rose to rule all of Egypt, and saved his family from famine. You meant evil against me, he told his brothers, but God meant it for good.",
+   "start": 262.378094,
+   "card": 0.6,
+   "vo": 262.978094,
+   "vodur": 25.796553,
+   "end": 289.774647,
+   "caps": [
+    {
+     "text": "Jacob loved his son Joseph, and gave him a robe of many colors.",
+     "start": 262.978,
+     "end": 267.864
+    },
+    {
+     "text": "His jealous brothers sold him as a slave into Egypt.",
+     "start": 268.264,
+     "end": 272.221
+    },
+    {
+     "text": "But God was with Joseph.",
+     "start": 272.621,
+     "end": 274.596
+    },
+    {
+     "text": "He interpreted Pharaoh's dreams, rose to rule all of Egypt,",
+     "start": 274.996,
+     "end": 279.687
+    },
+    {
+     "text": "and saved his family from famine.",
+     "start": 279.687,
+     "end": 282.31
+    },
+    {
+     "text": "You meant evil against me, he told his brothers, but God meant it for good.",
+     "start": 282.71,
+     "end": 288.775
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "scene": "c3",
+   "p": [
+    0,
+    0.3
+   ],
+   "sfx": "crowd",
+   "ch": "IV",
+   "title": "EXODUS",
+   "sub": "Exodus, Numbers",
+   "say": "Four hundred years later, a new Pharaoh enslaved the Israelites. They cried out, and God heard their groaning. A Hebrew baby, hidden in a basket on the Nile, was raised in Pharaoh's own house. His name was Moses.",
+   "start": 289.774647,
+   "card": 3.0,
+   "vo": 292.774647,
+   "vodur": 18.740408,
+   "end": 312.515055,
+   "caps": [
+    {
+     "text": "Four hundred years later, a new Pharaoh enslaved the Israelites.",
+     "start": 292.775,
+     "end": 297.88
+    },
+    {
+     "text": "They cried out, and God heard their groaning.",
+     "start": 298.28,
+     "end": 301.71
+    },
+    {
+     "text": "A Hebrew baby, hidden in a basket on the Nile,",
+     "start": 302.11,
+     "end": 306.163
+    },
+    {
+     "text": "was raised in Pharaoh's own house.",
+     "start": 306.163,
+     "end": 309.159
+    },
+    {
+     "text": "His name was Moses.",
+     "start": 309.559,
+     "end": 311.515
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "scene": "bush",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "fire",
+   "ch": "",
+   "title": "EXODUS",
+   "sub": "Exodus, Numbers",
+   "say": "In the wilderness, Moses saw a bush burning with fire, yet it was not consumed. God called to him from the bush. Take off your sandals, for the place where you stand is holy ground. I am who I am. Go, and tell Pharaoh, let my people go.",
+   "start": 312.515055,
+   "card": 0.6,
+   "vo": 313.11505500000004,
+   "vodur": 20.825057,
+   "end": 334.94011200000006,
+   "caps": [
+    {
+     "text": "In the wilderness, Moses saw a bush burning with fire, yet it was not consumed.",
+     "start": 313.115,
+     "end": 319.343
+    },
+    {
+     "text": "God called to him from the bush.",
+     "start": 319.743,
+     "end": 322.041
+    },
+    {
+     "text": "Take off your sandals, for the place where you stand is holy ground.",
+     "start": 322.441,
+     "end": 327.473
+    },
+    {
+     "text": "I am who I am.",
+     "start": 327.873,
+     "end": 329.454
+    },
+    {
+     "text": "Go, and tell Pharaoh, let my people go.",
+     "start": 329.854,
+     "end": 333.94
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "scene": "plagues",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "EXODUS",
+   "sub": "Exodus, Numbers",
+   "say": "Pharaoh hardened his heart. So God struck Egypt with ten plagues. Water turned to blood. Frogs, gnats, flies. Disease, boils, hail, locusts, and darkness. Finally, the firstborn of Egypt died, but death passed over every house marked with the blood of the lamb.",
+   "start": 334.94011200000006,
+   "card": 0.6,
+   "vo": 335.5401120000001,
+   "vodur": 25.952449,
+   "end": 362.4925610000001,
+   "caps": [
+    {
+     "text": "Pharaoh hardened his heart.",
+     "start": 335.54,
+     "end": 337.811
+    },
+    {
+     "text": "So God struck Egypt with ten plagues.",
+     "start": 338.211,
+     "end": 341.397
+    },
+    {
+     "text": "Water turned to blood.",
+     "start": 341.797,
+     "end": 343.619
+    },
+    {
+     "text": "Frogs, gnats, flies.",
+     "start": 344.019,
+     "end": 346.954
+    },
+    {
+     "text": "Disease, boils, hail, locusts, and darkness.",
+     "start": 347.354,
+     "end": 352.437
+    },
+    {
+     "text": "Finally, the firstborn of Egypt died,",
+     "start": 352.837,
+     "end": 355.887
+    },
+    {
+     "text": "but death passed over every house marked with the blood of the lamb.",
+     "start": 355.887,
+     "end": 361.493
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "scene": "c3",
+   "p": [
+    0.3,
+    0.78
+   ],
+   "sfx": "sea",
+   "ch": "",
+   "title": "EXODUS",
+   "sub": "Exodus, Numbers",
+   "say": "Israel fled, and Pharaoh's army chased them to the sea. Moses stretched out his hand, and the Lord drove the sea back with a strong east wind. Israel walked through on dry ground, with walls of water on their right and on their left.",
+   "start": 362.4925610000001,
+   "card": 0.6,
+   "vo": 363.0925610000001,
+   "vodur": 17.525238,
+   "end": 381.6177990000001,
+   "caps": [
+    {
+     "text": "Israel fled, and Pharaoh's army chased them to the sea.",
+     "start": 363.093,
+     "end": 367.404
+    },
+    {
+     "text": "Moses stretched out his hand,",
+     "start": 367.804,
+     "end": 369.918
+    },
+    {
+     "text": "and the Lord drove the sea back with a strong east wind.",
+     "start": 369.918,
+     "end": 373.998
+    },
+    {
+     "text": "Israel walked through on dry ground,",
+     "start": 374.398,
+     "end": 376.914
+    },
+    {
+     "text": "with walls of water on their right and on their left.",
+     "start": 376.914,
+     "end": 380.618
+    }
+   ]
+  },
+  {
+   "id": "s17",
+   "scene": "c3",
+   "p": [
+    0.78,
+    1
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "EXODUS",
+   "sub": "Exodus, Numbers",
+   "say": "At Mount Sinai, the mountain shook with thunder and fire. God gave Moses the Ten Commandments, written on tablets of stone. But because of unbelief, Israel wandered in the wilderness for forty years, fed with manna from heaven.",
+   "start": 381.6177990000001,
+   "card": 0.6,
+   "vo": 382.2177990000001,
+   "vodur": 18.798027,
+   "end": 402.0158260000001,
+   "caps": [
+    {
+     "text": "At Mount Sinai, the mountain shook with thunder and fire.",
+     "start": 382.218,
+     "end": 386.637
+    },
+    {
+     "text": "God gave Moses the Ten Commandments, written on tablets of stone.",
+     "start": 387.037,
+     "end": 392.181
+    },
+    {
+     "text": "But because of unbelief,",
+     "start": 392.581,
+     "end": 394.585
+    },
+    {
+     "text": "Israel wandered in the wilderness for forty years,",
+     "start": 394.585,
+     "end": 398.761
+    },
+    {
+     "text": "fed with manna from heaven.",
+     "start": 398.761,
+     "end": 401.016
+    }
+   ]
+  },
+  {
+   "id": "s18",
+   "scene": "c4",
+   "p": [
+    0,
+    0.6
+   ],
+   "sfx": "crowd",
+   "ch": "V",
+   "title": "THE PROMISED LAND",
+   "sub": "Joshua, Judges, Ruth",
+   "say": "After Moses died, Joshua led Israel across the Jordan River. At Jericho, they marched around the city for seven days. On the seventh day, the priests blew the trumpets, the people shouted, and the walls fell down flat.",
+   "start": 402.0158260000001,
+   "card": 3.0,
+   "vo": 405.0158260000001,
+   "vodur": 18.229365,
+   "end": 424.2451910000001,
+   "caps": [
+    {
+     "text": "After Moses died, Joshua led Israel across the Jordan River.",
+     "start": 405.016,
+     "end": 410.017
+    },
+    {
+     "text": "At Jericho, they marched around the city for seven days.",
+     "start": 410.417,
+     "end": 414.827
+    },
+    {
+     "text": "On the seventh day, the priests blew the trumpets,",
+     "start": 415.227,
+     "end": 419.276
+    },
+    {
+     "text": "the people shouted, and the walls fell down flat.",
+     "start": 419.276,
+     "end": 423.245
+    }
+   ]
+  },
+  {
+   "id": "s19",
+   "scene": "c4",
+   "p": [
+    0.6,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "THE PROMISED LAND",
+   "sub": "Joshua, Judges, Ruth",
+   "say": "Again and again Israel turned from God, and again and again he raised up judges to deliver them. Deborah, Gideon, and Samson. And in the days of the judges, a Moabite woman named Ruth said, your people shall be my people, and your God my God. She became the great grandmother of King David.",
+   "start": 424.2451910000001,
+   "card": 0.6,
+   "vo": 424.8451910000001,
+   "vodur": 25.20873,
+   "end": 451.0539210000001,
+   "caps": [
+    {
+     "text": "Again and again Israel turned from God,",
+     "start": 424.845,
+     "end": 427.905
+    },
+    {
+     "text": "and again and again he raised up judges to deliver them.",
+     "start": 427.905,
+     "end": 432.299
+    },
+    {
+     "text": "Deborah, Gideon, and Samson.",
+     "start": 432.699,
+     "end": 435.61
+    },
+    {
+     "text": "And in the days of the judges,",
+     "start": 436.01,
+     "end": 438.737
+    },
+    {
+     "text": "a Moabite woman named Ruth said,",
+     "start": 438.737,
+     "end": 441.645
+    },
+    {
+     "text": "your people shall be my people, and your God my God.",
+     "start": 441.645,
+     "end": 446.37
+    },
+    {
+     "text": "She became the great grandmother of King David.",
+     "start": 446.77,
+     "end": 450.054
+    }
+   ]
+  },
+  {
+   "id": "s20",
+   "scene": "c5",
+   "p": [
+    0,
+    0.55
+   ],
+   "sfx": "crowd",
+   "ch": "VI",
+   "title": "THE KINGDOM",
+   "sub": "Samuel, Kings, Chronicles",
+   "say": "Israel demanded a king, and Saul was anointed. But God chose a shepherd boy, a man after his own heart. When the giant Goliath defied the armies of the living God, young David ran to meet him. The battle is the Lord's, he said. One stone, and the giant fell.",
+   "start": 451.0539210000001,
+   "card": 3.0,
+   "vo": 454.0539210000001,
+   "vodur": 22.813175,
+   "end": 477.8670960000001,
+   "caps": [
+    {
+     "text": "Israel demanded a king, and Saul was anointed.",
+     "start": 454.054,
+     "end": 458.054
+    },
+    {
+     "text": "But God chose a shepherd boy, a man after his own heart.",
+     "start": 458.454,
+     "end": 463.033
+    },
+    {
+     "text": "When the giant Goliath defied the armies of the living God,",
+     "start": 463.433,
+     "end": 467.873
+    },
+    {
+     "text": "young David ran to meet him.",
+     "start": 467.873,
+     "end": 469.98
+    },
+    {
+     "text": "The battle is the Lord's, he said.",
+     "start": 470.38,
+     "end": 473.267
+    },
+    {
+     "text": "One stone, and the giant fell.",
+     "start": 473.667,
+     "end": 476.867
+    }
+   ]
+  },
+  {
+   "id": "s21",
+   "scene": "c5",
+   "p": [
+    0.55,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "THE KINGDOM",
+   "sub": "Samuel, Kings, Chronicles",
+   "say": "David became king, and God promised that his throne would be established forever. David's son Solomon asked God for wisdom, and built a magnificent temple in Jerusalem. The glory of the Lord filled the house.",
+   "start": 477.8670960000001,
+   "card": 0.6,
+   "vo": 478.46709600000014,
+   "vodur": 15.92127,
+   "end": 495.38836600000013,
+   "caps": [
+    {
+     "text": "David became king,",
+     "start": 478.467,
+     "end": 479.78
+    },
+    {
+     "text": "and God promised that his throne would be established forever.",
+     "start": 479.78,
+     "end": 484.303
+    },
+    {
+     "text": "David's son Solomon asked God for wisdom,",
+     "start": 484.703,
+     "end": 487.884
+    },
+    {
+     "text": "and built a magnificent temple in Jerusalem.",
+     "start": 487.884,
+     "end": 491.297
+    },
+    {
+     "text": "The glory of the Lord filled the house.",
+     "start": 491.697,
+     "end": 494.388
+    }
+   ]
+  },
+  {
+   "id": "s22",
+   "scene": "c6",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "THE KINGDOM",
+   "sub": "Samuel, Kings, Chronicles",
+   "say": "After Solomon, the kingdom split in two. Many kings led the people into idolatry. On Mount Carmel, the prophet Elijah prayed, and fire fell from heaven. Prophets like Isaiah warned the people, and foretold a child who would be called Wonderful Counselor, Mighty God, Prince of Peace.",
+   "start": 495.38836600000013,
+   "card": 0.6,
+   "vo": 495.98836600000016,
+   "vodur": 24.505714,
+   "end": 521.4940800000002,
+   "caps": [
+    {
+     "text": "After Solomon, the kingdom split in two.",
+     "start": 495.988,
+     "end": 499.444
+    },
+    {
+     "text": "Many kings led the people into idolatry.",
+     "start": 499.844,
+     "end": 503.053
+    },
+    {
+     "text": "On Mount Carmel, the prophet Elijah prayed, and fire fell from heaven.",
+     "start": 503.453,
+     "end": 509.058
+    },
+    {
+     "text": "Prophets like Isaiah warned the people,",
+     "start": 509.458,
+     "end": 512.82
+    },
+    {
+     "text": "and foretold a child who would be called Wonderful Counselor,",
+     "start": 512.82,
+     "end": 518.08
+    },
+    {
+     "text": "Mighty God, Prince of Peace.",
+     "start": 518.08,
+     "end": 520.494
+    }
+   ]
+  },
+  {
+   "id": "s23",
+   "scene": "c7",
+   "p": [
+    0,
+    0.55
+   ],
+   "sfx": "fire",
+   "ch": "VII",
+   "title": "EXILE AND RETURN",
+   "sub": "Kings, Daniel, Ezra, Nehemiah",
+   "say": "The northern kingdom fell to Assyria. Then Babylon besieged Jerusalem, burned the temple, and carried the people into exile. By the rivers of Babylon, they sat down and wept.",
+   "start": 521.4940800000002,
+   "card": 3.0,
+   "vo": 524.4940800000002,
+   "vodur": 13.869365,
+   "end": 539.3634450000002,
+   "caps": [
+    {
+     "text": "The northern kingdom fell to Assyria.",
+     "start": 524.494,
+     "end": 527.288
+    },
+    {
+     "text": "Then Babylon besieged Jerusalem, burned the temple,",
+     "start": 527.688,
+     "end": 531.593
+    },
+    {
+     "text": "and carried the people into exile.",
+     "start": 531.593,
+     "end": 534.197
+    },
+    {
+     "text": "By the rivers of Babylon, they sat down and wept.",
+     "start": 534.597,
+     "end": 538.363
+    }
+   ]
+  },
+  {
+   "id": "s24",
+   "scene": "c7",
+   "p": [
+    0.55,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "EXILE AND RETURN",
+   "sub": "Kings, Daniel, Ezra, Nehemiah",
+   "say": "In Babylon, Daniel prayed to God three times a day, even when it was forbidden. He was thrown into the lions' den. But God sent his angel, and shut the lions' mouths.",
+   "start": 539.3634450000002,
+   "card": 0.6,
+   "vo": 539.9634450000002,
+   "vodur": 13.548163,
+   "end": 554.5116080000003,
+   "caps": [
+    {
+     "text": "In Babylon, Daniel prayed to God three times a day, even when it was forbidden.",
+     "start": 539.963,
+     "end": 545.972
+    },
+    {
+     "text": "He was thrown into the lions' den.",
+     "start": 546.372,
+     "end": 548.918
+    },
+    {
+     "text": "But God sent his angel, and shut the lions' mouths.",
+     "start": 549.318,
+     "end": 553.512
+    }
+   ]
+  },
+  {
+   "id": "s25",
+   "scene": "c8",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "EXILE AND RETURN",
+   "sub": "Kings, Daniel, Ezra, Nehemiah",
+   "say": "After seventy years, King Cyrus of Persia let the exiles return. They rebuilt the temple, and Nehemiah rebuilt the walls of Jerusalem. In Persia, Queen Esther risked her life to save her people.",
+   "start": 554.5116080000003,
+   "card": 0.6,
+   "vo": 555.1116080000003,
+   "vodur": 16.229705,
+   "end": 572.3413130000002,
+   "caps": [
+    {
+     "text": "After seventy years, King Cyrus of Persia let the exiles return.",
+     "start": 555.112,
+     "end": 560.818
+    },
+    {
+     "text": "They rebuilt the temple, and Nehemiah rebuilt the walls of Jerusalem.",
+     "start": 561.218,
+     "end": 566.579
+    },
+    {
+     "text": "In Persia, Queen Esther risked her life to save her people.",
+     "start": 566.979,
+     "end": 571.341
+    }
+   ]
+  },
+  {
+   "id": "s26",
+   "scene": "c9",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "EXILE AND RETURN",
+   "sub": "Kings, Daniel, Ezra, Nehemiah",
+   "say": "Then came four hundred years of silence. No new prophet spoke. Empires rose and fell, Persia, Greece, and Rome. But the last prophet, Malachi, had promised that a messenger would prepare the way of the Lord.",
+   "start": 572.3413130000002,
+   "card": 0.6,
+   "vo": 572.9413130000003,
+   "vodur": 17.847098,
+   "end": 591.7884110000002,
+   "caps": [
+    {
+     "text": "Then came four hundred years of silence.",
+     "start": 572.941,
+     "end": 575.959
+    },
+    {
+     "text": "No new prophet spoke.",
+     "start": 576.359,
+     "end": 578.383
+    },
+    {
+     "text": "Empires rose and fell, Persia, Greece, and Rome.",
+     "start": 578.783,
+     "end": 583.707
+    },
+    {
+     "text": "But the last prophet, Malachi,",
+     "start": 584.107,
+     "end": 586.239
+    },
+    {
+     "text": "had promised that a messenger would prepare the way of the Lord.",
+     "start": 586.239,
+     "end": 590.788
+    }
+   ]
+  },
+  {
+   "id": "s27",
+   "scene": "c10",
+   "p": [
+    0,
+    0.5
+   ],
+   "sfx": "wind",
+   "ch": "VIII",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "In the town of Bethlehem, the angel's word came true. The virgin Mary gave birth to a son, and laid him in a manger. Angels announced good news of great joy to shepherds. Wise men followed a star. His name was Jesus, for he would save his people from their sins.",
+   "start": 591.7884110000002,
+   "card": 3.0,
+   "vo": 594.7884110000002,
+   "vodur": 21.937619,
+   "end": 617.7260300000003,
+   "caps": [
+    {
+     "text": "In the town of Bethlehem, the angel's word came true.",
+     "start": 594.788,
+     "end": 598.917
+    },
+    {
+     "text": "The virgin Mary gave birth to a son, and laid him in a manger.",
+     "start": 599.317,
+     "end": 604.304
+    },
+    {
+     "text": "Angels announced good news of great joy to shepherds.",
+     "start": 604.704,
+     "end": 608.949
+    },
+    {
+     "text": "Wise men followed a star.",
+     "start": 609.349,
+     "end": 611.546
+    },
+    {
+     "text": "His name was Jesus, for he would save his people from their sins.",
+     "start": 611.946,
+     "end": 616.726
+    }
+   ]
+  },
+  {
+   "id": "s28",
+   "scene": "baptism",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "sea",
+   "ch": "",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "John the Baptist cried out in the wilderness, prepare the way of the Lord. When Jesus was baptized in the Jordan, the heavens opened. The Spirit descended like a dove, and a voice from heaven said, this is my beloved Son, with whom I am well pleased.",
+   "start": 617.7260300000003,
+   "card": 0.6,
+   "vo": 618.3260300000003,
+   "vodur": 20.98517,
+   "end": 640.3112000000003,
+   "caps": [
+    {
+     "text": "John the Baptist cried out in the wilderness, prepare the way of the Lord.",
+     "start": 618.326,
+     "end": 623.531
+    },
+    {
+     "text": "When Jesus was baptized in the Jordan, the heavens opened.",
+     "start": 623.931,
+     "end": 628.433
+    },
+    {
+     "text": "The Spirit descended like a dove,",
+     "start": 628.833,
+     "end": 631.866
+    },
+    {
+     "text": "and a voice from heaven said, this is my beloved Son,",
+     "start": 631.866,
+     "end": 636.738
+    },
+    {
+     "text": "with whom I am well pleased.",
+     "start": 636.738,
+     "end": 639.311
+    }
+   ]
+  },
+  {
+   "id": "s29",
+   "scene": "sermon",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "Jesus called twelve disciples, and went up on the mountain to teach. Blessed are the poor in spirit, for theirs is the kingdom of heaven. Love your enemies. Seek first the kingdom of God. Crowds followed him everywhere.",
+   "start": 640.3112000000003,
+   "card": 0.6,
+   "vo": 640.9112000000003,
+   "vodur": 17.542608,
+   "end": 659.4538080000003,
+   "caps": [
+    {
+     "text": "Jesus called twelve disciples, and went up on the mountain to teach.",
+     "start": 640.911,
+     "end": 645.85
+    },
+    {
+     "text": "Blessed are the poor in spirit, for theirs is the kingdom of heaven.",
+     "start": 646.25,
+     "end": 651.184
+    },
+    {
+     "text": "Love your enemies.",
+     "start": 651.584,
+     "end": 653.196
+    },
+    {
+     "text": "Seek first the kingdom of God.",
+     "start": 653.596,
+     "end": 656.009
+    },
+    {
+     "text": "Crowds followed him everywhere.",
+     "start": 656.409,
+     "end": 658.454
+    }
+   ]
+  },
+  {
+   "id": "s30",
+   "scene": "c10",
+   "p": [
+    0.5,
+    1
+   ],
+   "sfx": "sea",
+   "ch": "",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "He opened the eyes of the blind. He fed five thousand with five loaves and two fish. He walked on the water, and calmed the storm with a word. He raised Lazarus from the dead. I am the resurrection and the life, he said.",
+   "start": 659.4538080000003,
+   "card": 0.6,
+   "vo": 660.0538080000003,
+   "vodur": 17.980068,
+   "end": 679.0338760000003,
+   "caps": [
+    {
+     "text": "He opened the eyes of the blind.",
+     "start": 660.054,
+     "end": 662.322
+    },
+    {
+     "text": "He fed five thousand with five loaves and two fish.",
+     "start": 662.722,
+     "end": 666.529
+    },
+    {
+     "text": "He walked on the water, and calmed the storm with a word.",
+     "start": 666.929,
+     "end": 671.3
+    },
+    {
+     "text": "He raised Lazarus from the dead.",
+     "start": 671.7,
+     "end": 674.101
+    },
+    {
+     "text": "I am the resurrection and the life, he said.",
+     "start": 674.501,
+     "end": 678.034
+    }
+   ]
+  },
+  {
+   "id": "s31",
+   "scene": "supper",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "fire",
+   "ch": "",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "On the night he was betrayed, Jesus shared the Passover with his disciples. He took bread, gave thanks, and broke it. This is my body, given for you. Then he took the cup. This is my blood of the new covenant, poured out for many, for the forgiveness of sins.",
+   "start": 679.0338760000003,
+   "card": 0.6,
+   "vo": 679.6338760000003,
+   "vodur": 21.899546,
+   "end": 702.5334220000003,
+   "caps": [
+    {
+     "text": "On the night he was betrayed, Jesus shared the Passover with his disciples.",
+     "start": 679.634,
+     "end": 685.319
+    },
+    {
+     "text": "He took bread, gave thanks, and broke it.",
+     "start": 685.719,
+     "end": 689.565
+    },
+    {
+     "text": "This is my body, given for you.",
+     "start": 689.965,
+     "end": 692.891
+    },
+    {
+     "text": "Then he took the cup.",
+     "start": 693.291,
+     "end": 694.825
+    },
+    {
+     "text": "This is my blood of the new covenant, poured out for many,",
+     "start": 695.225,
+     "end": 699.48
+    },
+    {
+     "text": "for the forgiveness of sins.",
+     "start": 699.48,
+     "end": 701.533
+    }
+   ]
+  },
+  {
+   "id": "s32",
+   "scene": "gethsemane",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "THE SAVIOR",
+   "sub": "Matthew, Mark, Luke, John",
+   "say": "In the garden of Gethsemane, he prayed in anguish. Father, if it is possible, let this cup pass from me. Yet not my will, but yours be done. Then Judas came with soldiers, and betrayed him with a kiss.",
+   "start": 702.5334220000003,
+   "card": 0.6,
+   "vo": 703.1334220000003,
+   "vodur": 17.47805,
+   "end": 721.6114720000004,
+   "caps": [
+    {
+     "text": "In the garden of Gethsemane, he prayed in anguish.",
+     "start": 703.133,
+     "end": 707.06
+    },
+    {
+     "text": "Father, if it is possible, let this cup pass from me.",
+     "start": 707.46,
+     "end": 712.211
+    },
+    {
+     "text": "Yet not my will, but yours be done.",
+     "start": 712.611,
+     "end": 715.87
+    },
+    {
+     "text": "Then Judas came with soldiers, and betrayed him with a kiss.",
+     "start": 716.27,
+     "end": 720.611
+    }
+   ]
+  },
+  {
+   "id": "s33",
+   "scene": "c11",
+   "p": [
+    0,
+    0.58
+   ],
+   "sfx": "storm",
+   "ch": "IX",
+   "title": "THE CROSS",
+   "sub": "The Gospels",
+   "say": "Jesus was mocked, beaten, and crowned with thorns. They crucified him at Golgotha, between two criminals. Father, forgive them, he prayed. Darkness covered the land. Then Jesus cried out, it is finished, and gave up his spirit. The curtain of the temple was torn in two.",
+   "start": 721.6114720000004,
+   "card": 3.0,
+   "vo": 724.6114720000004,
+   "vodur": 23.859388,
+   "end": 749.4708600000004,
+   "caps": [
+    {
+     "text": "Jesus was mocked, beaten, and crowned with thorns.",
+     "start": 724.611,
+     "end": 728.879
+    },
+    {
+     "text": "They crucified him at Golgotha, between two criminals.",
+     "start": 729.279,
+     "end": 733.479
+    },
+    {
+     "text": "Father, forgive them, he prayed.",
+     "start": 733.879,
+     "end": 736.987
+    },
+    {
+     "text": "Darkness covered the land.",
+     "start": 737.387,
+     "end": 739.564
+    },
+    {
+     "text": "Then Jesus cried out, it is finished, and gave up his spirit.",
+     "start": 739.964,
+     "end": 745.017
+    },
+    {
+     "text": "The curtain of the temple was torn in two.",
+     "start": 745.417,
+     "end": 748.471
+    }
+   ]
+  },
+  {
+   "id": "s34",
+   "scene": "c11",
+   "p": [
+    0.58,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "THE CROSS",
+   "sub": "The Gospels",
+   "say": "His body was laid in a tomb, sealed with a great stone. But very early on the first day of the week, the women found the stone rolled away. An angel said, he is not here. He has risen, just as he said. Jesus appeared to Mary Magdalene, to his disciples, and to more than five hundred people.",
+   "start": 749.4708600000004,
+   "card": 0.6,
+   "vo": 750.0708600000004,
+   "vodur": 24.562721,
+   "end": 775.6335810000004,
+   "caps": [
+    {
+     "text": "His body was laid in a tomb, sealed with a great stone.",
+     "start": 750.071,
+     "end": 754.352
+    },
+    {
+     "text": "But very early on the first day of the week,",
+     "start": 754.752,
+     "end": 757.98
+    },
+    {
+     "text": "the women found the stone rolled away.",
+     "start": 757.98,
+     "end": 760.769
+    },
+    {
+     "text": "An angel said, he is not here.",
+     "start": 761.169,
+     "end": 764.282
+    },
+    {
+     "text": "He has risen, just as he said.",
+     "start": 764.682,
+     "end": 767.46
+    },
+    {
+     "text": "Jesus appeared to Mary Magdalene, to his disciples,",
+     "start": 767.86,
+     "end": 771.786
+    },
+    {
+     "text": "and to more than five hundred people.",
+     "start": 771.786,
+     "end": 774.634
+    }
+   ]
+  },
+  {
+   "id": "s35",
+   "scene": "ascend",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "THE CROSS",
+   "sub": "The Gospels",
+   "say": "For forty days he taught them. Go and make disciples of all nations. Then he was lifted up, and a cloud took him out of their sight. Two men in white said, this same Jesus, who was taken up from you into heaven, will come in the same way as you saw him go.",
+   "start": 775.6335810000004,
+   "card": 0.6,
+   "vo": 776.2335810000004,
+   "vodur": 21.614671,
+   "end": 798.8482520000005,
+   "caps": [
+    {
+     "text": "For forty days he taught them.",
+     "start": 776.234,
+     "end": 778.45
+    },
+    {
+     "text": "Go and make disciples of all nations.",
+     "start": 778.85,
+     "end": 782.056
+    },
+    {
+     "text": "Then he was lifted up, and a cloud took him out of their sight.",
+     "start": 782.456,
+     "end": 786.947
+    },
+    {
+     "text": "Two men in white said, this same Jesus,",
+     "start": 787.347,
+     "end": 790.732
+    },
+    {
+     "text": "who was taken up from you into heaven,",
+     "start": 790.732,
+     "end": 794.03
+    },
+    {
+     "text": "will come in the same way as you saw him go.",
+     "start": 794.03,
+     "end": 797.848
+    }
+   ]
+  },
+  {
+   "id": "s36",
+   "scene": "c12",
+   "p": [
+    0,
+    0.5
+   ],
+   "sfx": "fire",
+   "ch": "X",
+   "title": "THE CHURCH IS BORN",
+   "sub": "Acts to Revelation",
+   "say": "On the day of Pentecost, a sound like a rushing mighty wind filled the house. Tongues of fire rested on each of them, and they were filled with the Holy Spirit. Peter preached, and about three thousand people were baptized that day.",
+   "start": 798.8482520000005,
+   "card": 3.0,
+   "vo": 801.8482520000005,
+   "vodur": 16.899116,
+   "end": 819.7473680000005,
+   "caps": [
+    {
+     "text": "On the day of Pentecost, a sound like a rushing mighty wind filled the house.",
+     "start": 801.848,
+     "end": 807.285
+    },
+    {
+     "text": "Tongues of fire rested on each of them,",
+     "start": 807.685,
+     "end": 810.464
+    },
+    {
+     "text": "and they were filled with the Holy Spirit.",
+     "start": 810.464,
+     "end": 813.458
+    },
+    {
+     "text": "Peter preached, and about three thousand people were baptized that day.",
+     "start": 813.858,
+     "end": 818.747
+    }
+   ]
+  },
+  {
+   "id": "s37",
+   "scene": "c12",
+   "p": [
+    0.5,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "THE CHURCH IS BORN",
+   "sub": "Acts to Revelation",
+   "say": "Saul of Tarsus hunted the followers of Jesus. But on the road to Damascus, a light from heaven flashed around him. Saul, Saul, why are you persecuting me? Saul became Paul, the apostle to the nations.",
+   "start": 819.7473680000005,
+   "card": 0.6,
+   "vo": 820.3473680000005,
+   "vodur": 18.047302,
+   "end": 839.3946700000005,
+   "caps": [
+    {
+     "text": "Saul of Tarsus hunted the followers of Jesus.",
+     "start": 820.347,
+     "end": 823.943
+    },
+    {
+     "text": "But on the road to Damascus, a light from heaven flashed around him.",
+     "start": 824.343,
+     "end": 829.406
+    },
+    {
+     "text": "Saul, Saul, why are you persecuting me?",
+     "start": 829.806,
+     "end": 833.947
+    },
+    {
+     "text": "Saul became Paul, the apostle to the nations.",
+     "start": 834.347,
+     "end": 838.395
+    }
+   ]
+  },
+  {
+   "id": "s38",
+   "scene": "ship",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "THE CHURCH IS BORN",
+   "sub": "Acts to Revelation",
+   "say": "Paul traveled across the Roman world, planting churches, and writing letters that are now part of Scripture. He was beaten, imprisoned, and shipwrecked, but he kept the faith. Finally he was taken as a prisoner to Rome.",
+   "start": 839.3946700000005,
+   "card": 0.6,
+   "vo": 839.9946700000005,
+   "vodur": 18.019433,
+   "end": 859.0141030000005,
+   "caps": [
+    {
+     "text": "Paul traveled across the Roman world, planting churches,",
+     "start": 839.995,
+     "end": 844.591
+    },
+    {
+     "text": "and writing letters that are now part of Scripture.",
+     "start": 844.591,
+     "end": 848.777
+    },
+    {
+     "text": "He was beaten, imprisoned, and shipwrecked, but he kept the faith.",
+     "start": 849.177,
+     "end": 854.285
+    },
+    {
+     "text": "Finally he was taken as a prisoner to Rome.",
+     "start": 854.685,
+     "end": 858.014
+    }
+   ]
+  },
+  {
+   "id": "s39",
+   "scene": "c14",
+   "p": [
+    0,
+    0.55
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "THE CHURCH IS BORN",
+   "sub": "Acts to Revelation",
+   "say": "Near the end of the first century, the apostle John was exiled on the island of Patmos. There he saw the risen Christ in glory, and wrote the book of Revelation, the final book of the Bible.",
+   "start": 859.0141030000005,
+   "card": 0.6,
+   "vo": 859.6141030000006,
+   "vodur": 15.247483,
+   "end": 875.8615860000006,
+   "caps": [
+    {
+     "text": "Near the end of the first century,",
+     "start": 859.614,
+     "end": 862.278
+    },
+    {
+     "text": "the apostle John was exiled on the island of Patmos.",
+     "start": 862.278,
+     "end": 866.353
+    },
+    {
+     "text": "There he saw the risen Christ in glory,",
+     "start": 866.753,
+     "end": 869.915
+    },
+    {
+     "text": "and wrote the book of Revelation,",
+     "start": 869.915,
+     "end": 872.591
+    },
+    {
+     "text": "the final book of the Bible.",
+     "start": 872.591,
+     "end": 874.862
+    }
+   ]
+  },
+  {
+   "id": "s40",
+   "scene": "martyrs",
+   "p": [
+    0,
+    0.55
+   ],
+   "sfx": "crowd",
+   "ch": "XI",
+   "title": "BLOOD AND FAITH",
+   "sub": "AD 64 to 381",
+   "say": "In the year sixty four, Emperor Nero blamed Christians for the great fire of Rome, and many were put to death. According to early church tradition, Peter and Paul were martyred in Rome. For two hundred and fifty years, waves of persecution came. Yet the church grew.",
+   "start": 875.8615860000006,
+   "card": 3.0,
+   "vo": 878.8615860000006,
+   "vodur": 22.606327,
+   "end": 902.4679130000005,
+   "caps": [
+    {
+     "text": "In the year sixty four,",
+     "start": 878.862,
+     "end": 880.811
+    },
+    {
+     "text": "Emperor Nero blamed Christians for the great fire of Rome,",
+     "start": 880.811,
+     "end": 885.728
+    },
+    {
+     "text": "and many were put to death.",
+     "start": 885.728,
+     "end": 888.017
+    },
+    {
+     "text": "According to early church tradition, Peter and Paul were martyred in Rome.",
+     "start": 888.417,
+     "end": 894.25
+    },
+    {
+     "text": "For two hundred and fifty years, waves of persecution came.",
+     "start": 894.65,
+     "end": 899.366
+    },
+    {
+     "text": "Yet the church grew.",
+     "start": 899.766,
+     "end": 901.468
+    }
+   ]
+  },
+  {
+   "id": "s41",
+   "scene": "martyrs",
+   "p": [
+    0.55,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "BLOOD AND FAITH",
+   "sub": "AD 64 to 381",
+   "say": "In the year three thirteen, the Edict of Milan made Christianity legal in the Roman Empire. The councils of Nicaea, in three twenty five, and Constantinople, in three eighty one, confessed the faith in the Nicene Creed, that Jesus Christ is true God from true God.",
+   "start": 902.4679130000005,
+   "card": 0.6,
+   "vo": 903.0679130000005,
+   "vodur": 23.14585,
+   "end": 927.2137630000005,
+   "caps": [
+    {
+     "text": "In the year three thirteen,",
+     "start": 903.068,
+     "end": 905.153
+    },
+    {
+     "text": "the Edict of Milan made Christianity legal in the Roman Empire.",
+     "start": 905.153,
+     "end": 910.019
+    },
+    {
+     "text": "The councils of Nicaea, in three twenty five,",
+     "start": 910.419,
+     "end": 914.624
+    },
+    {
+     "text": "and Constantinople, in three eighty one,",
+     "start": 914.624,
+     "end": 918.363
+    },
+    {
+     "text": "confessed the faith in the Nicene Creed,",
+     "start": 918.363,
+     "end": 922.101
+    },
+    {
+     "text": "that Jesus Christ is true God from true God.",
+     "start": 922.101,
+     "end": 926.214
+    }
+   ]
+  },
+  {
+   "id": "s42",
+   "scene": "middle",
+   "p": [
+    0,
+    0.6
+   ],
+   "sfx": "wind",
+   "ch": "XII",
+   "title": "CANDLES IN THE DARK",
+   "sub": "AD 400 to 1400",
+   "say": "The Western Roman Empire fell in four seventy six. Through the centuries that followed, monks copied the Scriptures by hand, letter by letter. Missionaries like Patrick in Ireland carried the gospel to new peoples.",
+   "start": 927.2137630000005,
+   "card": 3.0,
+   "vo": 930.2137630000005,
+   "vodur": 16.463537,
+   "end": 947.6773000000005,
+   "caps": [
+    {
+     "text": "The Western Roman Empire fell in four seventy six.",
+     "start": 930.214,
+     "end": 934.153
+    },
+    {
+     "text": "Through the centuries that followed,",
+     "start": 934.553,
+     "end": 937.246
+    },
+    {
+     "text": "monks copied the Scriptures by hand, letter by letter.",
+     "start": 937.246,
+     "end": 941.287
+    },
+    {
+     "text": "Missionaries like Patrick in Ireland carried the gospel to new peoples.",
+     "start": 941.687,
+     "end": 946.677
+    }
+   ]
+  },
+  {
+   "id": "s43",
+   "scene": "middle",
+   "p": [
+    0.6,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "CANDLES IN THE DARK",
+   "sub": "AD 400 to 1400",
+   "say": "In ten fifty four, the church divided between East and West. Great cathedrals rose across Europe. And in the fourteenth century, John Wycliffe's followers translated the Bible into English.",
+   "start": 947.6773000000005,
+   "card": 0.6,
+   "vo": 948.2773000000005,
+   "vodur": 15.521156,
+   "end": 964.7984560000006,
+   "caps": [
+    {
+     "text": "In ten fifty four, the church divided between East and West.",
+     "start": 948.277,
+     "end": 953.306
+    },
+    {
+     "text": "Great cathedrals rose across Europe.",
+     "start": 953.706,
+     "end": 956.743
+    },
+    {
+     "text": "And in the fourteenth century,",
+     "start": 957.143,
+     "end": 959.361
+    },
+    {
+     "text": "John Wycliffe's followers translated the Bible into English.",
+     "start": 959.361,
+     "end": 963.798
+    }
+   ]
+  },
+  {
+   "id": "s44",
+   "scene": "reform",
+   "p": [
+    0,
+    0.45
+   ],
+   "sfx": "crowd",
+   "ch": "XIII",
+   "title": "REFORMATION",
+   "sub": "AD 1450 to 1600",
+   "say": "Around fourteen fifty five, Johannes Gutenberg printed the Bible with movable type. For the first time, copies of Scripture could be made by the thousands.",
+   "start": 964.7984560000006,
+   "card": 3.0,
+   "vo": 967.7984560000006,
+   "vodur": 12.357143,
+   "end": 981.1555990000005,
+   "caps": [
+    {
+     "text": "Around fourteen fifty five,",
+     "start": 967.798,
+     "end": 970.038
+    },
+    {
+     "text": "Johannes Gutenberg printed the Bible with movable type.",
+     "start": 970.038,
+     "end": 974.599
+    },
+    {
+     "text": "For the first time, copies of Scripture could be made by the thousands.",
+     "start": 974.999,
+     "end": 980.156
+    }
+   ]
+  },
+  {
+   "id": "s45",
+   "scene": "reform",
+   "p": [
+    0.45,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "",
+   "title": "REFORMATION",
+   "sub": "AD 1450 to 1600",
+   "say": "On October thirty first, fifteen seventeen, Martin Luther posted his ninety five theses in Wittenberg. The Reformation called the church back to Scripture alone, grace alone, and faith alone in Christ alone. Tyndale translated the New Testament into English, and gave his life for it.",
+   "start": 981.1555990000005,
+   "card": 0.6,
+   "vo": 981.7555990000005,
+   "vodur": 24.431542,
+   "end": 1007.1871410000006,
+   "caps": [
+    {
+     "text": "On October thirty first, fifteen seventeen,",
+     "start": 981.756,
+     "end": 985.776
+    },
+    {
+     "text": "Martin Luther posted his ninety five theses in Wittenberg.",
+     "start": 985.776,
+     "end": 991.2
+    },
+    {
+     "text": "The Reformation called the church back to Scripture alone,",
+     "start": 991.6,
+     "end": 996.324
+    },
+    {
+     "text": "grace alone, and faith alone in Christ alone.",
+     "start": 996.324,
+     "end": 999.989
+    },
+    {
+     "text": "Tyndale translated the New Testament into English, and gave his life for it.",
+     "start": 1000.389,
+     "end": 1006.187
+    }
+   ]
+  },
+  {
+   "id": "s46",
+   "scene": "missions",
+   "p": [
+    0,
+    0.5
+   ],
+   "sfx": "sea",
+   "ch": "XIV",
+   "title": "TO THE ENDS OF THE EARTH",
+   "sub": "AD 1700 to 2000",
+   "say": "In the seventeen hundreds, the Great Awakening swept through Britain and America. Then came the age of missions. William Carey sailed to India. Hudson Taylor went to China. David Livingstone traveled across Africa. Many missionaries gave their lives.",
+   "start": 1007.1871410000006,
+   "card": 3.0,
+   "vo": 1010.1871410000006,
+   "vodur": 20.951633,
+   "end": 1032.1387740000005,
+   "caps": [
+    {
+     "text": "In the seventeen hundreds,",
+     "start": 1010.187,
+     "end": 1012.012
+    },
+    {
+     "text": "the Great Awakening swept through Britain and America.",
+     "start": 1012.012,
+     "end": 1015.801
+    },
+    {
+     "text": "Then came the age of missions.",
+     "start": 1016.201,
+     "end": 1018.589
+    },
+    {
+     "text": "William Carey sailed to India.",
+     "start": 1018.989,
+     "end": 1021.366
+    },
+    {
+     "text": "Hudson Taylor went to China.",
+     "start": 1021.766,
+     "end": 1024.277
+    },
+    {
+     "text": "David Livingstone traveled across Africa.",
+     "start": 1024.677,
+     "end": 1027.948
+    },
+    {
+     "text": "Many missionaries gave their lives.",
+     "start": 1028.348,
+     "end": 1031.139
+    }
+   ]
+  },
+  {
+   "id": "s47",
+   "scene": "missions",
+   "p": [
+    0.5,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "TO THE ENDS OF THE EARTH",
+   "sub": "AD 1700 to 2000",
+   "say": "In the twentieth century, the church spread across Africa, Asia, and Latin America like never before. Bible translators worked in remote villages, so every people could hear God speak in their own language.",
+   "start": 1032.1387740000005,
+   "card": 0.6,
+   "vo": 1032.7387740000004,
+   "vodur": 17.885578,
+   "end": 1051.6243520000003,
+   "caps": [
+    {
+     "text": "In the twentieth century, the church spread across Africa,",
+     "start": 1032.739,
+     "end": 1038.106
+    },
+    {
+     "text": "Asia, and Latin America like never before.",
+     "start": 1038.106,
+     "end": 1041.993
+    },
+    {
+     "text": "Bible translators worked in remote villages,",
+     "start": 1042.393,
+     "end": 1045.909
+    },
+    {
+     "text": "so every people could hear God speak in their own language.",
+     "start": 1045.909,
+     "end": 1050.624
+    }
+   ]
+  },
+  {
+   "id": "s48",
+   "scene": "today",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "crowd",
+   "ch": "XV",
+   "title": "2026",
+   "sub": "Today",
+   "say": "Now, in twenty twenty six, the whole Bible has been translated into more than seven hundred languages, and parts of it into thousands more. Believers worship in megacities and in hidden house churches, and many still face persecution for the name of Jesus. And the gospel is still going out, to every nation, tribe, and tongue.",
+   "start": 1051.6243520000003,
+   "card": 3.0,
+   "vo": 1054.6243520000003,
+   "vodur": 27.409138,
+   "end": 1083.0334900000003,
+   "caps": [
+    {
+     "text": "Now, in twenty twenty six,",
+     "start": 1054.624,
+     "end": 1056.802
+    },
+    {
+     "text": "the whole Bible has been translated into more than seven hundred languages,",
+     "start": 1056.802,
+     "end": 1063.085
+    },
+    {
+     "text": "and parts of it into thousands more.",
+     "start": 1063.085,
+     "end": 1066.101
+    },
+    {
+     "text": "Believers worship in megacities and in hidden house churches,",
+     "start": 1066.501,
+     "end": 1071.475
+    },
+    {
+     "text": "and many still face persecution for the name of Jesus.",
+     "start": 1071.475,
+     "end": 1075.878
+    },
+    {
+     "text": "And the gospel is still going out, to every nation, tribe, and tongue.",
+     "start": 1076.278,
+     "end": 1082.033
+    }
+   ]
+  },
+  {
+   "id": "s49",
+   "scene": "return",
+   "p": [
+    0,
+    0.35
+   ],
+   "sfx": "storm",
+   "ch": "XVI",
+   "title": "THE RETURN",
+   "sub": "The day no one knows",
+   "say": "Jesus said, of that day and hour no one knows, not even the angels of heaven, but my Father only. There will be wars and rumors of wars. The gospel will be preached in the whole world. Then the end will come. So stay awake, for you do not know on what day your Lord is coming.",
+   "start": 1083.0334900000003,
+   "card": 3.0,
+   "vo": 1086.0334900000003,
+   "vodur": 22.713084,
+   "end": 1109.7465740000002,
+   "caps": [
+    {
+     "text": "Jesus said, of that day and hour no one knows,",
+     "start": 1086.033,
+     "end": 1090.041
+    },
+    {
+     "text": "not even the angels of heaven, but my Father only.",
+     "start": 1090.041,
+     "end": 1094.396
+    },
+    {
+     "text": "There will be wars and rumors of wars.",
+     "start": 1094.796,
+     "end": 1097.478
+    },
+    {
+     "text": "The gospel will be preached in the whole world.",
+     "start": 1097.878,
+     "end": 1101.121
+    },
+    {
+     "text": "Then the end will come.",
+     "start": 1101.521,
+     "end": 1103.359
+    },
+    {
+     "text": "So stay awake, for you do not know on what day your Lord is coming.",
+     "start": 1103.759,
+     "end": 1108.747
+    }
+   ]
+  },
+  {
+   "id": "s50",
+   "scene": "return",
+   "p": [
+    0.35,
+    0.6
+   ],
+   "sfx": "storm",
+   "ch": "",
+   "title": "THE RETURN",
+   "sub": "The day no one knows",
+   "say": "The Lord himself will descend from heaven with a shout, with the voice of the archangel, and with the trumpet of God. Every eye will see him, coming on the clouds of heaven with power and great glory. The dead in Christ will rise first.",
+   "start": 1109.7465740000002,
+   "card": 0.6,
+   "vo": 1110.3465740000001,
+   "vodur": 18.261451,
+   "end": 1129.6080250000002,
+   "caps": [
+    {
+     "text": "The Lord himself will descend from heaven with a shout,",
+     "start": 1110.347,
+     "end": 1114.621
+    },
+    {
+     "text": "with the voice of the archangel,",
+     "start": 1114.621,
+     "end": 1117.108
+    },
+    {
+     "text": "and with the trumpet of God.",
+     "start": 1117.108,
+     "end": 1119.284
+    },
+    {
+     "text": "Every eye will see him,",
+     "start": 1119.684,
+     "end": 1121.301
+    },
+    {
+     "text": "coming on the clouds of heaven with power and great glory.",
+     "start": 1121.301,
+     "end": 1125.378
+    },
+    {
+     "text": "The dead in Christ will rise first.",
+     "start": 1125.778,
+     "end": 1128.608
+    }
+   ]
+  },
+  {
+   "id": "s51",
+   "scene": "return",
+   "p": [
+    0.6,
+    1
+   ],
+   "sfx": "birds",
+   "ch": "",
+   "title": "THE RETURN",
+   "sub": "The day no one knows",
+   "say": "Then John saw a new heaven and a new earth, and the holy city, New Jerusalem, coming down out of heaven from God. God will dwell with his people. He will wipe away every tear from their eyes. There will be no more death, no more sorrow, no more crying, and no more pain. Behold, I am making all things new.",
+   "start": 1129.6080250000002,
+   "card": 0.6,
+   "vo": 1130.2080250000001,
+   "vodur": 26.361882,
+   "end": 1157.569907,
+   "caps": [
+    {
+     "text": "Then John saw a new heaven and a new earth,",
+     "start": 1130.208,
+     "end": 1134.048
+    },
+    {
+     "text": "and the holy city, New Jerusalem,",
+     "start": 1134.048,
+     "end": 1136.996
+    },
+    {
+     "text": "coming down out of heaven from God.",
+     "start": 1136.996,
+     "end": 1140.122
+    },
+    {
+     "text": "God will dwell with his people.",
+     "start": 1140.522,
+     "end": 1142.645
+    },
+    {
+     "text": "He will wipe away every tear from their eyes.",
+     "start": 1143.045,
+     "end": 1146.247
+    },
+    {
+     "text": "There will be no more death, no more sorrow, no more crying, and no more pain.",
+     "start": 1146.647,
+     "end": 1152.947
+    },
+    {
+     "text": "Behold, I am making all things new.",
+     "start": 1153.347,
+     "end": 1156.57
+    }
+   ]
+  },
+  {
+   "id": "s52",
+   "scene": "outro",
+   "p": [
+    0,
+    1
+   ],
+   "sfx": "wind",
+   "ch": "",
+   "title": "",
+   "sub": "",
+   "say": "From Eden, to eternity. He who testifies to these things says, surely I am coming soon. Amen. Come, Lord Jesus.",
+   "start": 1157.569907,
+   "card": 0.6,
+   "vo": 1158.169907,
+   "vodur": 11.73288,
+   "end": 1176.902787,
+   "caps": [
+    {
+     "text": "From Eden, to eternity.",
+     "start": 1158.17,
+     "end": 1160.712
+    },
+    {
+     "text": "He who testifies to these things says, surely I am coming soon.",
+     "start": 1161.112,
+     "end": 1166.238
+    },
+    {
+     "text": "Amen.",
+     "start": 1166.638,
+     "end": 1167.419
+    },
+    {
+     "text": "Come, Lord Jesus.",
+     "start": 1167.819,
+     "end": 1169.903
+    }
+   ]
+  }
+ ]
+}
