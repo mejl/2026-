@@ -22,18 +22,18 @@ Legend: `[x]` done · `[ ]` to do
 - [x] s16 Red Sea: chariots chase Israel → Moses stretches out his hand → Israel walks through
 - [x] s17 Sinai: thunder/fire → tablets → wilderness wandering with manna falling
 
-## Stage 2: Promised Land & Kingdom  ← current
-- [ ] s18 Priests carry the Ark of the Covenant across the Jordan → marching around Jericho → walls fall
-- [ ] s19 Judges; Samson pushes down the pillars → Ruth gleaning in the field with Boaz → the line of David (crown)
-- [ ] s20 Samuel anoints Saul (horn of oil) → David the shepherd with sheep and harp → Goliath battle
-- [ ] s21 David crowned → Solomon prays for wisdom → temple built → glory cloud fills the temple
-- [ ] s22 Kingdom splits (map/crack) → Elijah's fire on Carmel (priests of Baal) → Isaiah's prophecy of the child
-- [ ] s23 Assyria takes the north → Babylon burns Jerusalem → captives by the rivers of Babylon
-- [ ] s24 Daniel praying at his window → thrown to the lions → angel shuts the lions' mouths
-- [ ] s25 Cyrus's decree → rebuilding the temple/walls → Esther before the king (scepter)
-- [ ] s26 400 years: Persia → Greece → Rome banners; Malachi's promise
+## Stage 2: Promised Land & Kingdom  ✅ done (v9)
+- [x] s18 Priests carry the Ark of the Covenant across the Jordan → marching around Jericho → walls fall
+- [x] s19 Judges; Samson pushes down the pillars → Ruth gleaning in the field with Boaz → the line of David (crown)
+- [x] s20 Samuel anoints Saul (horn of oil) → David the shepherd with sheep and harp → Goliath battle
+- [x] s21 David crowned → Solomon prays for wisdom → temple built → glory cloud fills the temple
+- [x] s22 Kingdom splits (map/crack) → Elijah's fire on Carmel (priests of Baal) → Isaiah's prophecy of the child
+- [x] s23 Assyria takes the north → Babylon burns Jerusalem → captives by the rivers of Babylon
+- [x] s24 Daniel praying at his window → thrown to the lions → angel shuts the lions' mouths
+- [x] s25 Cyrus's decree → rebuilding the temple/walls → Esther before the king (scepter)
+- [x] s26 400 years: Persia → Greece → Rome banners; Malachi's promise
 
-## Stage 3: Life of Jesus
+## Stage 3: Life of Jesus  ← current
 - [ ] s27 Bethlehem → Mary, Joseph, baby in the manger → angels appear to shepherds → wise men follow the star
 - [ ] s28 John baptizing → Jesus baptized, dove, heavens open
 - [ ] s29 Calling fishermen at their boats → Sermon on the Mount crowds

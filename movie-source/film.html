@@ -1007,6 +1007,30 @@ function renderStory(s,body,d){ const beats=STORY[s.id], ts=beatTimes(s,beats); 
 
 const STORY_ACTIVE=new Set(['s03','s05','s07','s08','s10','s11','s12','s16','s17']);
 
+function idol(x,y,s){ X.save(); X.translate(x,y); X.scale(s,s); X.fillStyle='#8a6a2a'; X.fillRect(-40,-20,80,20); X.fillStyle='#e8b830'; X.shadowColor='#ffd060'; X.shadowBlur=20; X.beginPath(); X.ellipse(0,-50,34,18,0,0,TAU); X.fill(); X.fillRect(-26,-50,6,30); X.fillRect(18,-50,6,30); X.beginPath(); X.ellipse(36,-66,12,9,0,0,TAU); X.fill(); X.beginPath(); X.moveTo(32,-74); X.lineTo(28,-88); X.lineTo(38,-76); X.moveTo(40,-74); X.lineTo(46,-88); X.lineTo(44,-74); X.fill(); X.restore(); X.shadowBlur=0; }
+function banner(x,y,txt,col,t){ X.fillStyle='#3a2a1a'; X.fillRect(x-3,y-160,6,160); X.fillStyle=col; X.beginPath(); X.moveTo(x,y-160); X.lineTo(x+90+Math.sin(t*2)*6,y-150); X.lineTo(x+86+Math.sin(t*2+1)*6,y-100); X.lineTo(x,y-110); X.fill(); X.fillStyle='#fff'; X.font='bold 18px Georgia'; X.textAlign='left'; X.fillText(txt,x+8,y-126); }
+Object.assign(STORY,{
+ s19:[
+  [0,(u,t)=>{ BG.desert(t,.6); idol(W*.5,GY,1.6); for(let i=0;i<8;i++) figure(W*(.1+i*.1)+(i>3?W*.08:0),GY,160,t,{col:'#2a1c12',rim:'#ffd080',ph:300+i,pose:'kneel',dir:i>3?-1:1}); if(u>.55){ const q=smooth(.55,.8,u); X.globalAlpha=q; figure(W*.86,GY,240,t,{col:'#3a2414',rim:'#fff0c0',ph:310,female:true,pose:'point',dir:-1}); X.globalAlpha=1; rays(W*.86,-40,12,t,'rgba(255,245,220,.35)',q,1400,.3); } }],
+  ['Samson',(u,t)=>{ BG.palace(t); const fall=smooth(.45,.85,u); for(let i=0;i<2;i++){ X.save(); X.translate(W*(.42+i*.16),GY); X.rotate((i?1:-1)*fall*.5); X.fillStyle='#b88a5a'; X.fillRect(-18,-H*.7,36,H*.7); X.restore(); } figure(W*.5,GY,250,t,{col:'#3a2414',rim:'#ffd090',ph:320,female:false,pose:'arms'}); for(let i=0;i<14;i++){ const u2=((t*.5+i/14)%1); X.fillStyle='#8a6a4a'; if(fall>0) X.fillRect(W*(.2+hash(i)*.6),H*.1+u2*H*.7*fall,18,12); } if(u>.45) particles('dust',t,100,9875,fall); if(u>.45&&u<.5) flash(.4); }],
+  ...STORY.s19.slice(2)],
+ s20:[ STORY.s20[0], STORY.s20[1], ['Goliath',(u,t)=>SCENES.c5(lerp(0,.55,u)*40,40)] ],
+ s22:[
+  [0,(u,t)=>{ BG.desert(t,.5); X.strokeStyle='#e8c060'; X.lineWidth=3; X.fillStyle='rgba(200,170,110,.5)'; X.fillRect(W*.3,H*.2,W*.4,H*.55); const g=smooth(.2,.7,u)*40; X.fillStyle='#b89a60'; X.fillRect(W*.3-g,H*.2,W*.2,H*.55); X.fillStyle='#c8aa70'; X.fillRect(W*.5+g,H*.2,W*.2,H*.55); X.fillStyle='#3a2410'; X.font='bold 26px Georgia'; X.textAlign='center'; X.fillText('ISRAEL',W*.4-g,H*.48); X.fillText('JUDAH',W*.6+g,H*.48); X.strokeStyle='#8a1a0a'; X.lineWidth=4; X.beginPath(); X.moveTo(W*.5,H*.2); for(let y=H*.2;y<H*.75;y+=20) X.lineTo(W*.5+Math.sin(y)*8,y); X.stroke(); }],
+  ['idolatry',(u,t)=>{ BG.desert(t,.8); idol(W*.5,GY,1.4); X.fillStyle='#4a3a2a'; X.fillRect(W*.1,GY-120,40,120); X.fillRect(W*.86,GY-110,36,110); for(let i=0;i<6;i++) figure(W*(.2+i*.1),GY,170,t,{col:'#2a1810',rim:'#ffb070',ph:330+i,pose:i%2?'kneel':'arms',dir:i>2?-1:1}); figure(W*.5,GY-60,200,t,{col:'#5a2a4a',rim:'#ffe0b0',ph:340,female:false,pose:'point'}); }],
+  ['Carmel',(u,t)=>SCENES.c6(lerp(.3,.7,u)*30,30)],
+  ['Isaiah',(u,t)=>{ BG.night(t); figure(W*.34,GY,230,t,{col:'#1a1420',rim:'#c8d4ff',ph:350,female:false,pose:'point'}); scrollProp(W*.34+60,GY-150,120,60,1,4); const q=smooth(.3,.7,u); glow(W*.66,H*.3,lerp(20,200,q),'rgba(255,250,230,.9)',q); X.globalAlpha=q; X.fillStyle='#f0e6d0'; X.beginPath(); X.ellipse(W*.66,H*.32,26,11,0,0,TAU); X.fill(); X.globalAlpha=1; rays(W*.66,H*.3,30,t,'rgba(255,245,220,.4)',q); }]],
+ s23:[
+  [0,(u,t)=>{ BG.desert(t,.9); city(H*.8,'#3a2418',9960,16,120,true); crowdOn(lerp(W*1.2,W*.4,u),W*1.4,14,130,t,'#1a0a04',9961,-30); for(let i=0;i<5;i++) banner(lerp(W*1.1,W*.5,u)+i*90,GY-10,'',['#6a1a1a','#3a1a1a'][i%2],t); particles('dust',t,80,9962,1); }],
+  ['Babylon',(u,t)=>SCENES.c7(lerp(0,.5,u)*30,30)],
+  ['rivers',(u,t)=>{ BG.desert(t,.7); water(H*.78,t,'#3a5a6a','#12242a',4); for(let i=0;i<5;i++) tree(W*(.08+i*.22),H*.78,1.4,'#2a1a10','#3a5a2a'); for(let i=0;i<7;i++) figure(W*(.12+i*.11),GY+4,170,t,{col:'#1a1210',rim:'#d0a070',ph:360+i,pose:'kneel',female:i%2==0,dir:i%2?-1:1}); X.strokeStyle='#6a4a2a'; X.lineWidth=2; for(let i=0;i<3;i++){ X.beginPath(); X.moveTo(W*(.13+i*.22),H*.62); X.lineTo(W*(.14+i*.22),H*.7); X.stroke(); } }]],
+ s26:[
+  [0,(u,t)=>SCENES.c9(lerp(0,.3,u)*30,30)],
+  ['Persia',(u,t)=>{ SCENES.c9(12,30); const k=u<.34?0:(u<.67?1:2); const names=['PERSIA','GREECE','ROME'], cols=['#6a2a6a','#2a4a8a','#8a1a1a']; for(let i=0;i<5;i++) banner(W*(.15+i*.16),GY,names[k],cols[k],t); crowdOn(W*1.1,-60,12,130,t,'#1a1418',9970+k,-40); }],
+  ['Malachi',(u,t)=>{ BG.night(t); figure(W*.4,GY,230,t,{col:'#141220',rim:'#e8d8a0',ph:370,female:false,pose:'point'}); scrollProp(W*.62,H*.5,300,160,smooth(0,.5,u),8); rays(W*.9,H*.2,20,t,'rgba(255,240,200,.35)',smooth(.4,1,u)); }]]
+});
+['s18','s19','s20','s21','s22','s23','s24','s25','s26'].forEach(k=>STORY_ACTIVE.add(k));
+
 // ===== calm camera: one slow, gentle drift per shot, no cuts or punch-in zooms =====
 camFor=function(s,u){ const e=ease(clamp(u)), id=parseInt((s.id||'s0').slice(1))||0, dir=hash(id*7+1)>.5?1:-1;
   return {s:lerp(1.04,1.09,e), tx:dir*lerp(-28,28,e), ty:lerp(6,-6,e)}; };
