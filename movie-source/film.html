@@ -1047,10 +1047,34 @@ Object.assign(STORY,{
 });
 ['s27','s28','s29','s30','s31','s32'].forEach(k=>STORY_ACTIVE.add(k));
 
+Object.assign(STORY,{
+ s35:[
+  [0,(u,t)=>{ BG.hill(t); JESUS(W*.36,GY,250,t,{pose:u>.5?'point':'bless'}); for(let i=0;i<11;i++) figure(W*(.5+i*.045),GY,190-(i%3)*10,t,{col:'#2a1c12',rim:'#fff0c0',ph:500+i,female:false,pose:'kneel',dir:-1}); }],
+  ['lifted up',(u,t)=>SCENES.ascend(lerp(.1,1,u)*30,30)]],
+ s36:[
+  [0,(u,t)=>{ BG.interior(t); for(let i=0;i<9;i++) figure(W*(.12+i*.095),GY,190,t,{col:'#2a1c12',rim:'#ffc080',ph:510+i,pose:'pray',female:i%4==1}); X.strokeStyle='rgba(255,240,220,.35)'; X.lineWidth=2; for(let i=0;i<30;i++){ const y=hash(i+9990)*H*.8, x=((t*700+hash(i+9991)*W*2)%(W*1.6))-W*.3; X.beginPath(); X.moveTo(x,y); X.quadraticCurveTo(x+60,y-10,x+140,y); X.stroke(); } }],
+  ['Tongues of fire',(u,t)=>SCENES.c12(lerp(0,.5,u)*.5*30/.5,30)],
+  ['Peter preached',(u,t)=>{ BG.desert(t,.3); city(H*.72,'#8a6a4a',9995,18,110,true); X.fillStyle='#b8a080'; X.fillRect(W*.4,GY-60,W*.2,60); figure(W*.5,GY-60,230,t,{col:'#3a2a1a',rim:'#fff0c0',ph:520,female:false,pose:'point'}); crowdOn(-20,W*.38,9,150,t,'#2a2014',9996); crowdOn(W*.62,W*1.02,9,150,t,'#2a2014',9997); }],
+  ['baptized',(u,t)=>{ BG.desert(t,.3); water(H*.8,t,'#3a7aa0','#12384e',4); for(let i=0;i<4;i++){ const x=W*(.2+i*.2); figure(x,GY,200,t,{col:'#3a2a1a',rim:'#fff0c0',ph:530+i,female:false,pose:'bless'}); figure(x+50,GY+6,180,t,{col:'#e8e0d0',rim:'#fff',ph:540+i,pose:'pray',dir:-1}); } }]],
+ s37:[
+  [0,(u,t)=>{ BG.desert(t,.6); city(H*.74,'#6a4a2a',9998,14,100,true); figure(W*.36,GY,240,t,{col:'#3a1a10',rim:'#ff9a60',ph:550,female:false,pose:'point'}); for(let i=0;i<2;i++) figure(W*(.52+i*.08),GY,210,t,{col:'#2a1810',rim:'#ff9a60',ph:551+i,female:false,pose:'staff'}); for(let i=0;i<3;i++) figure(W*(.72+i*.07),GY,190,t,{col:'#2a2418',rim:'#ffe0b0',ph:560+i,pose:'kneel',female:i==1,dir:-1}); }],
+  ['Damascus',(u,t)=>SCENES.c12(lerp(.5,.85,u)*30,30)],
+  ['became Paul',(u,t)=>{ BG.desert(t,.35); city(H*.72,'#8a6a4a',9999,16,100,true); figure(W*.45,GY,240,t,{col:'#3a2414',rim:'#fff0c0',ph:570,female:false,pose:'point'}); crowdOn(W*.58,W*1.02,8,150,t,'#2a2014',10000); scrollProp(W*.26,GY-90,120,60,1,4); }]],
+ s38:[
+  [0,(u,t)=>{ X.fillStyle='#d8c8a0'; X.fillRect(-60,-60,W+120,H+120); X.fillStyle='#8ab0c8'; X.beginPath(); X.ellipse(W*.45,H*.52,W*.36,H*.18,0,0,TAU); X.fill(); X.fillStyle='#c8b080'; [[.2,.3,90,50],[.72,.34,110,60],[.4,.78,160,40]].forEach(([a,b,c,d])=>{ X.beginPath(); X.ellipse(W*a,H*b,c,d,0,0,TAU); X.fill(); });
+   const pts=[[.82,.5],[.7,.36],[.55,.3],[.42,.34],[.3,.42],[.2,.36]]; X.strokeStyle='#8a1a0a'; X.lineWidth=3; X.setLineDash([10,8]); X.beginPath(); const n=Math.max(2,Math.ceil(u*pts.length)); pts.slice(0,n).forEach((p,i)=>{ const x=W*p[0], y=H*p[1]; i?X.lineTo(x,y):X.moveTo(x,y); }); X.stroke(); X.setLineDash([]); pts.slice(0,n).forEach(p=>disc(W*p[0],H*p[1],6,'#8a1a0a'));
+   X.fillStyle='#3a2410'; X.font='bold 18px Georgia'; X.textAlign='center'; [['JERUSALEM',.82,.55],['ANTIOCH',.72,.32],['EPHESUS',.55,.26],['CORINTH',.42,.39],['ROME',.2,.31]].forEach(([n2,x,y])=>X.fillText(n2,W*x,H*y)); }],
+  ['beaten',(u,t)=>SCENES.ship(lerp(0,.68,u)*30,30)],
+  ['Rome',(u,t)=>SCENES.ship(lerp(.72,1,u)*30,30)]]
+});
+['s33','s34','s35','s36','s37','s38','s39'].forEach(k=>STORY_ACTIVE.add(k));
+
 // ===== calm camera: one slow, gentle drift per shot, no cuts or punch-in zooms =====
 camFor=function(s,u){ const e=ease(clamp(u)), id=parseInt((s.id||'s0').slice(1))||0, dir=hash(id*7+1)>.5?1:-1;
   return {s:lerp(1.04,1.09,e), tx:dir*lerp(-28,28,e), ty:lerp(6,-6,e)}; };
 
+const YEARS={"s01": "The Beginning", "s02": "The Beginning", "s03": "The Beginning", "s04": "The Beginning", "s05": "The Beginning", "s06": "Before c. 2100 BC", "s07": "Before c. 2100 BC", "s08": "Before c. 2100 BC", "s09": "Before c. 2100 BC", "s10": "c. 2100 BC", "s11": "c. 2000 BC", "s12": "c. 1900 BC", "s13": "c. 1520 BC", "s14": "c. 1450 BC", "s15": "c. 1446 BC", "s16": "c. 1446 BC", "s17": "c. 1446–1406 BC", "s18": "c. 1406 BC", "s19": "c. 1380–1050 BC", "s20": "c. 1050–1010 BC", "s21": "c. 1010–960 BC", "s22": "c. 930–700 BC", "s23": "722–586 BC", "s24": "c. 540 BC", "s25": "538–470 BC", "s26": "c. 430–5 BC", "s27": "c. 5 BC", "s28": "c. AD 27", "s29": "c. AD 28", "s30": "c. AD 28–30", "s31": "c. AD 30", "s32": "c. AD 30", "s33": "c. AD 30", "s34": "c. AD 30", "s35": "c. AD 30", "s36": "c. AD 30", "s37": "c. AD 34", "s38": "c. AD 46–60", "s39": "c. AD 95", "s40": "AD 64–300", "s41": "AD 313–381", "s42": "AD 476–1300", "s43": "AD 1054–1380", "s44": "c. AD 1455", "s45": "AD 1517", "s46": "AD 1730–1900", "s47": "AD 1900–2000", "s48": "AD 2026", "s49": "Future", "s50": "Future", "s51": "Eternity"};
+function yearTag(s){ const y=YEARS[s.id]; if(!y) return; X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.textAlign='right'; X.font='600 22px Georgia, serif'; X.fillStyle='#d4a437'; X.fillText(y,W-28,38); X.restore(); }
 window.renderAt = function(t){ window.__t=t; window.__heroPrev=window.__heroCur.h?window.__heroCur:window.__heroPrev; window.__heroCur={h:0,x:W/2,y:H*.6};
   const s = SCH.scenes.find(s=>t>=s.start&&t<s.end) || SCH.scenes[SCH.scenes.length-1];
   const lt = t - s.start;
@@ -1068,7 +1092,7 @@ window.renderAt = function(t){ window.__t=t; window.__heroPrev=window.__heroCur.
   bloom(); bokeh(t); vignette(); grain(t);
   // cinematic letterbox 2.39:1
   X.fillStyle='#000'; X.fillRect(0,0,W,58); X.fillRect(0,H-58,W,58);
-  subtitle(s,t);
+  subtitle(s,t); yearTag(s);
 };
 window.renderAt(0);
 </script></body></html>

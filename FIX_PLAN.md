@@ -41,16 +41,16 @@ Legend: `[x]` done · `[ ]` to do
 - [x] s31 Last Supper: bread broken, cup shared, Judas leaves
 - [x] s32 Gethsemane: prayer, sweat/angel → Judas's kiss, soldiers with torches
 
-## Stage 4: Cross, Resurrection, Church  ← current
-- [ ] s33 Mocked with the crown of thorns → carrying the cross → crucifixion → darkness → temple curtain torn
-- [ ] s34 Tomb sealed and guarded → stone rolled away, angel, women → Jesus appears to Mary, then the disciples
-- [ ] s35 Ascension with clouds and two men in white
-- [ ] s36 Pentecost: wind, tongues of fire, Peter preaching, baptisms
-- [ ] s37 Saul persecuting → the light on the Damascus road → blind → Paul preaching
-- [ ] s38 Paul's journeys map → storm and shipwreck → arrival in Rome
-- [ ] s39 John on Patmos writing Revelation, vision of Christ
+## Stage 4: Cross, Resurrection, Church  ✅ done (v11)
+- [x] s33 Mocked with the crown of thorns → carrying the cross → crucifixion → darkness → temple curtain torn
+- [x] s34 Tomb sealed and guarded → stone rolled away, angel, women → Jesus appears to Mary, then the disciples
+- [x] s35 Ascension with clouds and two men in white
+- [x] s36 Pentecost: wind, tongues of fire, Peter preaching, baptisms
+- [x] s37 Saul persecuting → the light on the Damascus road → blind → Paul preaching
+- [x] s38 Paul's journeys map → storm and shipwreck → arrival in Rome
+- [x] s39 John on Patmos writing Revelation, vision of Christ
 
-## Stage 5: Church history to 2026
+## Stage 5: Church history to 2026  ← current
 - [ ] s40–s41 Nero's persecution, catacombs → Edict of Milan → Council of Nicaea
 - [ ] s42–s43 Monks copying Scripture, Patrick in Ireland → 1054 split → Wycliffe
 - [ ] s44–s45 Gutenberg's press → Luther nails the 95 theses → Tyndale's Bible
@@ -58,7 +58,7 @@ Legend: `[x]` done · `[ ]` to do
 - [ ] s48 2026: Bibles in many languages, house churches, persecuted believers
 
 ## Stage 6: The Return & final polish
-- [ ] Year/era label in the top-right corner (added from Stage 4 render on)
+- [x] Year/era label in the top-right corner
 - [ ] s49–s51 Signs, trumpet, Christ on the clouds, dead rise → New Jerusalem descends, no more tears
 - [ ] Whole-film pass: remove leftover mismatches, fix any glitches found in a frame-by-frame review
 - [ ] Final render, audio check, commit, deliver
