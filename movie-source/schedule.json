@@ -62,10 +62,10 @@
   },
   {
    "id": "s01",
-   "scene": "c1",
+   "scene": "creation",
    "p": [
     0,
-    0.45
+    1
    ],
    "sfx": "wind",
    "ch": "I",
@@ -117,10 +117,10 @@
   },
   {
    "id": "s02",
-   "scene": "eden",
+   "scene": "adam",
    "p": [
-    0.3,
-    0.72
+    0,
+    1
    ],
    "sfx": "birds",
    "ch": "",
@@ -287,10 +287,10 @@
   },
   {
    "id": "s06",
-   "scene": "flood",
+   "scene": "arkbuild",
    "p": [
     0,
-    0.4
+    1
    ],
    "sfx": "rain",
    "ch": "II",
@@ -327,10 +327,10 @@
   },
   {
    "id": "s07",
-   "scene": "flood",
+   "scene": "deluge",
    "p": [
-    0.4,
-    0.72
+    0,
+    1
    ],
    "sfx": "storm",
    "ch": "",
@@ -602,10 +602,10 @@
   },
   {
    "id": "s13",
-   "scene": "c3",
+   "scene": "slavery",
    "p": [
     0,
-    0.3
+    1
    ],
    "sfx": "crowd",
    "ch": "IV",
