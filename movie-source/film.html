@@ -1110,6 +1110,28 @@ Object.assign(STORY,{
 });
 ['s40','s41','s42','s43','s44','s45','s46','s47','s48'].forEach(k=>STORY_ACTIVE.add(k));
 
+function newJerusalem(x,y,s,a){ X.save(); X.globalAlpha=a; X.translate(x,y); X.scale(s,s); glow(0,-120,300,'rgba(255,230,170,.55)'); X.fillStyle='#f6e0a0'; X.fillRect(-260,-60,520,60); for(let i=0;i<12;i++){ const tx=-240+i*44; X.fillStyle=i%2?'#fff0c0':'#f0d890'; X.fillRect(tx,-60-(i%3+1)*40,30,(i%3+1)*40); } X.fillStyle='#ffe8a0'; X.beginPath(); X.moveTo(-60,-60); X.lineTo(0,-260); X.lineTo(60,-60); X.fill(); for(let i=0;i<6;i++){ X.fillStyle='rgba(255,255,255,.9)'; X.fillRect(-250+i*96,-40,26,40); } X.restore(); }
+Object.assign(STORY,{
+ s49:[
+  [0,(u,t)=>{ BG.hill(t); JESUS(W*.36,GY,250,t,{pose:'point'}); for(let i=0;i<6;i++) figure(W*(.56+i*.07),GY,190,t,{col:'#2a1c12',rim:'#fff0c0',ph:800+i,female:false,pose:'kneel',dir:-1}); city(H*.7,'#b8a080',10200,10,70,true); }],
+  ['wars',(u,t)=>{ BG.storm(t); sky(['#1a0404','#4a1008','#8a2a10']); for(let i=0;i<8;i++){ X.save(); X.globalCompositeOperation='lighter'; glow(W*(.08+i*.12),H*.7-Math.abs(Math.sin(t*2+i))*40,70,'rgba(255,120,40,.5)'); X.restore(); } for(let i=0;i<10;i++) figure(W*(.05+i*.1),GY,150,t*1.6,{col:'#0a0404',rim:'#ff6030',ph:810+i,female:false,pose:i%2?'point':'staff',dir:i<5?1:-1,walk:1}); particles('ember',t,120,10201,1); }],
+  ['preached in the whole world',(u,t)=>SCENES.missions(lerp(.6,1,u)*30,30)],
+  ['Then the end',(u,t)=>{ BG.storm(t); for(let i=0;i<14;i++) glow(W*(.05+i*.07),H*.15+Math.sin(i)*30,200,'rgba(20,20,30,.9)'); glow(W*.5,H*.05,lerp(0,200,u),'rgba(255,250,230,.8)'); }],
+  ['stay awake',(u,t)=>{ BG.night(t); X.fillStyle='#3a2a1a'; X.fillRect(W*.4,GY-70,W*.2,10); glow(W*.5,GY-90,140,'rgba(255,190,90,.8)'); X.save(); X.globalCompositeOperation='lighter'; for(let k=0;k<4;k++) glow(W*.5+Math.sin(t*8+k)*2,GY-96-k*6,16-k*3,'rgba(255,190,90,.8)'); X.restore(); X.fillStyle='#b89a4a'; X.beginPath(); X.ellipse(W*.5,GY-80,18,7,0,0,TAU); X.fill(); for(let i=0;i<3;i++) figure(W*(.3+i*.2)+(i==1?80:0),GY,200,t,{col:'#1a1420',rim:'#ffc070',ph:820+i,pose:'stand',female:true,dir:i>0?-1:1}); }]],
+ s50:[
+  [0,(u,t)=>SCENES.return(lerp(.05,.35,u)*40,40)],
+  ['trumpet',(u,t)=>{ SCENES.return(lerp(.35,.45,u)*40,40); ANGEL(W*.2,H*.5,150,t,{pose:'point'}); X.fillStyle='#ffd24a'; X.beginPath(); X.moveTo(W*.2+24,H*.5-120); X.lineTo(W*.2+90,H*.5-150); X.lineTo(W*.2+96,H*.5-130); X.lineTo(W*.2+26,H*.5-110); X.fill(); for(let r=0;r<4;r++){ const k=(t*.8+r/4)%1; X.strokeStyle='rgba(255,240,200,'+((1-k)*.6)+')'; X.lineWidth=3; X.beginPath(); X.arc(W*.2+96,H*.5-140,k*500,0,TAU); X.stroke(); } }],
+  ['Every eye',(u,t)=>SCENES.return(lerp(.45,.62,u)*40,40)],
+  ['dead in Christ',(u,t)=>{ SCENES.return(26,40); for(let i=0;i<8;i++){ const x=W*(.06+i*.125); cross(x,GY,60,'#2a2018'); const r=smooth(.1+i*.05,.6+i*.05,u); X.globalAlpha=r; figure(x+20,GY-r*260,150,t,{col:'#fff6e0',rim:'#fff',ph:830+i,pose:'arms'}); glow(x+20,GY-r*260-90,60,'rgba(255,250,235,.6)',r); X.globalAlpha=1; } }]],
+ s51:[
+  [0,(u,t)=>SCENES.c14(lerp(.6,.8,u)*40,40)],
+  ['New Jerusalem',(u,t)=>{ sky(['#3a70b0','#c89a6a','#e8c48a']); rays(W*.5,H*.1,30,t,'rgba(255,240,200,.3)',1); ridge(10210,H*.8,20,'#7aba82',1); water(H*.86,t,'#7ac0e8','#3a80b0',4); newJerusalem(W*.5,lerp(H*.1,H*.8,ease(smooth(0,.8,u))),1,smooth(0,.3,u)); }],
+  ['dwell',(u,t)=>{ sky(['#4a80b8','#d0a878','#e8c890']); newJerusalem(W*.5,H*.62,.7,1); X.fillStyle='#7aba82'; X.fillRect(-60,H*.72,W+120,H*.3); water(H*.78,t,'#8ad0f0','#4a90c0',3); X.fillStyle='#7aba82'; X.fillRect(-60,H*.84,W+120,H*.2); tree(W*.14,H*.84,2,'#5a3a1a','#3a9a4a'); for(let i=0;i<10;i++) disc(W*.14+Math.cos(i)*50,H*.84-150+Math.sin(i*2)*24,6,'#f0c040'); JESUS(W*.52,GY,240,t,{pose:'bless'}); for(let i=0;i<8;i++) figure(W*(.26+i*.07)+(i>3?W*.12:0),GY,180,t,{col:'#e8e0d0',rim:'#fff',ph:840+i,pose:i%2?'arms':'stand',female:i%2==0,dir:i>3?-1:1}); }],
+  ['every tear',(u,t)=>{ sky(['#4a80b8','#d0a878','#e8c890']); ridge(10211,H*.72,30,'#8aca8a',.8); X.fillStyle='#7aba82'; X.fillRect(-60,H*.82,W+120,H*.3); JESUS(W*.46,GY,250,t,{pose:'bless'}); figure(W*.58,GY,210,t,{col:'#e8e0d0',rim:'#fff',ph:850,pose:u<.4?'pray':'arms',female:true,dir:-1}); lion(W*.2,GY+4,2.4,t,{sleep:1,col:'#c89a50'}); quad(W*.3,GY+6,1.8,t,{col:'#f4f0e8'}); quad(W*.8,GY+6,1.6,t,{col:'#f4f0e8',ph:2}); particles('petal',t,40,10212,1); }],
+  ['all things new',(u,t)=>{ SCENES.c14(lerp(.85,1,u)*40,40); glow(W*.5,H*.4,lerp(200,900,u),'rgba(255,252,240,.9)',smooth(.3,1,u)); }]]
+});
+['s49','s50','s51'].forEach(k=>STORY_ACTIVE.add(k));
+
 // ===== calm camera: one slow, gentle drift per shot, no cuts or punch-in zooms =====
 camFor=function(s,u){ const e=ease(clamp(u)), id=parseInt((s.id||'s0').slice(1))||0, dir=hash(id*7+1)>.5?1:-1;
   return {s:lerp(1.04,1.09,e), tx:dir*lerp(-28,28,e), ty:lerp(6,-6,e)}; };

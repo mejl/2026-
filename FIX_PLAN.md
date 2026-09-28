@@ -57,8 +57,10 @@ Legend: `[x]` done · `[ ]` to do
 - [x] s46–s47 Revival preaching → Carey (India), Taylor (China), Livingstone (Africa) → translators
 - [x] s48 2026: Bibles in many languages, house churches, persecuted believers
 
-## Stage 6: The Return & final polish  ← current
+## Stage 6: The Return & final polish  ✅ done (v13, final)
 - [x] Year/era label in the top-right corner
-- [ ] s49–s51 Signs, trumpet, Christ on the clouds, dead rise → New Jerusalem descends, no more tears
-- [ ] Whole-film pass: remove leftover mismatches, fix any glitches found in a frame-by-frame review
-- [ ] Final render, audio check, commit, deliver
+- [x] s49–s51 Signs, trumpet, Christ on the clouds, dead rise → New Jerusalem descends, no more tears
+- [x] Whole-film pass: remove leftover mismatches, fix any glitches found in a frame-by-frame review
+- [x] Final render, audio check, commit, deliver
+
+## Status: 100% complete ✅ (v13)
