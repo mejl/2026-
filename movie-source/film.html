@@ -975,7 +975,7 @@ const STORY={
   ['Wise men',(u,t)=>{ BG.desert(t,1); X.fillStyle='rgba(10,10,40,.6)'; X.fillRect(0,0,W,H); stars(300,9920,t,1,H*.6); const sx=W*.8,sy=H*.14; glow(sx,sy,200,'rgba(220,235,255,.8)'); rays(sx,sy,24,t,'rgba(220,235,255,.5)',1,900); for(let i=0;i<3;i++){ const x=lerp(-100,W*.5,u)+i*150; camel(x,GY,1.3,t,{walk:1}); figure(x-4,GY-84,90,t,{col:['#6a2a5a','#2a4a6a','#6a5a1a'][i],rim:'#ffe6b0',ph:110+i,female:false}); } }]],
  s29:[
   [0,(u,t)=>{ BG.sea(t,0); X.fillStyle='#8a7a5a'; X.fillRect(-60,H*.8,W*.5,H*.3); boat(W*.66,H*.66,1,t,'#3a2414'); figure(W*.62,H*.64,110,t,{col:'#2a1c12',rim:'#ffe0b0',ph:120,female:false,pose:'point',dir:-1}); figure(W*.7,H*.64,110,t,{col:'#2a1c12',rim:'#ffe0b0',ph:121,female:false,pose:'arms',dir:-1}); JESUS(W*.3,GY,230,t,{pose:'bless'}); }],
-  ['mountain',(u,t)=>SCENES.sermon(lerp(.2,1,u)*30,30)]],
+  ['Blessed',(u,t)=>SCENES.sermon(lerp(.2,1,u)*30,30)]],
  s30:[
   [0,(u,t)=>{ BG.hill(t); JESUS(W*.42,GY,240,t,{pose:'point'}); figure(W*.58,GY,220,t,{col:'#3a2a1a',rim:'#fff0c0',ph:130,female:false,dir:-1,pose:u>.5?'arms':'staff'}); glow(W*.58,GY-200,lerp(0,90,smooth(.3,.6,u)),'rgba(255,255,240,.95)'); crowdOn(W*.7,W*1.05,5,150,t,'#2a2014',9930); }],
   ['five thousand',(u,t)=>{ BG.hill(t); for(let r=0;r<4;r++) for(let i=0;i<16;i++) figure(W*(.04+i*.062)+r*14,H*(.7+r*.05),50+r*16,t,{col:'#3a3024',rim:'#fff0c0',ph:r*20+i,pose:'kneel',dir:i<8?1:-1}); JESUS(W*.5,GY,200,t,{pose:'arms'}); const n=Math.floor(lerp(2,14,u)); for(let i=0;i<n;i++) X.fillStyle='#c89a5a', X.beginPath(), X.ellipse(W*.5-60+(i%7)*20,GY-6-Math.floor(i/7)*10,9,5,0,0,TAU), X.fill(); }],
@@ -1030,6 +1030,22 @@ Object.assign(STORY,{
   ['Malachi',(u,t)=>{ BG.night(t); figure(W*.4,GY,230,t,{col:'#141220',rim:'#e8d8a0',ph:370,female:false,pose:'point'}); scrollProp(W*.62,H*.5,300,160,smooth(0,.5,u),8); rays(W*.9,H*.2,20,t,'rgba(255,240,200,.35)',smooth(.4,1,u)); }]]
 });
 ['s18','s19','s20','s21','s22','s23','s24','s25','s26'].forEach(k=>STORY_ACTIVE.add(k));
+
+Object.assign(STORY,{
+ s28:[
+  [0,(u,t)=>{ BG.desert(t,.4); water(H*.8,t,'#3a7aa0','#12384e',4); P('john',W*.46,GY,240,t,{pose:u>.3?'arms':'point',col:'#4a3018',rim:'#ffe0b0'}); crowdOn(W*.62,W*1.02,7,150,t,'#2a1c12',9980); crowdOn(-20,W*.3,5,140,t,'#2a1c12',9981); }],
+  ['baptized',(u,t)=>SCENES.baptism(lerp(.2,.6,u)*30,30)],
+  ['dove',(u,t)=>SCENES.baptism(lerp(.55,1,u)*30,30)]],
+ s31:[
+  [0,(u,t)=>SCENES.supper(t,30)],
+  ['took bread',(u,t)=>{ BG.interior(t); table(W*.5,GY-60,W*.6); JESUS(W*.5,GY-60,250,t,{pose:'bless'}); const sp=smooth(.3,.7,u)*26; X.fillStyle='#c89a5a'; X.beginPath(); X.ellipse(W*.5-8-sp,GY-150,22,12,0,Math.PI*.5,Math.PI*1.5); X.fill(); X.beginPath(); X.ellipse(W*.5+8+sp,GY-150,22,12,0,-Math.PI*.5,Math.PI*.5); X.fill(); for(let i=0;i<4;i++) figure(W*(.14+i*.07)+(i>1?W*.58:0),GY-60,210,t,{col:'#1a0e06',rim:'#ffb060',ph:400+i,female:false,dir:i>1?-1:1}); }],
+  ['cup',(u,t)=>{ BG.interior(t); table(W*.5,GY-60,W*.6); JESUS(W*.5,GY-60,250,t,{pose:'arms'}); const cy=GY-60-250*lerp(.6,.95,smooth(0,.5,u)); X.fillStyle='#b89a4a'; X.fillRect(W*.5-7,cy,14,26); X.beginPath(); X.ellipse(W*.5,cy,15,6,0,0,TAU); X.fill(); X.fillStyle='#6a0a1a'; X.beginPath(); X.ellipse(W*.5,cy,11,4,0,0,TAU); X.fill(); glow(W*.5,cy,90,'rgba(255,230,200,.5)'); for(let i=0;i<4;i++) figure(W*(.14+i*.07)+(i>1?W*.58:0),GY-60,210,t,{col:'#1a0e06',rim:'#ffb060',ph:400+i,female:false,dir:i>1?-1:1,pose:'pray'}); }]],
+ s32:[
+  [0,(u,t)=>SCENES.gethsemane(t*.5,60)],
+  ['Father',(u,t)=>{ BG.night(t); for(let i=0;i<5;i++) olive(W*(.04+i*.24),H*.86,1.4,'#03050a'); X.fillStyle='#1a1a24'; X.beginPath(); X.ellipse(W*.5,GY+6,100,24,0,0,TAU); X.fill(); JESUS(W*.5,GY,240,t,{pose:'pray',col:'#b8b0c8',rim:'#c8d4ff'}); if(u>.4){ const q=smooth(.4,.8,u); X.globalAlpha=q; ANGEL(W*.72,GY-60,170,t,{pose:'bless',dir:-1}); X.globalAlpha=1; } }],
+  ['Judas',(u,t)=>{ BG.night(t); for(let i=0;i<5;i++) olive(W*(.04+i*.24),H*.86,1.3,'#03050a'); for(let i=0;i<7;i++){ const x=W*(.64+i*.06); glow(x,GY-190,40,'rgba(255,160,60,.9)'); figure(x,GY,200,t,{col:'#1a0e06',rim:'#ffa050',ph:420+i,female:false,pose:i%2?'staff':'point',dir:-1}); } JESUS(W*.4,GY,240,t,{col:'#b8b0c8'}); const jx=lerp(W*.62,W*.46,smooth(0,.5,u)); figure(jx,GY,235,t,{col:'#2a1810',rim:'#ffa050',ph:430,female:false,dir:-1,walk:u<.5?1:0,pose:u>.5?'arms':'stand'}); }]]
+});
+['s27','s28','s29','s30','s31','s32'].forEach(k=>STORY_ACTIVE.add(k));
 
 // ===== calm camera: one slow, gentle drift per shot, no cuts or punch-in zooms =====
 camFor=function(s,u){ const e=ease(clamp(u)), id=parseInt((s.id||'s0').slice(1))||0, dir=hash(id*7+1)>.5?1:-1;

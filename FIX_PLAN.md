@@ -33,15 +33,15 @@ Legend: `[x]` done · `[ ]` to do
 - [x] s25 Cyrus's decree → rebuilding the temple/walls → Esther before the king (scepter)
 - [x] s26 400 years: Persia → Greece → Rome banners; Malachi's promise
 
-## Stage 3: Life of Jesus  ← current
-- [ ] s27 Bethlehem → Mary, Joseph, baby in the manger → angels appear to shepherds → wise men follow the star
-- [ ] s28 John baptizing → Jesus baptized, dove, heavens open
-- [ ] s29 Calling fishermen at their boats → Sermon on the Mount crowds
-- [ ] s30 Healing the blind → feeding 5,000 (loaves multiply) → walking on water → Lazarus walks out of the tomb
-- [ ] s31 Last Supper: bread broken, cup shared, Judas leaves
-- [ ] s32 Gethsemane: prayer, sweat/angel → Judas's kiss, soldiers with torches
+## Stage 3: Life of Jesus  ✅ done (v10)
+- [x] s27 Bethlehem → Mary, Joseph, baby in the manger → angels appear to shepherds → wise men follow the star
+- [x] s28 John baptizing → Jesus baptized, dove, heavens open
+- [x] s29 Calling fishermen at their boats → Sermon on the Mount crowds
+- [x] s30 Healing the blind → feeding 5,000 (loaves multiply) → walking on water → Lazarus walks out of the tomb
+- [x] s31 Last Supper: bread broken, cup shared, Judas leaves
+- [x] s32 Gethsemane: prayer, sweat/angel → Judas's kiss, soldiers with torches
 
-## Stage 4: Cross, Resurrection, Church
+## Stage 4: Cross, Resurrection, Church  ← current
 - [ ] s33 Mocked with the crown of thorns → carrying the cross → crucifixion → darkness → temple curtain torn
 - [ ] s34 Tomb sealed and guarded → stone rolled away, angel, women → Jesus appears to Mary, then the disciples
 - [ ] s35 Ascension with clouds and two men in white
@@ -58,6 +58,7 @@ Legend: `[x]` done · `[ ]` to do
 - [ ] s48 2026: Bibles in many languages, house churches, persecuted believers
 
 ## Stage 6: The Return & final polish
+- [ ] Year/era label in the top-right corner (added from Stage 4 render on)
 - [ ] s49–s51 Signs, trumpet, Christ on the clouds, dead rise → New Jerusalem descends, no more tears
 - [ ] Whole-film pass: remove leftover mismatches, fix any glitches found in a frame-by-frame review
 - [ ] Final render, audio check, commit, deliver
