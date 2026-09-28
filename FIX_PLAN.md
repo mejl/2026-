@@ -11,18 +11,18 @@ Legend: `[x]` done · `[ ]` to do
 - [x] Calm camera (no cut/zoom spam); no floating characters (ground parallax bug)
 - [x] Story-synced: Creation (s01), Adam from dust + Eve (s02), ark building (s06), flood rising (s07), slavery + baby Moses (s13)
 
-## Stage 1: Genesis & Exodus story beats  ← current
-- [ ] s03 The Fall: serpent coils down the tree → talks to Eve → Eve takes the fruit, eats, gives it to Adam, he eats → they hide in the bushes → the garden withers
-- [ ] s05 Cain & Abel: shepherd Abel and farmer Cain → offerings (one accepted) → Cain attacks Abel → Abel lies dead, Cain flees
-- [ ] s07 Flood ending: inside the ark, Noah's family and the animals
-- [ ] s08 After the flood: ark drifting → water recedes, dove with olive leaf, ark rests on the mountain → altar + rainbow
-- [ ] s10 Abram: leaves Ur with Sarai and camels → journey → God's promise → counts the stars → kneels in faith
-- [ ] s11 Isaac born to Sarah → Jacob wrestles with God at night → twelve sons
-- [ ] s12 Joseph: coat of many colors → sold to traders → Pharaoh's dream (7 fat / 7 thin cows) → rules Egypt → brothers bow, reconciliation
-- [ ] s16 Red Sea: chariots chase Israel → Moses stretches out his hand → Israel walks through
-- [ ] s17 Sinai: thunder/fire → tablets → wilderness wandering with manna falling
+## Stage 1: Genesis & Exodus story beats  ✅ done (v8)
+- [x] s03 The Fall: serpent coils down the tree → talks to Eve → Eve takes the fruit, eats, gives it to Adam, he eats → they hide in the bushes → the garden withers
+- [x] s05 Cain & Abel: shepherd Abel and farmer Cain → offerings (one accepted) → Cain attacks Abel → Abel lies dead, Cain flees
+- [x] s07 Flood ending: inside the ark, Noah's family and the animals
+- [x] s08 After the flood: ark drifting → water recedes, dove with olive leaf, ark rests on the mountain → altar + rainbow
+- [x] s10 Abram: leaves Ur with Sarai and camels → journey → God's promise → counts the stars → kneels in faith
+- [x] s11 Isaac born to Sarah → Jacob wrestles with God at night → twelve sons
+- [x] s12 Joseph: coat of many colors → sold to traders → Pharaoh's dream (7 fat / 7 thin cows) → rules Egypt → brothers bow, reconciliation
+- [x] s16 Red Sea: chariots chase Israel → Moses stretches out his hand → Israel walks through
+- [x] s17 Sinai: thunder/fire → tablets → wilderness wandering with manna falling
 
-## Stage 2: Promised Land & Kingdom
+## Stage 2: Promised Land & Kingdom  ← current
 - [ ] s18 Priests carry the Ark of the Covenant across the Jordan → marching around Jericho → walls fall
 - [ ] s19 Judges; Samson pushes down the pillars → Ruth gleaning in the field with Boaz → the line of David (crown)
 - [ ] s20 Samuel anoints Saul (horn of oil) → David the shepherd with sheep and harp → Goliath battle
