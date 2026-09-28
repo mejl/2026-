@@ -50,14 +50,14 @@ Legend: `[x]` done · `[ ]` to do
 - [x] s38 Paul's journeys map → storm and shipwreck → arrival in Rome
 - [x] s39 John on Patmos writing Revelation, vision of Christ
 
-## Stage 5: Church history to 2026  ← current
-- [ ] s40–s41 Nero's persecution, catacombs → Edict of Milan → Council of Nicaea
-- [ ] s42–s43 Monks copying Scripture, Patrick in Ireland → 1054 split → Wycliffe
-- [ ] s44–s45 Gutenberg's press → Luther nails the 95 theses → Tyndale's Bible
-- [ ] s46–s47 Revival preaching → Carey (India), Taylor (China), Livingstone (Africa) → translators
-- [ ] s48 2026: Bibles in many languages, house churches, persecuted believers
+## Stage 5: Church history to 2026  ✅ done (v12)
+- [x] s40–s41 Nero's persecution, catacombs → Edict of Milan → Council of Nicaea
+- [x] s42–s43 Monks copying Scripture, Patrick in Ireland → 1054 split → Wycliffe
+- [x] s44–s45 Gutenberg's press → Luther nails the 95 theses → Tyndale's Bible
+- [x] s46–s47 Revival preaching → Carey (India), Taylor (China), Livingstone (Africa) → translators
+- [x] s48 2026: Bibles in many languages, house churches, persecuted believers
 
-## Stage 6: The Return & final polish
+## Stage 6: The Return & final polish  ← current
 - [x] Year/era label in the top-right corner
 - [ ] s49–s51 Signs, trumpet, Christ on the clouds, dead rise → New Jerusalem descends, no more tears
 - [ ] Whole-film pass: remove leftover mismatches, fix any glitches found in a frame-by-frame review
