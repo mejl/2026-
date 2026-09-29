@@ -50,7 +50,7 @@ Daniel → Jesus's warnings → the history of thinking machines → the US–Ch
 ### Stage B7: Ch XI: The Return, the Messianic age; audio; final
 - [x] The Return (no date), the machines fall silent, judgement, new creation, Isaiah 2 & 11 kingdom
 - [x] Machine-age score (synth pulses) + orchestral for the biblical parts; sound design
-- [ ] Whole-film audit, final render, deliver
+- [x] Whole-film audit, final render, deliver
 
 ---
 
