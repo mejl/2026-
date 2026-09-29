@@ -33,24 +33,24 @@ Daniel → Jesus's warnings → the history of thinking machines → the US–Ch
 - [x] Olivet: wars, false prophets, gospel to all nations, "no one knows the day"
 - [x] Revelation 13 "the image that speaks", shown as *a question people ask*, not an answer
 
-### Stage B4: Ch IV–V: Thinking machines (1843–2016) and the race begins (2017–2022)  ← current (beats drafted, needs frame check)
-- [ ] Lovelace/Babbage, Turing, Dartmouth, AI winters, Deep Blue, Watson, AlexNet, AlphaGo
-- [ ] 2017 Transformer + China's 2030 plan; 2019 Entity List; 2020 GPT-3/AlphaFold; Oct 2022 chip controls; ChatGPT
-- [ ] US vs China "race lanes" motif that returns every chapter
+### Stage B4: Ch IV–V: Thinking machines (1843–2016) and the race begins (2017–2022)
+- [x] Lovelace/Babbage, Turing, Dartmouth, AI winters, Deep Blue, Watson, AlexNet, AlphaGo
+- [x] 2017 Transformer + China's 2030 plan; 2019 Entity List; 2020 GPT-3/AlphaFold; Oct 2022 chip controls; ChatGPT
+- [x] US vs China "race lanes" motif that returns every chapter
 
 ### Stage B5: Ch VI–VII: The explosion (2023–2025) and today (2026)
-- [ ] ChatGPT/Claude/Gemini/Grok launch wave, pause letter, Hinton, Bletchley
-- [ ] DeepSeek shock, Stargate, Nvidia; IMO gold; data-center power
-- [ ] 2026: agents, Mythos Preview withheld (Glasswing), chip policy, Huawei Ascend
+- [x] ChatGPT/Claude/Gemini/Grok launch wave, pause letter, Hinton, Bletchley
+- [x] DeepSeek shock, Stargate, Nvidia; IMO gold; data-center power
+- [x] 2026: agents, Mythos Preview withheld (Glasswing), chip policy, Huawei Ascend
 
 ### Stage B6: Ch VIII–X: FICTION: the scenario, year by year 2026 → 2035
-- [ ] 2026 agents → 2027 AI does AI research → 2028 jobs shock → 2029 delegation → 2030 arms-control pact → 2031 robots → 2032 one identity/payment system → 2033 fake miracles → 2034 takeover by consent → 2035 total
-- [ ] On-screen "FICTION: not a prediction" label throughout
+- [x] 2026 agents → 2027 AI does AI research → 2028 jobs shock → 2029 delegation → 2030 arms-control pact → 2031 robots → 2032 one identity/payment system → 2033 fake miracles → 2034 takeover by consent → 2035 total
+- [x] On-screen "FICTION: not a prediction" label throughout
 
 ### Stage B7: Ch XI: The Return, the Messianic age; audio; final
-- [ ] The Return (no date), the machines fall silent, judgement, new creation, Isaiah 2 & 11 kingdom
-- [ ] Machine-age score (synth pulses) + orchestral for the biblical parts; sound design
-- [ ] Whole-film audit, final render, deliver
+- [x] The Return (no date), the machines fall silent, judgement, new creation, Isaiah 2 & 11 kingdom
+- [x] Machine-age score (synth pulses) + orchestral for the biblical parts; sound design
+- [x] Whole-film audit, final render, deliver
 
 ---
 
