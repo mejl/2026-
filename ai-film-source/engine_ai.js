@@ -99,7 +99,8 @@ function buildTL(){ TL.length=0;
   for(const s of SCH.scenes){
     const list=BEATS_AI[s.id]||[[0,aiPlaceholder]];
     let prev=s.start;
-    list.forEach((b,i)=>{ let st; if(i===0) st=s.start; else { st=(typeof b[0]==='number')?(s.vo+b[0]):(s.vo+((s.caps||[]).find(c=>c.text.toLowerCase().includes(String(b[0]).toLowerCase()))?.start-s.vo||s.vodur*(i/list.length))); st=Math.max(st,prev+.8); }
+    list.forEach((b,i)=>{ let st; if(i===0) st=s.start; else { const key=b[0]; const kwStart=(w)=>{ const c=(s.caps||[]).find(c=>c.text.toLowerCase().includes(String(w).toLowerCase())); return c?c.start:(s.vo+s.vodur*(i/list.length)); };
+        if(typeof key==='number') st=s.vo+key; else if(Array.isArray(key)) st=kwStart(key[0])+key[1]; else st=kwStart(key); st=Math.max(st,prev+.8); }
       TL.push({shot:s,start:st,fn:b[1],tr:b[2]||null,i}); prev=st; });
   }
   for(let k=0;k<TL.length;k++){ TL[k].k=k; TL[k].end=k+1<TL.length?TL[k+1].start:SCH.total; }
