@@ -12,6 +12,6 @@
 ## Stage Q3: Encode quality
 - [x] CRF 17 slow, ~4 Mbps video, 192k audio; split parts under 30 MB for delivery, keep master
 ## Stage Q4: Re-render AI film, audit, deliver
-## Stage Q5: Same safe-area + 1080p fix for the Christian film (Eden to Eternity)
-## Stage Q6: Re-render Christian film, audit, deliver
+## Stage Q5: SKIPPED (Christian film already uploaded by the user)
+## Stage Q6: SKIPPED
 ## Stage Q7: Tick, commit, push (repo file-size limit: master over 100 MB is not committed; keep sources only)
