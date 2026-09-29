@@ -1,0 +1,2 @@
+// ---- title card and cold open ----
+BEATS_AI.presents=[[0,(u,t,d,B)=>{ X.fillStyle='#000'; X.fillRect(-60,-60,W+120,H+120); particles('sparkle',t,50,4711,.5); const a=smooth(.1,.3,u)*(1-smooth(.82,.98,u)); X.globalAlpha=a; aiText('C L A U D E   S O N N E T   5 . 5',W/2,H/2-40,22,'#d4a437'); aiText('EFFORT: ULTRACODE',W/2,H/2+18,46,'#ffffff','center','#38d6ff'); aiText('presents',W/2,H/2+70,20,'#8a8fa6'); X.globalAlpha=1; }]];
