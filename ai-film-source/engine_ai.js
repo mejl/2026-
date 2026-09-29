@@ -14,7 +14,7 @@ function aiText(str,x,y,size,col,align='center',glowc){ X.save(); X.textAlign=al
 function aiMono(str,x,y,size,col,align='left'){ X.save(); X.textAlign=align; X.font=`${size}px "Courier New", monospace`; X.fillStyle=col; X.fillText(str,x,y); X.restore(); }
 function rr(x,y,w,h,r){ X.beginPath(); X.moveTo(x+r,y); X.arcTo(x+w,y,x+w,y+h,r); X.arcTo(x+w,y+h,x,y+h,r); X.arcTo(x,y+h,x,y,r); X.arcTo(x,y,x+w,y,r); X.closePath(); }
 // keyword timing inside a beat: progress (0..1 over dur) since the caption containing `word` began
-function kwT(B,word){ const s=B.shot; const c=(s.caps||[]).find(c=>c.text.toLowerCase().includes(word.toLowerCase())); return c?c.start:(B.start+(B.end-B.start)*.5); }
+function kwT(B,word){ const s=B.shot; const c=(s.caps||[]).find(c=>(c.raw||c.text).toLowerCase().includes(word.toLowerCase())); return c?c.start:(B.start+(B.end-B.start)*.5); }
 function kwP(B,word,dur=1.2,off=0){ return smooth(0,dur,(window.__t||0)-kwT(B,word)-off); }
 
 // corrected limb capsule (the older seg() has inward-curving end caps)
@@ -99,7 +99,7 @@ function buildTL(){ TL.length=0;
   for(const s of SCH.scenes){
     const list=BEATS_AI[s.id]||[[0,aiPlaceholder]];
     let prev=s.start;
-    list.forEach((b,i)=>{ let st; if(i===0) st=s.start; else { const key=b[0]; const kwStart=(w)=>{ const c=(s.caps||[]).find(c=>c.text.toLowerCase().includes(String(w).toLowerCase())); return c?c.start:(s.vo+s.vodur*(i/list.length)); };
+    list.forEach((b,i)=>{ let st; if(i===0) st=s.start; else { const key=b[0]; const kwStart=(w)=>{ const c=(s.caps||[]).find(c=>(c.raw||c.text).toLowerCase().includes(String(w).toLowerCase())); return c?c.start:(s.vo+s.vodur*(i/list.length)); };
         if(typeof key==='number') st=s.vo+key; else if(Array.isArray(key)) st=kwStart(key[0])+key[1]; else st=kwStart(key); st=Math.max(st,prev+.8); }
       TL.push({shot:s,start:st,fn:b[1],tr:b[2]||null,i}); prev=st; });
   }
@@ -122,8 +122,8 @@ function compose(tr,p,t){ const e=ease(clamp(p)); X.setTransform(1,0,0,1,0,0); X
 
 // ---- overlays ----
 function aiChapterTitle(s,t){ const lt=t-s.start, d=s.card; if(!s.ch||lt>=d) return; const a=smooth(.15,.7,lt)*(1-smooth(d-.7,d,lt)); const c=MOODC[s.mood]||'#fff'; X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=.55*a; X.fillStyle='#000'; X.fillRect(0,0,W,H); X.globalAlpha=a; X.textAlign='center'; X.fillStyle=c; X.font='600 22px Georgia'; X.fillText(('CHAPTER  '+s.ch).split('').join(String.fromCharCode(8202)),W/2,H/2-70); const sc=lerp(1.12,1,ease(smooth(.1,.8,lt))); X.translate(W/2,H/2+10); X.scale(sc,sc); X.fillStyle='#fff'; X.shadowColor=c; X.shadowBlur=30; X.font='bold 78px Georgia'; const tw=X.measureText(s.title).width; if(tw>1120) X.scale(1120/tw,1120/tw); X.fillText(s.title,0,0); X.restore(); X.save(); X.globalAlpha=a; X.textAlign='center'; X.fillStyle='#c8cce0'; X.font='italic 24px Georgia'; X.fillText(s.sub,W/2,H/2+66); X.restore(); }
-function aiTags(s,t){ X.save(); X.setTransform(1,0,0,1,0,0); const lab=LABELS[s.label]; if(lab){ X.font='700 15px Georgia'; const txt=lab[0], tw=X.measureText(txt).width+24; X.fillStyle='rgba(0,0,0,.6)'; rr(24,15,tw,28,14); X.fill(); X.strokeStyle=lab[1]; X.lineWidth=1.6; X.stroke(); X.fillStyle=lab[1]; X.textAlign='left'; X.fillText(txt,36,35); }
-  if(s.year){ const c=(s.mood==='machine'||s.mood==='fiction')?'#7ee3ff':'#d4a437'; X.textAlign='right'; X.font='700 24px Georgia'; X.fillStyle=c; X.shadowColor=c; X.shadowBlur=10; X.fillText(s.year,W-28,38); } X.restore(); }
+function aiTags(s,t){ X.save(); X.setTransform(1,0,0,1,0,0); const lab=LABELS[s.label]; if(lab){ X.font='700 14px Georgia'; const txt=lab[0], tw=X.measureText(txt).width+24; X.fillStyle='rgba(0,0,0,.6)'; rr(24,6,tw,24,12); X.fill(); X.strokeStyle=lab[1]; X.lineWidth=1.6; X.stroke(); X.fillStyle=lab[1]; X.textAlign='left'; X.fillText(txt,36,23); }
+  if(s.year){ const c=(s.mood==='machine'||s.mood==='fiction')?'#7ee3ff':'#d4a437'; X.textAlign='right'; X.font='700 22px Georgia'; X.fillStyle=c; X.shadowColor=c; X.shadowBlur=10; X.fillText(s.year,W-28,26); } X.restore(); }
 function aiScan(s){ if(s.mood!=='fiction'&&s.mood!=='machine') return; X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=s.mood==='fiction'?.07:.04; X.fillStyle='#000'; for(let y=0;y<H;y+=3) X.fillRect(0,y,W,1); if(s.mood==='fiction'){ X.globalAlpha=.06; X.fillStyle='#ff2a2a'; X.fillRect(0,0,W,H); } X.restore(); }
 
 window.renderAt=function(t){ window.__t=t; X=MAINCTX; if(!TL.length) buildTL(); const B=beatAt(t), s=B.shot; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.globalCompositeOperation='source-over'; X.shadowBlur=0;
@@ -133,6 +133,6 @@ window.renderAt=function(t){ window.__t=t; X=MAINCTX; if(!TL.length) buildTL(); 
   X=MAINCTX; X.setTransform(1,0,0,1,0,0);
   aiChapterTitle(s,t); aiScan(s);
   bloom(); bokeh(t,'rgba(120,190,255,.10)'); vignette(); grain(t);
-  X.fillStyle='#000'; X.fillRect(0,0,W,58); X.fillRect(0,H-58,W,58);
+  X.fillStyle='#000'; X.fillRect(0,0,W,36); X.fillRect(0,H-58,W,58);
   if(t<1.2) flash(1-t/1.2,'#000'); if(SCH.total-t<2.2) flash(1-(SCH.total-t)/2.2,'#000');
   subtitle(s,t); aiTags(s,t); };

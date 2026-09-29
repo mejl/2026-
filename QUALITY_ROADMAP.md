@@ -15,3 +15,6 @@
 ## Stage Q5: SKIPPED (Christian film already uploaded by the user)
 ## Stage Q6: SKIPPED
 ## Stage Q7: Tick, commit, push (repo file-size limit: master over 100 MB is not committed; keep sources only)
+
+## Standing rule (user request): subtitles always use numerals
+GPT-1, GPT-4, ChatGPT, AI, R1, 2017, 175 billion, July 20, 539 BC. Implemented in `ai-film-source/norm_caps.py` (spoken text -> display text, audio unchanged; beat keys still match the raw spoken text).
