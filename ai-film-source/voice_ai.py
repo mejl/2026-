@@ -16,9 +16,11 @@ C=json.load(open('script_ai.json'))
 shots=[(c,s) for c in C for s in c['shots']]
 def tts(job):
     key,i,text=job; raw=f'sent/{key}_{i}_raw.wav'; wav=f'sent/{key}_{i}.wav'
-    if os.path.exists(wav): return wav
+    tf=f'sent/{key}_{i}.txt'
+    if os.path.exists(wav) and os.path.exists(tf) and open(tf).read()==text: return wav
     subprocess.run(['piper','-m',MODEL,'--length_scale','1.1','-f',raw],input=speak(text).encode(),check=True,capture_output=True)
     subprocess.run(['ffmpeg','-y','-loglevel','error','-i',raw,'-af','silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,'+AF,'-ar','44100','-ac','2',wav],check=True)
+    open(tf,'w').write(text)
     return wav
 jobs=[]
 for c,s in shots:

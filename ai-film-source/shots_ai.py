@@ -14,7 +14,7 @@ def times():
     return ts
 ts=times(); out=sys.argv[3]; os.makedirs('strip',exist_ok=True); files=[]
 with sync_playwright() as p:
-    b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium'); pg=b.new_page(viewport={'width':1280,'height':720})
+    b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium'); pg=b.new_page(viewport={'width':1920,'height':1080})
     errs=[]; pg.on('pageerror',lambda e:errs.append(str(e))); pg.on('console',lambda m: errs.append('LOG '+m.text) if m.type=='error' else None)
     pg.goto('file://'+os.path.abspath('film_ai.html'))
     for i,t in enumerate(ts):

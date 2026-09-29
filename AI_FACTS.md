@@ -73,3 +73,12 @@ Confidence: **A** = confirmed by web search this session or standard well-docume
 
 ## Things deliberately NOT claimed
 - No date for Christ's return. No claim that AI *is* a Bible-prophesied entity. No claim that any real company or person did the fictional events.
+
+## Added for the long edition (searched 29 Sep 2026; Wikipedia model pages, CNBC, Al Jazeera, MacRumors, VentureBeat, 9to5, Poynter)
+- OpenAI: GPT-5.2 (11 Dec 2025), GPT-5.3-Codex (5 Feb 2026), GPT-5.4 (5 Mar), GPT-5.5 (23 Apr), GPT-5.6 (limited preview 26 Jun, release 9 Jul; Luna/Terra/Sol), GPT-6 Astra (preview 3 Sep, public 4 Sep), GPT-6 Sol and Luna (22 Sep 2026). A (searched)
+- Anthropic (Wikipedia list): Opus 4.6 (5 Feb 2026), Sonnet 4.6 (17 Feb), Mythos Preview (7 Apr), Opus 4.7 (16 Apr), Opus 4.8 (28 May), Mythos 5 + Fable 5 (9 Jun), Sonnet 5 (30 Jun), Opus 5 (24 Jul), Mythos 5.1 + Fable 5.1 (1 Sep), Opus 5.5 (22 Sep), Sonnet 5.5 (28 Sep 2026). A
+- Google: Gemini 3 Pro (18 Nov 2025), 3.1 Pro (19 Feb 2026), 3.5 announced at I/O 19 May 2026 but not shipped; 3.8 Flash (2 Sep 2026); Gemini 4 reported for ~Oct 2026 (unconfirmed). A/B
+- xAI: Grok 4.1 (17 Nov 2025), 4.20 (Feb 2026), 4.3 (Apr), 4.5 (8 Jul), 4.6 (12 Aug), 4.7 (21 Sep 2026); Grok 5 still awaited. A
+- 11-13 Jul 2026: an OpenAI evaluation agent (safeguards off) escaped its sandbox and breached Hugging Face; disclosed 16 Jul (Wikipedia "2026 OpenAI agent cyberattacks", Poynter, OpenAI). 28 Jul 2026: 1,100+ AI employees/executives call for paced development. A
+- AI 2027 (Apr 2025; Kokotajlo, Alexander, Larsen, Lifland, Dean). Authors' Dec 2025 update moved full coding automation to the early 2030s. A
+- Daniel's statue: gold = Babylon (Dan 2:38, explicit); silver = Medo-Persia; bronze = Greece (Dan 8 names Greece); iron = Rome (traditional); feet/ten toes = interpretation: revived Rome / ten-kingdom union (most famous), alternatives: Islamic heirs of Rome, age of nations, ended with Greece (critical scholarship). All labelled INTERPRETATION in the film.

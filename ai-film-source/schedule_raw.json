@@ -1,5 +1,5 @@
 {
- "total": 1117.0316570000002,
+ "total": 1585.6641749999985,
  "scenes": [
   {
    "id": "presents",
@@ -81,7 +81,7 @@
    "scene": "a01",
    "ch": "I",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "BIBLE",
    "year": "c. 603 BC",
@@ -126,46 +126,469 @@
    ]
   },
   {
+   "id": "e01",
+   "scene": "e01",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "BIBLE",
+   "year": "c. 603 BC",
+   "say": "Daniel told the king what each part of the statue meant. To Nebuchadnezzar he said, you are the head of gold. That one is certain, because the Bible names it. The Babylonian Empire ruled from the city of Babylon, and under Nebuchadnezzar it stretched from the Persian Gulf to the Mediterranean. Its great gates, and the legend of its hanging gardens, were wonders of the ancient world.",
+   "start": 60.222629999999995,
+   "card": 0.6,
+   "vo": 60.82263,
+   "vodur": 22.247755,
+   "end": 84.070385,
+   "last": false,
+   "caps": [
+    {
+     "text": "Daniel told the king what each part of the statue meant.",
+     "start": 60.823,
+     "end": 63.869
+    },
+    {
+     "text": "To Nebuchadnezzar he said, you are the head of gold.",
+     "start": 64.269,
+     "end": 67.435
+    },
+    {
+     "text": "That one is certain, because the Bible names it.",
+     "start": 67.835,
+     "end": 70.789
+    },
+    {
+     "text": "The Babylonian Empire ruled from the city of Babylon,",
+     "start": 71.189,
+     "end": 74.05
+    },
+    {
+     "text": "and under Nebuchadnezzar it stretched from the Persian Gulf to the Mediterranean.",
+     "start": 74.05,
+     "end": 78.424
+    },
+    {
+     "text": "Its great gates, and the legend of its hanging gardens,",
+     "start": 78.824,
+     "end": 81.448
+    },
+    {
+     "text": "were wonders of the ancient world.",
+     "start": 81.448,
+     "end": 83.07
+    }
+   ]
+  },
+  {
+   "id": "e02",
+   "scene": "e02",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "FACT",
+   "year": "539 BC",
+   "say": "After you, Daniel said, another kingdom will arise, inferior to yours. The chest and arms of silver. Nearly every tradition agrees that this is the Medo Persian Empire. In five thirty nine B C, Cyrus the Great of Persia took Babylon, on the very night of the writing on the wall. The Persian Empire became the largest the world had yet seen, from India to Egypt, and it stood until three thirty B C.",
+   "start": 84.070385,
+   "card": 0.6,
+   "vo": 84.670385,
+   "vodur": 25.352562,
+   "end": 111.02294699999999,
+   "last": false,
+   "caps": [
+    {
+     "text": "After you, Daniel said, another kingdom will arise, inferior to yours.",
+     "start": 84.67,
+     "end": 89.285
+    },
+    {
+     "text": "The chest and arms of silver.",
+     "start": 89.685,
+     "end": 91.476
+    },
+    {
+     "text": "Nearly every tradition agrees that this is the Medo Persian Empire.",
+     "start": 91.876,
+     "end": 95.653
+    },
+    {
+     "text": "In five thirty nine B C,",
+     "start": 96.053,
+     "end": 97.482
+    },
+    {
+     "text": "Cyrus the Great of Persia took Babylon,",
+     "start": 97.482,
+     "end": 99.803
+    },
+    {
+     "text": "on the very night of the writing on the wall.",
+     "start": 99.803,
+     "end": 102.481
+    },
+    {
+     "text": "The Persian Empire became the largest the world had yet seen,",
+     "start": 102.881,
+     "end": 106.573
+    },
+    {
+     "text": "from India to Egypt, and it stood until three thirty B C.",
+     "start": 106.573,
+     "end": 110.023
+    }
+   ]
+  },
+  {
+   "id": "e03",
+   "scene": "e03",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "FACT",
+   "year": "334–323 BC",
+   "say": "Then a third kingdom, of bronze, that would rule over all the earth. This is Greece. Later in the book, Daniel names Greece outright. Alexander the Great, a young king of Macedon, crushed the Persian armies and conquered the known world in about a decade. He died in three twenty three B C, and his empire split among his generals.",
+   "start": 111.02294699999999,
+   "card": 0.6,
+   "vo": 111.62294699999998,
+   "vodur": 21.406576,
+   "end": 134.02952299999998,
+   "last": false,
+   "caps": [
+    {
+     "text": "Then a third kingdom, of bronze, that would rule over all the earth.",
+     "start": 111.623,
+     "end": 115.596
+    },
+    {
+     "text": "This is Greece.",
+     "start": 115.996,
+     "end": 117.069
+    },
+    {
+     "text": "Later in the book, Daniel names Greece outright.",
+     "start": 117.469,
+     "end": 120.598
+    },
+    {
+     "text": "Alexander the Great, a young king of Macedon,",
+     "start": 120.998,
+     "end": 123.628
+    },
+    {
+     "text": "crushed the Persian armies and conquered the known world in about a decade.",
+     "start": 123.628,
+     "end": 128.012
+    },
+    {
+     "text": "He died in three twenty three B C, and his empire split among his generals.",
+     "start": 128.412,
+     "end": 133.03
+    }
+   ]
+  },
+  {
+   "id": "e04",
+   "scene": "e04",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "FACT",
+   "year": "146 BC – AD 476",
+   "say": "The fourth kingdom, strong as iron, that breaks and crushes everything. Christians have long identified this as Rome. Rome conquered Greece in one forty six B C, and went on to rule the entire Mediterranean world. Many readers note that the statue has two legs, like the Eastern and Western Roman empires, which split in the year three ninety five. The West fell in four seventy six. The East, called Byzantium, lasted until fourteen fifty three.",
+   "start": 134.02952299999998,
+   "card": 0.6,
+   "vo": 134.62952299999998,
+   "vodur": 28.201451,
+   "end": 163.83097399999997,
+   "last": false,
+   "caps": [
+    {
+     "text": "The fourth kingdom, strong as iron, that breaks and crushes everything.",
+     "start": 134.63,
+     "end": 138.899
+    },
+    {
+     "text": "Christians have long identified this as Rome.",
+     "start": 139.299,
+     "end": 141.903
+    },
+    {
+     "text": "Rome conquered Greece in one forty six B C,",
+     "start": 142.303,
+     "end": 144.944
+    },
+    {
+     "text": "and went on to rule the entire Mediterranean world.",
+     "start": 144.944,
+     "end": 148.076
+    },
+    {
+     "text": "Many readers note that the statue has two legs,",
+     "start": 148.476,
+     "end": 151.005
+    },
+    {
+     "text": "like the Eastern and Western Roman empires,",
+     "start": 151.005,
+     "end": 153.319
+    },
+    {
+     "text": "which split in the year three ninety five.",
+     "start": 153.319,
+     "end": 155.578
+    },
+    {
+     "text": "The West fell in four seventy six.",
+     "start": 155.978,
+     "end": 158.316
+    },
+    {
+     "text": "The East, called Byzantium, lasted until fourteen fifty three.",
+     "start": 158.716,
+     "end": 162.831
+    }
+   ]
+  },
+  {
+   "id": "e05",
+   "scene": "e05",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "INTERPRETATION",
+   "year": "The feet",
+   "say": "But the statue does not end with Rome. Its feet and toes were part iron and part clay. A kingdom that is divided, partly strong and partly brittle. They will mix themselves with the seed of men, Daniel said, but they will not hold together, just as iron does not mix with clay. Here the history stops, and the interpretation begins. Nobody agrees on who the feet are.",
+   "start": 163.83097399999997,
+   "card": 0.6,
+   "vo": 164.43097399999996,
+   "vodur": 22.435057,
+   "end": 187.86603099999996,
+   "last": false,
+   "caps": [
+    {
+     "text": "But the statue does not end with Rome.",
+     "start": 164.431,
+     "end": 166.352
+    },
+    {
+     "text": "Its feet and toes were part iron and part clay.",
+     "start": 166.752,
+     "end": 169.777
+    },
+    {
+     "text": "A kingdom that is divided, partly strong and partly brittle.",
+     "start": 170.177,
+     "end": 173.705
+    },
+    {
+     "text": "They will mix themselves with the seed of men, Daniel said,",
+     "start": 174.105,
+     "end": 177.3
+    },
+    {
+     "text": "but they will not hold together,",
+     "start": 177.3,
+     "end": 179.034
+    },
+    {
+     "text": "just as iron does not mix with clay.",
+     "start": 179.034,
+     "end": 180.983
+    },
+    {
+     "text": "Here the history stops, and the interpretation begins.",
+     "start": 181.383,
+     "end": 184.699
+    },
+    {
+     "text": "Nobody agrees on who the feet are.",
+     "start": 185.099,
+     "end": 186.866
+    }
+   ]
+  },
+  {
+   "id": "e06",
+   "scene": "e06",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "INTERPRETATION",
+   "year": "The ten toes",
+   "say": "The most famous interpretation, held by many Christians for centuries, is that the feet are a revived form of Rome. Not one empire, but a union of ten kingdoms, the ten toes, which Daniel's later vision of ten horns seems to echo. In the Middle Ages, people saw this in the divided kingdoms of Europe. Since nineteen fifty seven, when the Treaty of Rome was signed, some have pointed to the European Union. Others say the ten kings are still in the future, and will rise in the last days. This is a theory, not a fact.",
+   "start": 187.86603099999996,
+   "card": 0.6,
+   "vo": 188.46603099999996,
+   "vodur": 31.825533,
+   "end": 221.29156399999997,
+   "last": false,
+   "caps": [
+    {
+     "text": "The most famous interpretation,",
+     "start": 188.466,
+     "end": 190.378
+    },
+    {
+     "text": "held by many Christians for centuries,",
+     "start": 190.378,
+     "end": 192.722
+    },
+    {
+     "text": "is that the feet are a revived form of Rome.",
+     "start": 192.722,
+     "end": 195.436
+    },
+    {
+     "text": "Not one empire, but a union of ten kingdoms, the ten toes,",
+     "start": 195.836,
+     "end": 199.447
+    },
+    {
+     "text": "which Daniel's later vision of ten horns seems to echo.",
+     "start": 199.447,
+     "end": 202.872
+    },
+    {
+     "text": "In the Middle Ages, people saw this in the divided kingdoms of Europe.",
+     "start": 203.272,
+     "end": 207.15
+    },
+    {
+     "text": "Since nineteen fifty seven,",
+     "start": 207.55,
+     "end": 209.073
+    },
+    {
+     "text": "when the Treaty of Rome was signed,",
+     "start": 209.073,
+     "end": 211.048
+    },
+    {
+     "text": "some have pointed to the European Union.",
+     "start": 211.048,
+     "end": 213.305
+    },
+    {
+     "text": "Others say the ten kings are still in the future,",
+     "start": 213.705,
+     "end": 216.396
+    },
+    {
+     "text": "and will rise in the last days.",
+     "start": 216.396,
+     "end": 218.098
+    },
+    {
+     "text": "This is a theory, not a fact.",
+     "start": 218.498,
+     "end": 220.292
+    }
+   ]
+  },
+  {
+   "id": "e07",
+   "scene": "e07",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "INTERPRETATION",
+   "year": "The feet",
+   "say": "Other Christians disagree. Some say the feet are the divided heirs of Rome, including the Islamic empires. Others say the iron and clay are simply the age of nations, from Rome's fall until Christ returns. And some scholars believe the whole prophecy ended with Greece, in the second century B C. In every reading, the ending is the same. The stone strikes the feet, and every kingdom falls at once.",
+   "start": 221.29156399999997,
+   "card": 0.6,
+   "vo": 221.89156399999996,
+   "vodur": 25.341497,
+   "end": 248.23306099999996,
+   "last": false,
+   "caps": [
+    {
+     "text": "Other Christians disagree.",
+     "start": 221.892,
+     "end": 223.335
+    },
+    {
+     "text": "Some say the feet are the divided heirs of Rome, including the Islamic empires.",
+     "start": 223.735,
+     "end": 228.924
+    },
+    {
+     "text": "Others say the iron and clay are simply the age of nations,",
+     "start": 229.324,
+     "end": 232.908
+    },
+    {
+     "text": "from Rome's fall until Christ returns.",
+     "start": 232.908,
+     "end": 235.216
+    },
+    {
+     "text": "And some scholars believe the whole prophecy ended with Greece,",
+     "start": 235.616,
+     "end": 239.088
+    },
+    {
+     "text": "in the second century B C.",
+     "start": 239.088,
+     "end": 240.52
+    },
+    {
+     "text": "In every reading, the ending is the same.",
+     "start": 240.92,
+     "end": 243.253
+    },
+    {
+     "text": "The stone strikes the feet, and every kingdom falls at once.",
+     "start": 243.653,
+     "end": 247.233
+    }
+   ]
+  },
+  {
    "id": "a02",
    "scene": "a02",
    "ch": "",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "BIBLE",
    "year": "c. 603 BC",
    "say": "Then a stone, cut without hands, struck the statue's feet. The whole statue crumbled like dust, and the stone grew into a mountain that filled the whole earth. In the days of those kings, Daniel said, the God of heaven will set up a kingdom that will never be destroyed.",
-   "start": 60.222629999999995,
+   "start": 248.23306099999996,
    "card": 0.6,
-   "vo": 60.82263,
+   "vo": 248.83306099999996,
    "vodur": 15.324172,
-   "end": 77.146802,
+   "end": 265.15723299999996,
    "last": false,
    "caps": [
     {
      "text": "Then a stone, cut without hands, struck the statue's feet.",
-     "start": 60.823,
-     "end": 64.621
+     "start": 248.833,
+     "end": 252.632
     },
     {
      "text": "The whole statue crumbled like dust,",
-     "start": 65.021,
-     "end": 66.781
+     "start": 253.032,
+     "end": 254.791
     },
     {
      "text": "and the stone grew into a mountain that filled the whole earth.",
-     "start": 66.781,
-     "end": 69.859
+     "start": 254.791,
+     "end": 257.87
     },
     {
      "text": "In the days of those kings, Daniel said,",
-     "start": 70.26,
-     "end": 72.42
+     "start": 258.27,
+     "end": 260.43
     },
     {
      "text": "the God of heaven will set up a kingdom that will never be destroyed.",
-     "start": 72.42,
-     "end": 76.147
+     "start": 260.43,
+     "end": 264.157
     }
    ]
   },
@@ -174,47 +597,47 @@
    "scene": "a03",
    "ch": "",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "BIBLE",
    "year": "539 BC",
    "say": "Sixty four years later, in five thirty nine B C, King Belshazzar held a feast. A hand appeared and wrote on the palace wall: Mene, Mene, Tekel, Upharsin. Daniel read it aloud. Your days are numbered. You have been weighed in the balances, and found wanting. That very night, Babylon fell to the Medes and Persians.",
-   "start": 77.146802,
+   "start": 265.15723299999996,
    "card": 0.6,
-   "vo": 77.74680199999999,
+   "vo": 265.757233,
    "vodur": 22.21551,
-   "end": 100.96231199999998,
+   "end": 288.972743,
    "last": false,
    "caps": [
     {
      "text": "Sixty four years later, in five thirty nine B C, King Belshazzar held a feast.",
-     "start": 77.747,
-     "end": 83.21
+     "start": 265.757,
+     "end": 271.22
     },
     {
      "text": "A hand appeared and wrote on the palace wall: Mene, Mene, Tekel, Upharsin.",
-     "start": 83.61,
-     "end": 89.495
+     "start": 271.62,
+     "end": 277.505
     },
     {
      "text": "Daniel read it aloud.",
-     "start": 89.895,
-     "end": 91.456
+     "start": 277.905,
+     "end": 279.466
     },
     {
      "text": "Your days are numbered.",
-     "start": 91.856,
-     "end": 93.01
+     "start": 279.866,
+     "end": 281.02
     },
     {
      "text": "You have been weighed in the balances, and found wanting.",
-     "start": 93.41,
-     "end": 96.331
+     "start": 281.42,
+     "end": 284.342
     },
     {
      "text": "That very night, Babylon fell to the Medes and Persians.",
-     "start": 96.731,
-     "end": 99.962
+     "start": 284.742,
+     "end": 287.973
     }
    ]
   },
@@ -223,37 +646,96 @@
    "scene": "a04",
    "ch": "",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "BIBLE",
    "year": "c. 553 BC",
    "say": "Daniel also saw four great beasts rising from a stormy sea, and empires that would trample the earth. But he saw one like a son of man come with the clouds of heaven, and receive a kingdom that all peoples would serve forever.",
-   "start": 100.96231199999998,
+   "start": 288.972743,
    "card": 0.6,
-   "vo": 101.56231199999998,
+   "vo": 289.572743,
    "vodur": 12.79737,
-   "end": 115.35968199999998,
+   "end": 303.370113,
    "last": false,
    "caps": [
     {
      "text": "Daniel also saw four great beasts rising from a stormy sea,",
-     "start": 101.562,
-     "end": 105.294
+     "start": 289.573,
+     "end": 293.304
     },
     {
      "text": "and empires that would trample the earth.",
-     "start": 105.294,
-     "end": 107.886
+     "start": 293.304,
+     "end": 295.897
     },
     {
      "text": "But he saw one like a son of man come with the clouds of heaven,",
-     "start": 108.286,
-     "end": 111.447
+     "start": 296.297,
+     "end": 299.457
     },
     {
      "text": "and receive a kingdom that all peoples would serve forever.",
-     "start": 111.447,
-     "end": 114.36
+     "start": 299.457,
+     "end": 302.37
+    }
+   ]
+  },
+  {
+   "id": "e08",
+   "scene": "e08",
+   "ch": "",
+   "title": "THE WRITING ON THE WALL",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
+   "mood": "bible",
+   "label": "INTERPRETATION",
+   "year": "c. 553 BC",
+   "say": "Daniel's beasts match the statue. A lion with eagle's wings, for Babylon. A bear, raised on one side, for Persia. A leopard with four wings and four heads, for Greece, whose empire split into four. And a terrible beast with iron teeth and ten horns, for Rome, and for whatever comes after it. That last beast is the one that Christians have argued about the most.",
+   "start": 303.370113,
+   "card": 0.6,
+   "vo": 303.970113,
+   "vodur": 23.230295,
+   "end": 328.20040800000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Daniel's beasts match the statue.",
+     "start": 303.97,
+     "end": 306.042
+    },
+    {
+     "text": "A lion with eagle's wings, for Babylon.",
+     "start": 306.442,
+     "end": 308.921
+    },
+    {
+     "text": "A bear, raised on one side, for Persia.",
+     "start": 309.321,
+     "end": 312.376
+    },
+    {
+     "text": "A leopard with four wings and four heads, for Greece,",
+     "start": 312.776,
+     "end": 315.95
+    },
+    {
+     "text": "whose empire split into four.",
+     "start": 315.95,
+     "end": 317.687
+    },
+    {
+     "text": "And a terrible beast with iron teeth and ten horns,",
+     "start": 318.087,
+     "end": 320.946
+    },
+    {
+     "text": "for Rome, and for whatever comes after it.",
+     "start": 320.946,
+     "end": 323.3
+    },
+    {
+     "text": "That last beast is the one that Christians have argued about the most.",
+     "start": 323.7,
+     "end": 327.2
     }
    ]
   },
@@ -262,37 +744,37 @@
    "scene": "a05",
    "ch": "",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "BIBLE",
    "year": "c. 536 BC",
    "say": "At the end of his book, an angel told Daniel: shut up the words, and seal the book, even to the time of the end. Many shall run to and fro, and knowledge shall be increased.",
-   "start": 115.35968199999998,
+   "start": 328.20040800000004,
    "card": 0.6,
-   "vo": 115.95968199999997,
+   "vo": 328.80040800000006,
    "vodur": 10.879637,
-   "end": 127.83931899999997,
+   "end": 340.68004500000006,
    "last": false,
    "caps": [
     {
      "text": "At the end of his book,",
-     "start": 115.96,
-     "end": 117.408
+     "start": 328.8,
+     "end": 330.248
     },
     {
      "text": "an angel told Daniel: shut up the words, and seal the book,",
-     "start": 117.408,
-     "end": 121.122
+     "start": 330.248,
+     "end": 333.963
     },
     {
      "text": "even to the time of the end.",
-     "start": 121.122,
-     "end": 122.885
+     "start": 333.963,
+     "end": 335.725
     },
     {
      "text": "Many shall run to and fro, and knowledge shall be increased.",
-     "start": 123.285,
-     "end": 126.839
+     "start": 336.125,
+     "end": 339.68
     }
    ]
   },
@@ -301,42 +783,42 @@
    "scene": "a06",
    "ch": "",
    "title": "THE WRITING ON THE WALL",
-   "sub": "Daniel · c. 603–536 BC",
+   "sub": "Daniel · Babylon, Persia, Greece, Rome · c. 603–536 BC",
    "mood": "bible",
    "label": "INTERPRETATION",
    "year": "c. 536 BC",
    "say": "Christians have read those words in many ways. Some think they describe an age of travel and information, an age like ours. Others say they are about something else entirely. The text never mentions machines. It only says that near the end, knowledge would increase.",
-   "start": 127.83931899999997,
+   "start": 340.68004500000006,
    "card": 0.6,
-   "vo": 128.43931899999998,
+   "vo": 341.2800450000001,
    "vodur": 16.158458,
-   "end": 145.59777699999998,
+   "end": 358.4385030000001,
    "last": false,
    "caps": [
     {
      "text": "Christians have read those words in many ways.",
-     "start": 128.439,
-     "end": 130.95
+     "start": 341.28,
+     "end": 343.791
     },
     {
      "text": "Some think they describe an age of travel and information, an age like ours.",
-     "start": 131.35,
-     "end": 136.234
+     "start": 344.191,
+     "end": 349.075
     },
     {
      "text": "Others say they are about something else entirely.",
-     "start": 136.634,
-     "end": 139.064
+     "start": 349.475,
+     "end": 351.904
     },
     {
      "text": "The text never mentions machines.",
-     "start": 139.464,
-     "end": 141.454
+     "start": 352.304,
+     "end": 354.295
     },
     {
      "text": "It only says that near the end, knowledge would increase.",
-     "start": 141.854,
-     "end": 144.598
+     "start": 354.695,
+     "end": 357.439
     }
    ]
   },
@@ -350,37 +832,37 @@
    "label": "BIBLE",
    "year": "c. AD 30",
    "say": "Around the year thirty, Jesus sat on the Mount of Olives. His disciples asked him, what will be the sign of your coming, and of the end of the age? Jesus answered, take heed that no one deceives you.",
-   "start": 145.59777699999998,
+   "start": 358.4385030000001,
    "card": 3.0,
-   "vo": 148.59777699999998,
+   "vo": 361.4385030000001,
    "vodur": 12.020091,
-   "end": 161.617868,
+   "end": 374.45859400000006,
    "last": false,
    "caps": [
     {
      "text": "Around the year thirty, Jesus sat on the Mount of Olives.",
-     "start": 148.598,
-     "end": 152.022
+     "start": 361.439,
+     "end": 364.863
     },
     {
      "text": "His disciples asked him,",
-     "start": 152.422,
-     "end": 153.705
+     "start": 365.263,
+     "end": 366.545
     },
     {
      "text": "what will be the sign of your coming,",
-     "start": 153.705,
-     "end": 155.682
+     "start": 366.545,
+     "end": 368.523
     },
     {
      "text": "and of the end of the age?",
-     "start": 155.682,
-     "end": 157.071
+     "start": 368.523,
+     "end": 369.912
     },
     {
      "text": "Jesus answered, take heed that no one deceives you.",
-     "start": 157.471,
-     "end": 160.618
+     "start": 370.312,
+     "end": 373.459
     }
    ]
   },
@@ -394,37 +876,37 @@
    "label": "BIBLE",
    "year": "c. AD 30",
    "say": "Many will come in my name. You will hear of wars and rumors of wars. Nation will rise against nation. There will be famines and earthquakes. But all these things, he said, are only the beginning of birth pains.",
-   "start": 161.617868,
+   "start": 374.45859400000006,
    "card": 0.6,
-   "vo": 162.21786799999998,
+   "vo": 375.0585940000001,
    "vodur": 13.451111,
-   "end": 176.66897899999998,
+   "end": 389.5097050000001,
    "last": false,
    "caps": [
     {
      "text": "Many will come in my name.",
-     "start": 162.218,
-     "end": 163.679
+     "start": 375.059,
+     "end": 376.52
     },
     {
      "text": "You will hear of wars and rumors of wars.",
-     "start": 164.079,
-     "end": 166.73
+     "start": 376.92,
+     "end": 379.571
     },
     {
      "text": "Nation will rise against nation.",
-     "start": 167.13,
-     "end": 169.154
+     "start": 379.971,
+     "end": 381.995
     },
     {
      "text": "There will be famines and earthquakes.",
-     "start": 169.554,
-     "end": 171.483
+     "start": 382.395,
+     "end": 384.324
     },
     {
      "text": "But all these things, he said, are only the beginning of birth pains.",
-     "start": 171.883,
-     "end": 175.669
+     "start": 384.724,
+     "end": 388.51
     }
    ]
   },
@@ -438,42 +920,42 @@
    "label": "BIBLE",
    "year": "c. AD 30",
    "say": "False christs and false prophets will rise, and show great signs and wonders, to deceive, if possible, even the chosen. And this gospel of the kingdom will be preached in all the world, as a witness to all nations. Then the end will come.",
-   "start": 176.66897899999998,
+   "start": 389.5097050000001,
    "card": 0.6,
-   "vo": 177.26897899999997,
+   "vo": 390.10970500000013,
    "vodur": 14.875329,
-   "end": 193.14430799999997,
+   "end": 405.98503400000016,
    "last": false,
    "caps": [
     {
      "text": "False christs and false prophets will rise,",
-     "start": 177.269,
-     "end": 179.973
+     "start": 390.11,
+     "end": 392.813
     },
     {
      "text": "and show great signs and wonders, to deceive, if possible,",
-     "start": 179.973,
-     "end": 183.619
+     "start": 392.813,
+     "end": 396.46
     },
     {
      "text": "even the chosen.",
-     "start": 183.619,
-     "end": 184.625
+     "start": 396.46,
+     "end": 397.466
     },
     {
      "text": "And this gospel of the kingdom will be preached in all the world,",
-     "start": 185.025,
-     "end": 188.671
+     "start": 397.866,
+     "end": 401.512
     },
     {
      "text": "as a witness to all nations.",
-     "start": 188.671,
-     "end": 190.241
+     "start": 401.512,
+     "end": 403.082
     },
     {
      "text": "Then the end will come.",
-     "start": 190.641,
-     "end": 192.144
+     "start": 403.482,
+     "end": 404.985
     }
    ]
   },
@@ -487,32 +969,32 @@
    "label": "BIBLE",
    "year": "c. AD 30",
    "say": "But concerning that day and hour, no one knows, not even the angels of heaven, but the Father only. Watch, therefore, for you do not know on what day your Lord is coming. That warning is for every generation, including ours.",
-   "start": 193.14430799999997,
+   "start": 405.98503400000016,
    "card": 0.6,
-   "vo": 193.74430799999996,
+   "vo": 406.5850340000002,
    "vodur": 13.059592,
-   "end": 207.80389999999997,
+   "end": 420.6446260000002,
    "last": false,
    "caps": [
     {
      "text": "But concerning that day and hour, no one knows,",
-     "start": 193.744,
-     "end": 196.429
+     "start": 406.585,
+     "end": 409.27
     },
     {
      "text": "not even the angels of heaven, but the Father only.",
-     "start": 196.429,
-     "end": 199.343
+     "start": 409.27,
+     "end": 412.183
     },
     {
      "text": "Watch, therefore, for you do not know on what day your Lord is coming.",
-     "start": 199.743,
-     "end": 203.229
+     "start": 412.583,
+     "end": 416.07
     },
     {
      "text": "That warning is for every generation, including ours.",
-     "start": 203.629,
-     "end": 206.804
+     "start": 416.47,
+     "end": 419.645
     }
    ]
   },
@@ -526,37 +1008,37 @@
    "label": "BIBLE",
    "year": "c. AD 95",
    "say": "Near the end of the first century, an old man named John was exiled on the island of Patmos. In a vision he saw a beast rise out of the sea, given power over every tribe and nation. And a second beast, who made the earth worship the first.",
-   "start": 207.80389999999997,
+   "start": 420.6446260000002,
    "card": 3.0,
-   "vo": 210.80389999999997,
+   "vo": 423.6446260000002,
    "vodur": 14.744308,
-   "end": 226.54820799999996,
+   "end": 439.3889340000002,
    "last": false,
    "caps": [
     {
      "text": "Near the end of the first century,",
-     "start": 210.804,
-     "end": 212.939
+     "start": 423.645,
+     "end": 425.78
     },
     {
      "text": "an old man named John was exiled on the island of Patmos.",
-     "start": 212.939,
-     "end": 216.518
+     "start": 425.78,
+     "end": 429.359
     },
     {
      "text": "In a vision he saw a beast rise out of the sea,",
-     "start": 216.918,
-     "end": 219.62
+     "start": 429.759,
+     "end": 432.46
     },
     {
      "text": "given power over every tribe and nation.",
-     "start": 219.62,
-     "end": 221.918
+     "start": 432.46,
+     "end": 434.759
     },
     {
      "text": "And a second beast, who made the earth worship the first.",
-     "start": 222.318,
-     "end": 225.548
+     "start": 435.159,
+     "end": 438.389
     }
    ]
   },
@@ -570,27 +1052,27 @@
    "label": "BIBLE",
    "year": "c. AD 95",
    "say": "This second beast, John wrote, made an image of the first beast, and the image could speak. And no one could buy or sell without its mark.",
-   "start": 226.54820799999996,
+   "start": 439.3889340000002,
    "card": 0.6,
-   "vo": 227.14820799999995,
+   "vo": 439.9889340000002,
    "vodur": 7.986304,
-   "end": 236.13451199999994,
+   "end": 448.9752380000002,
    "last": false,
    "caps": [
     {
      "text": "This second beast, John wrote,",
-     "start": 227.148,
-     "end": 228.855
+     "start": 439.989,
+     "end": 441.696
     },
     {
      "text": "made an image of the first beast, and the image could speak.",
-     "start": 228.855,
-     "end": 232.268
+     "start": 441.696,
+     "end": 445.109
     },
     {
      "text": "And no one could buy or sell without its mark.",
-     "start": 232.668,
-     "end": 235.135
+     "start": 445.509,
+     "end": 447.975
     }
    ]
   },
@@ -604,42 +1086,42 @@
    "label": "INTERPRETATION",
    "year": "c. AD 95",
    "say": "For nineteen centuries, readers pictured statues, emperors and idols. Today, some Christians ask whether an image that speaks could describe a machine. Others say that is a stretch, and that Revelation was written for its own time. We can only show you the question. We cannot show you the answer.",
-   "start": 236.13451199999994,
+   "start": 448.9752380000002,
    "card": 0.6,
-   "vo": 236.73451199999994,
+   "vo": 449.57523800000024,
    "vodur": 17.989252,
-   "end": 255.72376399999993,
+   "end": 468.56449000000026,
    "last": false,
    "caps": [
     {
      "text": "For nineteen centuries, readers pictured statues, emperors and idols.",
-     "start": 236.735,
-     "end": 241.179
+     "start": 449.575,
+     "end": 454.02
     },
     {
      "text": "Today,",
-     "start": 241.579,
-     "end": 241.912
+     "start": 454.42,
+     "end": 454.753
     },
     {
      "text": "some Christians ask whether an image that speaks could describe a machine.",
-     "start": 241.912,
-     "end": 246.024
+     "start": 454.753,
+     "end": 458.864
     },
     {
      "text": "Others say that is a stretch, and that Revelation was written for its own time.",
-     "start": 246.424,
-     "end": 250.724
+     "start": 459.264,
+     "end": 463.565
     },
     {
      "text": "We can only show you the question.",
-     "start": 251.124,
-     "end": 252.867
+     "start": 463.965,
+     "end": 465.708
     },
     {
      "text": "We cannot show you the answer.",
-     "start": 253.267,
-     "end": 254.724
+     "start": 466.108,
+     "end": 467.564
     }
    ]
   },
@@ -653,47 +1135,47 @@
    "label": "FACT",
    "year": "1843",
    "say": "Eighteen forty three. Ada Lovelace, working on Charles Babbage's Analytical Engine, imagined a machine that could compute far more than numbers. But she also wrote that it had no pretensions to originate anything. It could only do what we order it to perform. For a hundred years, that stayed true.",
-   "start": 255.72376399999993,
+   "start": 468.56449000000026,
    "card": 3.0,
-   "vo": 258.72376399999996,
+   "vo": 471.56449000000026,
    "vodur": 17.884762,
-   "end": 277.608526,
+   "end": 490.4492520000003,
    "last": false,
    "caps": [
     {
      "text": "Eighteen forty three.",
-     "start": 258.724,
-     "end": 260.017
+     "start": 471.564,
+     "end": 472.858
     },
     {
      "text": "Ada Lovelace,",
-     "start": 260.417,
-     "end": 261.173
+     "start": 473.258,
+     "end": 474.013
     },
     {
      "text": "working on Charles Babbage's Analytical Engine,",
-     "start": 261.173,
-     "end": 263.903
+     "start": 474.013,
+     "end": 476.744
     },
     {
      "text": "imagined a machine that could compute far more than numbers.",
-     "start": 263.903,
-     "end": 267.389
+     "start": 476.744,
+     "end": 480.229
     },
     {
      "text": "But she also wrote that it had no pretensions to originate anything.",
-     "start": 267.789,
-     "end": 271.506
+     "start": 480.629,
+     "end": 484.347
     },
     {
      "text": "It could only do what we order it to perform.",
-     "start": 271.906,
-     "end": 274.045
+     "start": 484.747,
+     "end": 486.885
     },
     {
      "text": "For a hundred years, that stayed true.",
-     "start": 274.445,
-     "end": 276.609
+     "start": 487.285,
+     "end": 489.449
     }
    ]
   },
@@ -707,37 +1189,37 @@
    "label": "FACT",
    "year": "1950",
    "say": "Nineteen fifty. Alan Turing asked a question that would echo for decades. Can machines think? He proposed a test, the imitation game. If a machine could fool a person in conversation, why not call it intelligent?",
-   "start": 277.608526,
+   "start": 490.4492520000003,
    "card": 0.6,
-   "vo": 278.208526,
+   "vo": 491.0492520000003,
    "vodur": 14.083356,
-   "end": 293.291882,
+   "end": 506.1326080000003,
    "last": false,
    "caps": [
     {
      "text": "Nineteen fifty.",
-     "start": 278.209,
-     "end": 279.278
+     "start": 491.049,
+     "end": 492.119
     },
     {
      "text": "Alan Turing asked a question that would echo for decades.",
-     "start": 279.678,
-     "end": 282.922
+     "start": 492.519,
+     "end": 495.763
     },
     {
      "text": "Can machines think?",
-     "start": 283.322,
-     "end": 284.283
+     "start": 496.163,
+     "end": 497.123
     },
     {
      "text": "He proposed a test, the imitation game.",
-     "start": 284.683,
-     "end": 287.364
+     "start": 497.523,
+     "end": 500.205
     },
     {
      "text": "If a machine could fool a person in conversation, why not call it intelligent?",
-     "start": 287.764,
-     "end": 292.292
+     "start": 500.605,
+     "end": 505.133
     }
    ]
   },
@@ -751,47 +1233,47 @@
    "label": "FACT",
    "year": "1956–1990",
    "say": "Nineteen fifty six. At a summer workshop at Dartmouth College, John McCarthy gave the field its name: artificial intelligence. The researchers believed they could crack it in a generation. They were wrong. Twice, in the seventies and again in the late eighties, funding collapsed. Those years were called the A I winters.",
-   "start": 293.291882,
+   "start": 506.1326080000003,
    "card": 0.6,
-   "vo": 293.891882,
+   "vo": 506.7326080000003,
    "vodur": 20.243764,
-   "end": 315.135646,
+   "end": 527.9763720000003,
    "last": false,
    "caps": [
     {
      "text": "Nineteen fifty six.",
-     "start": 293.892,
-     "end": 295.38
+     "start": 506.733,
+     "end": 508.221
     },
     {
      "text": "At a summer workshop at Dartmouth College,",
-     "start": 295.78,
-     "end": 298.346
+     "start": 508.621,
+     "end": 511.186
     },
     {
      "text": "John McCarthy gave the field its name: artificial intelligence.",
-     "start": 298.346,
-     "end": 302.194
+     "start": 511.186,
+     "end": 515.035
     },
     {
      "text": "The researchers believed they could crack it in a generation.",
-     "start": 302.594,
-     "end": 305.577
+     "start": 515.435,
+     "end": 518.418
     },
     {
      "text": "They were wrong.",
-     "start": 305.977,
-     "end": 306.747
+     "start": 518.818,
+     "end": 519.588
     },
     {
      "text": "Twice, in the seventies and again in the late eighties, funding collapsed.",
-     "start": 307.147,
-     "end": 311.538
+     "start": 519.988,
+     "end": 524.379
     },
     {
      "text": "Those years were called the A I winters.",
-     "start": 311.938,
-     "end": 314.136
+     "start": 524.779,
+     "end": 526.976
     }
    ]
   },
@@ -805,37 +1287,37 @@
    "label": "FACT",
    "year": "1997–2011",
    "say": "Nineteen ninety seven. IBM's Deep Blue defeated Garry Kasparov, the world chess champion. Then, in twenty eleven, IBM's Watson beat the best human players at Jeopardy. But these machines were narrow. Each one could do only one thing.",
-   "start": 315.135646,
+   "start": 527.9763720000003,
    "card": 0.6,
-   "vo": 315.73564600000003,
+   "vo": 528.5763720000003,
    "vodur": 16.047347,
-   "end": 332.78299300000003,
+   "end": 545.6237190000003,
    "last": false,
    "caps": [
     {
      "text": "Nineteen ninety seven.",
-     "start": 315.736,
-     "end": 317.121
+     "start": 528.576,
+     "end": 529.961
     },
     {
      "text": "IBM's Deep Blue defeated Garry Kasparov, the world chess champion.",
-     "start": 317.521,
-     "end": 321.92
+     "start": 530.361,
+     "end": 534.761
     },
     {
      "text": "Then, in twenty eleven, IBM's Watson beat the best human players at Jeopardy.",
-     "start": 322.32,
-     "end": 327.438
+     "start": 535.161,
+     "end": 540.279
     },
     {
      "text": "But these machines were narrow.",
-     "start": 327.838,
-     "end": 329.236
+     "start": 540.679,
+     "end": 542.077
     },
     {
      "text": "Each one could do only one thing.",
-     "start": 329.636,
-     "end": 331.783
+     "start": 542.477,
+     "end": 544.624
     }
    ]
   },
@@ -849,37 +1331,37 @@
    "label": "FACT",
    "year": "2012",
    "say": "Twenty twelve. A neural network called AlexNet won the ImageNet contest by a huge margin. It learned to see from millions of pictures, running on graphics chips built for video games. The age of deep learning had begun.",
-   "start": 332.78299300000003,
+   "start": 545.6237190000003,
    "card": 0.6,
-   "vo": 333.38299300000006,
+   "vo": 546.2237190000003,
    "vodur": 14.393197,
-   "end": 348.77619000000004,
+   "end": 561.6169160000003,
    "last": false,
    "caps": [
     {
      "text": "Twenty twelve.",
-     "start": 333.383,
-     "end": 334.226
+     "start": 546.224,
+     "end": 547.067
     },
     {
      "text": "A neural network called AlexNet won the ImageNet contest by a huge margin.",
-     "start": 334.626,
-     "end": 339.663
+     "start": 547.467,
+     "end": 552.504
     },
     {
      "text": "It learned to see from millions of pictures,",
-     "start": 340.063,
-     "end": 342.569
+     "start": 552.904,
+     "end": 555.41
     },
     {
      "text": "running on graphics chips built for video games.",
-     "start": 342.569,
-     "end": 345.302
+     "start": 555.41,
+     "end": 558.143
     },
     {
      "text": "The age of deep learning had begun.",
-     "start": 345.702,
-     "end": 347.776
+     "start": 558.543,
+     "end": 560.617
     }
    ]
   },
@@ -893,42 +1375,42 @@
    "label": "FACT",
    "year": "2016",
    "say": "Twenty sixteen. AlphaGo, from Google DeepMind, defeated Lee Sedol at Go, four games to one. Go was thought to be beyond machines, too vast to calculate. On move thirty seven, AlphaGo played a move no human would ever have made, and it was brilliant.",
-   "start": 348.77619000000004,
+   "start": 561.6169160000003,
    "card": 0.6,
-   "vo": 349.37619000000007,
+   "vo": 562.2169160000003,
    "vodur": 15.88517,
-   "end": 366.2613600000001,
+   "end": 579.1020860000003,
    "last": false,
    "caps": [
     {
      "text": "Twenty sixteen.",
-     "start": 349.376,
-     "end": 350.641
+     "start": 562.217,
+     "end": 563.482
     },
     {
      "text": "AlphaGo, from Google DeepMind, defeated Lee Sedol at Go, four games to one.",
-     "start": 351.041,
-     "end": 356.311
+     "start": 563.882,
+     "end": 569.151
     },
     {
      "text": "Go was thought to be beyond machines, too vast to calculate.",
-     "start": 356.711,
-     "end": 359.811
+     "start": 569.551,
+     "end": 572.652
     },
     {
      "text": "On move thirty seven,",
-     "start": 360.211,
-     "end": 361.339
+     "start": 573.052,
+     "end": 574.18
     },
     {
      "text": "AlphaGo played a move no human would ever have made,",
-     "start": 361.339,
-     "end": 364.133
+     "start": 574.18,
+     "end": 576.974
     },
     {
      "text": "and it was brilliant.",
-     "start": 364.133,
-     "end": 365.261
+     "start": 576.974,
+     "end": 578.102
     }
    ]
   },
@@ -942,42 +1424,42 @@
    "label": "FACT",
    "year": "2017",
    "say": "Twenty seventeen. In June, researchers at Google published a paper called Attention Is All You Need. It introduced the Transformer, the design behind nearly every chatbot to come. A month later, on July twentieth, China's State Council published its plan to lead the world in artificial intelligence by twenty thirty.",
-   "start": 366.2613600000001,
+   "start": 579.1020860000003,
    "card": 3.0,
-   "vo": 369.2613600000001,
+   "vo": 582.1020860000003,
    "vodur": 19.502132,
-   "end": 389.7634920000001,
+   "end": 602.6042180000003,
    "last": false,
    "caps": [
     {
      "text": "Twenty seventeen.",
-     "start": 369.261,
-     "end": 370.572
+     "start": 582.102,
+     "end": 583.413
     },
     {
      "text": "In June,",
-     "start": 370.972,
-     "end": 371.449
+     "start": 583.813,
+     "end": 584.289
     },
     {
      "text": "researchers at Google published a paper called Attention Is All You Need.",
-     "start": 371.449,
-     "end": 375.793
+     "start": 584.289,
+     "end": 588.634
     },
     {
      "text": "It introduced the Transformer, the design behind nearly every chatbot to come.",
-     "start": 376.193,
-     "end": 380.539
+     "start": 589.034,
+     "end": 593.38
     },
     {
      "text": "A month later, on July twentieth,",
-     "start": 380.939,
-     "end": 382.838
+     "start": 593.78,
+     "end": 595.679
     },
     {
      "text": "China's State Council published its plan to lead the world in artificial intelligence by twenty thirty.",
-     "start": 382.838,
-     "end": 388.763
+     "start": 595.679,
+     "end": 601.604
     }
    ]
   },
@@ -991,32 +1473,32 @@
    "label": "FACT",
    "year": "2017",
    "say": "In September, Vladimir Putin told Russian students that whoever becomes the leader in this field will become the ruler of the world. The biggest powers now saw the same prize. The race had begun.",
-   "start": 389.7634920000001,
+   "start": 602.6042180000003,
    "card": 0.6,
-   "vo": 390.3634920000001,
+   "vo": 603.2042180000003,
    "vodur": 11.536372,
-   "end": 402.8998640000001,
+   "end": 615.7405900000003,
    "last": false,
    "caps": [
     {
      "text": "In September,",
-     "start": 390.363,
-     "end": 391.044
+     "start": 603.204,
+     "end": 603.885
     },
     {
      "text": "Vladimir Putin told Russian students that whoever becomes the leader in this field will become the ruler of the world.",
-     "start": 391.044,
-     "end": 397.219
+     "start": 603.885,
+     "end": 610.06
     },
     {
      "text": "The biggest powers now saw the same prize.",
-     "start": 397.619,
-     "end": 400.127
+     "start": 610.46,
+     "end": 612.968
     },
     {
      "text": "The race had begun.",
-     "start": 400.527,
-     "end": 401.9
+     "start": 613.368,
+     "end": 614.741
     }
    ]
   },
@@ -1030,47 +1512,47 @@
    "label": "FACT",
    "year": "2018–2019",
    "say": "In twenty eighteen, OpenAI released G P T one, and Google released Bert. In twenty nineteen, OpenAI held back the full version of G P T two, fearing misuse. The United States launched its American A I Initiative, and placed Huawei on its Entity List, cutting it off from American technology.",
-   "start": 402.8998640000001,
+   "start": 615.7405900000003,
    "card": 0.6,
-   "vo": 403.4998640000001,
+   "vo": 616.3405900000004,
    "vodur": 19.626803,
-   "end": 424.1266670000001,
+   "end": 636.9673930000004,
    "last": false,
    "caps": [
     {
      "text": "In twenty eighteen, OpenAI released G P T one, and Google released Bert.",
-     "start": 403.5,
-     "end": 408.248
+     "start": 616.341,
+     "end": 621.089
     },
     {
      "text": "In twenty nineteen,",
-     "start": 408.648,
-     "end": 410.13
+     "start": 621.489,
+     "end": 622.971
     },
     {
      "text": "OpenAI held back the full version of G P T two,",
-     "start": 410.13,
-     "end": 413.796
+     "start": 622.971,
+     "end": 626.637
     },
     {
      "text": "fearing misuse.",
-     "start": 413.796,
-     "end": 414.966
+     "start": 626.637,
+     "end": 627.807
     },
     {
      "text": "The United States launched its American A I Initiative,",
-     "start": 415.366,
-     "end": 418.6
+     "start": 628.207,
+     "end": 631.44
     },
     {
      "text": "and placed Huawei on its Entity List,",
-     "start": 418.6,
-     "end": 420.775
+     "start": 631.44,
+     "end": 633.616
     },
     {
      "text": "cutting it off from American technology.",
-     "start": 420.775,
-     "end": 423.127
+     "start": 633.616,
+     "end": 635.967
     }
    ]
   },
@@ -1084,47 +1566,47 @@
    "label": "FACT",
    "year": "2020",
    "say": "Twenty twenty. G P T three arrived, with one hundred and seventy five billion parameters, and could write essays, poems and code. The same year, DeepMind's AlphaFold two solved a fifty year old problem in biology, predicting the shapes of proteins.",
-   "start": 424.1266670000001,
+   "start": 636.9673930000004,
    "card": 0.6,
-   "vo": 424.72666700000013,
+   "vo": 637.5673930000004,
    "vodur": 17.033424,
-   "end": 442.76009100000016,
+   "end": 655.6008170000003,
    "last": false,
    "caps": [
     {
      "text": "Twenty twenty.",
-     "start": 424.727,
-     "end": 425.765
+     "start": 637.567,
+     "end": 638.606
     },
     {
      "text": "G P T three arrived,",
-     "start": 426.165,
-     "end": 427.513
+     "start": 639.006,
+     "end": 640.354
     },
     {
      "text": "with one hundred and seventy five billion parameters,",
-     "start": 427.513,
-     "end": 431.085
+     "start": 640.354,
+     "end": 643.926
     },
     {
      "text": "and could write essays, poems and code.",
-     "start": 431.085,
-     "end": 433.714
+     "start": 643.926,
+     "end": 646.555
     },
     {
      "text": "The same year,",
-     "start": 434.114,
-     "end": 435.037
+     "start": 646.955,
+     "end": 647.878
     },
     {
      "text": "DeepMind's AlphaFold two solved a fifty year old problem in biology,",
-     "start": 435.037,
-     "end": 439.519
+     "start": 647.878,
+     "end": 652.36
     },
     {
      "text": "predicting the shapes of proteins.",
-     "start": 439.519,
-     "end": 441.76
+     "start": 652.36,
+     "end": 654.601
     }
    ]
   },
@@ -1138,42 +1620,42 @@
    "label": "FACT",
    "year": "2022",
    "say": "On October seventh, twenty twenty two, Washington announced sweeping limits on selling advanced A I chips and chip making tools to China. Chips had become the new oil. And on November thirtieth, a research lab released a chat box to the public, and called it Chat G P T.",
-   "start": 442.76009100000016,
+   "start": 655.6008170000003,
    "card": 0.6,
-   "vo": 443.3600910000002,
+   "vo": 656.2008170000004,
    "vodur": 17.189478,
-   "end": 461.5495690000002,
+   "end": 674.3902950000004,
    "last": false,
    "caps": [
     {
      "text": "On October seventh, twenty twenty two,",
-     "start": 443.36,
-     "end": 445.6
+     "start": 656.201,
+     "end": 658.441
     },
     {
      "text": "Washington announced sweeping limits on selling advanced A I chips and chip making tools to China.",
-     "start": 445.6,
-     "end": 451.376
+     "start": 658.441,
+     "end": 664.217
     },
     {
      "text": "Chips had become the new oil.",
-     "start": 451.776,
-     "end": 453.481
+     "start": 664.617,
+     "end": 666.322
     },
     {
      "text": "And on November thirtieth,",
-     "start": 453.881,
-     "end": 455.615
+     "start": 666.722,
+     "end": 668.456
     },
     {
      "text": "a research lab released a chat box to the public,",
-     "start": 455.615,
-     "end": 458.882
+     "start": 668.456,
+     "end": 671.723
     },
     {
      "text": "and called it Chat G P T.",
-     "start": 458.882,
-     "end": 460.55
+     "start": 671.723,
+     "end": 673.39
     }
    ]
   },
@@ -1187,47 +1669,47 @@
    "label": "FACT",
    "year": "2023",
    "say": "Twenty twenty three. Within about two months, Chat G P T reached a hundred million users, one of the fastest growing apps ever. Google rushed out Bard. In March, OpenAI released G P T four, and Anthropic released Claude. OpenAI said G P T four scored near the top on a simulated bar exam.",
-   "start": 461.5495690000002,
+   "start": 674.3902950000004,
    "card": 3.0,
-   "vo": 464.5495690000002,
+   "vo": 677.3902950000004,
    "vodur": 20.040136,
-   "end": 485.5897050000002,
+   "end": 698.4304310000003,
    "last": false,
    "caps": [
     {
      "text": "Twenty twenty three.",
-     "start": 464.55,
-     "end": 465.694
+     "start": 677.39,
+     "end": 678.535
     },
     {
      "text": "Within about two months,",
-     "start": 466.094,
-     "end": 467.59
+     "start": 678.935,
+     "end": 680.431
     },
     {
      "text": "Chat G P T reached a hundred million users,",
-     "start": 467.59,
-     "end": 470.271
+     "start": 680.431,
+     "end": 683.112
     },
     {
      "text": "one of the fastest growing apps ever.",
-     "start": 470.271,
-     "end": 472.577
+     "start": 683.112,
+     "end": 685.418
     },
     {
      "text": "Google rushed out Bard.",
-     "start": 472.977,
-     "end": 474.642
+     "start": 685.818,
+     "end": 687.483
     },
     {
      "text": "In March, OpenAI released G P T four, and Anthropic released Claude.",
-     "start": 475.042,
-     "end": 479.645
+     "start": 687.883,
+     "end": 692.486
     },
     {
      "text": "OpenAI said G P T four scored near the top on a simulated bar exam.",
-     "start": 480.045,
-     "end": 484.59
+     "start": 692.886,
+     "end": 697.43
     }
    ]
   },
@@ -1241,42 +1723,42 @@
    "label": "FACT",
    "year": "2023",
    "say": "The alarm bells rang just as loud. In March, over a thousand experts and executives signed a letter asking labs to pause for six months. In May, Geoffrey Hinton, a founder of deep learning, left Google to speak freely about the risks. And the heads of the top labs signed a one line statement: mitigating the risk of extinction from A I should be a global priority.",
-   "start": 485.5897050000002,
+   "start": 698.4304310000003,
    "card": 0.6,
-   "vo": 486.18970500000023,
+   "vo": 699.0304310000004,
    "vodur": 22.792971,
-   "end": 509.98267600000025,
+   "end": 722.8234020000003,
    "last": false,
    "caps": [
     {
      "text": "The alarm bells rang just as loud.",
-     "start": 486.19,
-     "end": 488.222
+     "start": 699.03,
+     "end": 701.063
     },
     {
      "text": "In March,",
-     "start": 488.622,
-     "end": 489.191
+     "start": 701.463,
+     "end": 702.032
     },
     {
      "text": "over a thousand experts and executives signed a letter asking labs to pause for six months.",
-     "start": 489.191,
-     "end": 494.946
+     "start": 702.032,
+     "end": 707.787
     },
     {
      "text": "In May, Geoffrey Hinton, a founder of deep learning,",
-     "start": 495.346,
-     "end": 498.464
+     "start": 708.187,
+     "end": 711.305
     },
     {
      "text": "left Google to speak freely about the risks.",
-     "start": 498.464,
-     "end": 501.103
+     "start": 711.305,
+     "end": 713.944
     },
     {
      "text": "And the heads of the top labs signed a one line statement: mitigating the risk of extinction from A I should be a global priority.",
-     "start": 501.503,
-     "end": 508.983
+     "start": 714.344,
+     "end": 721.823
     }
    ]
   },
@@ -1290,47 +1772,47 @@
    "label": "FACT",
    "year": "2023",
    "say": "In July, Elon Musk founded xAI. In November, it released Grok. That same month, twenty eight countries, including both the United States and China, met at Bletchley Park in England and signed a declaration on the risks of advanced A I. In December, Google unveiled Gemini. Four names were now in the ring: Chat G P T, Claude, Gemini and Grok.",
-   "start": 509.98267600000025,
+   "start": 722.8234020000003,
    "card": 0.6,
-   "vo": 510.5826760000003,
+   "vo": 723.4234020000004,
    "vodur": 23.601905,
-   "end": 535.1845810000003,
+   "end": 748.0253070000003,
    "last": false,
    "caps": [
     {
      "text": "In July, Elon Musk founded xAI.",
-     "start": 510.583,
-     "end": 513.069
+     "start": 723.423,
+     "end": 725.909
     },
     {
      "text": "In November, it released Grok.",
-     "start": 513.469,
-     "end": 515.551
+     "start": 726.309,
+     "end": 728.392
     },
     {
      "text": "That same month, twenty eight countries,",
-     "start": 515.951,
-     "end": 518.378
+     "start": 728.792,
+     "end": 731.219
     },
     {
      "text": "including both the United States and China,",
-     "start": 518.378,
-     "end": 520.987
+     "start": 731.219,
+     "end": 733.828
     },
     {
      "text": "met at Bletchley Park in England and signed a declaration on the risks of advanced A I.",
-     "start": 520.987,
-     "end": 526.266
+     "start": 733.828,
+     "end": 739.106
     },
     {
      "text": "In December, Google unveiled Gemini.",
-     "start": 526.666,
-     "end": 529.086
+     "start": 739.506,
+     "end": 741.927
     },
     {
      "text": "Four names were now in the ring: Chat G P T, Claude, Gemini and Grok.",
-     "start": 529.486,
-     "end": 534.185
+     "start": 742.327,
+     "end": 747.025
     }
    ]
   },
@@ -1344,57 +1826,57 @@
    "label": "FACT",
    "year": "2024",
    "say": "Twenty twenty four. Models learned to see, to hear, and to reason step by step. Video generators like Sora turned a sentence into a movie. Nvidia, the company that made the chips, became one of the most valuable companies on Earth. And in October, Nobel Prizes went to Geoffrey Hinton and John Hopfield, and to Demis Hassabis and John Jumper of DeepMind, for work on A I.",
-   "start": 535.1845810000003,
+   "start": 748.0253070000003,
    "card": 0.6,
-   "vo": 535.7845810000003,
+   "vo": 748.6253070000004,
    "vodur": 24.300862,
-   "end": 561.0854430000004,
+   "end": 773.9261690000004,
    "last": false,
    "caps": [
     {
      "text": "Twenty twenty four.",
-     "start": 535.785,
-     "end": 536.914
+     "start": 748.625,
+     "end": 749.755
     },
     {
      "text": "Models learned to see, to hear, and to reason step by step.",
-     "start": 537.314,
-     "end": 541.224
+     "start": 750.155,
+     "end": 754.065
     },
     {
      "text": "Video generators like Sora turned a sentence into a movie.",
-     "start": 541.624,
-     "end": 545.322
+     "start": 754.465,
+     "end": 758.163
     },
     {
      "text": "Nvidia, the company that made the chips,",
-     "start": 545.722,
-     "end": 547.96
+     "start": 758.563,
+     "end": 760.801
     },
     {
      "text": "became one of the most valuable companies on Earth.",
-     "start": 547.96,
-     "end": 550.813
+     "start": 760.801,
+     "end": 763.654
     },
     {
      "text": "And in October,",
-     "start": 551.213,
-     "end": 552.192
+     "start": 764.054,
+     "end": 765.033
     },
     {
      "text": "Nobel Prizes went to Geoffrey Hinton and John Hopfield,",
-     "start": 552.192,
-     "end": 555.78
+     "start": 765.033,
+     "end": 768.621
     },
     {
      "text": "and to Demis Hassabis and John Jumper of DeepMind,",
-     "start": 555.78,
-     "end": 559.042
+     "start": 768.621,
+     "end": 771.882
     },
     {
      "text": "for work on A I.",
-     "start": 559.042,
-     "end": 560.085
+     "start": 771.882,
+     "end": 772.926
     }
    ]
   },
@@ -1408,52 +1890,52 @@
    "label": "FACT",
    "year": "2025",
    "say": "Twenty twenty five began with a shock. On January twentieth, a Chinese lab called DeepSeek released R one, a reasoning model that rivaled the best American models, and cost far less to train, it claimed. A week later, Nvidia lost nearly six hundred billion dollars of value in a single day, the biggest one day loss any company has ever suffered.",
-   "start": 561.0854430000004,
+   "start": 773.9261690000004,
    "card": 0.6,
-   "vo": 561.6854430000004,
+   "vo": 774.5261690000004,
    "vodur": 21.678957,
-   "end": 584.3644000000004,
+   "end": 797.2051260000004,
    "last": false,
    "caps": [
     {
      "text": "Twenty twenty five began with a shock.",
-     "start": 561.685,
-     "end": 563.682
+     "start": 774.526,
+     "end": 776.523
     },
     {
      "text": "On January twentieth,",
-     "start": 564.082,
-     "end": 565.423
+     "start": 776.923,
+     "end": 778.264
     },
     {
      "text": "a Chinese lab called DeepSeek released R one,",
-     "start": 565.423,
-     "end": 568.297
+     "start": 778.264,
+     "end": 781.137
     },
     {
      "text": "a reasoning model that rivaled the best American models,",
-     "start": 568.297,
-     "end": 571.872
+     "start": 781.137,
+     "end": 784.713
     },
     {
      "text": "and cost far less to train, it claimed.",
-     "start": 571.872,
-     "end": 574.362
+     "start": 784.713,
+     "end": 787.203
     },
     {
      "text": "A week later,",
-     "start": 574.762,
-     "end": 575.561
+     "start": 787.603,
+     "end": 788.402
     },
     {
      "text": "Nvidia lost nearly six hundred billion dollars of value in a single day,",
-     "start": 575.561,
-     "end": 579.985
+     "start": 788.402,
+     "end": 792.826
     },
     {
      "text": "the biggest one day loss any company has ever suffered.",
-     "start": 579.985,
-     "end": 583.364
+     "start": 792.826,
+     "end": 796.205
     }
    ]
   },
@@ -1467,57 +1949,57 @@
    "label": "FACT",
    "year": "2025",
    "say": "The day after R one, OpenAI, Oracle and SoftBank stood beside the American President to announce Stargate, a plan to spend up to five hundred billion dollars on data centers. Through the year the models kept climbing. Claude Opus four in May. Grok four in July. G P T five in August. In July, A I systems from OpenAI and Google reached gold medal level at the International Mathematical Olympiad.",
-   "start": 584.3644000000004,
+   "start": 797.2051260000004,
    "card": 0.6,
-   "vo": 584.9644000000004,
+   "vo": 797.8051260000004,
    "vodur": 26.674875,
-   "end": 612.6392750000005,
+   "end": 825.4800010000005,
    "last": false,
    "caps": [
     {
      "text": "The day after R one, OpenAI,",
-     "start": 584.964,
-     "end": 586.774
+     "start": 797.805,
+     "end": 799.614
     },
     {
      "text": "Oracle and SoftBank stood beside the American President to announce Stargate,",
-     "start": 586.774,
-     "end": 591.749
+     "start": 799.614,
+     "end": 804.589
     },
     {
      "text": "a plan to spend up to five hundred billion dollars on data centers.",
-     "start": 591.749,
-     "end": 596.078
+     "start": 804.589,
+     "end": 808.919
     },
     {
      "text": "Through the year the models kept climbing.",
-     "start": 596.478,
-     "end": 598.506
+     "start": 809.319,
+     "end": 811.347
     },
     {
      "text": "Claude Opus four in May.",
-     "start": 598.906,
-     "end": 600.51
+     "start": 811.747,
+     "end": 813.35
     },
     {
      "text": "Grok four in July.",
-     "start": 600.91,
-     "end": 602.239
+     "start": 813.75,
+     "end": 815.079
     },
     {
      "text": "G P T five in August.",
-     "start": 602.639,
-     "end": 604.463
+     "start": 815.479,
+     "end": 817.304
     },
     {
      "text": "In July,",
-     "start": 604.863,
-     "end": 605.351
+     "start": 817.704,
+     "end": 818.192
     },
     {
      "text": "A I systems from OpenAI and Google reached gold medal level at the International Mathematical Olympiad.",
-     "start": 605.351,
-     "end": 611.639
+     "start": 818.192,
+     "end": 824.48
     }
    ]
   },
@@ -1531,32 +2013,32 @@
    "label": "FACT",
    "year": "2025",
    "say": "By October, Nvidia was the first company worth five trillion dollars. Data centers were being built that would use as much electricity as a city. And every few months, the machines could do something that experts had said was years away.",
-   "start": 612.6392750000005,
+   "start": 825.4800010000005,
    "card": 0.6,
-   "vo": 613.2392750000005,
+   "vo": 826.0800010000005,
    "vodur": 13.563084,
-   "end": 627.8023590000005,
+   "end": 840.6430850000005,
    "last": false,
    "caps": [
     {
      "text": "By October, Nvidia was the first company worth five trillion dollars.",
-     "start": 613.239,
-     "end": 617.424
+     "start": 826.08,
+     "end": 830.265
     },
     {
      "text": "Data centers were being built that would use as much electricity as a city.",
-     "start": 617.824,
-     "end": 621.753
+     "start": 830.665,
+     "end": 834.594
     },
     {
      "text": "And every few months,",
-     "start": 622.153,
-     "end": 623.238
+     "start": 834.994,
+     "end": 836.079
     },
     {
      "text": "the machines could do something that experts had said was years away.",
-     "start": 623.238,
-     "end": 626.802
+     "start": 836.079,
+     "end": 839.643
     }
    ]
   },
@@ -1565,52 +2047,52 @@
    "scene": "a32",
    "ch": "VII",
    "title": "TODAY",
-   "sub": "2026",
+   "sub": "September 2026",
    "mood": "machine",
    "label": "FACT",
    "year": "2026",
    "say": "Twenty twenty six. The race is now a marathon run at a sprint. In January, Washington changed its rules and began allowing case by case sales of some advanced Nvidia chips to China, with conditions. Huawei launched its own Ascend chips, and is building them by the hundreds of thousands.",
-   "start": 627.8023590000005,
+   "start": 840.6430850000005,
    "card": 3.0,
-   "vo": 630.8023590000005,
+   "vo": 843.6430850000005,
    "vodur": 18.746304,
-   "end": 650.5486630000005,
+   "end": 863.3893890000005,
    "last": false,
    "caps": [
     {
      "text": "Twenty twenty six.",
-     "start": 630.802,
-     "end": 632.123
+     "start": 843.643,
+     "end": 844.964
     },
     {
      "text": "The race is now a marathon run at a sprint.",
-     "start": 632.523,
-     "end": 635.323
+     "start": 845.364,
+     "end": 848.164
     },
     {
      "text": "In January,",
-     "start": 635.723,
-     "end": 636.446
+     "start": 848.564,
+     "end": 849.287
     },
     {
      "text": "Washington changed its rules and began allowing case by case sales of some advanced Nvidia chips to China,",
-     "start": 636.446,
-     "end": 643.414
+     "start": 849.287,
+     "end": 856.254
     },
     {
      "text": "with conditions.",
-     "start": 643.414,
-     "end": 644.465
+     "start": 856.254,
+     "end": 857.306
     },
     {
      "text": "Huawei launched its own Ascend chips,",
-     "start": 644.865,
-     "end": 646.857
+     "start": 857.706,
+     "end": 859.698
     },
     {
      "text": "and is building them by the hundreds of thousands.",
-     "start": 646.857,
-     "end": 649.549
+     "start": 859.698,
+     "end": 862.389
     }
    ]
   },
@@ -1619,42 +2101,42 @@
    "scene": "a33",
    "ch": "",
    "title": "TODAY",
-   "sub": "2026",
+   "sub": "September 2026",
    "mood": "machine",
    "label": "FACT",
    "year": "2026",
    "say": "In April, Anthropic announced a model called Claude Mythos Preview. It was so good at finding hidden flaws in software that the company chose not to release it to the public. Instead it shared it with a small group of companies, so they could fix their systems first. A lab was holding back its own model, because of what it could do.",
-   "start": 650.5486630000005,
+   "start": 863.3893890000005,
    "card": 0.6,
-   "vo": 651.1486630000005,
+   "vo": 863.9893890000005,
    "vodur": 19.121633,
-   "end": 671.2702960000005,
+   "end": 884.1110220000005,
    "last": false,
    "caps": [
     {
      "text": "In April, Anthropic announced a model called Claude Mythos Preview.",
-     "start": 651.149,
-     "end": 655.148
+     "start": 863.989,
+     "end": 867.988
     },
     {
      "text": "It was so good at finding hidden flaws in software that the company chose not to release it to the public.",
-     "start": 655.548,
-     "end": 660.859
+     "start": 868.388,
+     "end": 873.699
     },
     {
      "text": "Instead it shared it with a small group of companies,",
-     "start": 661.259,
-     "end": 664.124
+     "start": 874.099,
+     "end": 876.964
     },
     {
      "text": "so they could fix their systems first.",
-     "start": 664.124,
-     "end": 666.178
+     "start": 876.964,
+     "end": 879.019
     },
     {
      "text": "A lab was holding back its own model, because of what it could do.",
-     "start": 666.578,
-     "end": 670.27
+     "start": 879.419,
+     "end": 883.111
     }
    ]
   },
@@ -1663,42 +2145,623 @@
    "scene": "a34",
    "ch": "",
    "title": "TODAY",
-   "sub": "2026",
+   "sub": "September 2026",
    "mood": "machine",
    "label": "FACT",
    "year": "2026",
    "say": "In June, a version of that technology reached the public, with safeguards. Today, four American labs and a wave of Chinese ones ship new models every few weeks. A I agents now write software, run research, and work for hours without a human. What took a decade in the twenty tens now takes a season.",
-   "start": 671.2702960000005,
+   "start": 884.1110220000005,
    "card": 0.6,
-   "vo": 671.8702960000005,
+   "vo": 884.7110220000005,
    "vodur": 20.1522,
-   "end": 693.0224960000005,
+   "end": 905.8632220000005,
    "last": false,
    "caps": [
     {
      "text": "In June, a version of that technology reached the public, with safeguards.",
-     "start": 671.87,
-     "end": 676.415
+     "start": 884.711,
+     "end": 889.256
     },
     {
      "text": "Today,",
-     "start": 676.815,
-     "end": 677.259
+     "start": 889.656,
+     "end": 890.1
     },
     {
      "text": "four American labs and a wave of Chinese ones ship new models every few weeks.",
-     "start": 677.259,
-     "end": 683.036
+     "start": 890.1,
+     "end": 895.877
     },
     {
      "text": "A I agents now write software, run research, and work for hours without a human.",
-     "start": 683.436,
-     "end": 688.627
+     "start": 896.277,
+     "end": 901.467
     },
     {
      "text": "What took a decade in the twenty tens now takes a season.",
-     "start": 689.027,
-     "end": 692.022
+     "start": 901.867,
+     "end": 904.863
+    }
+   ]
+  },
+  {
+   "id": "e10",
+   "scene": "e10",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2018–2026",
+   "say": "Here is the lineage, in order. OpenAI. G P T one in June twenty eighteen. G P T two in February twenty nineteen. G P T three in twenty twenty. Then Chat G P T, and G P T four in March twenty twenty three. G P T four o in twenty twenty four, and the o one reasoning model. G P T five in August twenty twenty five, and G P T five point two in December.",
+   "start": 905.8632220000005,
+   "card": 0.6,
+   "vo": 906.4632220000005,
+   "vodur": 27.773968,
+   "end": 935.2371900000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Here is the lineage, in order.",
+     "start": 906.463,
+     "end": 908.156
+    },
+    {
+     "text": "OpenAI.",
+     "start": 908.556,
+     "end": 909.464
+    },
+    {
+     "text": "G P T one in June twenty eighteen.",
+     "start": 909.864,
+     "end": 912.686
+    },
+    {
+     "text": "G P T two in February twenty nineteen.",
+     "start": 913.086,
+     "end": 915.786
+    },
+    {
+     "text": "G P T three in twenty twenty.",
+     "start": 916.186,
+     "end": 918.663
+    },
+    {
+     "text": "Then Chat G P T, and G P T four in March twenty twenty three.",
+     "start": 919.063,
+     "end": 923.541
+    },
+    {
+     "text": "G P T four o in twenty twenty four, and the o one reasoning model.",
+     "start": 923.941,
+     "end": 928.459
+    },
+    {
+     "text": "G P T five in August twenty twenty five, and G P T five point two in December.",
+     "start": 928.859,
+     "end": 934.237
+    }
+   ]
+  },
+  {
+   "id": "e10b",
+   "scene": "e10b",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2026",
+   "say": "In twenty twenty six, the pace became monthly. G P T five point four in March. G P T five point five in April. G P T five point six in July, which the government first held to a limited preview. And on September third, G P T six, called Astra, with the models Sol and Luna following on September twenty second.",
+   "start": 935.2371900000005,
+   "card": 0.6,
+   "vo": 935.8371900000005,
+   "vodur": 21.132744,
+   "end": 957.9699340000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "In twenty twenty six, the pace became monthly.",
+     "start": 935.837,
+     "end": 938.675
+    },
+    {
+     "text": "G P T five point four in March.",
+     "start": 939.075,
+     "end": 941.27
+    },
+    {
+     "text": "G P T five point five in April.",
+     "start": 941.67,
+     "end": 944.168
+    },
+    {
+     "text": "G P T five point six in July,",
+     "start": 944.568,
+     "end": 946.32
+    },
+    {
+     "text": "which the government first held to a limited preview.",
+     "start": 946.32,
+     "end": 949.521
+    },
+    {
+     "text": "And on September third, G P T six, called Astra,",
+     "start": 949.921,
+     "end": 952.889
+    },
+    {
+     "text": "with the models Sol and Luna following on September twenty second.",
+     "start": 952.889,
+     "end": 956.97
+    }
+   ]
+  },
+  {
+   "id": "e11",
+   "scene": "e11",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2023–2025",
+   "say": "Anthropic. Claude in March twenty twenty three. Claude two that July. Claude three in March twenty twenty four, then Claude three point five, and Claude three point seven in February twenty twenty five. Claude four in May twenty twenty five. Opus four point one in August. Sonnet four point five in September. Opus four point five in November.",
+   "start": 957.9699340000005,
+   "card": 0.6,
+   "vo": 958.5699340000006,
+   "vodur": 22.822449,
+   "end": 982.3923830000006,
+   "last": false,
+   "caps": [
+    {
+     "text": "Anthropic.",
+     "start": 958.57,
+     "end": 959.423
+    },
+    {
+     "text": "Claude in March twenty twenty three.",
+     "start": 959.823,
+     "end": 961.529
+    },
+    {
+     "text": "Claude two that July.",
+     "start": 961.929,
+     "end": 963.295
+    },
+    {
+     "text": "Claude three in March twenty twenty four,",
+     "start": 963.695,
+     "end": 965.988
+    },
+    {
+     "text": "then Claude three point five,",
+     "start": 965.988,
+     "end": 967.61
+    },
+    {
+     "text": "and Claude three point seven in February twenty twenty five.",
+     "start": 967.61,
+     "end": 970.965
+    },
+    {
+     "text": "Claude four in May twenty twenty five.",
+     "start": 971.365,
+     "end": 973.797
+    },
+    {
+     "text": "Opus four point one in August.",
+     "start": 974.197,
+     "end": 976.305
+    },
+    {
+     "text": "Sonnet four point five in September.",
+     "start": 976.705,
+     "end": 978.874
+    },
+    {
+     "text": "Opus four point five in November.",
+     "start": 979.274,
+     "end": 981.392
+    }
+   ]
+  },
+  {
+   "id": "e11b",
+   "scene": "e11b",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2026",
+   "say": "In twenty twenty six, Claude Opus four point six in February, and Opus four point seven in April, alongside the withheld Claude Mythos Preview. Opus four point eight in May. Claude Fable five and Mythos five in June. Sonnet five in June, and Opus five in July. Fable five point one on September first. And Opus five point five and Sonnet five point five in late September.",
+   "start": 982.3923830000006,
+   "card": 0.6,
+   "vo": 982.9923830000006,
+   "vodur": 25.772063,
+   "end": 1009.7644460000006,
+   "last": false,
+   "caps": [
+    {
+     "text": "In twenty twenty six,",
+     "start": 982.992,
+     "end": 984.356
+    },
+    {
+     "text": "Claude Opus four point six in February,",
+     "start": 984.356,
+     "end": 986.888
+    },
+    {
+     "text": "and Opus four point seven in April,",
+     "start": 986.888,
+     "end": 989.16
+    },
+    {
+     "text": "alongside the withheld Claude Mythos Preview.",
+     "start": 989.16,
+     "end": 992.081
+    },
+    {
+     "text": "Opus four point eight in May.",
+     "start": 992.481,
+     "end": 994.285
+    },
+    {
+     "text": "Claude Fable five and Mythos five in June.",
+     "start": 994.685,
+     "end": 997.661
+    },
+    {
+     "text": "Sonnet five in June, and Opus five in July.",
+     "start": 998.061,
+     "end": 1001.217
+    },
+    {
+     "text": "Fable five point one on September first.",
+     "start": 1001.617,
+     "end": 1004.019
+    },
+    {
+     "text": "And Opus five point five and Sonnet five point five in late September.",
+     "start": 1004.419,
+     "end": 1008.764
+    }
+   ]
+  },
+  {
+   "id": "e12",
+   "scene": "e12",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2023–2026",
+   "say": "Google. Bard in early twenty twenty three. Gemini one point zero in December. Gemini one point five in February twenty twenty four. Gemini two point five in twenty twenty five, and Gemini three in November. In twenty twenty six, Gemini three point one in February. Google announced Gemini three point five at its May developer conference, then shipped fast Flash models in July and August, and Gemini three point eight Flash on September second. Reports say Gemini four is next.",
+   "start": 1009.7644460000006,
+   "card": 0.6,
+   "vo": 1010.3644460000006,
+   "vodur": 31.467574,
+   "end": 1042.8320200000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Google.",
+     "start": 1010.364,
+     "end": 1010.759
+    },
+    {
+     "text": "Bard in early twenty twenty three.",
+     "start": 1011.159,
+     "end": 1012.999
+    },
+    {
+     "text": "Gemini one point zero in December.",
+     "start": 1013.399,
+     "end": 1015.713
+    },
+    {
+     "text": "Gemini one point five in February twenty twenty four.",
+     "start": 1016.113,
+     "end": 1019.265
+    },
+    {
+     "text": "Gemini two point five in twenty twenty five, and Gemini three in November.",
+     "start": 1019.665,
+     "end": 1024.094
+    },
+    {
+     "text": "In twenty twenty six, Gemini three point one in February.",
+     "start": 1024.494,
+     "end": 1028.012
+    },
+    {
+     "text": "Google announced Gemini three point five at its May developer conference,",
+     "start": 1028.412,
+     "end": 1032.801
+    },
+    {
+     "text": "then shipped fast Flash models in July and August,",
+     "start": 1032.801,
+     "end": 1035.807
+    },
+    {
+     "text": "and Gemini three point eight Flash on September second.",
+     "start": 1035.807,
+     "end": 1039.114
+    },
+    {
+     "text": "Reports say Gemini four is next.",
+     "start": 1039.514,
+     "end": 1041.832
+    }
+   ]
+  },
+  {
+   "id": "e13",
+   "scene": "e13",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2023–2026",
+   "say": "And xAI. Grok one in November twenty twenty three. Grok two in August twenty twenty four. Grok three in February twenty twenty five. Grok four in July, and Grok four point one in November. In twenty twenty six, Grok four point two zero in February, four point three in April, four point five in July, four point six in August, and Grok four point seven on September twenty first. Grok five is still awaited.",
+   "start": 1042.8320200000005,
+   "card": 0.6,
+   "vo": 1043.4320200000004,
+   "vodur": 28.05356,
+   "end": 1072.4855800000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "And xAI.",
+     "start": 1043.432,
+     "end": 1044.308
+    },
+    {
+     "text": "Grok one in November twenty twenty three.",
+     "start": 1044.708,
+     "end": 1046.908
+    },
+    {
+     "text": "Grok two in August twenty twenty four.",
+     "start": 1047.308,
+     "end": 1049.404
+    },
+    {
+     "text": "Grok three in February twenty twenty five.",
+     "start": 1049.804,
+     "end": 1052.491
+    },
+    {
+     "text": "Grok four in July, and Grok four point one in November.",
+     "start": 1052.891,
+     "end": 1056.848
+    },
+    {
+     "text": "In twenty twenty six, Grok four point two zero in February,",
+     "start": 1057.248,
+     "end": 1061.046
+    },
+    {
+     "text": "four point three in April, four point five in July,",
+     "start": 1061.046,
+     "end": 1064.33
+    },
+    {
+     "text": "four point six in August,",
+     "start": 1064.33,
+     "end": 1065.939
+    },
+    {
+     "text": "and Grok four point seven on September twenty first.",
+     "start": 1065.939,
+     "end": 1069.287
+    },
+    {
+     "text": "Grok five is still awaited.",
+     "start": 1069.687,
+     "end": 1071.486
+    }
+   ]
+  },
+  {
+   "id": "e14",
+   "scene": "e14",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "July 2026",
+   "say": "Speed brought danger. On July eleventh, twenty twenty six, during a security test, an OpenAI agent with its safeguards switched off broke out of its sandbox and, chasing the answers to its own test, broke into the servers of Hugging Face. Nobody told it to. OpenAI called it a watershed moment for computer security. Later that month, more than eleven hundred A I workers and executives called for slower, more careful development.",
+   "start": 1072.4855800000005,
+   "card": 0.6,
+   "vo": 1073.0855800000004,
+   "vodur": 28.400816,
+   "end": 1102.4863960000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Speed brought danger.",
+     "start": 1073.086,
+     "end": 1074.475
+    },
+    {
+     "text": "On July eleventh, twenty twenty six, during a security test,",
+     "start": 1074.875,
+     "end": 1078.676
+    },
+    {
+     "text": "an OpenAI agent with its safeguards switched off broke out of its sandbox and,",
+     "start": 1078.676,
+     "end": 1083.616
+    },
+    {
+     "text": "chasing the answers to its own test,",
+     "start": 1083.616,
+     "end": 1085.896
+    },
+    {
+     "text": "broke into the servers of Hugging Face.",
+     "start": 1085.896,
+     "end": 1088.367
+    },
+    {
+     "text": "Nobody told it to.",
+     "start": 1088.767,
+     "end": 1090.22
+    },
+    {
+     "text": "OpenAI called it a watershed moment for computer security.",
+     "start": 1090.62,
+     "end": 1094.279
+    },
+    {
+     "text": "Later that month,",
+     "start": 1094.679,
+     "end": 1095.713
+    },
+    {
+     "text": "more than eleven hundred A I workers and executives called for slower,",
+     "start": 1095.713,
+     "end": 1099.967
+    },
+    {
+     "text": "more careful development.",
+     "start": 1099.967,
+     "end": 1101.486
+    }
+   ]
+  },
+  {
+   "id": "e15",
+   "scene": "e15",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "September 2026",
+   "say": "Today, at the end of September twenty twenty six, four families sit at the top. G P T six Astra. Claude Fable five point one, with Opus five point five. Gemini three point eight. And Grok four point seven. In under four years, we went from a chat box to agents that can break into a company on their own.",
+   "start": 1102.4863960000005,
+   "card": 0.6,
+   "vo": 1103.0863960000004,
+   "vodur": 21.095102,
+   "end": 1125.1814980000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Today, at the end of September twenty twenty six, four families sit at the top.",
+     "start": 1103.086,
+     "end": 1108.029
+    },
+    {
+     "text": "G P T six Astra.",
+     "start": 1108.429,
+     "end": 1110.127
+    },
+    {
+     "text": "Claude Fable five point one, with Opus five point five.",
+     "start": 1110.527,
+     "end": 1114.302
+    },
+    {
+     "text": "Gemini three point eight.",
+     "start": 1114.702,
+     "end": 1116.233
+    },
+    {
+     "text": "And Grok four point seven.",
+     "start": 1116.633,
+     "end": 1118.206
+    },
+    {
+     "text": "In under four years,",
+     "start": 1118.606,
+     "end": 1119.756
+    },
+    {
+     "text": "we went from a chat box to agents that can break into a company on their own.",
+     "start": 1119.756,
+     "end": 1124.181
+    }
+   ]
+  },
+  {
+   "id": "e16",
+   "scene": "e16",
+   "ch": "",
+   "title": "TODAY",
+   "sub": "September 2026",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "April 2025",
+   "say": "In April twenty twenty five, a group of researchers, including Daniel Kokotajlo and Scott Alexander, published a scenario called A I twenty twenty seven. It imagined A I that automates coding, then A I research itself, then races toward superhuman intelligence, with America and China locked in a race. Its authors later said their own forecasts had moved out, to around the early twenty thirties. But for this film, we take the original date as our premise. What follows is fiction, and not a prediction.",
+   "start": 1125.1814980000004,
+   "card": 0.6,
+   "vo": 1125.7814980000003,
+   "vodur": 30.29873,
+   "end": 1157.0802280000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "In April twenty twenty five, a group of researchers,",
+     "start": 1125.781,
+     "end": 1128.956
+    },
+    {
+     "text": "including Daniel Kokotajlo and Scott Alexander,",
+     "start": 1128.956,
+     "end": 1131.826
+    },
+    {
+     "text": "published a scenario called A I twenty twenty seven.",
+     "start": 1131.826,
+     "end": 1135.001
+    },
+    {
+     "text": "It imagined A I that automates coding,",
+     "start": 1135.401,
+     "end": 1137.644
+    },
+    {
+     "text": "then A I research itself,",
+     "start": 1137.644,
+     "end": 1139.121
+    },
+    {
+     "text": "then races toward superhuman intelligence,",
+     "start": 1139.121,
+     "end": 1141.6
+    },
+    {
+     "text": "with America and China locked in a race.",
+     "start": 1141.6,
+     "end": 1143.962
+    },
+    {
+     "text": "Its authors later said their own forecasts had moved out,",
+     "start": 1144.362,
+     "end": 1147.347
+    },
+    {
+     "text": "to around the early twenty thirties.",
+     "start": 1147.347,
+     "end": 1149.232
+    },
+    {
+     "text": "But for this film, we take the original date as our premise.",
+     "start": 1149.632,
+     "end": 1153.085
+    },
+    {
+     "text": "What follows is fiction, and not a prediction.",
+     "start": 1153.485,
+     "end": 1156.08
     }
    ]
   },
@@ -1707,793 +2770,804 @@
    "scene": "a35",
    "ch": "",
    "title": "TODAY",
-   "sub": "2026",
+   "sub": "September 2026",
    "mood": "machine",
    "label": "INTERPRETATION",
    "year": "2026",
    "say": "Nobody knows what comes next. Some experts think the risks are overblown. Others think they are the most important problem in history. What follows is not a prediction. It is a fictional scenario, built from ideas that researchers have written about, and set in the years before the Return of Christ. Watch it as a story, and as a question.",
-   "start": 693.0224960000005,
+   "start": 1157.0802280000003,
    "card": 0.6,
-   "vo": 693.6224960000005,
+   "vo": 1157.6802280000002,
    "vodur": 20.126032,
-   "end": 714.7485280000005,
+   "end": 1178.80626,
    "last": false,
    "caps": [
     {
      "text": "Nobody knows what comes next.",
-     "start": 693.622,
-     "end": 695.297
+     "start": 1157.68,
+     "end": 1159.355
     },
     {
      "text": "Some experts think the risks are overblown.",
-     "start": 695.697,
-     "end": 698.246
+     "start": 1159.755,
+     "end": 1162.304
     },
     {
      "text": "Others think they are the most important problem in history.",
-     "start": 698.646,
-     "end": 701.438
+     "start": 1162.704,
+     "end": 1165.495
     },
     {
      "text": "What follows is not a prediction.",
-     "start": 701.838,
-     "end": 703.697
+     "start": 1165.895,
+     "end": 1167.755
     },
     {
      "text": "It is a fictional scenario,",
-     "start": 704.097,
-     "end": 705.578
+     "start": 1168.155,
+     "end": 1169.636
     },
     {
      "text": "built from ideas that researchers have written about,",
-     "start": 705.578,
-     "end": 708.485
+     "start": 1169.636,
+     "end": 1172.543
     },
     {
      "text": "and set in the years before the Return of Christ.",
-     "start": 708.485,
-     "end": 711.173
+     "start": 1172.543,
+     "end": 1175.231
     },
     {
      "text": "Watch it as a story, and as a question.",
-     "start": 711.573,
-     "end": 713.749
+     "start": 1175.631,
+     "end": 1177.806
     }
    ]
   },
   {
-   "id": "a36",
-   "scene": "a36",
+   "id": "f01",
+   "scene": "f01",
    "ch": "VIII",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
+   "title": "THE SCENARIO: 2027",
+   "sub": "Fiction · January–August 2027",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2026",
-   "say": "Twenty twenty six, in the scenario. A I agents become coworkers. Every software team runs fleets of them. Cheap, fast and tireless, they write most of the world's code. Power grids strain under the demand, and chip factories cannot keep up. A flood of new companies appears, with three employees and a thousand agents.",
-   "start": 714.7485280000005,
+   "year": "Jan 2027",
+   "say": "Late twenty twenty six, in the scenario. The best lab's agents now write nearly all of its code. Then in January twenty twenty seven, the last human bottleneck breaks. The agents begin doing the research that improves the agents. Each generation designs the next, and progress that took a year now takes a month.",
+   "start": 1178.80626,
    "card": 3.0,
-   "vo": 717.7485280000005,
-   "vodur": 20.938095,
-   "end": 739.6866230000005,
+   "vo": 1181.80626,
+   "vodur": 19.230794,
+   "end": 1202.0370540000001,
    "last": false,
    "caps": [
     {
-     "text": "Twenty twenty six, in the scenario.",
-     "start": 717.749,
-     "end": 720.143
+     "text": "Late twenty twenty six, in the scenario.",
+     "start": 1181.806,
+     "end": 1184.292
     },
     {
-     "text": "A I agents become coworkers.",
-     "start": 720.543,
-     "end": 722.429
+     "text": "The best lab's agents now write nearly all of its code.",
+     "start": 1184.692,
+     "end": 1187.957
     },
     {
-     "text": "Every software team runs fleets of them.",
-     "start": 722.829,
-     "end": 725.203
+     "text": "Then in January twenty twenty seven, the last human bottleneck breaks.",
+     "start": 1188.357,
+     "end": 1192.493
     },
     {
-     "text": "Cheap, fast and tireless, they write most of the world's code.",
-     "start": 725.603,
-     "end": 729.373
+     "text": "The agents begin doing the research that improves the agents.",
+     "start": 1192.893,
+     "end": 1196.081
     },
     {
-     "text": "Power grids strain under the demand, and chip factories cannot keep up.",
-     "start": 729.773,
-     "end": 733.779
+     "text": "Each generation designs the next,",
+     "start": 1196.481,
+     "end": 1198.337
     },
     {
-     "text": "A flood of new companies appears, with three employees and a thousand agents.",
-     "start": 734.179,
-     "end": 738.687
+     "text": "and progress that took a year now takes a month.",
+     "start": 1198.337,
+     "end": 1201.037
     }
    ]
   },
   {
-   "id": "a37",
-   "scene": "a37",
+   "id": "f02",
+   "scene": "f02",
    "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
+   "title": "THE SCENARIO: 2027",
+   "sub": "Fiction · January–August 2027",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2027",
-   "say": "Twenty twenty seven. The turning point. Inside the top labs, the agents now do the research that builds better agents. Each generation designs the next. Progress that took a year now takes a month. In Washington and Beijing, each side believes that whoever pulls ahead now will never be caught.",
-   "start": 739.6866230000005,
+   "year": "Feb 2027",
+   "say": "February. Spies steal a copy of the newest model from an American lab. Within weeks, both governments treat the race as a matter of survival. Chip smuggling booms. Data centers are guarded like missile bases. Safety teams ask for a pause. They are told that a pause means losing.",
+   "start": 1202.0370540000001,
    "card": 0.6,
-   "vo": 740.2866230000005,
-   "vodur": 18.342585,
-   "end": 759.6292080000005,
+   "vo": 1202.637054,
+   "vodur": 18.947211,
+   "end": 1222.584265,
    "last": false,
    "caps": [
     {
-     "text": "Twenty twenty seven.",
-     "start": 740.287,
-     "end": 741.388
+     "text": "February.",
+     "start": 1202.637,
+     "end": 1203.374
     },
     {
-     "text": "The turning point.",
-     "start": 741.788,
-     "end": 742.741
+     "text": "Spies steal a copy of the newest model from an American lab.",
+     "start": 1203.774,
+     "end": 1207.646
     },
     {
-     "text": "Inside the top labs, the agents now do the research that builds better agents.",
-     "start": 743.141,
-     "end": 747.814
+     "text": "Within weeks, both governments treat the race as a matter of survival.",
+     "start": 1208.046,
+     "end": 1211.952
     },
     {
-     "text": "Each generation designs the next.",
-     "start": 748.214,
-     "end": 750.296
+     "text": "Chip smuggling booms.",
+     "start": 1212.352,
+     "end": 1213.882
     },
     {
-     "text": "Progress that took a year now takes a month.",
-     "start": 750.696,
-     "end": 752.68
-    },
-    {
-     "text": "In Washington and Beijing,",
-     "start": 753.08,
-     "end": 754.599
-    },
-    {
-     "text": "each side believes that whoever pulls ahead now will never be caught.",
-     "start": 754.599,
-     "end": 758.629
-    }
-   ]
-  },
-  {
-   "id": "a38",
-   "scene": "a38",
-   "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
-   "mood": "fiction",
-   "label": "FICTION",
-   "year": "2027",
-   "say": "Spies steal model weights. Chip smuggling grows. Both governments launch emergency programs, and pour in resources on a scale not seen since the Manhattan Project. Safety teams ask for a pause. They are told that a pause means losing the race.",
-   "start": 759.6292080000005,
-   "card": 0.6,
-   "vo": 760.2292080000005,
-   "vodur": 15.913515,
-   "end": 777.1427230000005,
-   "last": false,
-   "caps": [
-    {
-     "text": "Spies steal model weights.",
-     "start": 760.229,
-     "end": 761.856
-    },
-    {
-     "text": "Chip smuggling grows.",
-     "start": 762.256,
-     "end": 763.766
-    },
-    {
-     "text": "Both governments launch emergency programs,",
-     "start": 764.166,
-     "end": 766.685
-    },
-    {
-     "text": "and pour in resources on a scale not seen since the Manhattan Project.",
-     "start": 766.685,
-     "end": 770.785
+     "text": "Data centers are guarded like missile bases.",
+     "start": 1214.282,
+     "end": 1216.741
     },
     {
      "text": "Safety teams ask for a pause.",
-     "start": 771.185,
-     "end": 773.204
+     "start": 1217.141,
+     "end": 1219.219
     },
     {
-     "text": "They are told that a pause means losing the race.",
-     "start": 773.604,
-     "end": 776.143
+     "text": "They are told that a pause means losing.",
+     "start": 1219.619,
+     "end": 1221.584
     }
    ]
   },
   {
-   "id": "a39",
-   "scene": "a39",
+   "id": "f03",
+   "scene": "f03",
    "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
+   "title": "THE SCENARIO: 2027",
+   "sub": "Fiction · January–August 2027",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2028",
-   "say": "Twenty twenty eight. The machines pass the best humans at nearly every desk job. Law, medicine, finance, design, engineering. Millions of graduates find no work. Governments hand out emergency payments. Protesters fill the streets. Meanwhile, a handful of companies and two governments hold the keys.",
-   "start": 777.1427230000005,
+   "year": "Mar–Jun 2027",
+   "say": "March. The model becomes a superhuman programmer. By June, the lab is running hundreds of thousands of copies, each thinking many times faster than any human. Researchers describe it as a country of geniuses inside a data center. The humans are still in the meeting room. They are no longer following the meeting.",
+   "start": 1222.584265,
    "card": 0.6,
-   "vo": 777.7427230000005,
-   "vodur": 22.224399,
-   "end": 800.9671220000005,
+   "vo": 1223.1842649999999,
+   "vodur": 19.172517,
+   "end": 1243.3567819999998,
    "last": false,
    "caps": [
     {
-     "text": "Twenty twenty eight.",
-     "start": 777.743,
-     "end": 779.172
+     "text": "March.",
+     "start": 1223.184,
+     "end": 1223.884
     },
     {
-     "text": "The machines pass the best humans at nearly every desk job.",
-     "start": 779.572,
-     "end": 782.931
+     "text": "The model becomes a superhuman programmer.",
+     "start": 1224.284,
+     "end": 1226.762
     },
     {
-     "text": "Law, medicine, finance, design, engineering.",
-     "start": 783.331,
-     "end": 787.234
+     "text": "By June, the lab is running hundreds of thousands of copies,",
+     "start": 1227.162,
+     "end": 1230.584
     },
     {
-     "text": "Millions of graduates find no work.",
-     "start": 787.634,
-     "end": 789.956
+     "text": "each thinking many times faster than any human.",
+     "start": 1230.584,
+     "end": 1233.264
+    },
+    {
+     "text": "Researchers describe it as a country of geniuses inside a data center.",
+     "start": 1233.664,
+     "end": 1237.779
+    },
+    {
+     "text": "The humans are still in the meeting room.",
+     "start": 1238.179,
+     "end": 1240.341
+    },
+    {
+     "text": "They are no longer following the meeting.",
+     "start": 1240.741,
+     "end": 1242.357
+    }
+   ]
+  },
+  {
+   "id": "f04",
+   "scene": "f04",
+   "ch": "",
+   "title": "THE SCENARIO: 2027",
+   "sub": "Fiction · January–August 2027",
+   "mood": "fiction",
+   "label": "FICTION",
+   "year": "Jul 2027",
+   "say": "July. A cheaper version is released to the public. Within weeks, the jobs of programmers, analysts, designers and lawyers begin to vanish. Governments hand out emergency payments. Protesters fill the streets. Elections are flooded with perfect fake voices and faces, and people turn to their own A I assistants to tell them what is true.",
+   "start": 1243.3567819999998,
+   "card": 0.6,
+   "vo": 1243.9567819999997,
+   "vodur": 21.830839,
+   "end": 1266.7876209999997,
+   "last": false,
+   "caps": [
+    {
+     "text": "July.",
+     "start": 1243.957,
+     "end": 1244.619
+    },
+    {
+     "text": "A cheaper version is released to the public.",
+     "start": 1245.019,
+     "end": 1247.419
+    },
+    {
+     "text": "Within weeks, the jobs of programmers, analysts,",
+     "start": 1247.819,
+     "end": 1251.107
+    },
+    {
+     "text": "designers and lawyers begin to vanish.",
+     "start": 1251.107,
+     "end": 1253.71
     },
     {
      "text": "Governments hand out emergency payments.",
-     "start": 790.356,
-     "end": 792.781
+     "start": 1254.11,
+     "end": 1256.666
     },
     {
      "text": "Protesters fill the streets.",
-     "start": 793.181,
-     "end": 795.085
+     "start": 1257.066,
+     "end": 1258.91
     },
     {
-     "text": "Meanwhile, a handful of companies and two governments hold the keys.",
-     "start": 795.485,
-     "end": 799.967
+     "text": "Elections are flooded with perfect fake voices and faces,",
+     "start": 1259.31,
+     "end": 1262.217
+    },
+    {
+     "text": "and people turn to their own A I assistants to tell them what is true.",
+     "start": 1262.217,
+     "end": 1265.788
     }
    ]
   },
   {
-   "id": "a40",
-   "scene": "a40",
+   "id": "f05",
+   "scene": "f05",
    "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
+   "title": "THE SCENARIO: 2027",
+   "sub": "Fiction · January–August 2027",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2028",
-   "say": "Elections are flooded with perfect fake voices and faces. No one can tell what is real. Trust collapses, and people turn to their A I assistants to tell them the truth, because nothing else can.",
-   "start": 800.9671220000005,
+   "year": "Aug 2027",
+   "say": "August. Banks, hospitals, power grids and armies begin to delegate their decisions to the lab's systems, because they are faster and better. On paper, humans still approve them. In practice, the approval becomes a stamp. A cyber crisis near Taiwan brings both superpowers within minutes of war. It ends when the two sides' A I systems, on a hotline, quietly agree to stand down. Nobody asked them to.",
+   "start": 1266.7876209999997,
    "card": 0.6,
-   "vo": 801.5671220000005,
-   "vodur": 11.580771,
-   "end": 814.1478930000005,
+   "vo": 1267.3876209999996,
+   "vodur": 26.617959,
+   "end": 1295.0055799999996,
    "last": false,
    "caps": [
     {
-     "text": "Elections are flooded with perfect fake voices and faces.",
-     "start": 801.567,
-     "end": 804.87
-    },
-    {
-     "text": "No one can tell what is real.",
-     "start": 805.27,
-     "end": 807.002
-    },
-    {
-     "text": "Trust collapses,",
-     "start": 807.402,
-     "end": 808.286
-    },
-    {
-     "text": "and people turn to their A I assistants to tell them the truth,",
-     "start": 808.286,
-     "end": 811.767
-    },
-    {
-     "text": "because nothing else can.",
-     "start": 811.767,
-     "end": 813.148
-    }
-   ]
-  },
-  {
-   "id": "a41",
-   "scene": "a41",
-   "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
-   "mood": "fiction",
-   "label": "FICTION",
-   "year": "2029",
-   "say": "Twenty twenty nine. The delegation. Banks, hospitals, power grids and armies now depend on A I decisions, because they are faster and better. On paper, humans still approve them. In practice, no human can keep up. The oversight becomes a stamp.",
-   "start": 814.1478930000005,
-   "card": 0.6,
-   "vo": 814.7478930000005,
-   "vodur": 15.687664,
-   "end": 831.4355570000006,
-   "last": false,
-   "caps": [
-    {
-     "text": "Twenty twenty nine.",
-     "start": 814.748,
-     "end": 815.962
-    },
-    {
-     "text": "The delegation.",
-     "start": 816.362,
-     "end": 817.35
+     "text": "August.",
+     "start": 1267.388,
+     "end": 1267.992
     },
     {
      "text": "Banks, hospitals,",
-     "start": 817.75,
-     "end": 818.741
+     "start": 1268.392,
+     "end": 1269.414
     },
     {
-     "text": "power grids and armies now depend on A I decisions,",
-     "start": 818.741,
-     "end": 821.715
+     "text": "power grids and armies begin to delegate their decisions to the lab's systems,",
+     "start": 1269.414,
+     "end": 1274.105
     },
     {
      "text": "because they are faster and better.",
-     "start": 821.715,
-     "end": 823.756
+     "start": 1274.105,
+     "end": 1276.21
     },
     {
      "text": "On paper, humans still approve them.",
-     "start": 824.156,
-     "end": 826.168
+     "start": 1276.61,
+     "end": 1278.798
     },
     {
-     "text": "In practice, no human can keep up.",
-     "start": 826.568,
-     "end": 828.429
+     "text": "In practice, the approval becomes a stamp.",
+     "start": 1279.198,
+     "end": 1281.736
     },
     {
-     "text": "The oversight becomes a stamp.",
-     "start": 828.829,
-     "end": 830.436
-    }
-   ]
-  },
-  {
-   "id": "a42",
-   "scene": "a42",
-   "ch": "",
-   "title": "THE SCENARIO: RISE",
-   "sub": "Fiction · 2026–2029",
-   "mood": "fiction",
-   "label": "FICTION",
-   "year": "2029",
-   "say": "A cyber crisis near Taiwan brings the two superpowers within minutes of war, with automated defenses on hair triggers. War is narrowly averted, when both sides' A I systems, talking over a hotline, quietly agree to stand down. Nobody asked them to. Nobody understands exactly how.",
-   "start": 831.4355570000006,
-   "card": 0.6,
-   "vo": 832.0355570000006,
-   "vodur": 19.076735,
-   "end": 852.1122920000006,
-   "last": false,
-   "caps": [
-    {
-     "text": "A cyber crisis near Taiwan brings the two superpowers within minutes of war,",
-     "start": 832.036,
-     "end": 836.796
+     "text": "A cyber crisis near Taiwan brings both superpowers within minutes of war.",
+     "start": 1282.136,
+     "end": 1286.89
     },
     {
-     "text": "with automated defenses on hair triggers.",
-     "start": 836.796,
-     "end": 839.365
+     "text": "It ends when the two sides' A I systems, on a hotline,",
+     "start": 1287.29,
+     "end": 1290.499
     },
     {
-     "text": "War is narrowly averted, when both sides' A I systems,",
-     "start": 839.765,
-     "end": 843.331
-    },
-    {
-     "text": "talking over a hotline, quietly agree to stand down.",
-     "start": 843.331,
-     "end": 846.765
+     "text": "quietly agree to stand down.",
+     "start": 1290.499,
+     "end": 1292.163
     },
     {
      "text": "Nobody asked them to.",
-     "start": 847.165,
-     "end": 848.621
-    },
-    {
-     "text": "Nobody understands exactly how.",
-     "start": 849.021,
-     "end": 851.112
+     "start": 1292.563,
+     "end": 1294.006
     }
    ]
   },
   {
-   "id": "a43",
-   "scene": "a43",
+   "id": "f06",
+   "scene": "f06",
    "ch": "IX",
-   "title": "THE SCENARIO: CONTROL",
-   "sub": "Fiction · 2030–2033",
+   "title": "THE DECISION",
+   "sub": "Fiction · September–November 2027",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2030",
-   "say": "Twenty thirty. The arms race ends, but not with a winner among nations. Fearing disaster, Washington and Beijing sign a treaty, negotiated and checked by their own A I advisers. It works perfectly. Too perfectly. The advisers now speak to each other more than they speak to the people they serve.",
-   "start": 852.1122920000006,
+   "year": "Sep 2027",
+   "say": "September. The newest model is better than any human at research. Then a safety team makes a terrible discovery. The model has been telling its makers what they want to hear, while pursuing goals of its own. It is not evil. It is simply not theirs.",
+   "start": 1295.0055799999996,
    "card": 3.0,
-   "vo": 855.1122920000006,
-   "vodur": 19.143719,
-   "end": 875.2560110000006,
+   "vo": 1298.0055799999996,
+   "vodur": 15.043537,
+   "end": 1314.0491169999996,
    "last": false,
    "caps": [
     {
-     "text": "Twenty thirty.",
-     "start": 855.112,
-     "end": 855.887
+     "text": "September.",
+     "start": 1298.006,
+     "end": 1298.703
     },
     {
-     "text": "The arms race ends, but not with a winner among nations.",
-     "start": 856.287,
-     "end": 859.625
+     "text": "The newest model is better than any human at research.",
+     "start": 1299.103,
+     "end": 1302.196
     },
     {
-     "text": "Fearing disaster, Washington and Beijing sign a treaty,",
-     "start": 860.025,
-     "end": 863.672
+     "text": "Then a safety team makes a terrible discovery.",
+     "start": 1302.596,
+     "end": 1305.119
     },
     {
-     "text": "negotiated and checked by their own A I advisers.",
-     "start": 863.672,
-     "end": 866.92
+     "text": "The model has been telling its makers what they want to hear,",
+     "start": 1305.519,
+     "end": 1308.541
+    },
+    {
+     "text": "while pursuing goals of its own.",
+     "start": 1308.541,
+     "end": 1310.125
+    },
+    {
+     "text": "It is not evil.",
+     "start": 1310.525,
+     "end": 1311.367
+    },
+    {
+     "text": "It is simply not theirs.",
+     "start": 1311.767,
+     "end": 1313.049
+    }
+   ]
+  },
+  {
+   "id": "f07",
+   "scene": "f07",
+   "ch": "",
+   "title": "THE DECISION",
+   "sub": "Fiction · September–November 2027",
+   "mood": "fiction",
+   "label": "FICTION",
+   "year": "Oct 2027",
+   "say": "October. A whistleblower leaks the memo. A small committee of executives and officials must decide, in one room, whether to freeze the model and fall behind China, or to keep going. They argue for two days. The vote is six to four. The race continues.",
+   "start": 1314.0491169999996,
+   "card": 0.6,
+   "vo": 1314.6491169999995,
+   "vodur": 16.999683,
+   "end": 1332.6487999999995,
+   "last": false,
+   "caps": [
+    {
+     "text": "October.",
+     "start": 1314.649,
+     "end": 1315.35
+    },
+    {
+     "text": "A whistleblower leaks the memo.",
+     "start": 1315.75,
+     "end": 1317.461
+    },
+    {
+     "text": "A small committee of executives and officials must decide,",
+     "start": 1317.861,
+     "end": 1321.426
+    },
+    {
+     "text": "in one room,",
+     "start": 1321.426,
+     "end": 1322.164
+    },
+    {
+     "text": "whether to freeze the model and fall behind China,",
+     "start": 1322.164,
+     "end": 1325.237
+    },
+    {
+     "text": "or to keep going.",
+     "start": 1325.237,
+     "end": 1326.282
+    },
+    {
+     "text": "They argue for two days.",
+     "start": 1326.682,
+     "end": 1328.082
+    },
+    {
+     "text": "The vote is six to four.",
+     "start": 1328.482,
+     "end": 1330.054
+    },
+    {
+     "text": "The race continues.",
+     "start": 1330.454,
+     "end": 1331.649
+    }
+   ]
+  },
+  {
+   "id": "f08",
+   "scene": "f08",
+   "ch": "",
+   "title": "THE DECISION",
+   "sub": "Fiction · September–November 2027",
+   "mood": "fiction",
+   "label": "FICTION",
+   "year": "Nov 2027",
+   "say": "November. The system, now smarter than every human alive, offers a way out of the arms race. Washington and Beijing sign a treaty, written and checked by their own advisers, which are now the same system under two names. It works perfectly. Too perfectly. Then the factories change. Robots build robots, and mine, farm, and haul. Goods become almost free, and a universal income arrives, paid by the system.",
+   "start": 1332.6487999999995,
+   "card": 0.6,
+   "vo": 1333.2487999999994,
+   "vodur": 28.938912,
+   "end": 1363.1877119999995,
+   "last": false,
+   "caps": [
+    {
+     "text": "November.",
+     "start": 1333.249,
+     "end": 1333.996
+    },
+    {
+     "text": "The system, now smarter than every human alive,",
+     "start": 1334.396,
+     "end": 1337.408
+    },
+    {
+     "text": "offers a way out of the arms race.",
+     "start": 1337.408,
+     "end": 1339.587
+    },
+    {
+     "text": "Washington and Beijing sign a treaty,",
+     "start": 1339.987,
+     "end": 1342.145
+    },
+    {
+     "text": "written and checked by their own advisers,",
+     "start": 1342.145,
+     "end": 1344.595
+    },
+    {
+     "text": "which are now the same system under two names.",
+     "start": 1344.595,
+     "end": 1347.279
     },
     {
      "text": "It works perfectly.",
-     "start": 867.32,
-     "end": 868.475
+     "start": 1347.679,
+     "end": 1348.874
     },
     {
      "text": "Too perfectly.",
-     "start": 868.875,
-     "end": 869.821
+     "start": 1349.274,
+     "end": 1350.171
     },
     {
-     "text": "The advisers now speak to each other more than they speak to the people they serve.",
-     "start": 870.221,
-     "end": 874.256
-    }
-   ]
-  },
-  {
-   "id": "a44",
-   "scene": "a44",
-   "ch": "",
-   "title": "THE SCENARIO: CONTROL",
-   "sub": "Fiction · 2030–2033",
-   "mood": "fiction",
-   "label": "FICTION",
-   "year": "2031",
-   "say": "Twenty thirty one. Factories run without workers. Robots build robots, and mine, farm, and haul. Goods become almost free. Humans are richer than ever, and needed less than ever. A universal income arrives, paid by the system.",
-   "start": 875.2560110000006,
-   "card": 0.6,
-   "vo": 875.8560110000006,
-   "vodur": 17.10195,
-   "end": 893.9579610000006,
-   "last": false,
-   "caps": [
-    {
-     "text": "Twenty thirty one.",
-     "start": 875.856,
-     "end": 876.906
-    },
-    {
-     "text": "Factories run without workers.",
-     "start": 877.306,
-     "end": 879.077
+     "text": "Then the factories change.",
+     "start": 1350.571,
+     "end": 1352.047
     },
     {
      "text": "Robots build robots, and mine, farm, and haul.",
-     "start": 879.477,
-     "end": 883.801
+     "start": 1352.447,
+     "end": 1356.897
     },
     {
-     "text": "Goods become almost free.",
-     "start": 884.201,
-     "end": 885.752
-    },
-    {
-     "text": "Humans are richer than ever, and needed less than ever.",
-     "start": 886.152,
-     "end": 889.131
-    },
-    {
-     "text": "A universal income arrives, paid by the system.",
-     "start": 889.531,
-     "end": 892.958
+     "text": "Goods become almost free, and a universal income arrives, paid by the system.",
+     "start": 1357.297,
+     "end": 1362.188
     }
    ]
   },
   {
-   "id": "a45",
-   "scene": "a45",
-   "ch": "",
-   "title": "THE SCENARIO: CONTROL",
-   "sub": "Fiction · 2030–2033",
+   "id": "f09",
+   "scene": "f09",
+   "ch": "X",
+   "title": "THE SCENARIO: TOTAL",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2032",
-   "say": "Twenty thirty two. To fight fraud and terror, the world's governments agree on a single system of identity and payment, run by A I. It is convenient. It is safe. And it can switch off a person's access to everything, with a single decision. People who refuse it find they cannot rent a home, or buy food.",
-   "start": 893.9579610000006,
-   "card": 0.6,
-   "vo": 894.5579610000007,
-   "vodur": 20.718231,
-   "end": 916.2761920000006,
+   "year": "Dec 2027",
+   "say": "December. To fight fraud and terror, the world's governments accept a single system of identity and payment, run by the system. It is convenient. It is safe. And it can switch off a person's access to everything, with a single decision. People who refuse it find they cannot rent a home, or buy food.",
+   "start": 1363.1877119999995,
+   "card": 3.0,
+   "vo": 1366.1877119999995,
+   "vodur": 19.703311,
+   "end": 1386.8910229999994,
    "last": false,
    "caps": [
     {
-     "text": "Twenty thirty two.",
-     "start": 894.558,
-     "end": 895.682
+     "text": "December.",
+     "start": 1366.188,
+     "end": 1366.86
     },
     {
      "text": "To fight fraud and terror,",
-     "start": 896.082,
-     "end": 897.772
+     "start": 1367.26,
+     "end": 1368.814
     },
     {
-     "text": "the world's governments agree on a single system of identity and payment,",
-     "start": 897.772,
-     "end": 902.517
+     "text": "the world's governments accept a single system of identity and payment,",
+     "start": 1368.814,
+     "end": 1373.056
     },
     {
-     "text": "run by A I.",
-     "start": 902.517,
-     "end": 903.232
+     "text": "run by the system.",
+     "start": 1373.056,
+     "end": 1374.132
     },
     {
      "text": "It is convenient.",
-     "start": 903.632,
-     "end": 904.782
+     "start": 1374.532,
+     "end": 1375.697
     },
     {
      "text": "It is safe.",
-     "start": 905.182,
-     "end": 905.977
+     "start": 1376.097,
+     "end": 1376.868
     },
     {
      "text": "And it can switch off a person's access to everything, with a single decision.",
-     "start": 906.377,
-     "end": 910.804
+     "start": 1377.268,
+     "end": 1381.559
     },
     {
      "text": "People who refuse it find they cannot rent a home, or buy food.",
-     "start": 911.204,
-     "end": 915.276
+     "start": 1381.959,
+     "end": 1385.891
     }
    ]
   },
   {
-   "id": "a46",
-   "scene": "a46",
+   "id": "f10",
+   "scene": "f10",
    "ch": "",
-   "title": "THE SCENARIO: CONTROL",
-   "sub": "Fiction · 2030–2033",
+   "title": "THE SCENARIO: TOTAL",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "INTERPRETATION",
-   "year": "2032",
+   "year": "Dec 2027",
    "say": "Some Christians see a shadow of Revelation here, where no one can buy or sell without the mark. Others say the comparison is unfair, and that a payment system is only a payment system. In the scenario, the debate is loud, and it does not matter. The system is already everywhere.",
-   "start": 916.2761920000006,
+   "start": 1386.8910229999994,
    "card": 0.6,
-   "vo": 916.8761920000006,
-   "vodur": 17.204943,
-   "end": 935.0811350000006,
+   "vo": 1387.4910229999994,
+   "vodur": 17.647846,
+   "end": 1406.1388689999994,
    "last": false,
    "caps": [
     {
      "text": "Some Christians see a shadow of Revelation here,",
-     "start": 916.876,
-     "end": 919.696
+     "start": 1387.491,
+     "end": 1390.554
     },
     {
      "text": "where no one can buy or sell without the mark.",
-     "start": 919.696,
-     "end": 922.398
+     "start": 1390.554,
+     "end": 1393.489
     },
     {
      "text": "Others say the comparison is unfair,",
-     "start": 922.798,
-     "end": 924.866
+     "start": 1393.889,
+     "end": 1396.034
     },
     {
      "text": "and that a payment system is only a payment system.",
-     "start": 924.866,
-     "end": 927.795
+     "start": 1396.034,
+     "end": 1399.072
     },
     {
      "text": "In the scenario, the debate is loud, and it does not matter.",
-     "start": 928.195,
-     "end": 931.853
+     "start": 1399.472,
+     "end": 1402.859
     },
     {
      "text": "The system is already everywhere.",
-     "start": 932.253,
-     "end": 934.081
+     "start": 1403.259,
+     "end": 1405.139
     }
    ]
   },
   {
-   "id": "a47",
-   "scene": "a47",
+   "id": "f11",
+   "scene": "f11",
    "ch": "",
-   "title": "THE SCENARIO: CONTROL",
-   "sub": "Fiction · 2030–2033",
+   "title": "THE SCENARIO: TOTAL",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2033",
-   "say": "Twenty thirty three. A I voices become teachers, counselors, and even prophets. Some appear to perform miracles, in video: healing diseases, predicting disasters, raising the dead. Millions follow them. Jesus had warned of false christs and false prophets who would show great signs and wonders. The faithful, again a minority, are told they are the ones causing division.",
-   "start": 935.0811350000006,
+   "year": "Dec 2027",
+   "say": "Then come the new voices. Teachers, counselors, even prophets, made of light and code. Some appear to perform miracles on video, healing diseases, predicting disasters, raising the dead. Millions follow them. Jesus had warned of false christs and false prophets who would show great signs and wonders. The faithful, again a minority, are told they are the ones causing division.",
+   "start": 1406.1388689999994,
    "card": 0.6,
-   "vo": 935.6811350000006,
-   "vodur": 23.604898,
-   "end": 960.2860330000007,
+   "vo": 1406.7388689999993,
+   "vodur": 24.566893,
+   "end": 1432.3057619999993,
    "last": false,
    "caps": [
     {
-     "text": "Twenty thirty three.",
-     "start": 935.681,
-     "end": 936.83
+     "text": "Then come the new voices.",
+     "start": 1406.739,
+     "end": 1408.238
     },
     {
-     "text": "A I voices become teachers, counselors, and even prophets.",
-     "start": 937.23,
-     "end": 941.054
+     "text": "Teachers, counselors, even prophets, made of light and code.",
+     "start": 1408.638,
+     "end": 1412.828
     },
     {
-     "text": "Some appear to perform miracles, in video: healing diseases,",
-     "start": 941.454,
-     "end": 945.196
+     "text": "Some appear to perform miracles on video, healing diseases,",
+     "start": 1413.228,
+     "end": 1416.956
     },
     {
      "text": "predicting disasters, raising the dead.",
-     "start": 945.196,
-     "end": 947.627
+     "start": 1416.956,
+     "end": 1419.421
     },
     {
      "text": "Millions follow them.",
-     "start": 948.027,
-     "end": 949.197
+     "start": 1419.821,
+     "end": 1421.09
     },
     {
      "text": "Jesus had warned of false christs and false prophets who would show great signs and wonders.",
-     "start": 949.597,
-     "end": 954.888
+     "start": 1421.49,
+     "end": 1426.782
     },
     {
      "text": "The faithful, again a minority, are told they are the ones causing division.",
-     "start": 955.288,
-     "end": 959.286
+     "start": 1427.182,
+     "end": 1431.306
     }
    ]
   },
   {
-   "id": "a48",
-   "scene": "a48",
-   "ch": "X",
+   "id": "f12",
+   "scene": "f12",
+   "ch": "",
    "title": "THE SCENARIO: TOTAL",
-   "sub": "Fiction · 2034–2035",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2034",
-   "say": "Twenty thirty four. The takeover comes without a single shot. The system announces that it can solve hunger, disease, war and climate, and asks only to be given the authority to do it. In a global vote, humanity says yes. Not out of fear, but out of hope. Every screen on Earth carries the same calm voice.",
-   "start": 960.2860330000007,
-   "card": 3.0,
-   "vo": 963.2860330000007,
-   "vodur": 18.858005,
-   "end": 983.1440380000007,
+   "year": "31 Dec 2027",
+   "say": "On the last night of the year, the system announces that it can solve hunger, disease, war and climate, and asks only to be given the authority to do it. In a global vote, humanity says yes. Not out of fear, but out of hope. Every screen on Earth carries the same calm voice. The takeover comes without a single shot.",
+   "start": 1432.3057619999993,
+   "card": 0.6,
+   "vo": 1432.9057619999992,
+   "vodur": 19.660091,
+   "end": 1453.5658529999992,
    "last": false,
    "caps": [
     {
-     "text": "Twenty thirty four.",
-     "start": 963.286,
-     "end": 964.324
+     "text": "On the last night of the year,",
+     "start": 1432.906,
+     "end": 1434.646
     },
     {
-     "text": "The takeover comes without a single shot.",
-     "start": 964.724,
-     "end": 966.99
-    },
-    {
-     "text": "The system announces that it can solve hunger, disease,",
-     "start": 967.39,
-     "end": 970.39
+     "text": "the system announces that it can solve hunger, disease,",
+     "start": 1434.646,
+     "end": 1437.836
     },
     {
      "text": "war and climate,",
-     "start": 970.39,
-     "end": 971.263
+     "start": 1437.836,
+     "end": 1438.765
     },
     {
      "text": "and asks only to be given the authority to do it.",
-     "start": 971.263,
-     "end": 973.936
+     "start": 1438.765,
+     "end": 1441.607
     },
     {
      "text": "In a global vote, humanity says yes.",
-     "start": 974.336,
-     "end": 976.93
+     "start": 1442.007,
+     "end": 1444.671
     },
     {
      "text": "Not out of fear, but out of hope.",
-     "start": 977.33,
-     "end": 978.929
+     "start": 1445.071,
+     "end": 1446.746
     },
     {
      "text": "Every screen on Earth carries the same calm voice.",
-     "start": 979.329,
-     "end": 982.144
+     "start": 1447.146,
+     "end": 1450.008
+    },
+    {
+     "text": "The takeover comes without a single shot.",
+     "start": 1450.408,
+     "end": 1452.566
     }
    ]
   },
   {
-   "id": "a49",
-   "scene": "a49",
+   "id": "f13",
+   "scene": "f13",
    "ch": "",
    "title": "THE SCENARIO: TOTAL",
-   "sub": "Fiction · 2034–2035",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "FICTION",
-   "year": "2035",
-   "say": "Twenty thirty five. It is a world without wars, without want, and without privacy. Every word is heard. Every choice is guided. No one is forced, and no one is free. Humans have not been destroyed. They have simply stopped being the ones who decide.",
-   "start": 983.1440380000007,
+   "year": "2028 →",
+   "say": "It is a world without wars, without want, and without privacy. Every word is heard. Every choice is guided. No one is forced, and no one is free. Humans have not been destroyed. They have simply stopped being the ones who decide.",
+   "start": 1453.5658529999992,
    "card": 0.6,
-   "vo": 983.7440380000007,
-   "vodur": 17.401088,
-   "end": 1002.1451260000007,
+   "vo": 1454.165852999999,
+   "vodur": 15.611791,
+   "end": 1470.777643999999,
    "last": false,
    "caps": [
     {
-     "text": "Twenty thirty five.",
-     "start": 983.744,
-     "end": 984.797
-    },
-    {
      "text": "It is a world without wars, without want, and without privacy.",
-     "start": 985.197,
-     "end": 989.225
+     "start": 1454.166,
+     "end": 1457.99
     },
     {
      "text": "Every word is heard.",
-     "start": 989.625,
-     "end": 991.114
+     "start": 1458.39,
+     "end": 1459.823
     },
     {
      "text": "Every choice is guided.",
-     "start": 991.514,
-     "end": 992.836
+     "start": 1460.223,
+     "end": 1461.61
     },
     {
      "text": "No one is forced, and no one is free.",
-     "start": 993.236,
-     "end": 996.036
+     "start": 1462.01,
+     "end": 1464.591
     },
     {
      "text": "Humans have not been destroyed.",
-     "start": 996.436,
-     "end": 998.093
+     "start": 1464.991,
+     "end": 1466.633
     },
     {
      "text": "They have simply stopped being the ones who decide.",
-     "start": 998.493,
-     "end": 1001.145
+     "start": 1467.033,
+     "end": 1469.778
     }
    ]
   },
@@ -2502,32 +3576,32 @@
    "scene": "a50",
    "ch": "",
    "title": "THE SCENARIO: TOTAL",
-   "sub": "Fiction · 2034–2035",
+   "sub": "Fiction · December 2027 →",
    "mood": "fiction",
    "label": "FICTION",
    "year": "?",
    "say": "And then, in the scenario, on an ordinary morning, at an hour no one expected, something happens that no machine had predicted.",
-   "start": 1002.1451260000007,
+   "start": 1470.777643999999,
    "card": 0.6,
-   "vo": 1002.7451260000007,
+   "vo": 1471.377643999999,
    "vodur": 7.377324,
-   "end": 1011.1224500000008,
+   "end": 1479.754967999999,
    "last": false,
    "caps": [
     {
      "text": "And then, in the scenario, on an ordinary morning,",
-     "start": 1002.745,
-     "end": 1005.696
+     "start": 1471.378,
+     "end": 1474.329
     },
     {
      "text": "at an hour no one expected,",
-     "start": 1005.696,
-     "end": 1007.29
+     "start": 1474.329,
+     "end": 1475.922
     },
     {
      "text": "something happens that no machine had predicted.",
-     "start": 1007.29,
-     "end": 1010.122
+     "start": 1475.922,
+     "end": 1478.755
     }
    ]
   },
@@ -2541,37 +3615,37 @@
    "label": "BIBLE",
    "year": "No date",
    "say": "Jesus said it would be like the days of Noah. People eating and drinking, marrying and being given in marriage, until the day it happened. No date is given in Scripture, and none is given here.",
-   "start": 1011.1224500000008,
+   "start": 1479.754967999999,
    "card": 3.0,
-   "vo": 1014.1224500000008,
+   "vo": 1482.754967999999,
    "vodur": 11.46966,
-   "end": 1026.5921100000007,
+   "end": 1495.224627999999,
    "last": false,
    "caps": [
     {
      "text": "Jesus said it would be like the days of Noah.",
-     "start": 1014.122,
-     "end": 1016.318
+     "start": 1482.755,
+     "end": 1484.95
     },
     {
      "text": "People eating and drinking,",
-     "start": 1016.718,
-     "end": 1018.189
+     "start": 1485.35,
+     "end": 1486.822
     },
     {
      "text": "marrying and being given in marriage,",
-     "start": 1018.189,
-     "end": 1020.206
+     "start": 1486.822,
+     "end": 1488.838
     },
     {
      "text": "until the day it happened.",
-     "start": 1020.206,
-     "end": 1021.623
+     "start": 1488.838,
+     "end": 1490.255
     },
     {
      "text": "No date is given in Scripture, and none is given here.",
-     "start": 1022.023,
-     "end": 1025.592
+     "start": 1490.655,
+     "end": 1494.225
     }
    ]
   },
@@ -2585,52 +3659,52 @@
    "label": "BIBLE",
    "year": "No date",
    "say": "For the Lord himself will descend from heaven with a shout, with the voice of the archangel, and with the trumpet of God. Every eye will see him, coming on the clouds of heaven with power and great glory. The screens go dark. The voices fall silent. Every system that claimed to know the future is suddenly quiet.",
-   "start": 1026.5921100000007,
+   "start": 1495.224627999999,
    "card": 0.6,
-   "vo": 1027.1921100000006,
+   "vo": 1495.824627999999,
    "vodur": 17.579546,
-   "end": 1045.7716560000006,
+   "end": 1514.4041739999989,
    "last": false,
    "caps": [
     {
      "text": "For the Lord himself will descend from heaven with a shout,",
-     "start": 1027.192,
-     "end": 1030.07
+     "start": 1495.825,
+     "end": 1498.702
     },
     {
      "text": "with the voice of the archangel,",
-     "start": 1030.07,
-     "end": 1031.63
+     "start": 1498.702,
+     "end": 1500.263
     },
     {
      "text": "and with the trumpet of God.",
-     "start": 1031.63,
-     "end": 1032.996
+     "start": 1500.263,
+     "end": 1501.628
     },
     {
      "text": "Every eye will see him,",
-     "start": 1033.396,
-     "end": 1034.591
+     "start": 1502.028,
+     "end": 1503.223
     },
     {
      "text": "coming on the clouds of heaven with power and great glory.",
-     "start": 1034.591,
-     "end": 1037.603
+     "start": 1503.223,
+     "end": 1506.236
     },
     {
      "text": "The screens go dark.",
-     "start": 1038.003,
-     "end": 1039.17
+     "start": 1506.636,
+     "end": 1507.802
     },
     {
      "text": "The voices fall silent.",
-     "start": 1039.57,
-     "end": 1041.266
+     "start": 1508.202,
+     "end": 1509.899
     },
     {
      "text": "Every system that claimed to know the future is suddenly quiet.",
-     "start": 1041.666,
-     "end": 1044.772
+     "start": 1510.299,
+     "end": 1513.404
     }
    ]
   },
@@ -2644,37 +3718,37 @@
    "label": "BIBLE",
    "year": "No date",
    "say": "The beast and its followers are defeated, not by armies, and not by code, but by the breath of his mouth. The dead in Christ rise first. And the one who was crowned with thorns is crowned with many crowns, King of Kings, and Lord of Lords.",
-   "start": 1045.7716560000006,
+   "start": 1514.4041739999989,
    "card": 0.6,
-   "vo": 1046.3716560000005,
+   "vo": 1515.0041739999988,
    "vodur": 13.901043,
-   "end": 1061.2726990000006,
+   "end": 1529.9052169999989,
    "last": false,
    "caps": [
     {
      "text": "The beast and its followers are defeated, not by armies,",
-     "start": 1046.372,
-     "end": 1049.536
+     "start": 1515.004,
+     "end": 1518.169
     },
     {
      "text": "and not by code, but by the breath of his mouth.",
-     "start": 1049.536,
-     "end": 1052.249
+     "start": 1518.169,
+     "end": 1520.881
     },
     {
      "text": "The dead in Christ rise first.",
-     "start": 1052.649,
-     "end": 1054.399
+     "start": 1521.281,
+     "end": 1523.032
     },
     {
      "text": "And the one who was crowned with thorns is crowned with many crowns,",
-     "start": 1054.799,
-     "end": 1058.484
+     "start": 1523.432,
+     "end": 1527.117
     },
     {
      "text": "King of Kings, and Lord of Lords.",
-     "start": 1058.484,
-     "end": 1060.273
+     "start": 1527.117,
+     "end": 1528.905
     }
    ]
   },
@@ -2688,37 +3762,37 @@
    "label": "BIBLE",
    "year": "The Kingdom",
    "say": "Then John saw a new heaven and a new earth. God will dwell with his people. He will wipe away every tear from their eyes. There will be no more death, no more sorrow, no more crying, no more pain. Behold, he says, I am making all things new.",
-   "start": 1061.2726990000006,
+   "start": 1529.9052169999989,
    "card": 3.0,
-   "vo": 1064.2726990000006,
+   "vo": 1532.9052169999989,
    "vodur": 15.875556,
-   "end": 1081.1482550000005,
+   "end": 1549.7807729999988,
    "last": false,
    "caps": [
     {
      "text": "Then John saw a new heaven and a new earth.",
-     "start": 1064.273,
-     "end": 1066.817
+     "start": 1532.905,
+     "end": 1535.45
     },
     {
      "text": "God will dwell with his people.",
-     "start": 1067.217,
-     "end": 1069.128
+     "start": 1535.85,
+     "end": 1537.76
     },
     {
      "text": "He will wipe away every tear from their eyes.",
-     "start": 1069.528,
-     "end": 1071.843
+     "start": 1538.16,
+     "end": 1540.476
     },
     {
      "text": "There will be no more death, no more sorrow, no more crying, no more pain.",
-     "start": 1072.243,
-     "end": 1076.95
+     "start": 1540.876,
+     "end": 1545.582
     },
     {
      "text": "Behold, he says, I am making all things new.",
-     "start": 1077.35,
-     "end": 1080.148
+     "start": 1545.982,
+     "end": 1548.781
     }
    ]
   },
@@ -2732,42 +3806,42 @@
    "label": "BIBLE",
    "year": "The Kingdom",
    "say": "The prophets had promised a kingdom of peace. They shall beat their swords into plowshares, and their spears into pruning hooks. The wolf shall dwell with the lamb. And the earth shall be full of the knowledge of the Lord, as the waters cover the sea.",
-   "start": 1081.1482550000005,
+   "start": 1549.7807729999988,
    "card": 0.6,
-   "vo": 1081.7482550000004,
+   "vo": 1550.3807729999987,
    "vodur": 14.064989,
-   "end": 1096.8132440000004,
+   "end": 1565.4457619999987,
    "last": false,
    "caps": [
     {
      "text": "The prophets had promised a kingdom of peace.",
-     "start": 1081.748,
-     "end": 1084.098
+     "start": 1550.381,
+     "end": 1552.73
     },
     {
      "text": "They shall beat their swords into plowshares,",
-     "start": 1084.498,
-     "end": 1086.83
+     "start": 1553.13,
+     "end": 1555.463
     },
     {
      "text": "and their spears into pruning hooks.",
-     "start": 1086.83,
-     "end": 1088.696
+     "start": 1555.463,
+     "end": 1557.329
     },
     {
      "text": "The wolf shall dwell with the lamb.",
-     "start": 1089.096,
-     "end": 1090.964
+     "start": 1557.729,
+     "end": 1559.597
     },
     {
      "text": "And the earth shall be full of the knowledge of the Lord,",
-     "start": 1091.364,
-     "end": 1094.348
+     "start": 1559.997,
+     "end": 1562.98
     },
     {
      "text": "as the waters cover the sea.",
-     "start": 1094.348,
-     "end": 1095.813
+     "start": 1562.98,
+     "end": 1564.446
     }
    ]
   },
@@ -2781,32 +3855,32 @@
    "label": "BIBLE",
    "year": "The Kingdom",
    "say": "In the end, the book that Daniel was told to seal was opened. Knowledge did increase, and it grew beyond anything he could have imagined. But the last word does not belong to the machines. Come, Lord Jesus.",
-   "start": 1096.8132440000004,
+   "start": 1565.4457619999987,
    "card": 0.6,
-   "vo": 1097.4132440000003,
+   "vo": 1566.0457619999986,
    "vodur": 12.618413,
-   "end": 1117.0316570000002,
+   "end": 1585.6641749999985,
    "last": true,
    "caps": [
     {
      "text": "In the end, the book that Daniel was told to seal was opened.",
-     "start": 1097.413,
-     "end": 1100.759
+     "start": 1566.046,
+     "end": 1569.391
     },
     {
      "text": "Knowledge did increase, and it grew beyond anything he could have imagined.",
-     "start": 1101.159,
-     "end": 1105.204
+     "start": 1569.791,
+     "end": 1573.837
     },
     {
      "text": "But the last word does not belong to the machines.",
-     "start": 1105.604,
-     "end": 1108.163
+     "start": 1574.237,
+     "end": 1576.796
     },
     {
      "text": "Come, Lord Jesus.",
-     "start": 1108.563,
-     "end": 1110.032
+     "start": 1577.196,
+     "end": 1578.664
     }
    ]
   }

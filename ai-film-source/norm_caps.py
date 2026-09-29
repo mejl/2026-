@@ -9,7 +9,7 @@ NUM = {w:i for i,w in enumerate(ONES)}; NUM.update(TENS)
 ORD = {'first':1,'second':2,'third':3,'fourth':4,'fifth':5,'sixth':6,'seventh':7,'eighth':8,'ninth':9,'tenth':10,'eleventh':11,'twelfth':12,'twentieth':20,'thirtieth':30,
        'twenty first':21,'twenty second':22,'twenty third':23,'twenty fourth':24,'twenty fifth':25,'twenty sixth':26,'twenty seventh':27,'twenty eighth':28,'twenty ninth':29,'thirty first':31}
 UNITS = set('games years months days countries percent dollars hours weeks centuries decades'.split())
-YEAR_START = {'nineteen','eighteen','seventeen','sixteen','twenty'}
+YEAR_START = {'ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'}
 MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December'
 WORD = re.compile(r"[A-Za-z']+")
 
@@ -32,7 +32,7 @@ def fmt(n):
 def as_year(ws, following):
     """Return a year string if the run reads like a year, else None."""
     if any(w in SCALE for w in ws): return None
-    if following == 'B' and len(ws) >= 2 and ws[0] in ONES[1:10] and ws[1] in TENS:   # "five thirty nine B C" -> 539
+    if len(ws) >= 2 and (ws[0] in ONES[3:10] or (ws[0] in ('one','two') and following == 'B')) and ws[1] in TENS:   # "five thirty nine", "four seventy six" -> 539, 476
         return str(NUM[ws[0]]*100 + sum(NUM[w] for w in ws[1:]))
     if len(ws) >= 2 and ws[0] in YEAR_START and (ws[1] in TENS or 10 <= NUM[ws[1]] <= 19):
         return str(NUM[ws[0]]*100 + sum(NUM[w] for w in ws[1:]))
@@ -75,14 +75,18 @@ def convert_numbers(text):
         i = end
     return ''.join(out)
 
+DW='zero one two three four five six seven eight nine'.split()
+DWRE='(?:'+'|'.join(DW)+')'
 def norm(text):
     s = text
+    s = re.sub(r'\b(ten|'+DWRE+r') point ('+DWRE+r'(?: '+DWRE+r')*)\b', lambda m: str(NUM[m.group(1).lower()])+'.'+''.join(str(NUM[w]) for w in m.group(2).lower().split()), s, flags=re.I)
     s = re.sub(r'\bChat G P T\b', 'ChatGPT', s)
-    s = re.sub(r'\bG P T (one|two|three|four|five)\b', lambda m: 'GPT-' + str(NUM[m.group(1).lower()]), s, flags=re.I)
+    s = re.sub(r'\bG P T (\d+(?:\.\d+)?|one|two|three|four|five|six|seven|eight|nine)( o)?\b', lambda m: 'GPT-' + (m.group(1) if m.group(1)[0].isdigit() else str(NUM[m.group(1).lower()])) + ('o' if m.group(2) else ''), s, flags=re.I)
     s = re.sub(r'\bG P T\b', 'GPT', s); s = re.sub(r'\bA I\b', 'AI', s)
     s = re.sub(r'\bB C\b', 'B_C', s)
-    s = re.sub(r'\bBert\b', 'BERT', s); s = re.sub(r'\bR one\b', 'R1', s)
-    s = re.sub(r'\b(Opus|Grok|Sonnet|Haiku|Claude) (one|two|three|four|five)\b', lambda m: m.group(1) + ' ' + str(NUM[m.group(2).lower()]), s)
+    s = re.sub(r'\bBert\b', 'BERT', s); s = re.sub(r'\bR one\b', 'R1', s); s = re.sub(r'\bo one\b', 'o1', s)
+    s = re.sub(r'\b(Opus|Grok|Sonnet|Haiku|Claude|Gemini|Fable|Mythos) (one|two|three|four|five|six|seven|eight|nine)\b', lambda m: m.group(1) + ' ' + str(NUM[m.group(2).lower()]), s)
+    s = re.sub(r'\b(Bard|Astra)\b', r'\1', s)
     s = re.sub(r'\b(' + MONTHS + r') (' + '|'.join(sorted(ORD, key=len, reverse=True)) + r')\b', lambda m: m.group(1) + ' ' + str(ORD[m.group(2)]), s)
     s = convert_numbers(s)
     s = s.replace('B_C','BC'); s = re.sub(r'\bA D\b', 'AD', s)
