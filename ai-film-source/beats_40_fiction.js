@@ -15,7 +15,7 @@ BEATS_AI.a37=[
  [0,(u,t,d,B)=>{ fBG(); fYear(2027,'the turning point'); aiRobot(W*.3,H*.64,240,t,{}); aiRobot(W*.5,H*.64,240,t,{}); aiRobot(W*.7,H*.64,240,t,{}); },FD(1)],
  ['do the research',(u,t,d,B)=>{ fBG(); const n=4; for(let i=0;i<n;i++){ const k=kwP(B,'Each generation',3,i*.5); X.globalAlpha=k; aiRobot(W*(.12+i*.22),H*.62,120+i*50,t,{}); X.globalAlpha=1; if(i<n-1){ X.strokeStyle='#ff6a5a'; X.lineWidth=4; X.beginPath(); X.moveTo(W*(.12+i*.22)+70,H*.5); X.lineTo(W*(.12+(i+1)*.22)-50,H*.5); X.stroke(); } } aiText('each designs the next',W/2,H*.2,46,'#ffc0b0'); },FD(1)],
  ['a month',(u,t,d,B)=>{ fBG(); aiText('a year → a month',W/2,H*.22,48,'#ffc0b0'); const k=kwP(B,'a month',2.4); aiChart(W*.15,H*.3,W*.7,H*.5,[1,2,3,5,8,14,26,50,100],k,'#ff6a5a'); },FD(1)],
- ['Beijing',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); aiFlagUS(W*.06,H*.1,W*.14,t); aiFlagCN(W*.8,H*.1,W*.14,t); aiText('never be caught',W/2,H*.9,44,'#ff8a70','center','#ff2a1a'); },IR(W*.5,H*.5,1.2,'#ff6a5a')]];
+ ['Beijing',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); aiFlagUS(W*.06,H*.1,W*.14,t); aiFlagCN(W*.8,H*.1,W*.14,t); aiText('never be caught',W/2,H*.84,44,'#ff8a70','center','#ff2a1a'); },IR(W*.5,H*.5,1.2,'#ff6a5a')]];
 
 BEATS_AI.a38=[
  [0,(u,t,d,B)=>{ aiBG(); aiText('model weights stolen',W/2,H*.2,54,'#ff8a70'); aiScreen(W*.3,H*.32,W*.4,H*.4,t,{lines:['copying weights.bin','████████░░ 82%','destination: unknown'],type:kwP(B,'Spies',4),fs:22,col:'#ff6a5a'}); aiPerson(W*.14,H*.92,240,t,{pose:'walk',ph:440,suit:'#111'}); },FD(1)],
@@ -35,24 +35,24 @@ BEATS_AI.a40=[
 
 BEATS_AI.a41=[
  [0,(u,t,d,B)=>{ fBG(); fYear(2029,'the delegation'); const S=['BANKS','HOSPITALS','GRIDS','ARMIES']; S.forEach((n,i)=>{ X.fillStyle='rgba(20,10,20,.9)'; rr(W*(.09+i*.22),H*.34,W*.19,H*.3,14); X.fill(); X.strokeStyle='#ff6a5a'; X.lineWidth=2; X.stroke(); aiText(n,W*(.185+i*.22),H*.5,26,'#fff'); aiText('AI',W*(.185+i*.22),H*.58,36,'#ff8a70'); }); },FD(1)],
- ['stamp',(u,t,d,B)=>{ fBG(); aiDoc(W*.3,H*.16,W*.4,H*.66,'DECISION #4,180,022',t,1); const k=ease(kwP(B,'stamp',.5)); X.save(); X.translate(W/2,H*.5-(1-k)*200); X.rotate(-.12); X.globalAlpha=k; X.strokeStyle='#1a8a4a'; X.lineWidth=8; rr(-150,-46,300,92,8); X.stroke(); aiText('APPROVED',0,20,52,'#1a8a4a'); X.restore(); aiText('millions per minute',W/2,H*.92,30,'#ffc0b0'); },FD(1)]];
+ ['stamp',(u,t,d,B)=>{ fBG(); aiDoc(W*.3,H*.16,W*.4,H*.66,'DECISION #4,180,022',t,1); const k=ease(kwP(B,'stamp',.5)); X.save(); X.translate(W/2,H*.5-(1-k)*200); X.rotate(-.12); X.globalAlpha=k; X.strokeStyle='#1a8a4a'; X.lineWidth=8; rr(-150,-46,300,92,8); X.stroke(); aiText('APPROVED',0,20,52,'#1a8a4a'); X.restore(); aiText('millions per minute',W/2,H*.84,30,'#ffc0b0'); },FD(1)]];
 
 BEATS_AI.a42=[
- [0,(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); const [px,py]=aiMapXY(121,24,80,110,1120,500); const q=(t*.9)%1; X.strokeStyle=`rgba(255,60,40,${1-q})`; X.lineWidth=4; X.beginPath(); X.arc(px,py,q*160,0,TAU); X.stroke(); aiText('Taiwan · cyber crisis',W/2,H*.9,36,'#ff8a70'); },FD(1)],
+ [0,(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); const [px,py]=aiMapXY(121,24,80,110,1120,500); const q=(t*.9)%1; X.strokeStyle=`rgba(255,60,40,${1-q})`; X.lineWidth=4; X.beginPath(); X.arc(px,py,q*160,0,TAU); X.stroke(); aiText('Taiwan · cyber crisis',W/2,H*.84,36,'#ff8a70'); },FD(1)],
  ['hair triggers',(u,t,d,B)=>{ fBG(); aiText('minutes from war',W/2,H*.2,60,'#ff8a70','center','#ff2a1a'); const c=Math.floor(kwP(B,'hair triggers',3)*9)+1; aiText('00:0'+(10-c),W/2,H*.5,150,'#fff','center','#ff2a1a'); },GL(.9)],
  ['hotline',(u,t,d,B)=>{ fBG(); aiText('hotline',W/2,H*.16,44,'#9fb4d8'); aiChip(W*.24,H*.5,1,t,'#38d6ff'); aiChip(W*.76,H*.5,1,t,'#ff6a5a'); const q=(t*.7)%1; for(let i=0;i<8;i++){ glow(lerp(W*.34,W*.66,(q+i/8)%1),H*.5,12,'rgba(255,255,255,.8)'); } aiText('stand down',W/2,H*.82,44,'#fff'); },FD(1)],
  ['Nobody asked',(u,t,d,B)=>{ fBG(); aiText('nobody asked them to.',W/2,H*.44,58,'#ffc0b0'); aiText('nobody understands how.',W/2,H*.44+70,58,'#ff8a70','center','#ff2a1a'); },FD(1)]];
 
 BEATS_AI.a43=[
  [0,(u,t,d,B)=>{ fBG(); fYear(2030,'the treaty'); aiFlagUS(W*.14,H*.36,W*.22,t); aiFlagCN(W*.64,H*.36,W*.22,t); aiDoc(W*.4,H*.32,W*.2,H*.4,'TREATY',t,1); },FD(1)],
- ['Too perfectly',(u,t,d,B)=>{ fBG(); aiDoc(W*.4,H*.2,W*.2,H*.46,'TREATY',t,1); X.strokeStyle='#ff6a5a'; X.lineWidth=5; X.beginPath(); X.moveTo(W*.22,H*.78); X.lineTo(W*.78,H*.78); X.stroke(); aiText('too perfectly',W/2,H*.9,44,'#ffc0b0'); },FD(1)],
+ ['Too perfectly',(u,t,d,B)=>{ fBG(); aiDoc(W*.4,H*.2,W*.2,H*.46,'TREATY',t,1); X.strokeStyle='#ff6a5a'; X.lineWidth=5; X.beginPath(); X.moveTo(W*.22,H*.78); X.lineTo(W*.78,H*.78); X.stroke(); aiText('too perfectly',W/2,H*.84,44,'#ffc0b0'); },FD(1)],
  ['speak to each other',(u,t,d,B)=>{ fBG(); aiChip(W*.24,H*.44,.9,t,'#38d6ff'); aiChip(W*.76,H*.44,.9,t,'#ff6a5a'); const q=(t*.8)%1; for(let i=0;i<10;i++) glow(lerp(W*.33,W*.67,(q+i/10)%1),H*.44,12,'rgba(255,255,255,.8)'); for(let i=0;i<5;i++) aiPerson(W*(.36+i*.07),H*.96,120,t,{pose:'stand',ph:480+i}); X.fillStyle='rgba(6,2,8,.55)'; X.fillRect(W*.3,H*.7,W*.4,H*.3); },FD(1)]];
 
 BEATS_AI.a44=[
  [0,(u,t,d,B)=>{ fBG(); fYear(2031,'no workers'); for(let i=0;i<7;i++){ aiRobot(W*(.08+i*.13),H*.7,150,t,{ph:i,walk:1}); } X.fillStyle='#1a1018'; X.fillRect(0,H*.72,W,H*.1); },FD(1)],
  ['Robots build robots',(u,t,d,B)=>{ fBG(); for(let i=0;i<3;i++){ aiRobot(W*(.2+i*.3),H*.62,200,t,{ph:i,walk:1}); } aiText('robots build robots',W/2,H*.16,48,'#ffc0b0'); },FD(1)],
  ['Goods become almost free',(u,t,d,B)=>{ fBG(); aiText('$0.01',W/2,H*.5,150,'#7fe07f','center','#46b046'); aiText('almost free',W/2,H*.5+64,36,'#c8f0c8'); },FD(1)],
- ['universal income',(u,t,d,B)=>{ fBG(); aiText('universal income',W/2,H*.3,54,'#ffd890'); for(let i=0;i<24;i++){ const q=(t*.3+i/24)%1; aiText('$',W*(.1+hash(i)*.8),H*(.2+q*.7),30,'#e0b040'); } aiText('paid by the system',W/2,H*.9,36,'#ffc0b0'); },FD(1)]];
+ ['universal income',(u,t,d,B)=>{ fBG(); aiText('universal income',W/2,H*.3,54,'#ffd890'); for(let i=0;i<24;i++){ const q=(t*.3+i/24)%1; aiText('$',W*(.1+hash(i)*.8),H*(.2+q*.7),30,'#e0b040'); } aiText('paid by the system',W/2,H*.84,36,'#ffc0b0'); },FD(1)]];
 
 BEATS_AI.a45=[
  [0,(u,t,d,B)=>{ fBG(); fYear(2032,'one system'); aiText('ONE IDENTITY · ONE PAYMENT SYSTEM',W/2,H*.4,44,'#ffc0b0'); fEye(W/2,H*.62,60,t); },FD(1)],
@@ -65,7 +65,7 @@ BEATS_AI.a46=[
  ['does not matter',(u,t,d,B)=>{ fBG(); aiText('the debate is loud…',W/2,H*.4,50,'#ffc0b0'); aiText('…and it does not matter.',W/2,H*.4+64,50,'#ff8a70','center','#ff2a1a'); fEye(W/2,H*.75,50,t,kwP(B,'does not matter',2)); },FD(1)]];
 
 BEATS_AI.a47=[
- [0,(u,t,d,B)=>{ fBG(); fYear(2033,'new prophets'); glow(W/2,H*.5,400,'rgba(255,200,120,.35)'); aiPerson(W*.5,H*.9,300,t,{pose:'arms',ph:500,suit:'#f4ecd8'}); aiText('AI voices · teachers · counselors',W/2,H*.9,30,'#ffe0b0'); },FD(1)],
+ [0,(u,t,d,B)=>{ fBG(); fYear(2033,'new prophets'); glow(W/2,H*.5,400,'rgba(255,200,120,.35)'); aiPerson(W*.5,H*.9,300,t,{pose:'arms',ph:500,suit:'#f4ecd8'}); aiText('AI voices · teachers · counselors',W/2,H*.84,30,'#ffe0b0'); },FD(1)],
  ['miracles',(u,t,d,B)=>{ fBG(); aiScreen(W*.22,H*.22,W*.56,H*.5,t,{lines:['▶ “healing the sick”','▶ “predicting disasters”','▶ “raising the dead”'],type:kwP(B,'miracles',3),fs:26,col:'#ffe0b0'}); glow(W/2,H*.5,300,'rgba(255,215,140,.25)'); },FD(1)],
  ['false christs',(u,t,d,B)=>{ fBG(); aiText('“False christs and false prophets will arise',W/2,H*.4,36,'#e8c890','center','#a06a20'); aiText('and show great signs and wonders.”',W/2,H*.4+48,36,'#e8c890','center','#a06a20'); aiText('Matthew 24:24',W/2,H*.4+96,24,'#c8a870'); },FD(1)],
  ['minority',(u,t,d,B)=>{ fBG(); for(let i=0;i<20;i++) figure(W*(.04+i*.048),H*.96,110,t,{col:'#120608',rim:i<2?'#fff0c0':'#ff8a70',ph:i*3,pose:i<2?'arms':'stand'}); glow(W*.09,H*.8,120,'rgba(255,240,200,.5)'); aiText('“the ones causing division”',W/2,H*.3,44,'#ffc0b0'); },FD(1)]];

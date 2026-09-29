@@ -9,14 +9,14 @@ BEATS_AI.a51=[
 
 BEATS_AI.a52=[
  [0,(u,t,d,B)=>{ rSky(); const k=ease(kwP(B,'shout',2.5)); rGlory(t,k); X.save(); X.globalAlpha=.5+.5*k; for(let i=0;i<10;i++){ const x=W*(.1+i*.09); aiWing(x,H*.2+Math.sin(i*2)*50,.8,i%2?1:-1,t,'#fffaf0'); } X.restore(); },FD(1)],
- ['trumpet',(u,t,d,B)=>{ rSky(); rGlory(t,1); ANGEL&&ANGEL(W*.5,H*.4,220,t,{}); particles('sparkle',t,90,5252,1); aiText('the trumpet of God',W/2,H*.9,40,'#fff','center','#d4a437'); },FD(1)],
- ['clouds',(u,t,d,B)=>{ rSky(); const k=ease(kwP(B,'Every eye',3)); rGlory(t,.7+.3*k); JESUS(W/2,lerp(H*.4,H*.72,k),260,t,{pose:'arms'}); for(let i=0;i<9;i++){ glow(W*(.1+i*.1),H*(.78+.03*Math.sin(i)),140,'rgba(255,255,255,.55)'); } aiText('every eye will see him',W/2,H*.9,44,'#fff','center','#d4a437'); },FD(1)],
- ['screens go dark',(u,t,d,B)=>{ const k=kwP(B,'screens go dark',1.6); fBG('#000','#0a0410','#12081a'); for(let i=0;i<12;i++){ X.fillStyle=k>(i%6)*.15?'#000':'#101828'; rr(W*(.03+(i%6)*.16),H*(.16+Math.floor(i/6)*.36),W*.14,H*.3,8); X.fill(); if(k<(i%6)*.15) fEye(W*(.1+(i%6)*.16),H*(.31+Math.floor(i/6)*.36),18,t); } aiText('every system falls silent',W/2,H*.9,40,'#c8d4e8'); },GL(1)]];
+ ['trumpet',(u,t,d,B)=>{ rSky(); rGlory(t,1); ANGEL&&ANGEL(W*.5,H*.4,220,t,{}); particles('sparkle',t,90,5252,1); aiText('the trumpet of God',W/2,H*.84,40,'#fff','center','#d4a437'); },FD(1)],
+ ['clouds',(u,t,d,B)=>{ rSky(); const k=ease(kwP(B,'Every eye',3)); rGlory(t,.7+.3*k); JESUS(W/2,lerp(H*.4,H*.72,k),260,t,{pose:'arms'}); for(let i=0;i<9;i++){ glow(W*(.1+i*.1),H*(.78+.03*Math.sin(i)),140,'rgba(255,255,255,.55)'); } aiText('every eye will see him',W/2,H*.84,44,'#fff','center','#d4a437'); },FD(1)],
+ ['screens go dark',(u,t,d,B)=>{ const k=kwP(B,'screens go dark',1.6); fBG('#000','#0a0410','#12081a'); for(let i=0;i<12;i++){ X.fillStyle=k>(i%6)*.15?'#000':'#101828'; rr(W*(.03+(i%6)*.16),H*(.16+Math.floor(i/6)*.36),W*.14,H*.3,8); X.fill(); if(k<(i%6)*.15) fEye(W*(.1+(i%6)*.16),H*(.31+Math.floor(i/6)*.36),18,t); } aiText('every system falls silent',W/2,H*.84,40,'#c8d4e8'); },GL(1)]];
 
 BEATS_AI.a53=[
- [0,(u,t,d,B)=>{ rSky(); rGlory(t,1); JESUS(W/2,H*.72,270,t,{pose:'arms'}); X.fillStyle='rgba(60,10,10,.6)'; X.fillRect(0,H*.82,W,H*.2); aiText('by the breath of his mouth',W/2,H*.9,40,'#fff','center','#d4a437'); },FD(1)],
+ [0,(u,t,d,B)=>{ rSky(); rGlory(t,1); JESUS(W/2,H*.72,270,t,{pose:'arms'}); X.fillStyle='rgba(60,10,10,.6)'; X.fillRect(0,H*.82,W,H*.2); aiText('by the breath of his mouth',W/2,H*.84,40,'#fff','center','#d4a437'); },FD(1)],
  ['rise first',(u,t,d,B)=>{ rSky(); rGlory(t,.8); X.fillStyle='#1a2a14'; X.fillRect(-60,H*.82,W+120,H*.3); for(let i=0;i<10;i++){ const k=kwP(B,'rise first',2.4,i*.1); figure(W*(.06+i*.095),H*.98-k*H*.1,120,t,{col:'#fff8e8',rim:'#fff',ph:i*4,pose:'arms'}); } aiText('the dead in Christ rise first',W/2,H*.16,42,'#fff','center','#d4a437'); },FD(1)],
- ['many crowns',(u,t,d,B)=>{ rSky(); rGlory(t,1); JESUS(W/2,H*.78,300,t,{pose:'arms'}); for(let i=0;i<7;i++){ const a=-Math.PI/2+(i-3)*.28; glow(W/2+Math.sin((i-3)*.28)*90,H*.32-Math.cos((i-3)*.28)*40,26,'rgba(255,215,90,.95)'); } aiText('KING OF KINGS · LORD OF LORDS',W/2,H*.92,40,'#ffe9a8','center','#d4a437'); },FD(1.2)]];
+ ['many crowns',(u,t,d,B)=>{ rSky(); rGlory(t,1); JESUS(W/2,H*.78,300,t,{pose:'arms'}); for(let i=0;i<7;i++){ const a=-Math.PI/2+(i-3)*.28; glow(W/2+Math.sin((i-3)*.28)*90,H*.32-Math.cos((i-3)*.28)*40,26,'rgba(255,215,90,.95)'); } aiText('KING OF KINGS · LORD OF LORDS',W/2,H*.84,40,'#ffe9a8','center','#d4a437'); },FD(1.2)]];
 
 BEATS_AI.a54=[
  [0,(u,t,d,B)=>{ sky(['#3a70b0','#c89a6a','#e8c48a']); rays(W*.5,H*.1,30,t,'rgba(255,240,200,.3)',1); city(H*.7,'#f6e2a8',5454,22,200,true); aiText('a new heaven and a new earth',W/2,H*.16,46,'#fff','center','#d4a437'); },FD(1)],

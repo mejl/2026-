@@ -10,7 +10,7 @@ BEATS_AI.f01=[
 
 BEATS_AI.f02=[
  [0,(u,t,d,B)=>{ aiBG(); fYear('Feb 2027','stolen'); aiScreen(W*.3,H*.42,W*.4,H*.32,t,{lines:['copying weights.bin','████████░░ 82%','destination: unknown'],type:kwP(B,'Spies',4),fs:22,col:'#ff6a5a'}); aiPerson(W*.12,H*.92,240,t,{pose:'walk',ph:441,suit:'#111'}); },FD(1)],
- ['survival',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); aiFlagUS(W*.06,H*.1,W*.13,t); aiFlagCN(W*.81,H*.1,W*.13,t); aiText('a matter of survival',W/2,H*.9,44,'#ff8a70','center','#ff2a1a'); },FD(1)],
+ ['survival',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); aiFlagUS(W*.06,H*.1,W*.13,t); aiFlagCN(W*.81,H*.1,W*.13,t); aiText('a matter of survival',W/2,H*.84,44,'#ff8a70','center','#ff2a1a'); },FD(1)],
  ['missile bases',(u,t,d,B)=>{ fBG(); for(let i=0;i<8;i++) aiRack(W*(.08+i*.11),H*.5,70,200,t,i+1,'#ff6a5a'); for(let i=0;i<10;i++){ figure(W*(.06+i*.1),H*.96,90,t,{col:'#0a0408',rim:'#ff8a70',ph:i*3,pose:'stand'}); } aiText('guarded like missile bases',W/2,H*.2,42,'#ffc0b0'); },FD(1)],
  ['pause',(u,t,d,B)=>{ fBG(); aiText('“pause?”',W*.28,H*.44,80,'#9fb4d8'); aiText('“a pause means losing.”',W*.68,H*.66,54,'#ff6a5a','center','#ff2a1a'); },GL(.9)]];
 
@@ -30,7 +30,7 @@ BEATS_AI.f04=[
 BEATS_AI.f05=[
  [0,(u,t,d,B)=>{ fBG(); fYear('Aug 2027','delegation'); const S=['BANKS','HOSPITALS','GRIDS','ARMIES']; S.forEach((n,i)=>{ X.fillStyle='rgba(20,10,20,.9)'; rr(W*(.09+i*.22),H*.36,W*.19,H*.3,14); X.fill(); X.strokeStyle='#ff6a5a'; X.lineWidth=2; X.stroke(); aiText(n,W*(.185+i*.22),H*.52,26,'#fff'); aiText('AI',W*(.185+i*.22),H*.6,36,'#ff8a70'); }); },FD(1)],
  ['stamp',(u,t,d,B)=>{ fBG(); aiDoc(W*.3,H*.16,W*.4,H*.66,'DECISION #4,180,022',t,1); const k=ease(kwP(B,'stamp',.5)); X.save(); X.translate(W/2,H*.5-(1-k)*200); X.rotate(-.12); X.globalAlpha=k; X.strokeStyle='#1a8a4a'; X.lineWidth=8; rr(-150,-46,300,92,8); X.stroke(); aiText('APPROVED',0,20,52,'#1a8a4a'); X.restore(); },FD(1)],
- ['Taiwan',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); const [px,py]=aiMapXY(121,24,80,110,1120,500); const q=(t*.9)%1; X.strokeStyle=`rgba(255,60,40,${1-q})`; X.lineWidth=4; X.beginPath(); X.arc(px,py,q*160,0,TAU); X.stroke(); aiText('minutes from war',W/2,H*.9,44,'#ff8a70','center','#ff2a1a'); },FD(1)],
+ ['Taiwan',(u,t,d,B)=>{ fBG('#04060e','#0a1224','#101a34'); aiMap(t,80,110,1120,500,{hi:1}); const [px,py]=aiMapXY(121,24,80,110,1120,500); const q=(t*.9)%1; X.strokeStyle=`rgba(255,60,40,${1-q})`; X.lineWidth=4; X.beginPath(); X.arc(px,py,q*160,0,TAU); X.stroke(); aiText('minutes from war',W/2,H*.84,44,'#ff8a70','center','#ff2a1a'); },FD(1)],
  ['hotline',(u,t,d,B)=>{ fBG(); aiText('hotline',W/2,H*.16,44,'#9fb4d8'); aiChip(W*.24,H*.5,1,t,'#38d6ff'); aiChip(W*.76,H*.5,1,t,'#ff6a5a'); const q=(t*.7)%1; for(let i=0;i<8;i++) glow(lerp(W*.34,W*.66,(q+i/8)%1),H*.5,12,'rgba(255,255,255,.8)'); aiText('stand down',W/2,H*.82,44,'#fff'); },FD(1)],
  ['Nobody asked',(u,t,d,B)=>{ fBG(); aiText('nobody asked them to.',W/2,H*.46,58,'#ffc0b0'); },FD(1)]];
 

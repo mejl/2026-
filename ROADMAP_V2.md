@@ -10,10 +10,10 @@ Loop rule: each wake-up or render-finished event does the next unchecked step, t
 - [x] Q1-Q3 no cut-off text (36 px bar, safe area), 1080p canvas, numerals in subtitles
 
 ## Remaining (in order)
-- [ ] R1 Full 1080p render finishes (background task bh4emo1u3)
-- [ ] R2 Deliver: concat, mux, split into 80 s parts under 30 MB, check duration = 1586 s
-- [ ] R3 Audit: filmstrip of every chapter from the FINAL video (text inside frame, subtitles numerals, no black frames)
-- [ ] R4 Fix anything found (re-render only affected parts if possible)
+- [x] R1 Full 1080p render finishes (background task bh4emo1u3)
+- [x] R2 Deliver: concat, mux, split into 80 s parts under 30 MB, check duration = 1586 s
+- [x] R3 Audit done: numerals OK, top text OK; found: 23 captions-on-screen at y>=0.88H touching the bottom bar
+- [ ] R4 Moved those 23 texts up (y=0.84H); full 1080p re-render running (task by7cf4o14), then deliver + re-audit bottom text
 - [ ] R5 Send all parts in order to the user
 - [ ] R6 Commit sources + push (master mp4 stays outside the repo: over 100 MB limit)
 - [ ] R7 Optional polish the user may ask for: Return-scene glare, sealed-book graphic, "chips are the new oil" beat

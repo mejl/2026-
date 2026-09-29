@@ -27,7 +27,7 @@ BEATS_AI.e15=[
  ['chat box',(u,t,d,B)=>{ aiBG(); const k=kwP(B,'chat box',3); aiChat(W*.06,H*.26,W*.3,H*.4,t,'Hello!','Hi! How can I help?',1); aiText('→',W*.5,H*.46,90,'#fff'); aiRobot(W*.72,H*.62,210,t,{walk:1}); aiText('2022  →  2026',W/2,H*.16,46,'#7ee3ff'); },MO(W*.06,H*.26,W*.3,H*.4,1.2)]];
 
 BEATS_AI.e16=[
- [0,(u,t,d,B)=>{ aiBG(); aiText('April 2025',W/2,H*.13,40,'#ffcf60'); aiDoc(W*.32,H*.18,W*.36,H*.66,'AI 2027',t,kwP(B,'scenario',2.4)); aiText('Kokotajlo · Alexander · Larsen · Lifland · Dean',W/2,H*.9,22,'#9fb4d8'); },FD(1)],
+ [0,(u,t,d,B)=>{ aiBG(); aiText('April 2025',W/2,H*.13,40,'#ffcf60'); aiDoc(W*.32,H*.18,W*.36,H*.66,'AI 2027',t,kwP(B,'scenario',2.4)); aiText('Kokotajlo · Alexander · Larsen · Lifland · Dean',W/2,H*.84,22,'#9fb4d8'); },FD(1)],
  ['automates coding',(u,t,d,B)=>{ aiBG(); const S=[['coding','#38d6ff'],['AI research','#a58bff'],['superhuman','#ff6a5a']]; S.forEach(([n,c],i)=>{ const k=kwP(B,['automates coding','A I research itself','superhuman'][i],.8); X.globalAlpha=k; aiLogoChip(W*(.2+i*.3),H*.46,n,c,t,1); if(i<2){ aiText('→',W*(.35+i*.3),H*.46+12,60,'#fff'); } X.globalAlpha=1; }); },FD(1)],
  ['early twenty thirties',(u,t,d,B)=>{ aiBG(); aiText('2027',W*.3,H*.5,120,'rgba(255,255,255,.35)','center'); aiText('→',W*.5,H*.5,90,'#fff'); aiText('≈ 2030s',W*.72,H*.5,100,'#ffcf60','center','#d4a437'); aiText('the authors’ later forecast',W/2,H*.74,30,'#9fb4d8'); },FD(1)],
  ['our premise',(u,t,d,B)=>{ fBG('#1a0808','#2a1010','#3a1818'); aiText('FOR THIS FILM: 2027',W/2,H*.44,70,'#ff6a5a','center','#ff2a1a'); aiText('fiction · not a prediction',W/2,H*.44+64,38,'#ffb0a0'); },GL(1)]];
