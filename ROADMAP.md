@@ -26,14 +26,14 @@ Daniel → Jesus's warnings → the history of thinking machines → the US–Ch
 - [x] **Illusion transition engine**: infinite-zoom, iris reveal, shape morph, match-cut on a shared object
 - [x] Cyber colour grade for the AI era, gold grade for the biblical era
 
-### Stage B3: Ch I–III: Daniel, Jesus, the image that speaks  ← current
-- [ ] Statue dream → statue becomes a server tower (illusion)
-- [ ] Writing on the wall (Mene, Mene, Tekel, Upharsin) → text becomes a screen prompt
-- [ ] Four beasts, "knowledge shall increase", the sealed book
-- [ ] Olivet: wars, false prophets, gospel to all nations, "no one knows the day"
-- [ ] Revelation 13 "the image that speaks", shown as *a question people ask*, not an answer
+### Stage B3: Ch I–III: Daniel, Jesus, the image that speaks
+- [x] Statue dream → statue becomes a server tower (illusion)
+- [x] Writing on the wall (Mene, Mene, Tekel, Upharsin) → text becomes a screen prompt
+- [x] Four beasts, "knowledge shall increase", the sealed book
+- [x] Olivet: wars, false prophets, gospel to all nations, "no one knows the day"
+- [x] Revelation 13 "the image that speaks", shown as *a question people ask*, not an answer
 
-### Stage B4: Ch IV–V: Thinking machines (1843–2016) and the race begins (2017–2022)
+### Stage B4: Ch IV–V: Thinking machines (1843–2016) and the race begins (2017–2022)  ← current (beats drafted, needs frame check)
 - [ ] Lovelace/Babbage, Turing, Dartmouth, AI winters, Deep Blue, Watson, AlexNet, AlphaGo
 - [ ] 2017 Transformer + China's 2030 plan; 2019 Entity List; 2020 GPT-3/AlphaFold; Oct 2022 chip controls; ChatGPT
 - [ ] US vs China "race lanes" motif that returns every chapter
