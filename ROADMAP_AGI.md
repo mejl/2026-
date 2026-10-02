@@ -26,3 +26,7 @@ Credit: Claude Sonnet 5.5 · Ultracode. Style: same engine as "The Writing on th
 - [x] C6 Beats from a data-driven template + hand-made level-up scenes + illusion transitions between quarters
 - [x] C7 Frame audit of the final video (months not Q, numerals, no clipped text)
 - [x] C8 1080p render, deliver in parts under 30 MB, commit sources, tick everything
+
+## Fix round 2 (user feedback, 2 Oct 2026)
+- [x] Found: camera drift zoomed lane panels under the ladder HUD (text visible "behind" the panel) → camera drift disabled for this film, HUD panel made opaque
+- [ ] Re-render at 1080p, deliver in parts, check frames for overlap, send

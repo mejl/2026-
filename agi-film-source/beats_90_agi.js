@@ -25,7 +25,7 @@ function glowIcon(x,y,r,c){ const g=X.createRadialGradient(x,y,0,x,y,r); g.addCo
 // ---------- HUD ladder ----------
 const agiRY=l=>l===0?640:600-(l-1)*84;
 function aiHud(s,t){ const q=AGI.shots[s.id]; if(!q||q.kind==='intro') return; if(s.ch&&t-s.start<s.card) return; const st=agiStateAt(s.id,t);
-  X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=smooth(0,.6,t-s.start)*.96; X.fillStyle='rgba(3,6,16,.80)'; rr(10,62,184,600,14); X.fill(); X.strokeStyle='rgba(255,255,255,.14)'; X.lineWidth=1.2; X.stroke();
+  X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=smooth(0,.6,t-s.start)*.96; X.fillStyle='rgba(3,6,16,.97)'; rr(10,62,184,600,14); X.fill(); X.strokeStyle='rgba(255,255,255,.14)'; X.lineWidth=1.2; X.stroke();
   X.textAlign='center'; X.font='700 12px Georgia'; X.fillStyle='#9fb4d8'; X.fillText('OPENAI AGI LEVELS',102,82);
   for(let i=0;i<4;i++){ X.fillStyle=AGI_LABS[i].c; X.beginPath(); X.arc(92+i*26,98,4,0,TAU); X.fill(); }
   for(let l=1;l<=6;l++){ const y=agiRY(l); X.strokeStyle='rgba(255,255,255,.16)'; X.lineWidth=1.2; X.beginPath(); X.moveTo(22,y); X.lineTo(182,y); X.stroke(); X.textAlign='left'; X.font='700 13px Georgia'; X.fillStyle=AGI_LC[l]; X.fillText(l<6?String(l):'★',24,y-10); X.font='600 11px Georgia'; X.fillStyle='rgba(220,230,255,.75)'; X.fillText(AGI_LV[l],40,y-10); }
@@ -84,3 +84,5 @@ function agiBeatsFor(id){ const q=AGI.shots[id], s=SCH.scenes.find(x=>x.id===id)
   return beats; }
 Object.keys(AGI.shots).forEach(id=>{ BEATS_AI[id]=agiBeatsFor(id); });
 BEATS_AI.presents=[[0,(u,t,d,B)=>{ X.fillStyle='#000'; X.fillRect(-60,-60,W+120,H+120); particles('sparkle',t,50,4711,.5); const a=smooth(.1,.3,u)*(1-smooth(.82,.98,u)); X.globalAlpha=a; aiText('C L A U D E   S O N N E T   5 . 5',W/2,H/2-40,22,'#d4a437'); aiText('EFFORT: ULTRACODE',W/2,H/2+18,46,'#ffffff','center','#38d6ff'); aiText('presents',W/2,H/2+70,20,'#8a8fa6'); X.globalAlpha=1; }]];
+// no camera drift in this film: it pushed the lane panels under the ladder HUD
+function camAI(B,u){ return {s:1,tx:0,ty:0}; }
