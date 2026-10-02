@@ -4,13 +4,13 @@ Credit: Claude Sonnet 5.5 · Ultracode. Style: same engine as "The Writing on th
 **Loop rule:** every render-finished event or wake-up does the next unchecked step, ticks it, commits and pushes. Stop only at 100%.
 
 ## What you asked for (checklist to verify at the end)
-- [ ] Every year, one by one, **every quarter**, starting 2022, shown as **months** (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec), never "Q1"
-- [ ] Year always top-right, months shown with it
-- [ ] Starts at AGI Level 1 (2022) and keeps going quarter by quarter until Level 5 hits, then ASI, also year by year
-- [ ] For ALL 4 labs (OpenAI GPT, Anthropic Claude, Google Gemini, xAI Grok): the exact model that reached each level, in timeline order
-- [ ] Predictions for the levels not yet reached, and for ASI, per lab
-- [ ] Anything the Gemini prompt missed or got wrong is fixed from your own wishes + research (list in AGI_LEVELS_FACTS.md)
-- [ ] Long film is fine
+- [x] Every year, one by one, **every quarter**, starting 2022, shown as **months** (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec), never "Q1"
+- [x] Year always top-right, months shown with it
+- [x] Starts at AGI Level 1 (2022) and keeps going quarter by quarter until Level 5 hits, then ASI, also year by year
+- [x] For ALL 4 labs (OpenAI GPT, Anthropic Claude, Google Gemini, xAI Grok): the exact model that reached each level, in timeline order
+- [x] Predictions for the levels not yet reached, and for ASI, per lab
+- [x] Anything the Gemini prompt missed or got wrong is fixed from your own wishes + research (list in AGI_LEVELS_FACTS.md)
+- [x] Long film is fine
 
 ## Honesty rules
 - The 5 levels are OpenAI's own scale (reported by Bloomberg, July 2024), not a scientific standard. Which model "hit" a level is MY JUDGMENT, labelled as such.
@@ -24,5 +24,5 @@ Credit: Claude Sonnet 5.5 · Ultracode. Style: same engine as "The Writing on th
 - [x] C4 Engine: level ladder HUD (5 steps + ASI, active step glows), 4 lab lanes with current model chips, months-range label by the year (top-right), level-up moments
 - [x] C5 Narration (Piper), schedule, score
 - [x] C6 Beats from a data-driven template + hand-made level-up scenes + illusion transitions between quarters
-- [ ] C7 Frame audit of the FINAL video (render running)
-- [ ] C8 1080p render, deliver in parts under 30 MB, commit sources, tick everything
+- [x] C7 Frame audit of the final video (months not Q, numerals, no clipped text)
+- [x] C8 1080p render, deliver in parts under 30 MB, commit sources, tick everything
