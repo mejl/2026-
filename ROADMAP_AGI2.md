@@ -17,5 +17,5 @@ Level 1: 2022 Oct–Dec · Level 2: 2024 Jul–Sep · Level 3: 2026 Jan–Mar ·
 - [x] D3 Engine: 6 build animations (web shop, app, agent dashboard, invention lab, AI-run company, ASI "describe it, it exists"), money card, society city scene x6, gauge
 - [x] D4 Narration for the new sentences (Piper), schedule, score
 - [x] D5 Frame audit of the new scenes (nothing overlaps the ladder, no clipped text, numerals, "$")
-- [ ] D6 Full 1080p re-render running (started ~16:07 CEST), then build final + check frames of the FINAL video
-- [ ] D7 Send all parts in order, tick, commit, push
+- [x] D6 Full 1080p render + final build, frames checked (lanes clear of ladder, $ captions, year top-right)
+- [x] D7 All 20 parts sent, ticked, pushed

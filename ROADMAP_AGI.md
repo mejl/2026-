@@ -29,4 +29,4 @@ Credit: Claude Sonnet 5.5 · Ultracode. Style: same engine as "The Writing on th
 
 ## Fix round 2 (user feedback, 2 Oct 2026)
 - [x] Found: camera drift zoomed lane panels under the ladder HUD (text visible "behind" the panel) → camera drift disabled for this film, HUD panel made opaque
-- [ ] Re-render at 1080p, deliver in parts, check frames for overlap, send
+- [x] Re-render at 1080p, deliver in parts, check frames for overlap, send
