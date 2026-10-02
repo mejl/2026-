@@ -14,13 +14,14 @@ os.makedirs('sent',exist_ok=True)
 subprocess.run(['ffmpeg','-y','-loglevel','error','-f','lavfi','-i','anullsrc=r=44100:cl=stereo','-t',str(GAP),'sent/gap.wav'],check=True)
 C=json.load(open('script_ai.json'))
 shots=[(c,s) for c in C for s in c['shots']]
+import hashlib,shutil
 def tts(job):
-    key,i,text=job; raw=f'sent/{key}_{i}_raw.wav'; wav=f'sent/{key}_{i}.wav'
-    tf=f'sent/{key}_{i}.txt'
-    if os.path.exists(wav) and os.path.exists(tf) and open(tf).read()==text: return wav
-    subprocess.run(['piper','-m',MODEL,'--length_scale','1.1','-f',raw],input=speak(text).encode(),check=True,capture_output=True)
-    subprocess.run(['ffmpeg','-y','-loglevel','error','-i',raw,'-af','silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,'+AF,'-ar','44100','-ac','2',wav],check=True)
-    open(tf,'w').write(text)
+    key,i,text=job; wav=f'sent/{key}_{i}.wav'; h=hashlib.md5(text.encode()).hexdigest(); hw=f'sent/h_{h}.wav'
+    if not os.path.exists(hw):
+        raw=f'sent/h_{h}_raw.wav'
+        subprocess.run(['piper','-m',MODEL,'--length_scale','1.1','-f',raw],input=speak(text).encode(),check=True,capture_output=True)
+        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',raw,'-af','silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,'+AF,'-ar','44100','-ac','2',hw],check=True)
+    shutil.copy(hw,wav)
     return wav
 jobs=[]
 for c,s in shots:

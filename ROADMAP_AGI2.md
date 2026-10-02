@@ -12,9 +12,9 @@ Request (2 Oct 2026): for EVERY level (1, 2, 3, 4, 5) and ASI, in timeline order
 Level 1: 2022 Oct–Dec · Level 2: 2024 Jul–Sep · Level 3: 2026 Jan–Mar · Level 4: 2027 Jul–Sep · Level 5: 2028 Oct–Dec · ASI: 2030 Jan–Mar. Year + months top-right in every one.
 
 ## Stages
-- [ ] D1 Research + estimates table with assumptions (AGI_LEVELS_FACTS.md addendum)
-- [ ] D2 Script: 12 new shots (6 assistant + 6 society), intro sentence, "ESTIMATE" label, "$" in subtitles
-- [ ] D3 Engine: 6 build animations (web shop, app, agent dashboard, invention lab, AI-run company, ASI "describe it, it exists"), money card, society city scene x6, gauge
+- [x] D1 Research + estimates table with assumptions (AGI_LEVELS_FACTS.md addendum)
+- [x] D2 Script: 12 new shots (6 assistant + 6 society), intro sentence, "ESTIMATE" label, "$" in subtitles
+- [x] D3 Engine: 6 build animations (web shop, app, agent dashboard, invention lab, AI-run company, ASI "describe it, it exists"), money card, society city scene x6, gauge
 - [ ] D4 Narration for the new sentences (Piper), schedule, score
 - [ ] D5 Frame audit of the new scenes (nothing overlaps the ladder, no clipped text, numerals, "$")
 - [ ] D6 Full 1080p re-render (includes the ladder-overlap fix), build final, check frames of the FINAL video

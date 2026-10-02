@@ -1,7 +1,7 @@
 // ===================== AI FILM ENGINE (Stage B2) =====================
 const BEATS_AI={};
 const PAL={gold:'#d4a437',cyan:'#38d6ff',mag:'#ff3ea5',red:'#ff4a3a',green:'#46e68c',purple:'#a58bff',ink:'#05060c'};
-const LABELS={FACT:['FACT','#46e68c'],BIBLE:['BIBLE','#d4a437'],INTERPRETATION:['INTERPRETATION','#a58bff'],FICTION:['FICTION · NOT A PREDICTION','#ff5a4a'],JUDGMENT:['MY JUDGMENT','#a58bff'],PREDICTION:['PREDICTION · NOT A FACT','#ffb347']};
+const LABELS={FACT:['FACT','#46e68c'],BIBLE:['BIBLE','#d4a437'],INTERPRETATION:['INTERPRETATION','#a58bff'],FICTION:['FICTION · NOT A PREDICTION','#ff5a4a'],JUDGMENT:['MY JUDGMENT','#a58bff'],PREDICTION:['PREDICTION · NOT A FACT','#ffb347'],ESTIMATE:['MY ESTIMATE · NOT FINANCIAL ADVICE','#ffd24a']};
 const MOODC={bible:'#d4a437',glory:'#ffd98a',machine:'#38d6ff',fiction:'#ff5a4a'};
 // ---- transition constructors (used in beat definitions) ----
 const FD=(dur=1.0)=>({type:'fade',dur});

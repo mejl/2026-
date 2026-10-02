@@ -72,7 +72,7 @@ function agiTimelineBar(B,t){ const s=B.shot; agiBG('real',t); agiFit('2022 → 
 function agiThree(B,t){ const s=B.shot; agiBG('asi',t); agiFit('THREE THINGS TO WATCH',640,120,1100,48,'#fff','center','#ff9a50',700); const L=[['How long agents can work without a human','how long agents',3],['Whether an AI can build the next AI','whether an a i',4],['Who decides when to slow down','who decides',5]]; L.forEach(([txt,k,lv],i)=>{ const p=smooth(0,.8,t-kwS(s,k)), y=190+i*130; if(p<=0) return; X.save(); X.globalAlpha=p; X.fillStyle='rgba(8,14,30,.88)'; rr(200+(1-ease(p))*120,y,880,100,16); X.fill(); X.strokeStyle=AGI_LC[lv]; X.lineWidth=2.4; X.stroke(); agiFit(String(i+1),260,y+66,60,54,AGI_LC[lv],'center'); agiFit(txt,320,y+62,720,34,'#fff','left'); X.restore(); }); }
 // ---------- beats ----------
 const AW=f=>(u,t,d,B)=>f(B,t);
-function agiBeatsFor(id){ const q=AGI.shots[id], s=SCH.scenes.find(x=>x.id===id), vd=s.vodur, i=parseInt(id.slice(1)), col=q.era==='asi'?'#c28bff':(q.era==='pred'?'#ffb347':'#7ee3ff');
+function agiBeatsFor(id){ if(AGI.shots[id].kind==='assist'||AGI.shots[id].kind==='society') return null; const q=AGI.shots[id], s=SCH.scenes.find(x=>x.id===id), vd=s.vodur, i=parseInt(id.slice(1)), col=q.era==='asi'?'#c28bff':(q.era==='pred'?'#ffb347':'#7ee3ff');
   if(q.kind==='intro') return [[0,AW(agiIntro),FD(1.4)],['this film follows',AW(agiTimelineBar),MO(240,146,860,68,1.2)],['every date up to today',AW(agiTimelineBar),FD(.9)]];
   if(q.kind==='outro') return [[0,AW(agiLaneScene),FD(1.2)],['how long agents',AW(agiThree),IR(640,360,1.3,'#ff9a50')]];
   const TR=[Z(726,360,1.2,6),IR(726,330,1.2,col),MO(206,136,1040,472,1.2),GL(.9),FD(1.0)][i%5];
@@ -82,7 +82,7 @@ function agiBeatsFor(id){ const q=AGI.shots[id], s=SCH.scenes.find(x=>x.id===id)
     beats.push([r,(u,t,d,B)=>agiSpot(B,t,e),e.lvl?IR(726,y,1.1,c):Z(726,y,1.0,6)]);
     beats.push([r+D,AW(agiLaneScene),FD(.7)]); last=r+D; });
   return beats; }
-Object.keys(AGI.shots).forEach(id=>{ BEATS_AI[id]=agiBeatsFor(id); });
+Object.keys(AGI.shots).forEach(id=>{ const b=agiBeatsFor(id); if(b) BEATS_AI[id]=b; });
 BEATS_AI.presents=[[0,(u,t,d,B)=>{ X.fillStyle='#000'; X.fillRect(-60,-60,W+120,H+120); particles('sparkle',t,50,4711,.5); const a=smooth(.1,.3,u)*(1-smooth(.82,.98,u)); X.globalAlpha=a; aiText('C L A U D E   S O N N E T   5 . 5',W/2,H/2-40,22,'#d4a437'); aiText('EFFORT: ULTRACODE',W/2,H/2+18,46,'#ffffff','center','#38d6ff'); aiText('presents',W/2,H/2+70,20,'#8a8fa6'); X.globalAlpha=1; }]];
 // no camera drift in this film: it pushed the lane panels under the ladder HUD
 function camAI(B,u){ return {s:1,tx:0,ty:0}; }

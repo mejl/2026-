@@ -97,6 +97,8 @@ def norm(text):
     s = s.replace('B_C','BC'); s = re.sub(r'\bA D\b', 'AD', s)
     s = s.replace('games to one','games to 1').replace('AlphaFold two','AlphaFold 2')
     s = s.replace('the 20 tens','the 2010s').replace('the seventies','the 1970s').replace('the late eighties','the late 1980s').replace('late eighties','late 1980s')
+    s = re.sub(r'\b(\d[\d,]*) and (\d[\d,]*(?: (?:thousand|million|billion|trillion))?) dollars\b', r'$\1 and $\2', s)
+    s = re.sub(r'(?<![$\d])\b(\d[\d,\.]*(?: (?:thousand|million|billion|trillion))?) dollars\b', r'$\1', s)
     return s
 
 if __name__ == '__main__':

@@ -32,3 +32,14 @@ Basis: METR task-length doubling every ~4–7 months; announced compute build-ou
 
 ## Extra verified facts used
 GPT-5.2 11 Dec 2025 · GPT-5.4 5 Mar 2026 · GPT-5.5 23 Apr 2026 · GPT-5.6 9 Jul 2026 · GPT-6 Astra 3–4 Sep 2026, Sol/Luna 22 Sep · Opus 4.6 5 Feb 2026 · Mythos Preview 7 Apr 2026 · Opus 4.7 16 Apr · Fable 5 9 Jun · Fable 5.1 1 Sep · Opus 5.5 22 Sep · Sonnet 5.5 28 Sep · Gemini 3 Pro 18 Nov 2025 · 3.1 Pro 19 Feb 2026 · 3.5 announced 19 May, not shipped · 3.8 Flash 2 Sep · Grok 4 9 Jul 2025 · 4.1 17 Nov 2025 · 4.20 Feb 2026 · 4.3 Apr · 4.5 8 Jul · 4.6 12 Aug · 4.7 21 Sep 2026 · DeepSeek R1 20 Jan 2025 · Operator 23 Jan 2025 · o3 16 Apr 2025.
+
+## Income and society estimates (added 2 Oct 2026; MY ESTIMATES, one person full time, USD, after costs, before tax)
+| Level | Net / month (estimate) | Grounding |
+|---|---|---|
+| 1 Chatbots | $0 – $1,500 | AI freelancing beginners report ~$500–$1,000/month in the first months |
+| 2 Reasoners | $1,500 – $8,000 | niche AI-assisted freelancers report $3,000–$10,000; Upwork 2026: freelancers using AI earn ~34% more per hour |
+| 3 Agents | $4,000 – $30,000 | solo-founder micro-SaaS reports $5,000–$50,000 per month in REVENUE with no employees (revenue, not net) |
+| 4 Innovators | $15,000 – $150,000 | prediction; only for owners of a good idea |
+| 5 Organizations | $30,000 – $500,000+ | prediction; a few solo firms already report $300,000–$500,000/month revenue |
+| ASI | no estimate | money itself may stop being the measure |
+Society: entry-level hiring declines are debated (Stanford Digital Economy Lab, Nov 2025: ~16% relative employment decline for ages 22–25 in the most AI-exposed jobs; NY Fed Q4 2025: recent-grad unemployment 5.6%; a Federal Reserve study of 1M+ firms found no link to job postings). The "work done by AI" gauge (2%, 8%, 25%, 50%, 80%, 99%) is illustrative, not data.

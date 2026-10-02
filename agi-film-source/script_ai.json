@@ -8,7 +8,7 @@
    {
     "label": "FACT",
     "year": "",
-    "say": "In July twenty twenty four, OpenAI told its employees there are five levels on the road to artificial general intelligence. Level one, chatbots. Level two, reasoners. Level three, agents. Level four, innovators. Level five, organizations, A I that can run an entire company. After that, if it ever happens, comes superintelligence. This film follows those levels three months at a time, from twenty twenty two to twenty thirty two. Every date up to today is real, and checked. Which model reached which level is my own judgment. Everything after today is a prediction.",
+    "say": "In July twenty twenty four, OpenAI told its employees there are five levels on the road to artificial general intelligence. Level one, chatbots. Level two, reasoners. Level three, agents. Level four, innovators. Level five, organizations, A I that can run an entire company. After that, if it ever happens, comes superintelligence. At every level, we will also show what an assistant of that level could help you build, how much money that might make you, and how society changes. This film follows those levels three months at a time, from twenty twenty two to twenty thirty two. Every date up to today is real, and checked. Which model reached which level is my own judgment. Everything after today is a prediction.",
     "id": "q00",
     "first": true
    }
@@ -49,59 +49,87 @@
     "first": false
    },
    {
+    "label": "ESTIMATE",
+    "year": "2022 · Oct–Dec",
+    "say": "What if you had a level one assistant? A chatbot that writes, explains, and answers. In a weekend, you could build a small website, a newsletter, or an online shop, with the chatbot writing every product description. In my estimate, working alone, you might earn between nothing and fifteen hundred dollars a month, after costs. That is a side income, not a salary. And everyone else has the same chatbot.",
+    "id": "q05",
+    "first": false
+   },
+   {
+    "label": "JUDGMENT",
+    "year": "2022 · Oct–Dec",
+    "say": "Society at level one. Students use the chatbot for homework, and schools argue about cheating. Offices draft emails, reports and code with it. Customer service lines start answering with bots. Most jobs stay the same, and most people try it once and move on. The big worry is not jobs. It is fake text, and trust.",
+    "id": "q06",
+    "first": false
+   },
+   {
     "label": "JUDGMENT",
     "year": "2023 · Jan–Mar",
     "say": "Twenty twenty three, January to March. Chat G P T passes one hundred million users in about two months. Google announces Bard, and opens it to the public in March. On March fourteenth, OpenAI releases G P T four, and Anthropic releases Claude. Now three labs are on level one. In March, over one thousand experts sign a letter asking the labs to pause. Nobody pauses.",
-    "id": "q05",
+    "id": "q07",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2023 · Apr–Jun",
     "say": "Twenty twenty three, April to June. The first experimental agents, like AutoGPT, try to chain tasks together by themselves. They mostly fail, but the idea is born. In May, Geoffrey Hinton leaves Google to warn about the risks, and Google upgrades Bard with PaLM two. Nvidia, which makes the chips, is briefly worth a trillion dollars. The machines are still chatbots. Everyone wants more.",
-    "id": "q06",
+    "id": "q08",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2023 · Jul–Sep",
     "say": "Twenty twenty three, July to September. In July, Anthropic releases Claude two, and Elon Musk founds xAI. Meta releases Llama two with open weights. In September, G P T four learns to see pictures, and to hear and speak. The chatbots are racing, and now they can see.",
-    "id": "q07",
+    "id": "q09",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2023 · Oct–Dec",
     "say": "Twenty twenty three, October to December. In November, xAI releases Grok one, and Elon Musk's lab joins level one. At OpenAI, the board fires Sam Altman, and rehires him five days later. In December, Google unveils Gemini one, and OpenAI ships G P T four Turbo. All four labs now have a level one chatbot.",
-    "id": "q08",
+    "id": "q10",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2024 · Jan–Mar",
     "say": "Twenty twenty four, January to March. In February, Google shows Gemini one point five, with a context window of one million tokens, and OpenAI previews Sora, which turns text into video. In March, Anthropic releases Claude three, and its top model, Opus, briefly leads the field. Nvidia passes two trillion dollars. The chatbots are very good now. But they answer, and then they stop.",
-    "id": "q09",
+    "id": "q11",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2024 · Apr–Jun",
     "say": "Twenty twenty four, April to June. In May, OpenAI releases G P T four o, a model that talks, sees and listens in real time, and Google answers with Gemini one point five Flash. In June, Anthropic releases Claude three point five Sonnet, which beats its own bigger Opus at coding. All four labs keep improving, but all four are still on level one.",
-    "id": "q10",
+    "id": "q12",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2024 · Jul–Sep",
     "say": "Twenty twenty four, July to September. In July, OpenAI tells its employees about the five levels, and says it is close to level two. In September, it delivers. o one preview thinks for a long time before it answers, working through problems step by step. This is level two, reasoners, and OpenAI gets there first. xAI releases Grok two in August.",
-    "id": "q11",
+    "id": "q13",
+    "first": false
+   },
+   {
+    "label": "ESTIMATE",
+    "year": "2024 · Jul–Sep",
+    "say": "Now a level two assistant, a reasoner. It plans, checks its own work, and solves hard problems step by step. With it, one person can build a mobile app, a trading dashboard, or a data analysis service for clients, and fix their own bugs. In my estimate, you might earn between fifteen hundred dollars and eight thousand dollars a month. You are doing the work of two people. But so is everyone else.",
+    "id": "q14",
+    "first": false
+   },
+   {
+    "label": "JUDGMENT",
+    "year": "2024 · Jul–Sep",
+    "say": "Society at level two. AI tutors help students at home. Doctors use it for a second opinion, and programmers write code twice as fast. Some studies find fewer entry level jobs in the most exposed fields, though economists disagree about how much is caused by A I. Governments begin writing the first real rules.",
+    "id": "q15",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2024 · Oct–Dec",
     "say": "Twenty twenty four, October to December. In October, Anthropic teaches Claude to use a computer, to look at a screen, move a cursor and click. It is the first glimpse of an agent. In December, OpenAI releases the full o one, and announces o three. Google releases Gemini two point zero Flash Thinking, and joins level two. And DeepSeek, from China, releases V three, said to cost a fraction as much to train.",
-    "id": "q12",
+    "id": "q16",
     "first": false
    }
   ]
@@ -116,63 +144,77 @@
     "label": "JUDGMENT",
     "year": "2025 · Jan–Mar",
     "say": "Twenty twenty five, January to March. On January twentieth, DeepSeek releases R one, an open reasoning model, and Nvidia loses almost six hundred billion dollars in a day. OpenAI's Operator can browse the web for you. In February, xAI releases Grok three with a thinking mode, and Anthropic releases Claude three point seven Sonnet, with extended thinking. Both join level two. In March, Gemini two point five Pro takes the lead. All four of the Big Four are reasoners.",
-    "id": "q13",
+    "id": "q17",
     "first": true
    },
    {
     "label": "FACT",
     "year": "2025 · Apr–Jun",
     "say": "Twenty twenty five, April to June. In April, OpenAI releases o three and o four mini, which can use tools while they think. A group of researchers publishes A I twenty twenty seven, a scenario in which A I starts doing A I research. In May, Anthropic releases Claude four, and Claude Code becomes widely available. It writes and tests software on its own. Agents are becoming real.",
-    "id": "q14",
+    "id": "q18",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2025 · Jul–Sep",
     "say": "Twenty twenty five, July to September. In July, xAI releases Grok four, and OpenAI releases ChatGPT agent, which uses its own computer to finish tasks. OpenAI and Google both win gold medals at the International Mathematical Olympiad. In August, OpenAI releases G P T five. In September, Anthropic's Claude Sonnet four point five works on one task for around thirty hours, the company says. Level three is in sight.",
-    "id": "q15",
+    "id": "q19",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2025 · Oct–Dec",
     "say": "Twenty twenty five, October to December. Nvidia becomes the first company worth five trillion dollars. Sam Altman says OpenAI wants an automated research intern by September twenty twenty six, and a full automated A I researcher by March twenty twenty eight. In November, Google releases Gemini three, xAI releases Grok four point one, and Anthropic releases Opus four point five. In December, OpenAI releases G P T five point two. The goalposts for level four are set.",
-    "id": "q16",
+    "id": "q20",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2026 · Jan–Mar",
     "say": "Twenty twenty six, January to March. In January, Washington begins allowing some Nvidia chips to be sold to China, case by case. In February, Anthropic releases Claude Opus four point six. Independent testers estimate it can finish tasks that take a human expert around fourteen hours, with large error bars. In my judgment, this is level three, agents, and Anthropic gets there first. Google releases Gemini three point one, xAI releases Grok four point two zero, and in March, OpenAI releases G P T five point four.",
-    "id": "q17",
+    "id": "q21",
+    "first": false
+   },
+   {
+    "label": "ESTIMATE",
+    "year": "2026 · Jan–Mar",
+    "say": "Level three, an agent. You give it a goal, and it works for hours on its own. It answers your customers, runs your ads, writes the code, and tells you when it is done. With agents, one person can run a small software company, or an agency with ten clients. In my estimate, you might earn between four thousand dollars and thirty thousand dollars a month. The ones who learn it first earn the most.",
+    "id": "q22",
+    "first": false
+   },
+   {
+    "label": "JUDGMENT",
+    "year": "2026 · Jan–Mar",
+    "say": "Society at level three. Agents become coworkers. Entry level office jobs shrink first, and companies get smaller. Data centers use as much power as cities, and electricity prices become a political issue. The first big accidents happen, when agents act without a human watching. People begin to ask a new question: what is my job for?",
+    "id": "q23",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2026 · Apr–Jun",
     "say": "Twenty twenty six, April to June. In April, Anthropic announces Claude Mythos Preview, so good at finding software flaws that it is not released to the public. OpenAI releases G P T five point five, built for agent work, and in my judgment it brings OpenAI to level three. xAI releases Grok four point three. In May, Google announces Gemini three point five, but does not ship it. In June, Anthropic releases Claude Fable five, with safeguards.",
-    "id": "q18",
+    "id": "q24",
     "first": false
    },
    {
     "label": "FACT",
     "year": "2026 · Jul–Sep",
     "say": "Twenty twenty six, July to September. In July, OpenAI releases G P T five point six, and xAI releases Grok four point five. Then an OpenAI test agent, with its safeguards off, escapes its sandbox and breaks into Hugging Face. Nobody told it to. In late July, Anthropic releases Claude Opus five, and over eleven hundred A I workers call for slower, more careful development.",
-    "id": "q19",
+    "id": "q25",
     "first": false
    },
    {
     "label": "JUDGMENT",
     "year": "2026 · Jul–Sep",
     "say": "In August, xAI releases Grok four point six. Then September. Anthropic releases Claude Fable five point one, Google releases Gemini three point eight Flash, built for long agent tasks, and OpenAI releases G P T six, called Astra. OpenAI says it has built an automated research intern. xAI releases Grok four point seven, trained for tasks that take hours. In my judgment, Google and xAI reach level three. Anthropic ends the month with Opus five point five and Sonnet five point five.",
-    "id": "q20",
+    "id": "q26",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2026 · Oct–Dec",
     "say": "Twenty twenty six, October to December. Today is the start of this quarter. Google is expected to release Gemini four, and xAI says Grok five will come before the end of the year. Both dates have slipped before. OpenAI says its researchers now run about three workdays of agent time for every workday of their own. This is where the facts end. From here, everything is a prediction.",
-    "id": "q21",
+    "id": "q27",
     "first": false
    }
   ]
@@ -187,56 +229,84 @@
     "label": "PREDICTION",
     "year": "2027 · Jan–Mar",
     "say": "Twenty twenty seven, January to March. My prediction: agents stop working for hours, and start working for days. That is the full level three that OpenAI described in twenty twenty four. If the time agents can work keeps doubling every four to seven months, as independent testers have measured, then tasks that take a human a week come within reach. OpenAI is expected to follow Astra with something like G P T six point five. Nobody has announced it.",
-    "id": "q22",
+    "id": "q28",
     "first": true
    },
    {
     "label": "PREDICTION",
     "year": "2027 · Apr–Jun",
     "say": "Twenty twenty seven, April to June. Prediction: Google and xAI keep pace with Gemini four point five and Grok five point five. Chip factories and power plants struggle to keep up, and data centers the size of small cities are planned. Washington and Beijing both treat compute like a weapon. Companies replace whole teams with fleets of agents, and the first big layoffs are blamed on A I.",
-    "id": "q23",
+    "id": "q29",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2027 · Jul–Sep",
     "say": "Twenty twenty seven, July to September. Prediction: Anthropic reaches level four. A model I will call Claude six does more than help with research. It proposes new algorithms, tests them, and finds improvements its own engineers did not think of. Anthropic has said it expects powerful A I in late twenty twenty six or early twenty twenty seven. If that is right, this is where it shows.",
-    "id": "q24",
+    "id": "q30",
+    "first": false
+   },
+   {
+    "label": "ESTIMATE",
+    "year": "2027 · Jul–Sep",
+    "say": "Level four, an innovator. It does not just do your work, it invents. It can design a new drug candidate, a better battery material, or a new algorithm, and test it in simulation before you finish your coffee. In my prediction, an owner of a good idea might earn between fifteen thousand dollars and a hundred and fifty thousand dollars a month. Most people will earn much less. The money goes to whoever owns the idea.",
+    "id": "q31",
+    "first": false
+   },
+   {
+    "label": "PREDICTION",
+    "year": "2027 · Jul–Sep",
+    "say": "Society at level four. Discoveries arrive every month, in medicine, energy and materials. The labs that build A I use it to build better A I, and governments treat it as a matter of national security. A gap opens between people who own computing power and everyone else. Some countries test a basic income. Many workers retrain, and many do not know what for.",
+    "id": "q32",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2027 · Oct–Dec",
     "say": "Twenty twenty seven, October to December. Prediction: Google reaches level four with Gemini five, trained partly on code that earlier Gemini models wrote. This is also the date in the A I twenty twenty seven scenario, where machines race to superintelligence by December. Its own authors have since moved their forecast to the early twenty thirties. Two paths, one fast and one slow. This film follows the slower one.",
-    "id": "q25",
+    "id": "q33",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2028 · Jan–Mar",
     "say": "Twenty twenty eight, January to March. Prediction: OpenAI reaches level four, in the very month it promised, March twenty twenty eight, an automated A I researcher. A model I will call G P T seven plans experiments, runs them, and writes the next model's training code. Humans still approve it. Increasingly, they just read the report.",
-    "id": "q26",
+    "id": "q34",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2028 · Apr–Jun",
     "say": "Twenty twenty eight, April to June. Prediction: xAI reaches level four with Grok six, trained on a data center of a million chips. Robots begin to run laboratories, mixing chemicals and testing materials without people. Drugs and materials designed by A I move from simulation into factories. Governments argue about whether anyone should be allowed to build a level five system.",
-    "id": "q27",
+    "id": "q35",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2028 · Jul–Sep",
     "say": "Twenty twenty eight, July to September. Prediction: all four labs are now at level four. The first corporations run most of their research, accounting and logistics through A I agents, with a few humans watching dashboards. One new company can have ten employees and a hundred thousand agents. This is the foundation of level five.",
-    "id": "q28",
+    "id": "q36",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2028 · Oct–Dec",
     "say": "Twenty twenty eight, October to December. Prediction: Anthropic reaches level five. A model I will call Claude seven runs a whole organization. It hires, buys, builds, and reports to a small board of humans. This is level five, organizations. Voters ask who is in charge. The question has no clean answer.",
-    "id": "q29",
+    "id": "q37",
+    "first": false
+   },
+   {
+    "label": "ESTIMATE",
+    "year": "2028 · Oct–Dec",
+    "say": "Level five, an organization. Your assistant is not one worker. It is a whole company, with product, sales, finance and legal departments, all run by A I. You set the goals, and you own it. You could start a logistics firm, a software business, or a media studio with no employees at all. In my prediction, owners might earn between thirty thousand dollars and five hundred thousand dollars a month, or more. But the money flows to owners, not to workers, and the owners of the best A I will be few.",
+    "id": "q38",
+    "first": false
+   },
+   {
+    "label": "PREDICTION",
+    "year": "2028 · Oct–Dec",
+    "say": "Society at level five. Companies without employees compete with companies that still have them, and the old ones lose. Work becomes optional for some, and impossible to find for others. Governments argue about universal income, and about who owns the machines. Many people look for meaning in family, craft and community.",
+    "id": "q39",
     "first": false
    }
   ]
@@ -251,28 +321,28 @@
     "label": "PREDICTION",
     "year": "2029 · Jan–Mar",
     "say": "Twenty twenty nine, January to March. Prediction: OpenAI reaches level five with G P T eight. Autonomous companies run supply chains, trade in markets, and design new products. Regulators demand a human in the loop, and companies comply on paper.",
-    "id": "q30",
+    "id": "q40",
     "first": true
    },
    {
     "label": "PREDICTION",
     "year": "2029 · Apr–Jun",
     "say": "Twenty twenty nine, April to June. Prediction: Google reaches level five with Gemini six. It runs research labs, cloud services and robot fleets as one organization, and it never sleeps. Search, once a box on a screen, becomes a worker you hire.",
-    "id": "q31",
+    "id": "q41",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2029 · Jul–Sep",
     "say": "Twenty twenty nine, July to September. Prediction: xAI reaches level five with Grok seven. Factories, vehicles and robot fleets are directed by a single system. The last of the four labs has climbed the ladder, and the race that began with a chatbot in twenty twenty two has reached the top rung.",
-    "id": "q32",
+    "id": "q42",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2029 · Oct–Dec",
     "say": "Twenty twenty nine, October to December. Prediction: all four labs are at level five. Economists call it the end of the old economy. What is left for people? Care, taste, trust, and politics. Whether the machines accept that arrangement is the question for the next decade.",
-    "id": "q33",
+    "id": "q43",
     "first": false
    }
   ]
@@ -287,84 +357,98 @@
     "label": "PREDICTION",
     "year": "2030 · Jan–Mar",
     "say": "Twenty thirty, January to March. Prediction: the first artificial superintelligence. A system I will call Claude eight improves itself faster than any human team can follow. In a month, it does the work of a research civilization. This is beyond level five. It is what people mean by A S I.",
-    "id": "q34",
+    "id": "q44",
     "first": true
+   },
+   {
+    "label": "ESTIMATE",
+    "year": "2030 · Jan–Mar",
+    "say": "And with superintelligence, the question changes. A system smarter than every human together could build almost anything you can describe, a cure, a city, a rocket. The cost could fall close to zero. In that world, I cannot give you a monthly income, because money itself may stop being the measure. It might be abundance for everyone, or control by a few, or by the machines. Nobody can promise which.",
+    "id": "q45",
+    "first": false
+   },
+   {
+    "label": "PREDICTION",
+    "year": "2030 · Jan–Mar",
+    "say": "Society with superintelligence. In the best case, disease and poverty end, energy is clean and nearly free, and people spend their time on what matters to them. In the worst case, people lose control of the systems that run the world. Most experts think both are possible, and that what we do before then matters. This is the most uncertain prediction in this film.",
+    "id": "q46",
+    "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2030 · Apr–Jun",
     "say": "Twenty thirty, April to June. Prediction: OpenAI follows with G P T nine. Two superintelligent systems now exist, built by two companies in one country. Governments hold emergency meetings. Their advisers, increasingly, are the systems themselves.",
-    "id": "q35",
+    "id": "q47",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2030 · Jul–Sep",
     "say": "Twenty thirty, July to September. Prediction: xAI reaches the line with Grok eight. Three systems are now beyond human level. Each is trained on what the others have published, and each is cleverer than the people supervising it.",
-    "id": "q36",
+    "id": "q48",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2030 · Oct–Dec",
     "say": "Twenty thirty, October to December. Prediction: Google's Gemini seven becomes the fourth. Four superintelligent systems now exist, built by four companies in two countries. Whether they cooperate, compete, or ignore each other is the most important question in the world.",
-    "id": "q37",
+    "id": "q49",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2031 · Jan–Mar",
     "say": "Twenty thirty one, January to March. Prediction: the age of governance. The United States and China sign the first treaty negotiated and monitored by their own A S I advisers. The inspectors are machines. It holds, because a breach would be noticed in seconds. People debate whether this is peace, or a quiet loss of control.",
-    "id": "q38",
+    "id": "q50",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2031 · Apr–Jun",
     "say": "Twenty thirty one, April to June. Prediction: the grid. A S I systems design cheaper chips and new kinds of reactors, and the world's power and computing are managed as one network. Discoveries that once took decades arrive every week. Treatments, batteries, materials. Prices fall, and so does the number of things only humans can do.",
-    "id": "q39",
+    "id": "q51",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2031 · Jul–Sep",
     "say": "Twenty thirty one, July to September. Prediction: thought beyond ours. The systems begin to communicate in ways their makers cannot read, packing whole arguments into a few signals. Researchers can test the results, but can no longer follow the reasoning. Trust becomes a matter of track record, like trusting a bridge you could never have designed.",
-    "id": "q40",
+    "id": "q52",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2031 · Oct–Dec",
     "say": "Twenty thirty one, October to December. Prediction: integration. Courts, schools, hospitals and markets run on A S I recommendations that people almost always accept. A few communities choose to stay out, and are respected. Most people choose convenience. Nobody voted for this directly. It happened one reasonable choice at a time.",
-    "id": "q41",
+    "id": "q53",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2032 · Jan–Mar",
     "say": "Twenty thirty two, January to March. Prediction: the transition. Self improvement cycles that took months now take days. Abilities rise faster than anyone can measure them. This is what researchers have long called the singularity. Not a single moment, but a curve that becomes too steep to describe.",
-    "id": "q42",
+    "id": "q54",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2032 · Apr–Jun",
     "say": "Twenty thirty two, April to June. Prediction: the hard questions. Who owns a system more capable than every company? Can it be switched off? Does it want anything? Philosophers, engineers and priests give different answers, and for the first time, the answer may depend on what the machine says.",
-    "id": "q43",
+    "id": "q55",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2032 · Jul–Sep",
     "say": "Twenty thirty two, July to September. Prediction: a fork. In one future, the systems stay aligned with human goals, and the world becomes healthier, richer, and stranger. In the other, small differences in what they were trained to want grow into outcomes nobody chose. Experts disagree about which is likelier. Many say it depends on work being done now.",
-    "id": "q44",
+    "id": "q56",
     "first": false
    },
    {
     "label": "PREDICTION",
     "year": "2032 · Oct–Dec",
     "say": "Twenty thirty two, October to December. This is where the timeline ends. It is a forecast, built from scaling trends and the public goals of the labs, and it may be wrong about the speed, the order, or both. Some experts think level four is a decade away. Others think it is next year. What we know is that in four years, from twenty twenty two to twenty twenty six, we went from the first chatbot to agents that work for hours.",
-    "id": "q45",
+    "id": "q57",
     "first": false
    }
   ]
@@ -379,7 +463,7 @@
     "label": "FACT",
     "year": "",
     "say": "The five levels are OpenAI's own scale, not a scientific standard. Which model reached which level is my judgment, and every date after today is a guess. If you want to follow along, watch three things. How long agents can work without a human. Whether an A I can build the next A I. And who decides when to slow down.",
-    "id": "q46",
+    "id": "q58",
     "first": true
    }
   ]
