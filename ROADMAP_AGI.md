@@ -20,9 +20,9 @@ Credit: Claude Sonnet 5.5 · Ultracode. Style: same engine as "The Writing on th
 ## Stages
 - [x] C1 Research: OpenAI's level definitions, official statements about which level they are at; every lab's release dates 2022–Oct 2026; news since 28 Sep 2026; expert forecasts for Level 4/5/ASI → AGI_LEVELS_FACTS.md (with the list of Gemini-prompt errors)
 - [x] C2 Level-hit table per lab (judgment + reasons), predictions table per lab (Level 4, Level 5, ASI quarter + confidence)
-- [ ] C3 Script: one shot per quarter (2022 Jan–Mar … 2026 Oct–Dec, then predicted quarters through Level 5 and ASI years), four-lab state of play in each, labels FACT / MY JUDGMENT / PREDICTION
-- [ ] C4 Engine: level ladder HUD (5 steps + ASI, active step glows), 4 lab lanes with current model chips, months-range label by the year (top-right), level-up moments
-- [ ] C5 Narration (Piper), schedule, score
-- [ ] C6 Beats from a data-driven template + hand-made level-up scenes + illusion transitions between quarters
-- [ ] C7 Frame audit (top/bottom text inside frame, numerals, months not Q, all 4 labs in every quarter), fixes
+- [x] C3 Script: one shot per quarter (2022 Jan–Mar … 2026 Oct–Dec, then predicted quarters through Level 5 and ASI years), four-lab state of play in each, labels FACT / MY JUDGMENT / PREDICTION
+- [x] C4 Engine: level ladder HUD (5 steps + ASI, active step glows), 4 lab lanes with current model chips, months-range label by the year (top-right), level-up moments
+- [x] C5 Narration (Piper), schedule, score
+- [x] C6 Beats from a data-driven template + hand-made level-up scenes + illusion transitions between quarters
+- [ ] C7 Frame audit of the FINAL video (render running)
 - [ ] C8 1080p render, deliver in parts under 30 MB, commit sources, tick everything

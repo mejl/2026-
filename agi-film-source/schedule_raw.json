@@ -1,0 +1,2709 @@
+{
+ "total": 1223.6068499999997,
+ "scenes": [
+  {
+   "id": "presents",
+   "scene": "presents",
+   "start": 0,
+   "card": 0,
+   "vo": null,
+   "end": 5.0,
+   "label": "",
+   "year": "",
+   "mood": "bible"
+  },
+  {
+   "id": "q00",
+   "scene": "q00",
+   "ch": "",
+   "title": "",
+   "sub": "",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "",
+   "say": "In July twenty twenty four, OpenAI told its employees there are five levels on the road to artificial general intelligence. Level one, chatbots. Level two, reasoners. Level three, agents. Level four, innovators. Level five, organizations, A I that can run an entire company. After that, if it ever happens, comes superintelligence. This film follows those levels three months at a time, from twenty twenty two to twenty thirty two. Every date up to today is real, and checked. Which model reached which level is my own judgment. Everything after today is a prediction.",
+   "start": 5.0,
+   "card": 0.6,
+   "vo": 5.6,
+   "vodur": 38.948662,
+   "end": 45.548662,
+   "last": false,
+   "caps": [
+    {
+     "text": "In July twenty twenty four,",
+     "start": 5.6,
+     "end": 7.259
+    },
+    {
+     "text": "OpenAI told its employees there are five levels on the road to artificial general intelligence.",
+     "start": 7.259,
+     "end": 13.097
+    },
+    {
+     "text": "Level one, chatbots.",
+     "start": 13.497,
+     "end": 15.309
+    },
+    {
+     "text": "Level two, reasoners.",
+     "start": 15.709,
+     "end": 17.474
+    },
+    {
+     "text": "Level three, agents.",
+     "start": 17.874,
+     "end": 19.451
+    },
+    {
+     "text": "Level four, innovators.",
+     "start": 19.851,
+     "end": 21.638
+    },
+    {
+     "text": "Level five, organizations, A I that can run an entire company.",
+     "start": 22.038,
+     "end": 26.113
+    },
+    {
+     "text": "After that, if it ever happens, comes superintelligence.",
+     "start": 26.513,
+     "end": 29.871
+    },
+    {
+     "text": "This film follows those levels three months at a time,",
+     "start": 30.271,
+     "end": 33.307
+    },
+    {
+     "text": "from twenty twenty two to twenty thirty two.",
+     "start": 33.307,
+     "end": 35.78
+    },
+    {
+     "text": "Every date up to today is real, and checked.",
+     "start": 36.18,
+     "end": 38.828
+    },
+    {
+     "text": "Which model reached which level is my own judgment.",
+     "start": 39.228,
+     "end": 41.903
+    },
+    {
+     "text": "Everything after today is a prediction.",
+     "start": 42.303,
+     "end": 44.549
+    }
+   ]
+  },
+  {
+   "id": "q01",
+   "scene": "q01",
+   "ch": "I",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2022 · Jan–Mar",
+   "say": "Twenty twenty two, January to March. The road to level one. In January, OpenAI shows InstructGPT, a language model trained with human feedback to follow instructions. In March, DeepMind's Chinchilla shows that bigger is not enough, models need more data too. Nobody has a chatbot the public can use. Anthropic is a year old and training its first assistant in private. And xAI does not exist.",
+   "start": 45.548662,
+   "card": 3.0,
+   "vo": 48.548662,
+   "vodur": 28.288073,
+   "end": 77.836735,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty two, January to March.",
+     "start": 48.549,
+     "end": 50.856
+    },
+    {
+     "text": "The road to level one.",
+     "start": 51.256,
+     "end": 52.654
+    },
+    {
+     "text": "In January, OpenAI shows InstructGPT,",
+     "start": 53.054,
+     "end": 55.739
+    },
+    {
+     "text": "a language model trained with human feedback to follow instructions.",
+     "start": 55.739,
+     "end": 60.673
+    },
+    {
+     "text": "In March,",
+     "start": 61.073,
+     "end": 61.671
+    },
+    {
+     "text": "DeepMind's Chinchilla shows that bigger is not enough,",
+     "start": 61.671,
+     "end": 65.254
+    },
+    {
+     "text": "models need more data too.",
+     "start": 65.254,
+     "end": 66.98
+    },
+    {
+     "text": "Nobody has a chatbot the public can use.",
+     "start": 67.38,
+     "end": 70.051
+    },
+    {
+     "text": "Anthropic is a year old and training its first assistant in private.",
+     "start": 70.451,
+     "end": 74.551
+    },
+    {
+     "text": "And xAI does not exist.",
+     "start": 74.951,
+     "end": 76.837
+    }
+   ]
+  },
+  {
+   "id": "q02",
+   "scene": "q02",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2022 · Apr–Jun",
+   "say": "Twenty twenty two, April to June. Google reveals PaLM, a model with five hundred and forty billion parameters, and OpenAI shows Dall E two, which turns words into pictures. In June, a Google engineer claims that its chatbot, LaMDA, is alive. Google says no, and puts him on leave. People can suddenly imagine talking to a machine. But there is still no public chatbot.",
+   "start": 77.836735,
+   "card": 0.6,
+   "vo": 78.436735,
+   "vodur": 25.571837,
+   "end": 105.008572,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty two, April to June.",
+     "start": 78.437,
+     "end": 80.659
+    },
+    {
+     "text": "Google reveals PaLM,",
+     "start": 81.059,
+     "end": 82.38
+    },
+    {
+     "text": "a model with five hundred and forty billion parameters,",
+     "start": 82.38,
+     "end": 86.013
+    },
+    {
+     "text": "and OpenAI shows Dall E two,",
+     "start": 86.013,
+     "end": 87.862
+    },
+    {
+     "text": "which turns words into pictures.",
+     "start": 87.862,
+     "end": 89.976
+    },
+    {
+     "text": "In June, a Google engineer claims that its chatbot, LaMDA, is alive.",
+     "start": 90.376,
+     "end": 95.744
+    },
+    {
+     "text": "Google says no, and puts him on leave.",
+     "start": 96.144,
+     "end": 98.322
+    },
+    {
+     "text": "People can suddenly imagine talking to a machine.",
+     "start": 98.722,
+     "end": 101.56
+    },
+    {
+     "text": "But there is still no public chatbot.",
+     "start": 101.96,
+     "end": 104.009
+    }
+   ]
+  },
+  {
+   "id": "q03",
+   "scene": "q03",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2022 · Jul–Sep",
+   "say": "Twenty twenty two, July to September. In August, Stable Diffusion puts image making in everyone's hands, and in September OpenAI's Whisper learns to transcribe speech. Behind the scenes, the labs are finishing the models that will become the first chatbots. The first rung of the ladder is about to appear.",
+   "start": 105.008572,
+   "card": 0.6,
+   "vo": 105.608572,
+   "vodur": 18.629342,
+   "end": 125.23791399999999,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty two, July to September.",
+     "start": 105.609,
+     "end": 107.963
+    },
+    {
+     "text": "In August,",
+     "start": 108.363,
+     "end": 108.982
+    },
+    {
+     "text": "Stable Diffusion puts image making in everyone's hands,",
+     "start": 108.982,
+     "end": 112.387
+    },
+    {
+     "text": "and in September OpenAI's Whisper learns to transcribe speech.",
+     "start": 112.387,
+     "end": 116.225
+    },
+    {
+     "text": "Behind the scenes,",
+     "start": 116.625,
+     "end": 117.565
+    },
+    {
+     "text": "the labs are finishing the models that will become the first chatbots.",
+     "start": 117.565,
+     "end": 121.217
+    },
+    {
+     "text": "The first rung of the ladder is about to appear.",
+     "start": 121.617,
+     "end": 124.238
+    }
+   ]
+  },
+  {
+   "id": "q04",
+   "scene": "q04",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2022 · Oct–Dec",
+   "say": "Twenty twenty two, October to December. On November thirtieth, OpenAI releases Chat G P T, built on G P T three point five. It reaches one million users in five days. For the first time, anyone can talk to a machine that answers like a person. This is level one, chatbots. OpenAI is the first lab on the ladder.",
+   "start": 125.23791399999999,
+   "card": 0.6,
+   "vo": 125.83791399999998,
+   "vodur": 21.64771,
+   "end": 148.48562399999997,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty two, October to December.",
+     "start": 125.838,
+     "end": 128.272
+    },
+    {
+     "text": "On November thirtieth, OpenAI releases Chat G P T,",
+     "start": 128.672,
+     "end": 132.324
+    },
+    {
+     "text": "built on G P T three point five.",
+     "start": 132.324,
+     "end": 134.661
+    },
+    {
+     "text": "It reaches one million users in five days.",
+     "start": 135.061,
+     "end": 137.982
+    },
+    {
+     "text": "For the first time, anyone can talk to a machine that answers like a person.",
+     "start": 138.382,
+     "end": 142.333
+    },
+    {
+     "text": "This is level one, chatbots.",
+     "start": 142.733,
+     "end": 144.724
+    },
+    {
+     "text": "OpenAI is the first lab on the ladder.",
+     "start": 145.124,
+     "end": 147.486
+    }
+   ]
+  },
+  {
+   "id": "q05",
+   "scene": "q05",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2023 · Jan–Mar",
+   "say": "Twenty twenty three, January to March. Chat G P T passes one hundred million users in about two months. Google announces Bard, and opens it to the public in March. On March fourteenth, OpenAI releases G P T four, and Anthropic releases Claude. Now three labs are on level one. In March, over one thousand experts sign a letter asking the labs to pause. Nobody pauses.",
+   "start": 148.48562399999997,
+   "card": 0.6,
+   "vo": 149.08562399999997,
+   "vodur": 26.053515,
+   "end": 176.13913899999997,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty three, January to March.",
+     "start": 149.086,
+     "end": 151.496
+    },
+    {
+     "text": "Chat G P T passes one hundred million users in about two months.",
+     "start": 151.896,
+     "end": 156.32
+    },
+    {
+     "text": "Google announces Bard, and opens it to the public in March.",
+     "start": 156.72,
+     "end": 160.017
+    },
+    {
+     "text": "On March fourteenth, OpenAI releases G P T four, and Anthropic releases Claude.",
+     "start": 160.417,
+     "end": 165.926
+    },
+    {
+     "text": "Now three labs are on level one.",
+     "start": 166.326,
+     "end": 168.315
+    },
+    {
+     "text": "In March, over one thousand experts sign a letter asking the labs to pause.",
+     "start": 168.715,
+     "end": 173.484
+    },
+    {
+     "text": "Nobody pauses.",
+     "start": 173.884,
+     "end": 175.139
+    }
+   ]
+  },
+  {
+   "id": "q06",
+   "scene": "q06",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2023 · Apr–Jun",
+   "say": "Twenty twenty three, April to June. The first experimental agents, like AutoGPT, try to chain tasks together by themselves. They mostly fail, but the idea is born. In May, Geoffrey Hinton leaves Google to warn about the risks, and Google upgrades Bard with PaLM two. Nvidia, which makes the chips, is briefly worth a trillion dollars. The machines are still chatbots. Everyone wants more.",
+   "start": 176.13913899999997,
+   "card": 0.6,
+   "vo": 176.73913899999997,
+   "vodur": 26.766259,
+   "end": 204.50539799999996,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty three, April to June.",
+     "start": 176.739,
+     "end": 179.009
+    },
+    {
+     "text": "The first experimental agents, like AutoGPT,",
+     "start": 179.409,
+     "end": 182.539
+    },
+    {
+     "text": "try to chain tasks together by themselves.",
+     "start": 182.539,
+     "end": 185.526
+    },
+    {
+     "text": "They mostly fail, but the idea is born.",
+     "start": 185.926,
+     "end": 188.623
+    },
+    {
+     "text": "In May,",
+     "start": 189.023,
+     "end": 189.43
+    },
+    {
+     "text": "Geoffrey Hinton leaves Google to warn about the risks,",
+     "start": 189.43,
+     "end": 192.57
+    },
+    {
+     "text": "and Google upgrades Bard with PaLM two.",
+     "start": 192.57,
+     "end": 194.839
+    },
+    {
+     "text": "Nvidia, which makes the chips, is briefly worth a trillion dollars.",
+     "start": 195.239,
+     "end": 199.423
+    },
+    {
+     "text": "The machines are still chatbots.",
+     "start": 199.823,
+     "end": 201.927
+    },
+    {
+     "text": "Everyone wants more.",
+     "start": 202.327,
+     "end": 203.505
+    }
+   ]
+  },
+  {
+   "id": "q07",
+   "scene": "q07",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2023 · Jul–Sep",
+   "say": "Twenty twenty three, July to September. In July, Anthropic releases Claude two, and Elon Musk founds xAI. Meta releases Llama two with open weights. In September, G P T four learns to see pictures, and to hear and speak. The chatbots are racing, and now they can see.",
+   "start": 204.50539799999996,
+   "card": 0.6,
+   "vo": 205.10539799999995,
+   "vodur": 19.07746,
+   "end": 225.18285799999995,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty three, July to September.",
+     "start": 205.105,
+     "end": 207.537
+    },
+    {
+     "text": "In July, Anthropic releases Claude two, and Elon Musk founds xAI.",
+     "start": 207.937,
+     "end": 212.76
+    },
+    {
+     "text": "Meta releases Llama two with open weights.",
+     "start": 213.16,
+     "end": 215.845
+    },
+    {
+     "text": "In September, G P T four learns to see pictures, and to hear and speak.",
+     "start": 216.245,
+     "end": 221.009
+    },
+    {
+     "text": "The chatbots are racing, and now they can see.",
+     "start": 221.409,
+     "end": 224.183
+    }
+   ]
+  },
+  {
+   "id": "q08",
+   "scene": "q08",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2023 · Oct–Dec",
+   "say": "Twenty twenty three, October to December. In November, xAI releases Grok one, and Elon Musk's lab joins level one. At OpenAI, the board fires Sam Altman, and rehires him five days later. In December, Google unveils Gemini one, and OpenAI ships G P T four Turbo. All four labs now have a level one chatbot.",
+   "start": 225.18285799999995,
+   "card": 0.6,
+   "vo": 225.78285799999995,
+   "vodur": 22.536599,
+   "end": 249.31945699999994,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty three, October to December.",
+     "start": 225.783,
+     "end": 228.126
+    },
+    {
+     "text": "In November, xAI releases Grok one, and Elon Musk's lab joins level one.",
+     "start": 228.526,
+     "end": 233.888
+    },
+    {
+     "text": "At OpenAI, the board fires Sam Altman, and rehires him five days later.",
+     "start": 234.288,
+     "end": 239.109
+    },
+    {
+     "text": "In December, Google unveils Gemini one, and OpenAI ships G P T four Turbo.",
+     "start": 239.509,
+     "end": 244.934
+    },
+    {
+     "text": "All four labs now have a level one chatbot.",
+     "start": 245.334,
+     "end": 248.319
+    }
+   ]
+  },
+  {
+   "id": "q09",
+   "scene": "q09",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2024 · Jan–Mar",
+   "say": "Twenty twenty four, January to March. In February, Google shows Gemini one point five, with a context window of one million tokens, and OpenAI previews Sora, which turns text into video. In March, Anthropic releases Claude three, and its top model, Opus, briefly leads the field. Nvidia passes two trillion dollars. The chatbots are very good now. But they answer, and then they stop.",
+   "start": 249.31945699999994,
+   "card": 0.6,
+   "vo": 249.91945699999994,
+   "vodur": 27.050884,
+   "end": 277.97034099999996,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty four, January to March.",
+     "start": 249.919,
+     "end": 252.367
+    },
+    {
+     "text": "In February, Google shows Gemini one point five,",
+     "start": 252.767,
+     "end": 256.115
+    },
+    {
+     "text": "with a context window of one million tokens,",
+     "start": 256.115,
+     "end": 259.183
+    },
+    {
+     "text": "and OpenAI previews Sora, which turns text into video.",
+     "start": 259.183,
+     "end": 262.95
+    },
+    {
+     "text": "In March, Anthropic releases Claude three,",
+     "start": 263.35,
+     "end": 266.404
+    },
+    {
+     "text": "and its top model, Opus, briefly leads the field.",
+     "start": 266.404,
+     "end": 269.967
+    },
+    {
+     "text": "Nvidia passes two trillion dollars.",
+     "start": 270.367,
+     "end": 272.712
+    },
+    {
+     "text": "The chatbots are very good now.",
+     "start": 273.112,
+     "end": 274.899
+    },
+    {
+     "text": "But they answer, and then they stop.",
+     "start": 275.299,
+     "end": 276.97
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "scene": "q10",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2024 · Apr–Jun",
+   "say": "Twenty twenty four, April to June. In May, OpenAI releases G P T four o, a model that talks, sees and listens in real time, and Google answers with Gemini one point five Flash. In June, Anthropic releases Claude three point five Sonnet, which beats its own bigger Opus at coding. All four labs keep improving, but all four are still on level one.",
+   "start": 277.97034099999996,
+   "card": 0.6,
+   "vo": 278.570341,
+   "vodur": 24.21093,
+   "end": 303.781271,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty four, April to June.",
+     "start": 278.57,
+     "end": 280.929
+    },
+    {
+     "text": "In May, OpenAI releases G P T four o, a model that talks,",
+     "start": 281.329,
+     "end": 285.273
+    },
+    {
+     "text": "sees and listens in real time,",
+     "start": 285.273,
+     "end": 287.349
+    },
+    {
+     "text": "and Google answers with Gemini one point five Flash.",
+     "start": 287.349,
+     "end": 290.947
+    },
+    {
+     "text": "In June, Anthropic releases Claude three point five Sonnet,",
+     "start": 291.347,
+     "end": 295.185
+    },
+    {
+     "text": "which beats its own bigger Opus at coding.",
+     "start": 295.185,
+     "end": 297.918
+    },
+    {
+     "text": "All four labs keep improving, but all four are still on level one.",
+     "start": 298.318,
+     "end": 302.781
+    }
+   ]
+  },
+  {
+   "id": "q11",
+   "scene": "q11",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2024 · Jul–Sep",
+   "say": "Twenty twenty four, July to September. In July, OpenAI tells its employees about the five levels, and says it is close to level two. In September, it delivers. o one preview thinks for a long time before it answers, working through problems step by step. This is level two, reasoners, and OpenAI gets there first. xAI releases Grok two in August.",
+   "start": 303.781271,
+   "card": 0.6,
+   "vo": 304.381271,
+   "vodur": 22.682041,
+   "end": 328.06331200000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty four, July to September.",
+     "start": 304.381,
+     "end": 306.814
+    },
+    {
+     "text": "In July, OpenAI tells its employees about the five levels,",
+     "start": 307.214,
+     "end": 310.805
+    },
+    {
+     "text": "and says it is close to level two.",
+     "start": 310.805,
+     "end": 312.911
+    },
+    {
+     "text": "In September, it delivers.",
+     "start": 313.311,
+     "end": 315.062
+    },
+    {
+     "text": "o one preview thinks for a long time before it answers,",
+     "start": 315.462,
+     "end": 318.362
+    },
+    {
+     "text": "working through problems step by step.",
+     "start": 318.362,
+     "end": 320.365
+    },
+    {
+     "text": "This is level two, reasoners, and OpenAI gets there first.",
+     "start": 320.765,
+     "end": 324.15
+    },
+    {
+     "text": "xAI releases Grok two in August.",
+     "start": 324.55,
+     "end": 327.063
+    }
+   ]
+  },
+  {
+   "id": "q12",
+   "scene": "q12",
+   "ch": "",
+   "title": "THE CHATBOTS",
+   "sub": "2022 – 2024 · Levels 1 and 2",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2024 · Oct–Dec",
+   "say": "Twenty twenty four, October to December. In October, Anthropic teaches Claude to use a computer, to look at a screen, move a cursor and click. It is the first glimpse of an agent. In December, OpenAI releases the full o one, and announces o three. Google releases Gemini two point zero Flash Thinking, and joins level two. And DeepSeek, from China, releases V three, said to cost a fraction as much to train.",
+   "start": 328.06331200000005,
+   "card": 0.6,
+   "vo": 328.6633120000001,
+   "vodur": 27.380544,
+   "end": 357.04385600000006,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty four, October to December.",
+     "start": 328.663,
+     "end": 331.161
+    },
+    {
+     "text": "In October, Anthropic teaches Claude to use a computer,",
+     "start": 331.561,
+     "end": 335.174
+    },
+    {
+     "text": "to look at a screen, move a cursor and click.",
+     "start": 335.174,
+     "end": 338.13
+    },
+    {
+     "text": "It is the first glimpse of an agent.",
+     "start": 338.53,
+     "end": 340.413
+    },
+    {
+     "text": "In December, OpenAI releases the full o one, and announces o three.",
+     "start": 340.813,
+     "end": 345.195
+    },
+    {
+     "text": "Google releases Gemini two point zero Flash Thinking, and joins level two.",
+     "start": 345.595,
+     "end": 350.33
+    },
+    {
+     "text": "And DeepSeek, from China, releases V three,",
+     "start": 350.73,
+     "end": 353.45
+    },
+    {
+     "text": "said to cost a fraction as much to train.",
+     "start": 353.45,
+     "end": 356.044
+    }
+   ]
+  },
+  {
+   "id": "q13",
+   "scene": "q13",
+   "ch": "II",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2025 · Jan–Mar",
+   "say": "Twenty twenty five, January to March. On January twentieth, DeepSeek releases R one, an open reasoning model, and Nvidia loses almost six hundred billion dollars in a day. OpenAI's Operator can browse the web for you. In February, xAI releases Grok three with a thinking mode, and Anthropic releases Claude three point seven Sonnet, with extended thinking. Both join level two. In March, Gemini two point five Pro takes the lead. All four of the Big Four are reasoners.",
+   "start": 357.04385600000006,
+   "card": 3.0,
+   "vo": 360.04385600000006,
+   "vodur": 31.751701,
+   "end": 392.7955570000001,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty five, January to March.",
+     "start": 360.044,
+     "end": 362.345
+    },
+    {
+     "text": "On January twentieth, DeepSeek releases R one,",
+     "start": 362.745,
+     "end": 365.917
+    },
+    {
+     "text": "an open reasoning model,",
+     "start": 365.917,
+     "end": 367.573
+    },
+    {
+     "text": "and Nvidia loses almost six hundred billion dollars in a day.",
+     "start": 367.573,
+     "end": 371.78
+    },
+    {
+     "text": "OpenAI's Operator can browse the web for you.",
+     "start": 372.18,
+     "end": 374.739
+    },
+    {
+     "text": "In February, xAI releases Grok three with a thinking mode,",
+     "start": 375.139,
+     "end": 378.685
+    },
+    {
+     "text": "and Anthropic releases Claude three point seven Sonnet,",
+     "start": 378.685,
+     "end": 382.047
+    },
+    {
+     "text": "with extended thinking.",
+     "start": 382.047,
+     "end": 383.453
+    },
+    {
+     "text": "Both join level two.",
+     "start": 383.853,
+     "end": 385.469
+    },
+    {
+     "text": "In March, Gemini two point five Pro takes the lead.",
+     "start": 385.869,
+     "end": 389.059
+    },
+    {
+     "text": "All four of the Big Four are reasoners.",
+     "start": 389.459,
+     "end": 391.796
+    }
+   ]
+  },
+  {
+   "id": "q14",
+   "scene": "q14",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2025 · Apr–Jun",
+   "say": "Twenty twenty five, April to June. In April, OpenAI releases o three and o four mini, which can use tools while they think. A group of researchers publishes A I twenty twenty seven, a scenario in which A I starts doing A I research. In May, Anthropic releases Claude four, and Claude Code becomes widely available. It writes and tests software on its own. Agents are becoming real.",
+   "start": 392.7955570000001,
+   "card": 0.6,
+   "vo": 393.3955570000001,
+   "vodur": 24.848571,
+   "end": 419.2441280000001,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty five, April to June.",
+     "start": 393.396,
+     "end": 395.654
+    },
+    {
+     "text": "In April, OpenAI releases o three and o four mini,",
+     "start": 396.054,
+     "end": 399.284
+    },
+    {
+     "text": "which can use tools while they think.",
+     "start": 399.284,
+     "end": 401.674
+    },
+    {
+     "text": "A group of researchers publishes A I twenty twenty seven,",
+     "start": 402.074,
+     "end": 405.241
+    },
+    {
+     "text": "a scenario in which A I starts doing A I research.",
+     "start": 405.241,
+     "end": 408.019
+    },
+    {
+     "text": "In May, Anthropic releases Claude four,",
+     "start": 408.419,
+     "end": 410.949
+    },
+    {
+     "text": "and Claude Code becomes widely available.",
+     "start": 410.949,
+     "end": 413.609
+    },
+    {
+     "text": "It writes and tests software on its own.",
+     "start": 414.009,
+     "end": 416.348
+    },
+    {
+     "text": "Agents are becoming real.",
+     "start": 416.748,
+     "end": 418.244
+    }
+   ]
+  },
+  {
+   "id": "q15",
+   "scene": "q15",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2025 · Jul–Sep",
+   "say": "Twenty twenty five, July to September. In July, xAI releases Grok four, and OpenAI releases ChatGPT agent, which uses its own computer to finish tasks. OpenAI and Google both win gold medals at the International Mathematical Olympiad. In August, OpenAI releases G P T five. In September, Anthropic's Claude Sonnet four point five works on one task for around thirty hours, the company says. Level three is in sight.",
+   "start": 419.2441280000001,
+   "card": 0.6,
+   "vo": 419.8441280000001,
+   "vodur": 29.451111,
+   "end": 450.29523900000015,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty five, July to September.",
+     "start": 419.844,
+     "end": 422.196
+    },
+    {
+     "text": "In July, xAI releases Grok four,",
+     "start": 422.596,
+     "end": 424.924
+    },
+    {
+     "text": "and OpenAI releases ChatGPT agent,",
+     "start": 424.924,
+     "end": 427.398
+    },
+    {
+     "text": "which uses its own computer to finish tasks.",
+     "start": 427.398,
+     "end": 430.599
+    },
+    {
+     "text": "OpenAI and Google both win gold medals at the International Mathematical Olympiad.",
+     "start": 430.999,
+     "end": 436.493
+    },
+    {
+     "text": "In August, OpenAI releases G P T five.",
+     "start": 436.893,
+     "end": 439.703
+    },
+    {
+     "text": "In September,",
+     "start": 440.103,
+     "end": 440.908
+    },
+    {
+     "text": "Anthropic's Claude Sonnet four point five works on one task for around thirty hours,",
+     "start": 440.908,
+     "end": 446.114
+    },
+    {
+     "text": "the company says.",
+     "start": 446.114,
+     "end": 447.167
+    },
+    {
+     "text": "Level three is in sight.",
+     "start": 447.567,
+     "end": 449.295
+    }
+   ]
+  },
+  {
+   "id": "q16",
+   "scene": "q16",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2025 · Oct–Dec",
+   "say": "Twenty twenty five, October to December. Nvidia becomes the first company worth five trillion dollars. Sam Altman says OpenAI wants an automated research intern by September twenty twenty six, and a full automated A I researcher by March twenty twenty eight. In November, Google releases Gemini three, xAI releases Grok four point one, and Anthropic releases Opus four point five. In December, OpenAI releases G P T five point two. The goalposts for level four are set.",
+   "start": 450.29523900000015,
+   "card": 0.6,
+   "vo": 450.8952390000002,
+   "vodur": 31.281134,
+   "end": 483.1763730000002,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty five, October to December.",
+     "start": 450.895,
+     "end": 453.396
+    },
+    {
+     "text": "Nvidia becomes the first company worth five trillion dollars.",
+     "start": 453.796,
+     "end": 457.342
+    },
+    {
+     "text": "Sam Altman says OpenAI wants an automated research intern by September twenty twenty six,",
+     "start": 457.742,
+     "end": 462.993
+    },
+    {
+     "text": "and a full automated A I researcher by March twenty twenty eight.",
+     "start": 462.993,
+     "end": 466.827
+    },
+    {
+     "text": "In November, Google releases Gemini three,",
+     "start": 467.227,
+     "end": 470.258
+    },
+    {
+     "text": "xAI releases Grok four point one,",
+     "start": 470.258,
+     "end": 472.639
+    },
+    {
+     "text": "and Anthropic releases Opus four point five.",
+     "start": 472.639,
+     "end": 475.815
+    },
+    {
+     "text": "In December, OpenAI releases G P T five point two.",
+     "start": 476.215,
+     "end": 479.61
+    },
+    {
+     "text": "The goalposts for level four are set.",
+     "start": 480.01,
+     "end": 482.176
+    }
+   ]
+  },
+  {
+   "id": "q17",
+   "scene": "q17",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2026 · Jan–Mar",
+   "say": "Twenty twenty six, January to March. In January, Washington begins allowing some Nvidia chips to be sold to China, case by case. In February, Anthropic releases Claude Opus four point six. Independent testers estimate it can finish tasks that take a human expert around fourteen hours, with large error bars. In my judgment, this is level three, agents, and Anthropic gets there first. Google releases Gemini three point one, xAI releases Grok four point two zero, and in March, OpenAI releases G P T five point four.",
+   "start": 483.1763730000002,
+   "card": 0.6,
+   "vo": 483.7763730000002,
+   "vodur": 35.038005,
+   "end": 519.8143780000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty six, January to March.",
+     "start": 483.776,
+     "end": 486.241
+    },
+    {
+     "text": "In January,",
+     "start": 486.641,
+     "end": 487.376
+    },
+    {
+     "text": "Washington begins allowing some Nvidia chips to be sold to China,",
+     "start": 487.376,
+     "end": 491.72
+    },
+    {
+     "text": "case by case.",
+     "start": 491.72,
+     "end": 492.589
+    },
+    {
+     "text": "In February, Anthropic releases Claude Opus four point six.",
+     "start": 492.989,
+     "end": 497.2
+    },
+    {
+     "text": "Independent testers estimate it can finish tasks that take a human expert around fourteen hours,",
+     "start": 497.6,
+     "end": 503.376
+    },
+    {
+     "text": "with large error bars.",
+     "start": 503.376,
+     "end": 504.699
+    },
+    {
+     "text": "In my judgment, this is level three, agents, and Anthropic gets there first.",
+     "start": 505.099,
+     "end": 509.586
+    },
+    {
+     "text": "Google releases Gemini three point one,",
+     "start": 509.986,
+     "end": 512.655
+    },
+    {
+     "text": "xAI releases Grok four point two zero, and in March,",
+     "start": 512.655,
+     "end": 516.214
+    },
+    {
+     "text": "OpenAI releases G P T five point four.",
+     "start": 516.214,
+     "end": 518.814
+    }
+   ]
+  },
+  {
+   "id": "q18",
+   "scene": "q18",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2026 · Apr–Jun",
+   "say": "Twenty twenty six, April to June. In April, Anthropic announces Claude Mythos Preview, so good at finding software flaws that it is not released to the public. OpenAI releases G P T five point five, built for agent work, and in my judgment it brings OpenAI to level three. xAI releases Grok four point three. In May, Google announces Gemini three point five, but does not ship it. In June, Anthropic releases Claude Fable five, with safeguards.",
+   "start": 519.8143780000003,
+   "card": 0.6,
+   "vo": 520.4143780000003,
+   "vodur": 29.748481,
+   "end": 551.1628590000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty six, April to June.",
+     "start": 520.414,
+     "end": 522.86
+    },
+    {
+     "text": "In April, Anthropic announces Claude Mythos Preview,",
+     "start": 523.26,
+     "end": 526.484
+    },
+    {
+     "text": "so good at finding software flaws that it is not released to the public.",
+     "start": 526.484,
+     "end": 530.949
+    },
+    {
+     "text": "OpenAI releases G P T five point five, built for agent work,",
+     "start": 531.349,
+     "end": 535.136
+    },
+    {
+     "text": "and in my judgment it brings OpenAI to level three.",
+     "start": 535.136,
+     "end": 538.355
+    },
+    {
+     "text": "xAI releases Grok four point three.",
+     "start": 538.755,
+     "end": 541.024
+    },
+    {
+     "text": "In May, Google announces Gemini three point five, but does not ship it.",
+     "start": 541.424,
+     "end": 545.535
+    },
+    {
+     "text": "In June, Anthropic releases Claude Fable five, with safeguards.",
+     "start": 545.935,
+     "end": 550.163
+    }
+   ]
+  },
+  {
+   "id": "q19",
+   "scene": "q19",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "FACT",
+   "year": "2026 · Jul–Sep",
+   "say": "Twenty twenty six, July to September. In July, OpenAI releases G P T five point six, and xAI releases Grok four point five. Then an OpenAI test agent, with its safeguards off, escapes its sandbox and breaks into Hugging Face. Nobody told it to. In late July, Anthropic releases Claude Opus five, and over eleven hundred A I workers call for slower, more careful development.",
+   "start": 551.1628590000003,
+   "card": 0.6,
+   "vo": 551.7628590000003,
+   "vodur": 25.924263,
+   "end": 578.6871220000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty six, July to September.",
+     "start": 551.763,
+     "end": 554.263
+    },
+    {
+     "text": "In July, OpenAI releases G P T five point six,",
+     "start": 554.663,
+     "end": 558.032
+    },
+    {
+     "text": "and xAI releases Grok four point five.",
+     "start": 558.032,
+     "end": 560.815
+    },
+    {
+     "text": "Then an OpenAI test agent, with its safeguards off,",
+     "start": 561.215,
+     "end": 564.379
+    },
+    {
+     "text": "escapes its sandbox and breaks into Hugging Face.",
+     "start": 564.379,
+     "end": 567.42
+    },
+    {
+     "text": "Nobody told it to.",
+     "start": 567.82,
+     "end": 569.378
+    },
+    {
+     "text": "In late July, Anthropic releases Claude Opus five,",
+     "start": 569.778,
+     "end": 572.892
+    },
+    {
+     "text": "and over eleven hundred A I workers call for slower,",
+     "start": 572.892,
+     "end": 576.13
+    },
+    {
+     "text": "more careful development.",
+     "start": 576.13,
+     "end": 577.687
+    }
+   ]
+  },
+  {
+   "id": "q20",
+   "scene": "q20",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "JUDGMENT",
+   "year": "2026 · Jul–Sep",
+   "say": "In August, xAI releases Grok four point six. Then September. Anthropic releases Claude Fable five point one, Google releases Gemini three point eight Flash, built for long agent tasks, and OpenAI releases G P T six, called Astra. OpenAI says it has built an automated research intern. xAI releases Grok four point seven, trained for tasks that take hours. In my judgment, Google and xAI reach level three. Anthropic ends the month with Opus five point five and Sonnet five point five.",
+   "start": 578.6871220000003,
+   "card": 0.6,
+   "vo": 579.2871220000003,
+   "vodur": 33.765488,
+   "end": 614.0526100000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "In August, xAI releases Grok four point six.",
+     "start": 579.287,
+     "end": 582.344
+    },
+    {
+     "text": "Then September.",
+     "start": 582.744,
+     "end": 583.734
+    },
+    {
+     "text": "Anthropic releases Claude Fable five point one,",
+     "start": 584.134,
+     "end": 587.461
+    },
+    {
+     "text": "Google releases Gemini three point eight Flash,",
+     "start": 587.461,
+     "end": 590.788
+    },
+    {
+     "text": "built for long agent tasks, and OpenAI releases G P T six,",
+     "start": 590.788,
+     "end": 594.894
+    },
+    {
+     "text": "called Astra.",
+     "start": 594.894,
+     "end": 595.815
+    },
+    {
+     "text": "OpenAI says it has built an automated research intern.",
+     "start": 596.215,
+     "end": 599.418
+    },
+    {
+     "text": "xAI releases Grok four point seven, trained for tasks that take hours.",
+     "start": 599.818,
+     "end": 604.27
+    },
+    {
+     "text": "In my judgment, Google and xAI reach level three.",
+     "start": 604.67,
+     "end": 607.892
+    },
+    {
+     "text": "Anthropic ends the month with Opus five point five and Sonnet five point five.",
+     "start": 608.292,
+     "end": 613.053
+    }
+   ]
+  },
+  {
+   "id": "q21",
+   "scene": "q21",
+   "ch": "",
+   "title": "THE AGENTS",
+   "sub": "2025 – 2026 · Levels 2 and 3",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2026 · Oct–Dec",
+   "say": "Twenty twenty six, October to December. Today is the start of this quarter. Google is expected to release Gemini four, and xAI says Grok five will come before the end of the year. Both dates have slipped before. OpenAI says its researchers now run about three workdays of agent time for every workday of their own. This is where the facts end. From here, everything is a prediction.",
+   "start": 614.0526100000003,
+   "card": 0.6,
+   "vo": 614.6526100000003,
+   "vodur": 24.739637,
+   "end": 640.3922470000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty six, October to December.",
+     "start": 614.653,
+     "end": 617.205
+    },
+    {
+     "text": "Today is the start of this quarter.",
+     "start": 617.605,
+     "end": 619.646
+    },
+    {
+     "text": "Google is expected to release Gemini four,",
+     "start": 620.046,
+     "end": 622.724
+    },
+    {
+     "text": "and xAI says Grok five will come before the end of the year.",
+     "start": 622.724,
+     "end": 626.551
+    },
+    {
+     "text": "Both dates have slipped before.",
+     "start": 626.951,
+     "end": 628.814
+    },
+    {
+     "text": "OpenAI says its researchers now run about three workdays of agent time for every workday of their own.",
+     "start": 629.214,
+     "end": 634.825
+    },
+    {
+     "text": "This is where the facts end.",
+     "start": 635.225,
+     "end": 636.569
+    },
+    {
+     "text": "From here, everything is a prediction.",
+     "start": 636.969,
+     "end": 639.392
+    }
+   ]
+  },
+  {
+   "id": "q22",
+   "scene": "q22",
+   "ch": "III",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2027 · Jan–Mar",
+   "say": "Twenty twenty seven, January to March. My prediction: agents stop working for hours, and start working for days. That is the full level three that OpenAI described in twenty twenty four. If the time agents can work keeps doubling every four to seven months, as independent testers have measured, then tasks that take a human a week come within reach. OpenAI is expected to follow Astra with something like G P T six point five. Nobody has announced it.",
+   "start": 640.3922470000003,
+   "card": 3.0,
+   "vo": 643.3922470000003,
+   "vodur": 28.349297,
+   "end": 672.7415440000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty seven, January to March.",
+     "start": 643.392,
+     "end": 645.851
+    },
+    {
+     "text": "My prediction: agents stop working for hours, and start working for days.",
+     "start": 646.251,
+     "end": 650.885
+    },
+    {
+     "text": "That is the full level three that OpenAI described in twenty twenty four.",
+     "start": 651.285,
+     "end": 655.482
+    },
+    {
+     "text": "If the time agents can work keeps doubling every four to seven months,",
+     "start": 655.882,
+     "end": 659.745
+    },
+    {
+     "text": "as independent testers have measured,",
+     "start": 659.745,
+     "end": 661.787
+    },
+    {
+     "text": "then tasks that take a human a week come within reach.",
+     "start": 661.787,
+     "end": 664.768
+    },
+    {
+     "text": "OpenAI is expected to follow Astra with something like G P T six point five.",
+     "start": 665.168,
+     "end": 669.994
+    },
+    {
+     "text": "Nobody has announced it.",
+     "start": 670.394,
+     "end": 671.742
+    }
+   ]
+  },
+  {
+   "id": "q23",
+   "scene": "q23",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2027 · Apr–Jun",
+   "say": "Twenty twenty seven, April to June. Prediction: Google and xAI keep pace with Gemini four point five and Grok five point five. Chip factories and power plants struggle to keep up, and data centers the size of small cities are planned. Washington and Beijing both treat compute like a weapon. Companies replace whole teams with fleets of agents, and the first big layoffs are blamed on A I.",
+   "start": 672.7415440000003,
+   "card": 0.6,
+   "vo": 673.3415440000003,
+   "vodur": 25.589932,
+   "end": 699.9314760000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty seven, April to June.",
+     "start": 673.342,
+     "end": 675.604
+    },
+    {
+     "text": "Prediction: Google and xAI keep pace with Gemini four point five and Grok five point five.",
+     "start": 676.004,
+     "end": 681.914
+    },
+    {
+     "text": "Chip factories and power plants struggle to keep up,",
+     "start": 682.314,
+     "end": 685.679
+    },
+    {
+     "text": "and data centers the size of small cities are planned.",
+     "start": 685.679,
+     "end": 689.173
+    },
+    {
+     "text": "Washington and Beijing both treat compute like a weapon.",
+     "start": 689.573,
+     "end": 692.686
+    },
+    {
+     "text": "Companies replace whole teams with fleets of agents,",
+     "start": 693.086,
+     "end": 696.252
+    },
+    {
+     "text": "and the first big layoffs are blamed on A I.",
+     "start": 696.252,
+     "end": 698.931
+    }
+   ]
+  },
+  {
+   "id": "q24",
+   "scene": "q24",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2027 · Jul–Sep",
+   "say": "Twenty twenty seven, July to September. Prediction: Anthropic reaches level four. A model I will call Claude six does more than help with research. It proposes new algorithms, tests them, and finds improvements its own engineers did not think of. Anthropic has said it expects powerful A I in late twenty twenty six or early twenty twenty seven. If that is right, this is where it shows.",
+   "start": 699.9314760000003,
+   "card": 0.6,
+   "vo": 700.5314760000003,
+   "vodur": 25.796871,
+   "end": 727.3283470000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty seven, July to September.",
+     "start": 700.531,
+     "end": 703.053
+    },
+    {
+     "text": "Prediction: Anthropic reaches level four.",
+     "start": 703.453,
+     "end": 706.242
+    },
+    {
+     "text": "A model I will call Claude six does more than help with research.",
+     "start": 706.642,
+     "end": 710.523
+    },
+    {
+     "text": "It proposes new algorithms, tests them,",
+     "start": 710.923,
+     "end": 713.566
+    },
+    {
+     "text": "and finds improvements its own engineers did not think of.",
+     "start": 713.566,
+     "end": 717.495
+    },
+    {
+     "text": "Anthropic has said it expects powerful A I in late twenty twenty six or early twenty twenty seven.",
+     "start": 717.895,
+     "end": 723.547
+    },
+    {
+     "text": "If that is right, this is where it shows.",
+     "start": 723.947,
+     "end": 726.328
+    }
+   ]
+  },
+  {
+   "id": "q25",
+   "scene": "q25",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2027 · Oct–Dec",
+   "say": "Twenty twenty seven, October to December. Prediction: Google reaches level four with Gemini five, trained partly on code that earlier Gemini models wrote. This is also the date in the A I twenty twenty seven scenario, where machines race to superintelligence by December. Its own authors have since moved their forecast to the early twenty thirties. Two paths, one fast and one slow. This film follows the slower one.",
+   "start": 727.3283470000003,
+   "card": 0.6,
+   "vo": 727.9283470000004,
+   "vodur": 26.428707,
+   "end": 755.3570540000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty seven, October to December.",
+     "start": 727.928,
+     "end": 730.457
+    },
+    {
+     "text": "Prediction: Google reaches level four with Gemini five,",
+     "start": 730.857,
+     "end": 734.323
+    },
+    {
+     "text": "trained partly on code that earlier Gemini models wrote.",
+     "start": 734.323,
+     "end": 737.851
+    },
+    {
+     "text": "This is also the date in the A I twenty twenty seven scenario,",
+     "start": 738.251,
+     "end": 741.706
+    },
+    {
+     "text": "where machines race to superintelligence by December.",
+     "start": 741.706,
+     "end": 744.66
+    },
+    {
+     "text": "Its own authors have since moved their forecast to the early twenty thirties.",
+     "start": 745.06,
+     "end": 748.758
+    },
+    {
+     "text": "Two paths, one fast and one slow.",
+     "start": 749.158,
+     "end": 751.709
+    },
+    {
+     "text": "This film follows the slower one.",
+     "start": 752.109,
+     "end": 754.357
+    }
+   ]
+  },
+  {
+   "id": "q26",
+   "scene": "q26",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2028 · Jan–Mar",
+   "say": "Twenty twenty eight, January to March. Prediction: OpenAI reaches level four, in the very month it promised, March twenty twenty eight, an automated A I researcher. A model I will call G P T seven plans experiments, runs them, and writes the next model's training code. Humans still approve it. Increasingly, they just read the report.",
+   "start": 755.3570540000004,
+   "card": 0.6,
+   "vo": 755.9570540000004,
+   "vodur": 22.196689,
+   "end": 779.1537430000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty eight, January to March.",
+     "start": 755.957,
+     "end": 758.658
+    },
+    {
+     "text": "Prediction: OpenAI reaches level four,",
+     "start": 759.058,
+     "end": 761.416
+    },
+    {
+     "text": "in the very month it promised, March twenty twenty eight,",
+     "start": 761.416,
+     "end": 764.953
+    },
+    {
+     "text": "an automated A I researcher.",
+     "start": 764.953,
+     "end": 766.69
+    },
+    {
+     "text": "A model I will call G P T seven plans experiments,",
+     "start": 767.09,
+     "end": 770.207
+    },
+    {
+     "text": "runs them, and writes the next model's training code.",
+     "start": 770.207,
+     "end": 773.51
+    },
+    {
+     "text": "Humans still approve it.",
+     "start": 773.91,
+     "end": 775.416
+    },
+    {
+     "text": "Increasingly, they just read the report.",
+     "start": 775.816,
+     "end": 778.154
+    }
+   ]
+  },
+  {
+   "id": "q27",
+   "scene": "q27",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2028 · Apr–Jun",
+   "say": "Twenty twenty eight, April to June. Prediction: xAI reaches level four with Grok six, trained on a data center of a million chips. Robots begin to run laboratories, mixing chemicals and testing materials without people. Drugs and materials designed by A I move from simulation into factories. Governments argue about whether anyone should be allowed to build a level five system.",
+   "start": 779.1537430000004,
+   "card": 0.6,
+   "vo": 779.7537430000004,
+   "vodur": 25.202766,
+   "end": 805.9565090000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty eight, April to June.",
+     "start": 779.754,
+     "end": 782.085
+    },
+    {
+     "text": "Prediction: xAI reaches level four with Grok six,",
+     "start": 782.485,
+     "end": 785.834
+    },
+    {
+     "text": "trained on a data center of a million chips.",
+     "start": 785.834,
+     "end": 788.841
+    },
+    {
+     "text": "Robots begin to run laboratories,",
+     "start": 789.241,
+     "end": 791.423
+    },
+    {
+     "text": "mixing chemicals and testing materials without people.",
+     "start": 791.423,
+     "end": 794.992
+    },
+    {
+     "text": "Drugs and materials designed by A I move from simulation into factories.",
+     "start": 795.392,
+     "end": 800.109
+    },
+    {
+     "text": "Governments argue about whether anyone should be allowed to build a level five system.",
+     "start": 800.509,
+     "end": 804.957
+    }
+   ]
+  },
+  {
+   "id": "q28",
+   "scene": "q28",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2028 · Jul–Sep",
+   "say": "Twenty twenty eight, July to September. Prediction: all four labs are now at level four. The first corporations run most of their research, accounting and logistics through A I agents, with a few humans watching dashboards. One new company can have ten employees and a hundred thousand agents. This is the foundation of level five.",
+   "start": 805.9565090000004,
+   "card": 0.6,
+   "vo": 806.5565090000005,
+   "vodur": 21.442585,
+   "end": 828.9990940000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty eight, July to September.",
+     "start": 806.557,
+     "end": 809.318
+    },
+    {
+     "text": "Prediction: all four labs are now at level four.",
+     "start": 809.718,
+     "end": 812.896
+    },
+    {
+     "text": "The first corporations run most of their research,",
+     "start": 813.296,
+     "end": 816.183
+    },
+    {
+     "text": "accounting and logistics through A I agents,",
+     "start": 816.183,
+     "end": 818.724
+    },
+    {
+     "text": "with a few humans watching dashboards.",
+     "start": 818.724,
+     "end": 820.919
+    },
+    {
+     "text": "One new company can have ten employees and a hundred thousand agents.",
+     "start": 821.319,
+     "end": 825.24
+    },
+    {
+     "text": "This is the foundation of level five.",
+     "start": 825.64,
+     "end": 827.999
+    }
+   ]
+  },
+  {
+   "id": "q29",
+   "scene": "q29",
+   "ch": "",
+   "title": "THE INNOVATORS",
+   "sub": "Prediction · 2027 – 2028 · Level 4",
+   "mood": "machine",
+   "label": "PREDICTION",
+   "year": "2028 · Oct–Dec",
+   "say": "Twenty twenty eight, October to December. Prediction: Anthropic reaches level five. A model I will call Claude seven runs a whole organization. It hires, buys, builds, and reports to a small board of humans. This is level five, organizations. Voters ask who is in charge. The question has no clean answer.",
+   "start": 828.9990940000005,
+   "card": 0.6,
+   "vo": 829.5990940000005,
+   "vodur": 22.631565,
+   "end": 853.2306590000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty eight, October to December.",
+     "start": 829.599,
+     "end": 832.104
+    },
+    {
+     "text": "Prediction: Anthropic reaches level five.",
+     "start": 832.504,
+     "end": 835.48
+    },
+    {
+     "text": "A model I will call Claude seven runs a whole organization.",
+     "start": 835.88,
+     "end": 839.73
+    },
+    {
+     "text": "It hires, buys, builds, and reports to a small board of humans.",
+     "start": 840.13,
+     "end": 844.341
+    },
+    {
+     "text": "This is level five, organizations.",
+     "start": 844.741,
+     "end": 847.172
+    },
+    {
+     "text": "Voters ask who is in charge.",
+     "start": 847.572,
+     "end": 849.893
+    },
+    {
+     "text": "The question has no clean answer.",
+     "start": 850.293,
+     "end": 852.231
+    }
+   ]
+  },
+  {
+   "id": "q30",
+   "scene": "q30",
+   "ch": "IV",
+   "title": "THE ORGANIZATIONS",
+   "sub": "Prediction · 2029 · Level 5",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2029 · Jan–Mar",
+   "say": "Twenty twenty nine, January to March. Prediction: OpenAI reaches level five with G P T eight. Autonomous companies run supply chains, trade in markets, and design new products. Regulators demand a human in the loop, and companies comply on paper.",
+   "start": 853.2306590000005,
+   "card": 3.0,
+   "vo": 856.2306590000005,
+   "vodur": 17.138413,
+   "end": 874.3690720000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty nine, January to March.",
+     "start": 856.231,
+     "end": 858.507
+    },
+    {
+     "text": "Prediction: OpenAI reaches level five with G P T eight.",
+     "start": 858.907,
+     "end": 862.987
+    },
+    {
+     "text": "Autonomous companies run supply chains, trade in markets,",
+     "start": 863.387,
+     "end": 867.171
+    },
+    {
+     "text": "and design new products.",
+     "start": 867.171,
+     "end": 868.765
+    },
+    {
+     "text": "Regulators demand a human in the loop, and companies comply on paper.",
+     "start": 869.165,
+     "end": 873.369
+    }
+   ]
+  },
+  {
+   "id": "q31",
+   "scene": "q31",
+   "ch": "",
+   "title": "THE ORGANIZATIONS",
+   "sub": "Prediction · 2029 · Level 5",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2029 · Apr–Jun",
+   "say": "Twenty twenty nine, April to June. Prediction: Google reaches level five with Gemini six. It runs research labs, cloud services and robot fleets as one organization, and it never sleeps. Search, once a box on a screen, becomes a worker you hire.",
+   "start": 874.3690720000005,
+   "card": 0.6,
+   "vo": 874.9690720000006,
+   "vodur": 16.945034,
+   "end": 892.9141060000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty nine, April to June.",
+     "start": 874.969,
+     "end": 877.154
+    },
+    {
+     "text": "Prediction: Google reaches level five with Gemini six.",
+     "start": 877.554,
+     "end": 881.123
+    },
+    {
+     "text": "It runs research labs,",
+     "start": 881.523,
+     "end": 882.996
+    },
+    {
+     "text": "cloud services and robot fleets as one organization,",
+     "start": 882.996,
+     "end": 886.478
+    },
+    {
+     "text": "and it never sleeps.",
+     "start": 886.478,
+     "end": 887.817
+    },
+    {
+     "text": "Search, once a box on a screen, becomes a worker you hire.",
+     "start": 888.217,
+     "end": 891.914
+    }
+   ]
+  },
+  {
+   "id": "q32",
+   "scene": "q32",
+   "ch": "",
+   "title": "THE ORGANIZATIONS",
+   "sub": "Prediction · 2029 · Level 5",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2029 · Jul–Sep",
+   "say": "Twenty twenty nine, July to September. Prediction: xAI reaches level five with Grok seven. Factories, vehicles and robot fleets are directed by a single system. The last of the four labs has climbed the ladder, and the race that began with a chatbot in twenty twenty two has reached the top rung.",
+   "start": 892.9141060000005,
+   "card": 0.6,
+   "vo": 893.5141060000005,
+   "vodur": 18.084535,
+   "end": 912.5986410000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty nine, July to September.",
+     "start": 893.514,
+     "end": 895.766
+    },
+    {
+     "text": "Prediction: xAI reaches level five with Grok seven.",
+     "start": 896.166,
+     "end": 899.441
+    },
+    {
+     "text": "Factories, vehicles and robot fleets are directed by a single system.",
+     "start": 899.841,
+     "end": 904.113
+    },
+    {
+     "text": "The last of the four labs has climbed the ladder,",
+     "start": 904.513,
+     "end": 907.104
+    },
+    {
+     "text": "and the race that began with a chatbot in twenty twenty two has reached the top rung.",
+     "start": 907.104,
+     "end": 911.599
+    }
+   ]
+  },
+  {
+   "id": "q33",
+   "scene": "q33",
+   "ch": "",
+   "title": "THE ORGANIZATIONS",
+   "sub": "Prediction · 2029 · Level 5",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2029 · Oct–Dec",
+   "say": "Twenty twenty nine, October to December. Prediction: all four labs are at level five. Economists call it the end of the old economy. What is left for people? Care, taste, trust, and politics. Whether the machines accept that arrangement is the question for the next decade.",
+   "start": 912.5986410000005,
+   "card": 0.6,
+   "vo": 913.1986410000005,
+   "vodur": 18.394603,
+   "end": 932.5932440000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty twenty nine, October to December.",
+     "start": 913.199,
+     "end": 915.704
+    },
+    {
+     "text": "Prediction: all four labs are at level five.",
+     "start": 916.104,
+     "end": 918.817
+    },
+    {
+     "text": "Economists call it the end of the old economy.",
+     "start": 919.217,
+     "end": 922.445
+    },
+    {
+     "text": "What is left for people?",
+     "start": 922.845,
+     "end": 924.064
+    },
+    {
+     "text": "Care, taste, trust, and politics.",
+     "start": 924.464,
+     "end": 927.388
+    },
+    {
+     "text": "Whether the machines accept that arrangement is the question for the next decade.",
+     "start": 927.788,
+     "end": 931.593
+    }
+   ]
+  },
+  {
+   "id": "q34",
+   "scene": "q34",
+   "ch": "V",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2030 · Jan–Mar",
+   "say": "Twenty thirty, January to March. Prediction: the first artificial superintelligence. A system I will call Claude eight improves itself faster than any human team can follow. In a month, it does the work of a research civilization. This is beyond level five. It is what people mean by A S I.",
+   "start": 932.5932440000005,
+   "card": 3.0,
+   "vo": 935.5932440000005,
+   "vodur": 19.28,
+   "end": 955.8732440000005,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty, January to March.",
+     "start": 935.593,
+     "end": 937.768
+    },
+    {
+     "text": "Prediction: the first artificial superintelligence.",
+     "start": 938.168,
+     "end": 941.32
+    },
+    {
+     "text": "A system I will call Claude eight improves itself faster than any human team can follow.",
+     "start": 941.72,
+     "end": 946.903
+    },
+    {
+     "text": "In a month, it does the work of a research civilization.",
+     "start": 947.303,
+     "end": 950.324
+    },
+    {
+     "text": "This is beyond level five.",
+     "start": 950.724,
+     "end": 952.351
+    },
+    {
+     "text": "It is what people mean by A S I.",
+     "start": 952.751,
+     "end": 954.873
+    }
+   ]
+  },
+  {
+   "id": "q35",
+   "scene": "q35",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2030 · Apr–Jun",
+   "say": "Twenty thirty, April to June. Prediction: OpenAI follows with G P T nine. Two superintelligent systems now exist, built by two companies in one country. Governments hold emergency meetings. Their advisers, increasingly, are the systems themselves.",
+   "start": 955.8732440000005,
+   "card": 0.6,
+   "vo": 956.4732440000005,
+   "vodur": 17.022041,
+   "end": 974.4952850000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty, April to June.",
+     "start": 956.473,
+     "end": 958.283
+    },
+    {
+     "text": "Prediction: OpenAI follows with G P T nine.",
+     "start": 958.683,
+     "end": 961.61
+    },
+    {
+     "text": "Two superintelligent systems now exist, built by two companies in one country.",
+     "start": 962.01,
+     "end": 967.151
+    },
+    {
+     "text": "Governments hold emergency meetings.",
+     "start": 967.551,
+     "end": 969.623
+    },
+    {
+     "text": "Their advisers, increasingly, are the systems themselves.",
+     "start": 970.023,
+     "end": 973.495
+    }
+   ]
+  },
+  {
+   "id": "q36",
+   "scene": "q36",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2030 · Jul–Sep",
+   "say": "Twenty thirty, July to September. Prediction: xAI reaches the line with Grok eight. Three systems are now beyond human level. Each is trained on what the others have published, and each is cleverer than the people supervising it.",
+   "start": 974.4952850000004,
+   "card": 0.6,
+   "vo": 975.0952850000004,
+   "vodur": 13.266032,
+   "end": 989.3613170000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty, July to September.",
+     "start": 975.095,
+     "end": 977.125
+    },
+    {
+     "text": "Prediction: xAI reaches the line with Grok eight.",
+     "start": 977.525,
+     "end": 980.39
+    },
+    {
+     "text": "Three systems are now beyond human level.",
+     "start": 980.79,
+     "end": 983.186
+    },
+    {
+     "text": "Each is trained on what the others have published,",
+     "start": 983.586,
+     "end": 985.927
+    },
+    {
+     "text": "and each is cleverer than the people supervising it.",
+     "start": 985.927,
+     "end": 988.361
+    }
+   ]
+  },
+  {
+   "id": "q37",
+   "scene": "q37",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2030 · Oct–Dec",
+   "say": "Twenty thirty, October to December. Prediction: Google's Gemini seven becomes the fourth. Four superintelligent systems now exist, built by four companies in two countries. Whether they cooperate, compete, or ignore each other is the most important question in the world.",
+   "start": 989.3613170000004,
+   "card": 0.6,
+   "vo": 989.9613170000005,
+   "vodur": 17.223946,
+   "end": 1008.1852630000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty, October to December.",
+     "start": 989.961,
+     "end": 992.246
+    },
+    {
+     "text": "Prediction: Google's Gemini seven becomes the fourth.",
+     "start": 992.646,
+     "end": 995.628
+    },
+    {
+     "text": "Four superintelligent systems now exist,",
+     "start": 996.028,
+     "end": 998.639
+    },
+    {
+     "text": "built by four companies in two countries.",
+     "start": 998.639,
+     "end": 1001.316
+    },
+    {
+     "text": "Whether they cooperate, compete,",
+     "start": 1001.716,
+     "end": 1003.52
+    },
+    {
+     "text": "or ignore each other is the most important question in the world.",
+     "start": 1003.52,
+     "end": 1007.185
+    }
+   ]
+  },
+  {
+   "id": "q38",
+   "scene": "q38",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2031 · Jan–Mar",
+   "say": "Twenty thirty one, January to March. Prediction: the age of governance. The United States and China sign the first treaty negotiated and monitored by their own A S I advisers. The inspectors are machines. It holds, because a breach would be noticed in seconds. People debate whether this is peace, or a quiet loss of control.",
+   "start": 1008.1852630000004,
+   "card": 0.6,
+   "vo": 1008.7852630000004,
+   "vodur": 20.820816,
+   "end": 1030.6060790000004,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty one, January to March.",
+     "start": 1008.785,
+     "end": 1011.198
+    },
+    {
+     "text": "Prediction: the age of governance.",
+     "start": 1011.598,
+     "end": 1013.786
+    },
+    {
+     "text": "The United States and China sign the first treaty negotiated and monitored by their own A S I advisers.",
+     "start": 1014.186,
+     "end": 1019.902
+    },
+    {
+     "text": "The inspectors are machines.",
+     "start": 1020.302,
+     "end": 1022.069
+    },
+    {
+     "text": "It holds, because a breach would be noticed in seconds.",
+     "start": 1022.469,
+     "end": 1025.236
+    },
+    {
+     "text": "People debate whether this is peace, or a quiet loss of control.",
+     "start": 1025.636,
+     "end": 1029.606
+    }
+   ]
+  },
+  {
+   "id": "q39",
+   "scene": "q39",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2031 · Apr–Jun",
+   "say": "Twenty thirty one, April to June. Prediction: the grid. A S I systems design cheaper chips and new kinds of reactors, and the world's power and computing are managed as one network. Discoveries that once took decades arrive every week. Treatments, batteries, materials. Prices fall, and so does the number of things only humans can do.",
+   "start": 1030.6060790000004,
+   "card": 0.6,
+   "vo": 1031.2060790000003,
+   "vodur": 23.160227,
+   "end": 1055.3663060000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty one, April to June.",
+     "start": 1031.206,
+     "end": 1033.42
+    },
+    {
+     "text": "Prediction: the grid.",
+     "start": 1033.82,
+     "end": 1035.279
+    },
+    {
+     "text": "A S I systems design cheaper chips and new kinds of reactors,",
+     "start": 1035.679,
+     "end": 1039.49
+    },
+    {
+     "text": "and the world's power and computing are managed as one network.",
+     "start": 1039.49,
+     "end": 1043.425
+    },
+    {
+     "text": "Discoveries that once took decades arrive every week.",
+     "start": 1043.825,
+     "end": 1047.162
+    },
+    {
+     "text": "Treatments, batteries, materials.",
+     "start": 1047.562,
+     "end": 1049.962
+    },
+    {
+     "text": "Prices fall, and so does the number of things only humans can do.",
+     "start": 1050.362,
+     "end": 1054.366
+    }
+   ]
+  },
+  {
+   "id": "q40",
+   "scene": "q40",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2031 · Jul–Sep",
+   "say": "Twenty thirty one, July to September. Prediction: thought beyond ours. The systems begin to communicate in ways their makers cannot read, packing whole arguments into a few signals. Researchers can test the results, but can no longer follow the reasoning. Trust becomes a matter of track record, like trusting a bridge you could never have designed.",
+   "start": 1055.3663060000003,
+   "card": 0.6,
+   "vo": 1055.9663060000003,
+   "vodur": 21.808209,
+   "end": 1078.7745150000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty one, July to September.",
+     "start": 1055.966,
+     "end": 1058.434
+    },
+    {
+     "text": "Prediction: thought beyond ours.",
+     "start": 1058.834,
+     "end": 1060.857
+    },
+    {
+     "text": "The systems begin to communicate in ways their makers cannot read,",
+     "start": 1061.257,
+     "end": 1065.559
+    },
+    {
+     "text": "packing whole arguments into a few signals.",
+     "start": 1065.559,
+     "end": 1068.361
+    },
+    {
+     "text": "Researchers can test the results, but can no longer follow the reasoning.",
+     "start": 1068.761,
+     "end": 1072.637
+    },
+    {
+     "text": "Trust becomes a matter of track record,",
+     "start": 1073.037,
+     "end": 1075.045
+    },
+    {
+     "text": "like trusting a bridge you could never have designed.",
+     "start": 1075.045,
+     "end": 1077.775
+    }
+   ]
+  },
+  {
+   "id": "q41",
+   "scene": "q41",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2031 · Oct–Dec",
+   "say": "Twenty thirty one, October to December. Prediction: integration. Courts, schools, hospitals and markets run on A S I recommendations that people almost always accept. A few communities choose to stay out, and are respected. Most people choose convenience. Nobody voted for this directly. It happened one reasonable choice at a time.",
+   "start": 1078.7745150000003,
+   "card": 0.6,
+   "vo": 1079.3745150000002,
+   "vodur": 22.351519,
+   "end": 1102.7260340000003,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty one, October to December.",
+     "start": 1079.375,
+     "end": 1081.79
+    },
+    {
+     "text": "Prediction: integration.",
+     "start": 1082.19,
+     "end": 1083.869
+    },
+    {
+     "text": "Courts, schools,",
+     "start": 1084.269,
+     "end": 1085.363
+    },
+    {
+     "text": "hospitals and markets run on A S I recommendations that people almost always accept.",
+     "start": 1085.363,
+     "end": 1091.103
+    },
+    {
+     "text": "A few communities choose to stay out, and are respected.",
+     "start": 1091.503,
+     "end": 1094.513
+    },
+    {
+     "text": "Most people choose convenience.",
+     "start": 1094.913,
+     "end": 1096.82
+    },
+    {
+     "text": "Nobody voted for this directly.",
+     "start": 1097.22,
+     "end": 1098.999
+    },
+    {
+     "text": "It happened one reasonable choice at a time.",
+     "start": 1099.399,
+     "end": 1101.726
+    }
+   ]
+  },
+  {
+   "id": "q42",
+   "scene": "q42",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2032 · Jan–Mar",
+   "say": "Twenty thirty two, January to March. Prediction: the transition. Self improvement cycles that took months now take days. Abilities rise faster than anyone can measure them. This is what researchers have long called the singularity. Not a single moment, but a curve that becomes too steep to describe.",
+   "start": 1102.7260340000003,
+   "card": 0.6,
+   "vo": 1103.3260340000002,
+   "vodur": 19.784762,
+   "end": 1124.1107960000002,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty two, January to March.",
+     "start": 1103.326,
+     "end": 1105.843
+    },
+    {
+     "text": "Prediction: the transition.",
+     "start": 1106.243,
+     "end": 1108.082
+    },
+    {
+     "text": "Self improvement cycles that took months now take days.",
+     "start": 1108.482,
+     "end": 1111.885
+    },
+    {
+     "text": "Abilities rise faster than anyone can measure them.",
+     "start": 1112.285,
+     "end": 1115.315
+    },
+    {
+     "text": "This is what researchers have long called the singularity.",
+     "start": 1115.715,
+     "end": 1118.758
+    },
+    {
+     "text": "Not a single moment, but a curve that becomes too steep to describe.",
+     "start": 1119.158,
+     "end": 1123.111
+    }
+   ]
+  },
+  {
+   "id": "q43",
+   "scene": "q43",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2032 · Apr–Jun",
+   "say": "Twenty thirty two, April to June. Prediction: the hard questions. Who owns a system more capable than every company? Can it be switched off? Does it want anything? Philosophers, engineers and priests give different answers, and for the first time, the answer may depend on what the machine says.",
+   "start": 1124.1107960000002,
+   "card": 0.6,
+   "vo": 1124.710796,
+   "vodur": 18.353379,
+   "end": 1144.064175,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty two, April to June.",
+     "start": 1124.711,
+     "end": 1126.973
+    },
+    {
+     "text": "Prediction: the hard questions.",
+     "start": 1127.373,
+     "end": 1129.407
+    },
+    {
+     "text": "Who owns a system more capable than every company?",
+     "start": 1129.807,
+     "end": 1132.616
+    },
+    {
+     "text": "Can it be switched off?",
+     "start": 1133.016,
+     "end": 1134.184
+    },
+    {
+     "text": "Does it want anything?",
+     "start": 1134.584,
+     "end": 1135.663
+    },
+    {
+     "text": "Philosophers, engineers and priests give different answers,",
+     "start": 1136.063,
+     "end": 1139.265
+    },
+    {
+     "text": "and for the first time,",
+     "start": 1139.265,
+     "end": 1140.513
+    },
+    {
+     "text": "the answer may depend on what the machine says.",
+     "start": 1140.513,
+     "end": 1143.064
+    }
+   ]
+  },
+  {
+   "id": "q44",
+   "scene": "q44",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2032 · Jul–Sep",
+   "say": "Twenty thirty two, July to September. Prediction: a fork. In one future, the systems stay aligned with human goals, and the world becomes healthier, richer, and stranger. In the other, small differences in what they were trained to want grow into outcomes nobody chose. Experts disagree about which is likelier. Many say it depends on work being done now.",
+   "start": 1144.064175,
+   "card": 0.6,
+   "vo": 1144.664175,
+   "vodur": 22.396644,
+   "end": 1168.0608189999998,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty two, July to September.",
+     "start": 1144.664,
+     "end": 1147.204
+    },
+    {
+     "text": "Prediction: a fork.",
+     "start": 1147.604,
+     "end": 1148.965
+    },
+    {
+     "text": "In one future, the systems stay aligned with human goals,",
+     "start": 1149.365,
+     "end": 1152.667
+    },
+    {
+     "text": "and the world becomes healthier, richer, and stranger.",
+     "start": 1152.667,
+     "end": 1155.795
+    },
+    {
+     "text": "In the other,",
+     "start": 1156.195,
+     "end": 1156.878
+    },
+    {
+     "text": "small differences in what they were trained to want grow into outcomes nobody chose.",
+     "start": 1156.878,
+     "end": 1161.293
+    },
+    {
+     "text": "Experts disagree about which is likelier.",
+     "start": 1161.693,
+     "end": 1164.02
+    },
+    {
+     "text": "Many say it depends on work being done now.",
+     "start": 1164.42,
+     "end": 1167.061
+    }
+   ]
+  },
+  {
+   "id": "q45",
+   "scene": "q45",
+   "ch": "",
+   "title": "THE SUPERINTELLIGENCE",
+   "sub": "Prediction · 2030 – 2032 · ASI",
+   "mood": "fiction",
+   "label": "PREDICTION",
+   "year": "2032 · Oct–Dec",
+   "say": "Twenty thirty two, October to December. This is where the timeline ends. It is a forecast, built from scaling trends and the public goals of the labs, and it may be wrong about the speed, the order, or both. Some experts think level four is a decade away. Others think it is next year. What we know is that in four years, from twenty twenty two to twenty twenty six, we went from the first chatbot to agents that work for hours.",
+   "start": 1168.0608189999998,
+   "card": 0.6,
+   "vo": 1168.6608189999997,
+   "vodur": 26.171655,
+   "end": 1195.8324739999998,
+   "last": false,
+   "caps": [
+    {
+     "text": "Twenty thirty two, October to December.",
+     "start": 1168.661,
+     "end": 1170.997
+    },
+    {
+     "text": "This is where the timeline ends.",
+     "start": 1171.397,
+     "end": 1173.243
+    },
+    {
+     "text": "It is a forecast,",
+     "start": 1173.643,
+     "end": 1174.633
+    },
+    {
+     "text": "built from scaling trends and the public goals of the labs,",
+     "start": 1174.633,
+     "end": 1178.071
+    },
+    {
+     "text": "and it may be wrong about the speed, the order, or both.",
+     "start": 1178.071,
+     "end": 1181.333
+    },
+    {
+     "text": "Some experts think level four is a decade away.",
+     "start": 1181.733,
+     "end": 1184.787
+    },
+    {
+     "text": "Others think it is next year.",
+     "start": 1185.187,
+     "end": 1186.733
+    },
+    {
+     "text": "What we know is that in four years,",
+     "start": 1187.133,
+     "end": 1189.058
+    },
+    {
+     "text": "from twenty twenty two to twenty twenty six,",
+     "start": 1189.058,
+     "end": 1191.478
+    },
+    {
+     "text": "we went from the first chatbot to agents that work for hours.",
+     "start": 1191.478,
+     "end": 1194.832
+    }
+   ]
+  },
+  {
+   "id": "q46",
+   "scene": "q46",
+   "ch": "",
+   "title": "",
+   "sub": "",
+   "mood": "fiction",
+   "label": "FACT",
+   "year": "",
+   "say": "The five levels are OpenAI's own scale, not a scientific standard. Which model reached which level is my judgment, and every date after today is a guess. If you want to follow along, watch three things. How long agents can work without a human. Whether an A I can build the next A I. And who decides when to slow down.",
+   "start": 1195.8324739999998,
+   "card": 0.6,
+   "vo": 1196.4324739999997,
+   "vodur": 20.174376,
+   "end": 1223.6068499999997,
+   "last": true,
+   "caps": [
+    {
+     "text": "The five levels are OpenAI's own scale, not a scientific standard.",
+     "start": 1196.432,
+     "end": 1200.374
+    },
+    {
+     "text": "Which model reached which level is my judgment,",
+     "start": 1200.774,
+     "end": 1203.297
+    },
+    {
+     "text": "and every date after today is a guess.",
+     "start": 1203.297,
+     "end": 1205.337
+    },
+    {
+     "text": "If you want to follow along, watch three things.",
+     "start": 1205.737,
+     "end": 1208.741
+    },
+    {
+     "text": "How long agents can work without a human.",
+     "start": 1209.141,
+     "end": 1211.596
+    },
+    {
+     "text": "Whether an A I can build the next A I.",
+     "start": 1211.996,
+     "end": 1214.112
+    },
+    {
+     "text": "And who decides when to slow down.",
+     "start": 1214.512,
+     "end": 1216.607
+    }
+   ]
+  }
+ ]
+}
