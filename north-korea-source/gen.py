@@ -2,20 +2,20 @@ import json
 PER=60/151.78; TOTAL=227.6
 TL=[(0,'title','cut',{'hud':0}),(3.7,'name','whipU',{}),(9.0,'map','whipL',{}),(13.5,'cal','whipU',{})]
 for i in range(7): TL.append((round(19.09+i*4*PER,3),'pc',['flash','whipL','whipU','whipL','whipU','whipL','whipU'][i],{'k':i,'td':.22}))
-TL+=[(30.16,'monday','whipL',{'z':1.2}),(33.5,'tuesday','whipL',{}),(36.9,'wednesday','whipL',{'z':1.2}),(40.0,'kosher','cut',{}),(41.55,'wait','cut',{'kb':0,'punch':0}),(43.1,'waiter','cut',{'punch':0}),(46.0,'kim','cut',{'punch':0}),(49.3,'jewish','cut',{'punch':0}),(52.0,'spoonfall','cut',{'punch':0,'kb':.1})]
+TL+=[(30.16,'monday','whipL',{}),(33.5,'tuesday','whipL',{}),(36.9,'wednesday','whipL',{}),(40.0,'kosher','cut',{}),(41.55,'wait','cut',{'kb':0,'punch':0}),(43.1,'waiter','cut',{'punch':0}),(46.0,'kim','cut',{'punch':0}),(49.3,'jewish','cut',{'punch':0}),(52.0,'spoonfall','cut',{'punch':0,'kb':.1})]
 def chorus(ts,v,fin=False):
     for i,t in enumerate(ts): TL.append((t,'ch','flash' if i%4==0 else ['whipL','glitch','slash'][i%4-1],{'k':i%4,'v':v if i>=4 else 0,'td':.14 if i%4==0 else .2,'shake':1.4,'punch':1.5,'kb':.03,'hud':0,**({'fin':1} if fin and i%4==3 else {})}))
 chorus([55.0,57.05,58.7,60.28,61.84,63.42,64.98,66.65],1)
 TR=['glitch','whipL','cut','whipU','glitch','slash','cut','blinds']
 for i in range(16): TL.append((round(68.3+i*2*PER,3),'drop',TR[i%8],{'k':i,'td':.16,'shake':1.2,'punch':1.4}))
-TL+=[(80.95,'office','shutter',{'z':1.2,'td':.4}),(83.9,'whosent','cut',{'punch':0}),(86.9,'passport','cut',{}),(88.65,'plans','cut',{}),(90.35,'watch','cut',{'kb':0,'punch':0}),(93.65,'breakfast','cut',{'z':1.2}),(96.95,'waitnum','cut',{}),(100.4,'approved','cut',{}),(102.7,'delayed','cut',{})]
+TL+=[(80.95,'office','shutter',{'td':.4}),(83.9,'whosent','cut',{'punch':0}),(86.9,'passport','cut',{}),(88.65,'plans','cut',{}),(90.35,'watch','cut',{'kb':0,'punch':0}),(93.65,'breakfast','cut',{}),(96.95,'waitnum','cut',{}),(100.4,'approved','cut',{}),(102.7,'delayed','cut',{})]
 chorus([105.55,107.7,109.4,111.05,112.7,114.3,115.9,117.5],1)
 for i in range(17): TL.append((round(119.2+i*2*PER,3),'drop',TR[(i+3)%8],{'k':i+5,'td':.16,'shake':1.2,'punch':1.4}))
-TL+=[(132.64,'friday','shutter',{'z':1.2,'td':.6,'punch':0}),(135.9,'notarrest','cut',{'punch':0}),(139.0,'excellent','cut',{'punch':0}),(140.2,'notleave','cut',{'punch':0}),(143.9,'lessex','cut',{'punch':0}),
-(146.6,'saturday','whipL',{'z':1.2}),(149.95,'airport','whipL',{'z':1.2}),(152.5,'leave','cut',{'z':1.2}),(154.15,'disagree','cut',{'z':1.2}),(155.85,'argue','cut',{'z':1.2,'shake':1}),(157.25,'idback','flash',{'td':.15})]
+TL+=[(132.64,'friday','shutter',{'td':.6,'punch':0}),(135.9,'notarrest','cut',{'punch':0}),(139.0,'excellent','cut',{'punch':0}),(140.2,'notleave','cut',{'punch':0}),(143.9,'lessex','cut',{'punch':0}),
+(146.6,'saturday','whipL',{}),(149.95,'airport','whipL',{}),(152.5,'leave','cut',{}),(154.15,'disagree','cut',{}),(155.85,'argue','cut',{'shake':1}),(157.25,'idback','flash',{'td':.15})]
 chorus([158.75,161.65,163.05,164.7,166.28,167.75,169.3,170.9],0,True)
 for i in range(7): TL.append((round(172.5+i*4*PER,3),'fl',['whipL','whipU','zoom','whipL','spin','whipU','zoomOut'][i],{'k':i,'td':.25,'shake':.6}))
-TL+=[(183.57,'arrive','zoomOut',{'z':1.2,'td':.6,'punch':0}),(191.8,'cafe','whipL',{'punch':0}),(194.0,'ask','cut',{'z':1.2,'punch':0}),(199.8,'bring','cut',{'z':1.2,'punch':0}),(202.2,'noq','cut',{'punch':0}),(205.8,'noinv','cut',{'punch':0}),(207.4,'justsand','flash',{'td':.2,'punch':0}),(210.3,'verynice','cut',{'punch':0}),(212.8,'credits','whipU',{'hud':0}),(226.9,'black','cut',{})]
+TL+=[(183.57,'arrive','zoomOut',{'td':.6,'punch':0}),(191.8,'cafe','whipL',{'punch':0}),(194.0,'ask','cut',{'punch':0}),(199.8,'bring','cut',{'punch':0}),(202.2,'noq','cut',{'punch':0}),(205.8,'noinv','cut',{'punch':0}),(207.4,'justsand','flash',{'td':.2,'punch':0}),(210.3,'verynice','cut',{'punch':0}),(212.8,'credits','whipU',{'hud':0}),(226.9,'black','cut',{})]
 TLj=[dict(t0=a,s=s,tr=tr,**o) for a,s,tr,o in TL]
 assert all(TLj[i]['t0']<TLj[i+1]['t0'] for i in range(len(TLj)-1)), [ (TLj[i]['t0'],TLj[i]['s']) for i in range(len(TLj)-1) if TLj[i]['t0']>=TLj[i+1]['t0']]
 SAY=[(3.89,8.7,'My name is Yekutiel Zelig Finkelkrantz.',2.6),(9.07,13.3,'I went to North Korea',1.4),(13.66,15.9,'for 7 days.',.8),(16.09,19.0,'The first 2 were very nice.',1.6),
