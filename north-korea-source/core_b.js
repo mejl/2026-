@@ -20,7 +20,7 @@ function post(){ SMx.drawImage(cv,0,0,SMc.width,SMc.height); TNx.drawImage(SMc,0
 D.TL.forEach((c,i)=>c.i=i);
 // ---------- main ----------
 function sceneAt(t){ let i=0; for(let k=0;k<D.TL.length;k++) if(D.TL[k].t0<=t) i=k; const c=D.TL[i], t1=i+1<D.TL.length?D.TL[i+1].t0:D.total; return {i,c,len:t1-c.t0,lt:t-c.t0}; }
-function drawScene(ctx,c,lt,len,t){ X=ctx; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.globalCompositeOperation='source-over'; X.clearRect(0,0,W,H); TT=t; LT=lt; const u=lt/len, k0=c.kb??.06, dir=(c.i%2?1:-1); PARX=k0?dir*(u-.5)*46:0; const z=1.035+k0*u+BP*.018*(c.punch??1); X.translate(CX,CY); X.scale(z,z); X.translate(-CX-PARX*.6,-CY+(k0?(u-.5)*-10:0)); SC[c.s](lt,len,t,c); X.setTransform(1,0,0,1,0,0); }
+function drawScene(ctx,c,lt,len,t){ X=ctx; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.globalCompositeOperation='source-over'; X.clearRect(0,0,W,H); TT=t; LT=lt; const u=lt/len, k0=c.kb??.06, dir=(c.i%2?1:-1); PARX=k0?dir*(u-.5)*46:0; const z=(c.z||1.035)+k0*u+BP*.018*(c.punch??1); X.translate(CX,CY); X.scale(z,z); X.translate(-CX-PARX*.6,-CY+(k0?(u-.5)*-10:0)-(c.z?(c.z-1)*330:0)); SC[c.s](lt,len,t,c); X.setTransform(1,0,0,1,0,0); }
 window.renderAt=function(t){ const fr=(((t-PH)%PER)+PER)%PER; BP=Math.exp(-7*fr); BI=Math.floor((t-PH)/PER); const q=sceneAt(t), c=q.c; drawScene(BX,c,q.lt,q.len,t); const td=Math.min(c.td??.3,q.len*.6), p=q.lt/td;
   X=MAIN; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.fillStyle='#000'; X.fillRect(0,0,W,H);
   if(q.i>0&&p<1&&c.tr&&c.tr!=='cut'){ const pv=D.TL[q.i-1]; drawScene(AX,pv,t-pv.t0,c.t0-pv.t0,t); X=MAIN; TR[c.tr](clamp(p)); } else { const sh=(c.shake??0)*BP*14*U; img(BB,(hash(BI*3)-.5)*sh,(hash(BI*5)-.5)*sh); }
