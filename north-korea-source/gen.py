@@ -66,5 +66,49 @@ for i in chs:
     wt,k=align(ws,c['t0'],t1+0.2,(t1-c['t0'])*.62); c['wt']=[round(max(0,x-c['t0']),2) for x in wt]
     if k<len(ws)-1: c['wt']=[[.07,.3,.6,.95,1.31],[.1,.4,.63,.9,1.3],[.19,.59,.91,1.25],[.07,.35,.57,.89,1.29]][c['k']][:len(ws)] if not c.get('fin') else [.09,.33,.55,.81]
     print(c['t0'],k,c['wt'])
+# ---- second pass: prompted chunk transcription (tr_p.json) gives better word times where it matches the whole line
+PW=[]
+for seg in json.load(open('tr_p.json')):
+    for s_,e_,w in seg['words']:
+        n=re.sub(r'[^a-z0-9]','',w.lower())
+        if n and s_<213: PW.append((max(s_,e_-0.4)+0.05,n))
+def al2(words,a,b,ref):
+    cand=[x for x in PW if a-1.0<=x[0]<=b+1.8]; best=None
+    for st in range(len(cand)):
+        j=st; r=[]; k=0
+        for w in words:
+            n=norm(w); hit=None
+            for q in range(j,min(len(cand),j+3)):
+                if (n==cand[q][1] or (len(n)>4 and n[:4]==cand[q][1][:4])): hit=q; break
+            if hit is None: r.append(None)
+            else: r.append(cand[hit][0]); j=hit+1; k+=1
+        f=next((x for x in r if x is not None),None)
+        if f is None: continue
+        sc=(k,-abs(f-ref))
+        if best is None or sc>best[0]: best=(sc,r,k)
+    if not best: return None,0
+    r=best[1]; n=len(r)
+    for i in range(n):
+        if r[i] is None:
+            p=[q for q in range(i) if r[q] is not None]; nx=[q for q in range(i+1,n) if r[q] is not None]
+            if p and nx: r[i]=r[p[-1]]+(r[nx[0]]-r[p[-1]])*(i-p[-1])/(nx[0]-p[-1])
+            elif p: r[i]=r[p[-1]]+0.22*(i-p[-1])
+            else: r[i]=r[nx[0]]-0.22*(nx[0]-i)
+    for i in range(1,n): r[i]=max(r[i],r[i-1]+0.06)
+    return [round(x,2) for x in r],best[2]
+for l in LY:
+    ws=l['s'].split(' '); r,k=al2(ws,l['a'],l['b'],l['wt'][0])
+    if r and k>=max(1,len(ws)-1) and r[-1]<l['b']+1.2 and (r[0]>l['wt'][0]+0.05 or r[0]<l['wt'][0]-0.6):
+        if abs(r[0]-l['wt'][0])>0.25: print('RESYNC',l['s'],l['wt'][0],'->',r[0])
+        l['wt']=r; l['a']=round(r[0]-0.03,2); l['b']=max(l['b'],r[-1]+0.6)
+for i in range(len(LY)-1):
+    if LY[i+1]['a']>LY[i]['a']: LY[i]['b']=min(LY[i]['b'],LY[i+1]['a']-0.04)
+for i in chs:
+    c=TLj[i]; t1=TLj[i+1]['t0']; ws=CHL[c['k']] if not c.get('fin') else ['NOW',"I'M",'GOING','HOME']
+    r,k=al2(ws,c['t0'],t1,c['t0']+c['wt'][0])
+    if 0 and r and k==len(ws):
+        nw=[round(min(max(0,x-c['t0']),t1-c['t0']-0.15),2) for x in r]
+        if max(abs(a-b) for a,b in zip(nw,c['wt']))>0.2: print('CH',c['t0'],c['wt'],'->',nw)
+        c['wt']=nw
 for l in LY[:6]+LY[17:23]: print(l['a'],l['s'],l['wt'])
 json.dump(dict(TL=TLj,LY=LY,total=TOTAL),open('data.json','w')); print(len(TLj),'scenes',len(LY),'lines')
