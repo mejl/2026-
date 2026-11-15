@@ -27,4 +27,44 @@ SUB=[(30.2,'Monday in Pyongyang,'),(31.87,'everything was fine.'),(33.59,'Tuesda
 LY=[dict(a=a,b=b,s=s,k='say',d=d) for a,b,s,d in SAY]
 for i,(a,s) in enumerate(SUB):
     if s: LY.append(dict(a=a,b=SUB[i+1][0]-.04,s=s,k='sub'))
+
+# ---- word-level sync from the transcription (onset = late part of each detected word, never before the line anchor)
+import re
+TRW=[]
+for seg in json.load(open('tr.json')):
+    for s,e,w in seg['words']:
+        n=re.sub(r'[^a-z0-9]','',w.lower())
+        if n: TRW.append((max(s,e-0.4)+0.05,n))
+NUM={'7':'seven','2':'two','5':'five'}
+def norm(w):
+    n=re.sub(r'[^a-z0-9]','',w.lower()); return NUM.get(n,n)
+def same(a,b): return a==b or (len(a)>2 and len(b)>2 and a[:3]==b[:3])
+def align(words,a,b,spread):
+    cand=[(t,n) for t,n in TRW if a-0.45<=t<=b+0.2]; wt=[None]*len(words); j=0
+    for i,w in enumerate(words):
+        n=norm(w)
+        for k in range(j,min(len(cand),j+4)):
+            if same(n,cand[k][1]): wt[i]=cand[k][0]; j=k+1; break
+    # fill gaps
+    n=len(words); base=[a+spread*i/max(1,n) for i in range(n)]
+    known=[i for i in range(n) if wt[i] is not None]
+    for i in range(n):
+        if wt[i] is None:
+            p=[k for k in known if k<i]; q=[k for k in known if k>i]
+            if p and q: wt[i]=wt[p[-1]]+(wt[q[0]]-wt[p[-1]])*(i-p[-1])/(q[0]-p[-1])
+            elif p: wt[i]=wt[p[-1]]+0.26*(i-p[-1])
+            elif q: wt[i]=max(a,wt[q[0]]-0.26*(q[0]-i))
+            else: wt[i]=base[i]
+    for i in range(n): wt[i]=max(wt[i],a,(wt[i-1]+0.06) if i else a); wt[i]=min(wt[i],b-0.25)
+    return [round(x,2) for x in wt], len(known)
+for l in LY:
+    ws=l['s'].split(' '); l['wt'],k=align(ws,l['a'],l['b'],min(l.get('d') or (l['b']-l['a'])*.6,l['b']-l['a'])); l['a']=round(l['wt'][0]-0.03,2)
+CHL=[['HE','PUT','DOWN','HIS','SPOON'],['HE','PICKED','UP','HIS','PHONE'],['I','ASKED','FOR','LUNCH'],['NOW','I',"CAN'T",'GO','HOME']]
+chs=[i for i,c in enumerate(TLj) if c['s']=='ch']
+for i in chs:
+    c=TLj[i]; t1=TLj[i+1]['t0']; ws=CHL[c['k']] if not c.get('fin') else ['NOW',"I'M",'GOING','HOME']
+    wt,k=align(ws,c['t0'],t1+0.2,(t1-c['t0'])*.62); c['wt']=[round(max(0,x-c['t0']),2) for x in wt]
+    if k<len(ws)-1: c['wt']=[[.07,.3,.6,.95,1.31],[.1,.4,.63,.9,1.3],[.19,.59,.91,1.25],[.07,.35,.57,.89,1.29]][c['k']][:len(ws)] if not c.get('fin') else [.09,.33,.55,.81]
+    print(c['t0'],k,c['wt'])
+for l in LY[:6]+LY[17:23]: print(l['a'],l['s'],l['wt'])
 json.dump(dict(TL=TLj,LY=LY,total=TOTAL),open('data.json','w')); print(len(TLj),'scenes',len(LY),'lines')
