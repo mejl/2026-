@@ -1,0 +1,35 @@
+// ===== SEA OF GALILEE: stormy water, fishing boat, shore, grassy hill (crowd), mountains; shared night-sky dome =====
+const DOME=(function(){ const c=mkc(8,256), x=c.getContext('2d'); const tex=new THREE.CanvasTexture(c); tex.colorSpace=THREE.SRGBColorSpace;
+  const m=new THREE.Mesh(new THREE.SphereGeometry(500,32,16),new THREE.MeshBasicMaterial({map:tex,side:THREE.BackSide,fog:false,depthWrite:false})); m.renderOrder=-10; m.frustumCulled=false; GS.add(m);
+  const R=rng(31), sp=[]; for(let i=0;i<700;i++){ const a=R()*TAU, e=Math.acos(1-R()*.95); sp.push(Math.sin(e)*Math.cos(a)*480,Math.cos(e)*480,Math.sin(e)*Math.sin(a)*480); }
+  const stars=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(sp,3)),new THREE.PointsMaterial({color:0xdfe8ff,size:1.6,sizeAttenuation:false,fog:false,transparent:true,opacity:0,depthWrite:false})); stars.frustumCulled=false; GS.add(stars);
+  const moon=halo(0xbfd4ff,70,[0,0,0],GS,0), moonD=new THREE.Mesh(new THREE.CircleGeometry(9,32),new THREE.MeshBasicMaterial({color:0xe8efff,fog:false,transparent:true,opacity:0})); GS.add(moonD);
+  const D={m,stars,moon,moonD,tex,
+    set(top,mid,hor,stars_,moonOp,moonPos){ x.clearRect(0,0,8,256); const g=x.createLinearGradient(0,0,0,256); g.addColorStop(0,top); g.addColorStop(.3,mid); g.addColorStop(.49,hor); g.addColorStop(.52,hor); g.addColorStop(1,hor); x.fillStyle=g; x.fillRect(0,0,8,256); tex.needsUpdate=true; stars.material.opacity=stars_; stars.visible=stars_>0.01; if(moonPos){ moon.position.set(...moonPos); moonD.position.set(...moonPos); moonD.lookAt(GC.position); } moon.material.opacity=moonOp*.8; moonD.material.opacity=moonOp; },
+    show(v){ m.visible=v; if(!v){ stars.visible=false; moon.material.opacity=0; moonD.material.opacity=0; } } };
+  D.show(false); return D; })();
+const SEA={};
+(function(){
+  const R=rng(11);
+  const wg=new THREE.PlaneGeometry(300,300,100,100); wg.rotateX(-Math.PI/2); const wpos=wg.attributes.position, wbase=Float32Array.from(wpos.array);
+  const wmat=new THREE.MeshStandardMaterial({color:0x061a28,roughness:.22,metalness:.35,transparent:true,opacity:.8,envMapIntensity:0}); const water=new THREE.Mesh(wg,wmat); water.position.set(140,0,-20); water.renderOrder=-4;
+  SEA.A=.2; SEA.wave=(x,z,t,A=SEA.A)=>{ const f=sm(-8,14,x); return f*A*(Math.sin(x*.19+t*1.7)*.9+Math.sin(z*.16+t*1.3+1.7)*.8+Math.sin((x+z)*.1+t*.9)*1.2+Math.sin(x*.5+z*.43+t*2.8)*.25); };
+  SEA.update=(t,A)=>{ SEA.A=A; const p=wpos.array, ox=water.position.x, oz=water.position.z; for(let i=0;i<wpos.count;i++){ const x=wbase[i*3]+ox, z=wbase[i*3+2]+oz; p[i*3+1]=SEA.wave(x,z,t,A); } wpos.needsUpdate=true; if(A>.6) wg.computeVertexNormals(); else if(!SEA._n||A>.05){ wg.computeVertexNormals(); SEA._n=true; } };
+  // terrain: beach + grassy hillside
+  const tg=new THREE.PlaneGeometry(90,160,70,90); tg.rotateX(-Math.PI/2); const tp=tg.attributes.position; SEA.th=(x,z)=>{ if(x>-6) return .12-(x+6)*.3; const k=Math.max(0,-x-10); return .12+k*.22*(1+.25*Math.sin(z*.13+x*.2))+Math.sin(x*.7+z*.5)*.05*sm(-9,-14,x); };
+  for(let i=0;i<tp.count;i++){ const x=tp.getX(i)-41, z=tp.getZ(i)-20; tp.setY(i,SEA.th(x,z)); } tg.computeVertexNormals(); const col=new Float32Array(tp.count*3); for(let i=0;i<tp.count;i++){ const x=tp.getX(i)-41, y=tp.getY(i); const g=sm(.5,2.6,y); col[i*3]=lerp(.075,.035,g); col[i*3+1]=lerp(.068,.05,g); col[i*3+2]=lerp(.06,.03,g); } tg.setAttribute('color',new THREE.BufferAttribute(col,3));
+  const terrain=new THREE.Mesh(tg,new THREE.MeshStandardMaterial({vertexColors:true,roughness:.95})); terrain.position.set(-41,0,-20);
+  const bo=[]; // boat
+  const mkBoat=(par)=>{ const b=grp(null,par); const hull=mesh(GEO('hull',()=>new THREE.SphereGeometry(1,20,10,0,TAU,Math.PI/2,Math.PI/2)),M(0x1a1410,{r:.8}),[0,.35,0],b,m=>m.scale.set(1.5,.95,4.2)); cyl(.06,.08,5.2,M(0x120e0a),[0,3,.4],b,null,6); box(.05,.05,2.6,M(0x120e0a),[0,5.2,.4],b); mesh(GEO('sail',()=>new THREE.PlaneGeometry(2.4,3.6)),M(0x2a2620,{r:.9,side:THREE.DoubleSide}),[0,3.4,-.6],b,m=>{ m.rotation.y=Math.PI/2; }); const lm=M2(0xffd9a0,{e:0xffd9a0,ei:0}); const lan=sph(.1,lm,[0,1.6,2.6],b); const lh=halo(0xffc070,5,[0,1.6,2.6],b,0); b.userData={lm,lh}; return b; };
+  SEA.boat=[null,null];
+  // mountains (far shore) as layered silhouettes
+  const mkMount=(par)=>{ const g=grp(null,par); [[0x08101a,-250,34],[0x0b1624,-232,26],[0x0f1c2e,-218,18]].forEach(([c,x,h],li)=>{ const sh=new THREE.Shape(); sh.moveTo(-500,0); const r=rng(70+li); for(let i=0;i<=24;i++){ sh.lineTo(-500+i*42,h*2.2*(.35+.65*r())*(.6+.4*Math.sin(i*.55+li))); } sh.lineTo(500,0); const m=new THREE.Mesh(new THREE.ShapeGeometry(sh),new THREE.MeshBasicMaterial({color:c,fog:false,side:THREE.DoubleSide})); m.rotation.y=-Math.PI/2; m.position.set(-x,li*.1,0); g.add(m); }); return g; };
+  const rocks=new THREE.Group(); for(let i=0;i<30;i++){ const rr=new THREE.Mesh(new THREE.IcosahedronGeometry(1,0),M(0x14161c,{r:.9,f:true})); const z=-60+R()*100, x=-7.5-R()*3; rr.position.set(x,SEA.th(x,z)+.1,z); rr.scale.set(.3+R()*.9,.2+R()*.5,.3+R()*.9); rr.rotation.set(R()*3,R()*3,R()*3); rocks.add(rr); }
+  // hill trees (dark olive)
+  const trees=new THREE.Group(); for(let i=0;i<16;i++){ const x=-40-R()*20, z=-60+R()*100; const g=grp([x,SEA.th(x,z),z],trees); cyl(.2,.3,3,M(0x14100c),[0,1.5,0],g,null,6); sph(1.8+R(),M(0x0a1410,{r:1}),[0,3.8,0],g,m=>m.scale.y=.8); }
+  const lightning=(()=>{ const n=14, pos=new Float32Array((n)*6); const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.BufferAttribute(pos,3)); const l=new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0xcfe0ff,transparent:true,opacity:0,fog:false,blending:THREE.AdditiveBlending})); l.frustumCulled=false; return {l,pos,g}; })();
+  SEA.bolt=(seed,op)=>{ const {pos,g,l}=lightning, r=rng(seed*13+5); let x=60+r()*80, y=150, z=-120+r()*100; for(let i=0;i<14;i++){ const k=i*6; pos[k]=x; pos[k+1]=y; pos[k+2]=z; x+=(r()-.5)*14; y-=10.5; z+=(r()-.5)*8; pos[k+3]=x; pos[k+4]=y; pos[k+5]=z; } g.attributes.position.needsUpdate=true; l.material.opacity=op; };
+  const wo=world('sea',o=>{ o.r.add(water,terrain,rocks,trees,lightning.l); mkMount(o.r); mkMount(o.m); SEA.boat[0]=mkBoat(o.r); SEA.boat[1]=mkBoat(o.m); SEA.boat.forEach(b=>b.position.set(60,0,-14)); });
+  SEA.boatSet=(x,z,t,A,lantern=1)=>{ const y=SEA.wave(x,z,t,A), y2=SEA.wave(x,z+3,t,A), y3=SEA.wave(x+2,z,t,A); SEA.boat.forEach(b=>{ b.position.set(x,y-.15,z); b.rotation.set(Math.atan2(y2-y,3)*-1,0,-Math.atan2(y3-y,2)); b.userData.lm.emissiveIntensity=3*lantern; b.userData.lh.material.opacity=.8*lantern; }); };
+  SEA.crowdSpots=(()=>{ const a=[]; const r=rng(5); for(let row=0;row<9;row++) for(let c=0;c<20;c++){ const x=-14-row*2.1+(r()-.5)*.9, z=-26+c*2.4+(row%2)*1.1+(r()-.5)*.9; a.push([x,SEA.th(x,z),z]); } return a; })();
+})();
