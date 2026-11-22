@@ -2,13 +2,13 @@
 const JZ1=t=>24-JV*(t-14.38);     // Jesus' path in chorus 1 (walks away from camera down the street)
 SC.i1=function(lt,len,t){ stage('city'); base({hemi:1.0,moon:1.4,fd:.014,rim:.6,rc:0x6a88c8}); const u=lt/len; wanderer(t,{z:-1.5,pose:sitPose(1.0)}); CITYDEF(t,{sign:Math.sin(t*9)>.96?.05:0});
   rain(t,1,0,4,[[-6,5,-5,6,[.5,.6,1],.5]]); camMove(u,[2.4,1.15,22,-3.8,1.3,0,38],[-1.2,1.05,8,-5,.95,-6,34],'lin'); return {bloom:.55,warm:0,grain:.13,ov:titleOv}; };
-SC.i2=function(lt,len,t){ stage('city'); base({hemi:1.0,moon:1.4,fd:.016,rim:.6,rc:0x6a88c8}); const u=lt/len, look=sm(.62,.95,u); wanderer(t,{z:-1.5,pose:Object.assign(sitPose(1.0-.65*look),{tr:[.62-.25*look,0,0]})}); CITYDEF(t,{sign:Math.sin(t*7)>.93?.06:0});
+SC.i2=function(lt,len,t){ stage('city'); base({hemi:1.0,hc:0x8c96b4,moon:1.3,mc:0xb8c2d8,fd:.016,rim:.5,rc:0x8aa0d0}); auxOn(-4.0,1.5,-.4,5,0xffb06a); const u=lt/len, look=sm(.62,.95,u); wanderer(t,{z:-1.5,pose:Object.assign(sitPose(1.0-.65*look),{tr:[.62-.25*look,0,0]})}); CITYDEF(t,{sign:Math.sin(t*7)>.93?.06:0});
   jlight(-3.6,1.6,-30,60*sm(.5,1,u),0xffc880); rain(t,1,-5,0,[[-5.5,1.4,-1.5,3,[1,.78,.42],.9*sm(.5,1,u)]]);
   camMove(u,[-2.4,1.0,2.6,-5.6,.95,-1.5,32],[-3.2,1.05,.8,-5.6,1.0,-1.5,28]); return {bloom:.6,warm:.05*u,grain:.13,rays:[W*.5,H*.4,.15*u]}; };
 SC.c1a=function(lt,len,t){ stage('city'); base({hemi:.5,moon:.7}); const jz=JZ1(t), u=lt/len; wanderer(t,{z:-14}); jes(.9,jz,Math.PI,t); jlight(.9,1.5,jz-.5,30); CITYDEF(t,{jz,trail:1,win:.12,sign:0});
   litRain(t,1,.9,jz); footprints(t,14.38,.9,24,JV); camMove(u,[-1.6,2.3,jz+12,1.4,1.3,jz-8,40],[-.6,1.9,jz+8,1,1.3,jz-8,36],'lin'); return {bloom:.6,warm:.1,rays:[W*.54,H*.5,.4]}; };
 SC.c1b=function(lt,len,t){ stage('city'); base({hemi:.4,moon:.5}); const jz=JZ1(t), u=lt/len; wanderer(t,{z:-14}); jes(.9,jz,Math.PI,t); jlight(.9,1.2,jz-.4,26); CITYDEF(t,{jz,trail:1,win:.12});
-  footprints(t,14.38,.9,24,JV,-1,3,1.2); litRain(t,1,.9,jz,.6,4); camMove(u,[3.6,.22,jz+4.2,.9,.2,jz-.6,24],[3.2,.26,jz+3.2,.9,.2,jz-1.0,24],'lin'); return {bloom:.7,warm:.2,grain:.12,rays:[W*.5,H*.5,.3]}; };
+  footprints(t,14.38,.9,24,JV,-1,3,1.2); litRain(t,1,.9,jz,.6,4); camMove(u,[2.3,.3,jz+3.6,.9,.55,jz-.4,30],[1.9,.4,jz+2.8,.9,.6,jz-.9,30],'lin'); return {bloom:.7,warm:.2,grain:.12,rays:[W*.5,H*.5,.3]}; };
 SC.c1c=function(lt,len,t){ stage('city'); base({hemi:.5,moon:.6}); const jz=JZ1(t), u=lt/len; wanderer(t,{z:-14}); jes(.9,jz,Math.PI,t); jlight(.9,1.5,jz-.5,30); CITYDEF(t,{jz,trail:1,win:.12});
   footprints(t,14.38,.9,24,JV); litRain(t,1,.9,jz); camMove(u,[3.3,1.2,jz+3.4,.4,1.4,jz-.5,34],[3.0,1.3,jz+.4,.4,1.4,jz-1.4,32],'lin'); return {bloom:.6,warm:.15,rays:[W*.46,H*.5,.35]}; };
 SC.c1d=function(lt,len,t){ stage('city'); base({hemi:.5,moon:.6}); const jz=JZ1(t), u=lt/len; wanderer(t,{z:-14}); jes(.9,jz,Math.PI,t); jlight(.9,1.5,jz-.5,30); CITYDEF(t,{jz,trail:1,win:.12});

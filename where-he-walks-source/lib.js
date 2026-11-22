@@ -100,7 +100,7 @@ const SC={};   // shot functions: SC[name](lt,len,t,shot) -> post opts
 function sceneAt(t){ let i=0; for(let k=0;k<D.TL.length;k++) if(D.TL[k].t0<=t) i=k; const c=D.TL[i], t1=i+1<D.TL.length?D.TL[i+1].t0:D.total; return {i,c,len:t1-c.t0,lt:t-c.t0}; }
 const TC=mkc(W,H), TCX=TC.getContext('2d');
 let EXB=1; const expAt=(s,u)=>{ const e=window.EXPT&&EXPT[s]; if(!e||!e.length) return 1; if(u<=e[0][0]) return e[0][1]; for(let i=0;i<e.length-1;i++) if(u<=e[i+1][0]) return lerp(e[i][1],e[i+1][1],(u-e[i][0])/(e[i+1][0]-e[i][0])); return e[e.length-1][1]; };
-function frame3(c,lt,len,t){ TT=t; CURSHOT=c.s; CURU=lt/len; GR.toneMappingExposure=EXB; const o=SC[c.s](lt,len,t,c)||{}; EXB=GR.toneMappingExposure; GR.toneMappingExposure=EXB*expAt(c.s,lt/len); GR.render(GS,GC); return o; }
+function frame3(c,lt,len,t){ TT=t; CURSHOT=c.s; CURU=lt/len; GR.toneMappingExposure=EXB; const o=SC[c.s](lt,len,t,c)||{}; EXB=GR.toneMappingExposure; const ex=expAt(c.s,lt/len); GR.toneMappingExposure=EXB*ex; if(ex>1) JL.intensity*=Math.pow(ex,-.75); if(typeof JES!=='undefined') dimJes(ex>1?Math.max(.2,Math.pow(ex,-.8)):1); GR.render(GS,GC); return o; }
 window.__meter=()=>{ const c=mkc(96,54), x=c.getContext('2d'); x.drawImage(cv,0,0,96,54); const d=x.getImageData(0,0,96,54).data, L=[]; let s=0; for(let i=0;i<d.length;i+=4){ const y=.2126*d[i]+.7152*d[i+1]+.0722*d[i+2]; L.push(y); s+=y; } L.sort((p,q)=>p-q); const n=L.length; return [s/n,L[Math.floor(n*.98)],L[Math.floor(n*.1)]]; };
 window.renderAt=function(t){
   const fr=(((t-PH)%PER)+PER)%PER; BP=Math.exp(-6*fr); BI=Math.floor((t-PH)/PER); TT=t;

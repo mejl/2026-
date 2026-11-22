@@ -5,6 +5,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 FPS=30; SEG=150; d=json.load(open('data.json')); nf=int(d['total']*FPS); k=int(sys.argv[1]); K=int(sys.argv[2]); nseg=(nf+SEG-1)//SEG
 jobs=[('L',s) for s in range(nseg)]+[('R',s) for s in range(nseg)]
 todo=[(e,s) for j,(e,s) in enumerate(jobs) if j%K==k and not os.path.exists(f'seg_{e}{s:03d}.mp4')]
+if len(sys.argv)>3: todo=[(x.split(':')[0],int(x.split(':')[1])) for x in sys.argv[3].split(',')]
 if todo:
   with sync_playwright() as p:
     br=p.chromium.launch(executable_path='/opt/pw-browsers/chromium',args=['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']); pg=br.new_page(viewport={'width':1920,'height':1080}); pg.goto('file://'+os.path.abspath('run_h.html'))
