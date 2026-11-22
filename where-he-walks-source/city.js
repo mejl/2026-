@@ -65,10 +65,10 @@ const CHURCH=(function(){
     const cm=M2(0xffd9a0,{e:0xffd9a0,ei:0,r:.4}); C.crossM=cm; box(.35,2.8,.35,cm,[-13,37,-93],p); box(1.7,.35,.35,cm,[-13,37.8,-93],p); box(.3,2.4,.3,cm,[0,19.2,-91.5],p); box(1.4,.3,.3,cm,[0,19.8,-91.5],p);
   });
   C.haze=halo(0x7a4aa8,150,[0,14,-130],par[0],.5); C.halo=halo(0xffc070,26,[-13,36,-92],par[0],0); C.halo2=halo(0xffb060,16,[0,12.2,-90],par[0],0);
-  C.draw=function(prog,t){ const x=sign.x, w=1024, h=384, txt=sign.text; x.clearRect(0,0,w,h); x.lineJoin='round'; x.textAlign='center'; x.textBaseline='middle'; const tot=txt.join('').length; let idx=0;
+  C.draw=function(prog,t){ const x=sign.x, w=1024, h=384, txt=sign.text; x.clearRect(0,0,w,h); x.fillStyle='rgba(5,7,14,.82)'; x.beginPath(); (x.roundRect?x.roundRect(14,10,w-28,h-20,46):x.rect(14,10,w-28,h-20)); x.fill(); x.lineJoin='round'; x.textAlign='center'; x.textBaseline='middle'; const tot=txt.join('').length; let idx=0;
     txt.forEach((line,li)=>{ x.font=`900 ${li?150:132}px "Inter Display","Inter"`; x.letterSpacing='8px'; const y=li?285:104; let cx=w/2-x.measureText(line).width/2; for(let ch=0;ch<line.length;ch++){ const c=line[ch], cw=x.measureText(c).width; const on=clamp(prog*(tot+2)-idx); const fl=on>0&&on<1?(Math.sin(on*40)>-.1?1:.15):on>=1?1:0; const col=li?'#ff4f9a':'#ffb347';
         x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.strokeStyle='#262b3a'; x.lineWidth=15; x.strokeText(c,0,0); x.restore();
-        if(on>0){ x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.globalAlpha=Math.min(1,fl*(.8+.2*Math.sin(t*30+idx))); x.shadowColor=col; x.shadowBlur=42; x.strokeStyle=col; x.lineWidth=15; x.strokeText(c,0,0); x.shadowBlur=14; x.strokeStyle='#fff6e6'; x.lineWidth=5; x.strokeText(c,0,0); x.restore(); }
+        if(on>0){ x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.globalAlpha=Math.min(1,fl*(.8+.2*Math.sin(t*30+idx))); x.shadowColor=col; x.shadowBlur=42; x.strokeStyle=col; x.lineWidth=15; x.strokeText(c,0,0); x.shadowBlur=10; x.strokeStyle=li?'#ffd0e6':'#ffe7b8'; x.lineWidth=4; x.strokeText(c,0,0); x.restore(); }
         cx+=cw; idx++; } }); sign.tex.needsUpdate=true; };
   C.draw(0,0); return C; })();
 WORLDS.city.x.push(CHURCH.par[0],CHURCH.par[1]);
@@ -93,7 +93,7 @@ function cityLight(o,t){
     for(const r of grpL.red){ r.mat.emissiveIntensity=2.5; }
     for(const r of grpL.reds){ const bl=Math.pow(Math.max(0,Math.sin((t/PER*.5+r.ph)*Math.PI)),6); r.mat.emissiveIntensity=bl*3; r.hl.material.opacity=bl*.8; }
   }
-  CHURCH.draw(o.sign||0,t); CHURCH.crossM.emissiveIntensity=(o.cross||0)*3; CHURCH.halo.material.opacity=(o.cross||0)*.9; CHURCH.halo2.material.opacity=(o.rose||0)*.8;
+  CHURCH.draw(o.sign||0,t); CHURCH.smat.color.setScalar(o.signGain??1); CHURCH.crossM.emissiveIntensity=(o.cross||0)*3; CHURCH.halo.material.opacity=(o.cross||0)*.9; CHURCH.halo2.material.opacity=(o.rose||0)*.8;
   CHURCH.roseM.emissiveIntensity=(o.rose||0)*1.6; const rs=CHURCH.rose.userData.x; rs.fillStyle='#000'; rs.fillRect(0,0,256,256); if(o.rose){ for(let i=0;i<12;i++){ const a=i/12*TAU; rs.fillStyle=['#ff4f9a','#ffb347','#35e0ff'][i%3]; rs.beginPath(); rs.moveTo(128,128); rs.arc(128,128,120,a,a+TAU/12-.07); rs.fill(); } rs.fillStyle='#fff3d6'; rs.beginPath(); rs.arc(128,128,22,0,TAU); rs.fill(); rs.strokeStyle='#000'; rs.lineWidth=6; rs.beginPath(); rs.arc(128,128,60,0,TAU); rs.stroke(); } CHURCH.rose.needsUpdate=true;
   const d=o.dawn||0; SKY.night.material.opacity=1-d; SKY.dawn.material.opacity=d; SKY.sun.material.opacity=sm(.05,.6,d); SKY.sh.material.opacity=sm(.05,.8,d)*.3; const sy=lerp(-40,30,eo(clamp(d*1.1))); SKY.sun.position.y=sy; SKY.sh.position.y=sy; const ss=lerp(50,62,d); SKY.sun.scale.set(ss,ss,1); SKY.stars.material.opacity=.7*(1-d);
   const act=CITY.L.a.lamps.filter(l=>l.on>.3).sort((p,q)=>Math.abs(p.z-jz)-Math.abs(q.z-jz)); [LL1,LL2].forEach((L,i)=>{ const l=act[i]; if(l&&o.lampLights!==false){ L.position.set(l.x,6,l.z); L.intensity=l.on*45; } else L.intensity=0; });

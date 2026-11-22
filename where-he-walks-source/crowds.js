@@ -3,11 +3,11 @@ const POSE={
   sitSlump:{sit:1,cross:true,hd:[.55,0,0],tr:[.32,0,0],aL:[.55,.12,1.3],aR:[.55,.12,1.3]},
   sitUp:{sit:1,cross:true,hd:[-.08,0,0],tr:[0,0,0],aL:[.4,.12,1.2],aR:[.4,.12,1.2]},
   sitArms:{sit:1,cross:true,hd:[-.4,0,0],tr:[-.08,0,0],aL:[2.7,.35,.15],aR:[2.7,.35,.15]},
-  stSlump:{tr:[.3,0,0],hd:[.55,0,0],aL:[.05,.04,.1],aR:[.05,.04,.1]},
-  stUp:{tr:[-.03,0,0],hd:[-.38,0,0],aL:[.05,.06,.1],aR:[.05,.06,.1]},
-  stArms:{tr:[-.08,0,0],hd:[-.45,0,0],aL:[2.7,.42,.15],aR:[2.7,.42,.15]},
+  stSlump:{tr:[.3,0,0],hd:[.55,0,0],aL:[.05,.04,.1],aR:[.95,.2,1.5]},
+  stUp:{tr:[-.03,0,0],hd:[-.38,0,0],aL:[.05,.06,.1],aR:[.95,.2,1.5]},
+  stArms:{tr:[-.08,0,0],hd:[-.45,0,0],aL:[2.7,.42,.15],aR:[2.7,.42,.15],umb:0},
   stClosed:{tr:[-.03,0,0],hd:[-.38,0,0],aL:[.05,.06,.1],aR:[.05,.06,.1],umb:0},
-  stOpen:{tr:[-.06,0,0],hd:[-.4,0,0],aL:[.5,1.15,.2],aR:[.5,1.15,.2]}
+  stOpen:{tr:[-.06,0,0],hd:[-.4,0,0],aL:[.5,1.15,.2],aR:[.5,1.15,.2],umb:0}
 };
 const CROWD={};
 function buildCrowd(name,rigOpts,poseKeys,n,spec,parent,mirror,tints){ const geo=figGeom(rigOpts,poseKeys.map(k=>POSE[k])); const specs=[]; for(let i=0;i<n;i++) specs.push(Object.assign({id:i+1},spec(i))); const c=new Crowd(geo,specs,parent,mirror,tints); c.name=name; CROWD[name]=c; return c; }

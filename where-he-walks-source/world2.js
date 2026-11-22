@@ -19,8 +19,9 @@ const VOID={};
 (function(){
   const floorM=M(0x05060a,{r:.12,m:.5,t:true,o:.7}); const mk=(par,mir)=>{ if(!mir) pln(200,200,floorM,[0,0,0],par,m=>{ m.rotation.x=-Math.PI/2; m.renderOrder=-5; }); };
   // hand
+  const tfin=(r0,r1,l)=>GEO(`tf${r0}_${r1}_${l}`,()=>{ const g=loft(limbSecs(l,[[0,r0,r0*.9],[1,r1,r1*.85]]),{seg:10}); g.rotateZ(Math.PI); return g; });
   const mkHand=(par)=>{ const g=grp(null,par); const sk=M(0x2a1a12,{r:.7}); const wm=M2(0xffdca0,{e:0xffdca0,ei:1.5,r:.4}); caps(.036,.05,sk,[0,-.14,0],g,m=>m.scale.set(1.1,1,.8),3,10); caps(.05,.05,sk,[0,.035,0],g,m=>m.scale.set(1.18,1,.5),3,12);
-    const fs=[]; [[-.04,.095,.036,.04,.036],[-.014,.11,.04,.044,.038],[.014,.108,.04,.043,.037],[.04,.095,.036,.04,.034]].forEach(([x,y,l1,l2,l3],i)=>{ const f=grp([x,y,0],g); caps(.0105,l1,sk,[0,l1/2+.004,0],f,null,2,8); const f2=grp([0,l1+.012,0],f); caps(.0098,l2,sk,[0,l2/2,0],f2,null,2,8); const f3=grp([0,l2+.01,0],f2); caps(.0088,l3,sk,[0,l3/2,0],f3,null,2,8); fs.push([f,f2,f3]); });
+    const fs=[]; [[-.04,.095,.036,.04,.036],[-.014,.11,.04,.044,.038],[.014,.108,.04,.043,.037],[.04,.095,.036,.04,.034]].forEach(([x,y,l1,l2,l3],i)=>{ const f=grp([x,y,0],g); mesh(tfin(.0125,.0098,l1+.012),sk,[0,.0,0],f); const f2=grp([0,l1+.012,0],f); mesh(tfin(.0105,.0088,l2+.01),sk,[0,-.004,0],f2); const f3=grp([0,l2+.01,0],f2); mesh(tfin(.0092,.0064,l3+.01),sk,[0,-.004,0],f3); fs.push([f,f2,f3]); });
     const th=grp([-.06,.0,.005],g); th.rotation.z=.9; caps(.0125,.042,sk,[0,.03,0],th,null,2,8); const th2=grp([0,.062,0],th); caps(.011,.04,sk,[0,.02,0],th2,null,2,8);
     const wound=mesh(GEO('wnd',()=>new THREE.CircleGeometry(.0085,18)),wm,[0.004,.026,.0145],g); const wh=halo(0xffd29a,.2,[.004,.026,.025],g,0); g.userData={fs,th,th2,wound,wm,wh}; return g; };
   VOID.hand=mkHand(GS); hide(VOID.hand);

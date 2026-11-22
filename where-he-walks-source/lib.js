@@ -35,7 +35,12 @@ const GT=ctex(256,256,(x)=>{ const g=x.createRadialGradient(128,128,0,128,128,12
 const HALOM={}; function halo(col,size,p,par,op=1){ const k=col; const mat=new THREE.SpriteMaterial({map:GT,color:col,transparent:true,opacity:op,blending:THREE.AdditiveBlending,depthWrite:false,fog:false}); const s=new THREE.Sprite(mat); s.scale.set(size,size,1); if(p) s.position.set(p[0],p[1],p[2]); if(par) par.add(s); return s; }
 function pool(col,size,p,par,op=1){ const m=new THREE.MeshBasicMaterial({map:GT,color:col,transparent:true,opacity:op,blending:THREE.AdditiveBlending,depthWrite:false,fog:true}); const o=new THREE.Mesh(GEO('pool',()=>new THREE.PlaneGeometry(1,1)),m); o.rotation.x=-Math.PI/2; o.scale.set(size,size,1); if(p) o.position.set(p[0],p[1]+.02,p[2]); if(par) par.add(o); return o; }
 // ---------- camera ----------
-function cam(p,t,fov=35,roll=0){ if(GC.fov!==fov){ GC.fov=fov; GC.updateProjectionMatrix(); } GC.position.set(p[0],p[1],p[2]); GC.up.set(Math.sin(roll),Math.cos(roll),0); GC.lookAt(t[0],t[1],t[2]); }
+// stereo: EYE = -1 (left) / +1 (right) / 0 (mono). separation b and convergence distance C come from a per-shot depth-probe table (STT)
+let CURSHOT='', CURU=0;
+function stereoAt(){ const T=window.STT&&STT[CURSHOT]; if(!T) return {b:.12,C:8}; const x=clamp(CURU)*(T.length-1), i=Math.min(T.length-2,Math.floor(x)), f=x-i; return {b:lerp(T[i][0],T[i+1][0],f),C:lerp(T[i][1],T[i+1][1],f)}; }
+function cam(p,t,fov=35,roll=0){ GC.fov=fov; GC.updateProjectionMatrix(); GC.position.set(p[0],p[1],p[2]); GC.up.set(Math.sin(roll),Math.cos(roll),0); GC.lookAt(t[0],t[1],t[2]);
+  if(window.EYE){ const S=stereoAt(), x=window.EYE*S.b/2; GC.translateX(x); GC.projectionMatrix.elements[8]=-GC.projectionMatrix.elements[0]*x/S.C; GC.projectionMatrixInverse.copy(GC.projectionMatrix).invert(); }
+  GC.updateMatrixWorld(true); }
 function camMove(u,a,b,mode){ const e=mode==='lin'?clamp(u):mode==='eo'?eo(u):ease(u); const v=a.map((q,i)=>lerp(q,b[i]??q,e)); cam([v[0],v[1],v[2]],[v[3],v[4],v[5]],v[6]||35,v[7]||0); }
 // ---------- world registry ----------
 const WORLDS={}; let CURW=null;
@@ -94,7 +99,9 @@ function drawLyrics(t,mode){
 const SC={};   // shot functions: SC[name](lt,len,t,shot) -> post opts
 function sceneAt(t){ let i=0; for(let k=0;k<D.TL.length;k++) if(D.TL[k].t0<=t) i=k; const c=D.TL[i], t1=i+1<D.TL.length?D.TL[i+1].t0:D.total; return {i,c,len:t1-c.t0,lt:t-c.t0}; }
 const TC=mkc(W,H), TCX=TC.getContext('2d');
-function frame3(c,lt,len,t){ TT=t; const o=SC[c.s](lt,len,t,c)||{}; GR.render(GS,GC); return o; }
+let EXB=1; const expAt=(s,u)=>{ const e=window.EXPT&&EXPT[s]; if(!e||!e.length) return 1; if(u<=e[0][0]) return e[0][1]; for(let i=0;i<e.length-1;i++) if(u<=e[i+1][0]) return lerp(e[i][1],e[i+1][1],(u-e[i][0])/(e[i+1][0]-e[i][0])); return e[e.length-1][1]; };
+function frame3(c,lt,len,t){ TT=t; CURSHOT=c.s; CURU=lt/len; GR.toneMappingExposure=EXB; const o=SC[c.s](lt,len,t,c)||{}; EXB=GR.toneMappingExposure; GR.toneMappingExposure=EXB*expAt(c.s,lt/len); GR.render(GS,GC); return o; }
+window.__meter=()=>{ const c=mkc(96,54), x=c.getContext('2d'); x.drawImage(cv,0,0,96,54); const d=x.getImageData(0,0,96,54).data, L=[]; let s=0; for(let i=0;i<d.length;i+=4){ const y=.2126*d[i]+.7152*d[i+1]+.0722*d[i+2]; L.push(y); s+=y; } L.sort((p,q)=>p-q); const n=L.length; return [s/n,L[Math.floor(n*.98)],L[Math.floor(n*.1)]]; };
 window.renderAt=function(t){
   const fr=(((t-PH)%PER)+PER)%PER; BP=Math.exp(-6*fr); BI=Math.floor((t-PH)/PER); TT=t;
   const q=sceneAt(t), c=q.c; let po;
@@ -113,3 +120,13 @@ window.renderAt=function(t){
   if(t>D.total-1.2){ X.fillStyle=`rgba(0,0,0,${clamp((t-(D.total-1.2))/1.1)})`; X.fillRect(0,0,W,H); }
 };
 window.LYR=t=>(t>184.5&&t<238.5)?'neon':'soft';
+
+let DRT=null;
+window.__depth=()=>{ const w=128,h=72; if(!DRT) DRT=new THREE.WebGLRenderTarget(w,h,{type:THREE.FloatType,minFilter:THREE.NearestFilter,magFilter:THREE.NearestFilter});
+  const hid=[]; GS.traverse(o=>{ if((o.isSprite||o.isPoints||o.isLine)&&o.visible){ o.visible=false; hid.push(o); } });
+  const cc=new THREE.Color(); GR.getClearColor(cc); const ca=GR.getClearAlpha(); const tm=GR.toneMapping; GR.toneMapping=THREE.NoToneMapping; GR.setClearColor(0x000000,0);
+  GS.overrideMaterial=new THREE.MeshDepthMaterial(); GR.setRenderTarget(DRT); GR.clear(); GR.render(GS,GC); GR.setRenderTarget(null); GS.overrideMaterial=null; GR.setClearColor(cc,ca); GR.toneMapping=tm; hid.forEach(o=>o.visible=true);
+  const buf=new Float32Array(w*h*4); GR.readRenderTargetPixels(DRT,0,0,w,h,buf); const n=GC.near,f=GC.far, D=[];
+  for(let y=0;y<h;y++) for(let x=0;x<w;x++){ const v=buf[((h-1-y)*w+x)*4]; let d=700; if(buf[((h-1-y)*w+x)*4+3]>0.5){ const fz=1-v, zn=2*fz-1; d=2*n*f/((f+n)-zn*(f-n)); } D.push([x,y,d]); }
+  const body=D.filter(q=>q[1]<h*.92).map(q=>q[2]).sort((p,q)=>p-q), ctr=D.filter(q=>q[0]>w*.35&&q[0]<w*.65&&q[1]>h*.25&&q[1]<h*.7).map(q=>q[2]).sort((p,q)=>p-q);
+  return {near:body[Math.floor(body.length*.04)],med:ctr[Math.floor(ctr.length*.5)],m0:GC.projectionMatrix.elements[0]}; };
