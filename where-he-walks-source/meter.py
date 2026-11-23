@@ -4,7 +4,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 k=int(sys.argv[1]); K=int(sys.argv[2]); out=sys.argv[3]; d=json.load(open('data.json')); TL=d['TL']; tot=d['total']
 fr=[0,.25,.5,.75,1]; res={}
 with sync_playwright() as p:
-    b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium',args=['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']); pg=b.new_page(viewport={'width':1920,'height':1080}); pg.goto('file://'+os.path.abspath('run_h.html'))
+    b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium',args=['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']); pg=b.new_page(viewport={'width':1920,'height':1080}); pg.goto('file://'+os.path.abspath('run_m.html'))
     for i,c in enumerate(TL):
         if i%K!=k: continue
         t1=TL[i+1]['t0'] if i+1<len(TL) else tot; L=t1-c['t0']; r=[]; a0=min(.65,L*.2); a1=min(.55,L*.2)

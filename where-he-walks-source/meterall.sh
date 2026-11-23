@@ -1,4 +1,4 @@
-cd "$(dirname "$0")"; python3 build.py
+cd "$(dirname "$0")"; python3 build.py; sed 's/GWOVR=1920/GWOVR=1280/' run_h.html > run_m.html
 for k in 0 1 2 3; do python3 meter.py $k 4 m_$k.json > m_$k.log 2>&1 & done; wait
 python3 - <<'PY'
 import json

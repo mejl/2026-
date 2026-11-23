@@ -9,7 +9,7 @@ const PER=.50736, PH=.1776; let BP=0, BI=0;           // beat period / phase of 
 // ---------- renderer / scene ----------
 const GW=window.GWOVR||1280, GH=Math.round(GW*9/16);
 const GLC=document.createElement('canvas'); GLC.width=GW; GLC.height=GH;
-const GR=new THREE.WebGLRenderer({canvas:GLC,antialias:true,preserveDrawingBuffer:true});
+const GR=new THREE.WebGLRenderer({canvas:GLC,antialias:window.AA!==0,preserveDrawingBuffer:true});
 GR.setPixelRatio(1); GR.setSize(GW,GH,false); GR.toneMapping=THREE.ACESFilmicToneMapping; GR.toneMappingExposure=1; GR.shadowMap.enabled=true; GR.shadowMap.type=THREE.PCFSoftShadowMap; GR.setClearColor(0x05070d,1);
 const GS=new THREE.Scene(), GC=new THREE.PerspectiveCamera(35,16/9,.1,700);
 const HEMI=new THREE.HemisphereLight(0x5a6fa0,0x0c1018,.3);
@@ -61,27 +61,29 @@ function rain(t,amt,cx,cz,lights,tone=[.5,.65,.95],wind=.12){        // amt 0..1
   g.attributes.position.needsUpdate=true; g.attributes.color.needsUpdate=true; RAIN.o.visible=amt>0; }
 // ---------- 2D post ----------
 const mkc=(w,h)=>{ const c=document.createElement('canvas'); c.width=w; c.height=h; return c; };
-const BC1=mkc(480,270), BC2=mkc(120,68), RC=mkc(960,540), GRN=mkc(256,256), TX=mkc(W,H);
+const BC1=mkc(960,540), BC2=mkc(240,135), RC=mkc(960,540), GRN=mkc(256,256), TX=mkc(W,H), SHC=mkc(W,H), SHX=SHC.getContext('2d');
+(function(){ const s=document.createElementNS('http://www.w3.org/2000/svg','svg'); s.setAttribute('width','0'); s.setAttribute('height','0'); s.style.position='absolute'; s.innerHTML='<filter id="sharp" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feConvolveMatrix order="3" kernelMatrix="0 -.45 0 -.45 2.8 -.45 0 -.45 0" divisor="1" preserveAlpha="true"/></filter>'; document.body.appendChild(s); })();
 const B1=BC1.getContext('2d'), B2=BC2.getContext('2d'), RX=RC.getContext('2d'), TXX=TX.getContext('2d');
 (function(){ const x=GRN.getContext('2d'), d=x.createImageData(256,256), r=rng(99); for(let i=0;i<256*256;i++){ const v=r()*255; d.data[i*4]=d.data[i*4+1]=d.data[i*4+2]=v; d.data[i*4+3]=255; } x.putImageData(d,0,0); })();
 const VIG=(()=>{ const c=mkc(W,H), x=c.getContext('2d'), g=x.createRadialGradient(W/2,H/2,H*.38,W/2,H/2,Math.hypot(W,H)*.6); g.addColorStop(0,'rgba(0,0,0,0)'); g.addColorStop(1,'rgba(0,0,0,.72)'); x.fillStyle=g; x.fillRect(0,0,W,H); return c; })();
 function screenPos(v){ const p=v.clone().project(GC); return [(p.x*.5+.5)*W,(-p.y*.5+.5)*H,p.z]; }
 function present(o){      // o: {bloom, rays:[x,y,s], warm, flare:[x,y,s,col], grain, exp}
   const X=MAIN; X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.globalCompositeOperation='source-over'; X.filter='none'; X.imageSmoothingEnabled=true; X.imageSmoothingQuality='high';
-  X.drawImage(GLC,0,0,W,H);
+  X.drawImage(GLC,0,0,W,H); dofApply(X);
   const bl=o.bloom??.5;
-  B1.filter='brightness(1.1) contrast(1.35) saturate(1.2)'; B1.drawImage(cv,0,0,480,270); B1.filter='none';
-  B2.drawImage(BC1,0,0,120,68);
-  X.save(); X.globalCompositeOperation='screen'; X.globalAlpha=.30*bl; X.drawImage(BC1,0,0,W,H); X.globalAlpha=.55*bl; X.drawImage(BC2,0,0,W,H); X.restore();
+  B1.filter='brightness(1.1) contrast(1.35) saturate(1.2)'; B1.drawImage(cv,0,0,960,540); B1.filter='none';
+  B2.drawImage(BC1,0,0,240,135);
+  X.save(); X.globalCompositeOperation='screen'; X.globalAlpha=.22*bl; X.drawImage(BC1,0,0,W,H); X.globalAlpha=.34*bl; X.drawImage(BC2,0,0,W,H); X.restore();
   if(o.rays&&o.rays[2]>.01){ const [px,py,s]=o.rays; RX.filter='brightness(.75) contrast(2.4)'; RX.drawImage(cv,0,0,960,540); RX.filter='none';
-    X.save(); X.globalCompositeOperation='lighter'; const n=18; for(let i=1;i<=n;i++){ const sc=1+i*.032; X.globalAlpha=s*.16*(1-i/(n+1)); X.drawImage(RC,0,0,960,540,px*(1-sc),py*(1-sc),W*sc,H*sc); } X.restore(); }
+    X.save(); X.globalCompositeOperation='lighter'; const n=18; for(let i=1;i<=n;i++){ const sc=1+i*.032; X.globalAlpha=s*.10*(1-i/(n+1)); X.drawImage(RC,0,0,960,540,px*(1-sc),py*(1-sc),W*sc,H*sc); } X.restore(); }
   if(o.flare&&o.flare[2]>.01){ const [px,py,s,col]=o.flare; X.save(); X.globalCompositeOperation='lighter'; X.translate(px,py); for(const [sx,sy,a,c2] of [[14,.5,.5,col||'255,196,120'],[4,.2,.9,'255,240,220']]){ X.save(); X.scale(sx,sy); const g=X.createRadialGradient(0,0,0,0,0,70); g.addColorStop(0,`rgba(${c2},${a*s})`); g.addColorStop(1,`rgba(${c2},0)`); X.fillStyle=g; X.beginPath(); X.arc(0,0,70,0,TAU); X.fill(); X.restore(); } X.restore(); }
   // colour grade: cool/teal shadows (sad) -> amber highlights (hope)
   const w=o.warm??0; X.save(); X.globalCompositeOperation='soft-light'; X.globalAlpha=.34; X.fillStyle=`rgb(${lerp(40,255,w)|0},${lerp(80,150,w)|0},${lerp(170,70,w)|0})`; X.fillRect(0,0,W,H); X.restore();
   X.save(); X.globalCompositeOperation='multiply'; X.globalAlpha=.55*(1-w*.6); X.fillStyle='rgb(150,172,235)'; X.fillRect(0,0,W,H); X.restore();
   X.save(); X.globalCompositeOperation='source-over'; X.globalAlpha=1; X.drawImage(VIG,0,0); X.restore();
   // film grain
-  X.save(); X.globalCompositeOperation='overlay'; X.globalAlpha=o.grain??.1; const gx=(hash(BI*3.1+TT*7)*256)|0, gy=(hash(BI*1.7+TT*3)*256)|0; for(let yy=-gy;yy<H;yy+=256) for(let xx=-gx;xx<W;xx+=256) X.drawImage(GRN,xx,yy); X.restore();
+  if((o.grain??.1)*(window.GRAINK??0)>0.002){ X.save(); X.globalCompositeOperation='overlay'; X.globalAlpha=(o.grain??.1)*(window.GRAINK??0); const gx=(hash(BI*3.1+TT*7)*256)|0, gy=(hash(BI*1.7+TT*3)*256)|0; for(let yy=-gy;yy<H;yy+=256) for(let xx=-gx;xx<W;xx+=256) X.drawImage(GRN,xx,yy); X.restore(); }
+  if(window.SHARP!==0){ SHX.clearRect(0,0,W,H); SHX.drawImage(cv,0,0); X.save(); X.filter='url(#sharp)'; X.drawImage(SHC,0,0); X.restore(); }
 }
 let TT=0;
 // ---------- captions ----------
@@ -99,8 +101,38 @@ function drawLyrics(t,mode){
 const SC={};   // shot functions: SC[name](lt,len,t,shot) -> post opts
 function sceneAt(t){ let i=0; for(let k=0;k<D.TL.length;k++) if(D.TL[k].t0<=t) i=k; const c=D.TL[i], t1=i+1<D.TL.length?D.TL[i+1].t0:D.total; return {i,c,len:t1-c.t0,lt:t-c.t0}; }
 const TC=mkc(W,H), TCX=TC.getContext('2d');
+// ---- cast shadows: the moon / dawn key lights follow the action and shadow the figures, cars and buildings ----
+let SHPREP=false;
+function shadowPrep(){ SHPREP=true; GS.traverse(o=>{ if(!o.isMesh) return; let mir=false; for(let p=o;p;p=p.parent) if(p===MIRG){ mir=true; break; } const m=o.material;
+    if(mir||!m||o.isSprite||m.blending===THREE.AdditiveBlending||!m.isMeshStandardMaterial||o.renderOrder<=-10||o.userData.noShadow){ o.castShadow=false; o.receiveShadow=false; return; }
+    o.castShadow=!m.transparent; o.receiveShadow=true; }); }
+function shadowFollow(){ if(!SHPREP) shadowPrep(); if(window.SHADOWS===0){ MOON.castShadow=RIM.castShadow=false; return; }
+  const tgt=(typeof JES!=='undefined'&&JES.r.root.visible)?JES.r.root.position.clone():GC.position.clone().add(new THREE.Vector3(0,0,-1).applyQuaternion(GC.quaternion).multiplyScalar(14)).setY(0);
+  for(const [L,off,ext] of [[MOON,new THREE.Vector3(-18,34,22),22],[RIM,new THREE.Vector3(2,9,-34),26]]){ const on=L.intensity>.08; L.castShadow=on; if(!on) continue;
+    L.target.position.copy(tgt); L.position.copy(tgt).add(off); L.target.updateMatrixWorld(); const sc=L.shadow.camera; if(sc.right!==ext){ sc.left=-ext; sc.right=ext; sc.top=ext; sc.bottom=-ext; sc.near=1; sc.far=90; sc.updateProjectionMatrix(); L.shadow.mapSize.set(2048,2048); L.shadow.bias=-.0004; L.shadow.normalBias=.04; if(L.shadow.map){ L.shadow.map.dispose(); L.shadow.map=null; } } } }
+// ---- depth of field: a depth pass drives two masked blur layers (soft foreground, gentle background) ----
+let DOFRT=null, DOFHIDE=null; const DOFM=mkc(480,270), DOFMX=DOFM.getContext('2d'), DOFA=mkc(W,H), DOFAX=DOFA.getContext('2d'), DOFB=mkc(W,H), DOFBX=DOFB.getContext('2d'); let DOFON=0;
+function dofPass(str){ DOFON=0; if(!(str>.01)||window.DOF===0) return; const w=480,h=270; if(!DOFRT) DOFRT=new THREE.WebGLRenderTarget(w,h,{type:THREE.FloatType,minFilter:THREE.NearestFilter,magFilter:THREE.NearestFilter});
+  if(!DOFHIDE){ DOFHIDE=[]; GS.traverse(o=>{ if(o.isSprite||o.isPoints||o.isLine) DOFHIDE.push(o); }); }
+  const was=DOFHIDE.map(o=>o.visible); DOFHIDE.forEach(o=>o.visible=false);
+  const cc=new THREE.Color(); GR.getClearColor(cc); const ca=GR.getClearAlpha(), tm=GR.toneMapping; GR.toneMapping=THREE.NoToneMapping; GR.setClearColor(0,0);
+  GS.overrideMaterial=DOFMAT||(DOFMAT=new THREE.MeshDepthMaterial()); GR.setRenderTarget(DOFRT); GR.clear(); GR.render(GS,GC); GR.setRenderTarget(null); GS.overrideMaterial=null; GR.setClearColor(cc,ca); GR.toneMapping=tm; DOFHIDE.forEach((o,i)=>o.visible=was[i]);
+  const buf=new Float32Array(w*h*4); GR.readRenderTargetPixels(DOFRT,0,0,w,h,buf); const n=GC.near,f=GC.far;
+  // focus: on Jesus when he is on screen, otherwise the middle of the picture
+  let foc=0; if(typeof JES!=='undefined'&&JES.r.root.visible){ const p=JES.r.root.position.clone(); p.y+=1.2; foc=p.distanceTo(GC.position); const v=p.clone().project(GC); if(Math.abs(v.x)>1.1||Math.abs(v.y)>1.1) foc=0; }
+  const D=new Float32Array(w*h); for(let i=0;i<w*h;i++){ const k=i*4; let d=700; if(buf[k+3]>.5){ const zn=2*(1-buf[k])-1; d=2*n*f/((f+n)-zn*(f-n)); } D[((h-1-Math.floor(i/w))*w)+(i%w)]=d; }
+  if(!foc){ const c=[]; for(let y=Math.floor(h*.3);y<h*.7;y+=3) for(let x=Math.floor(w*.35);x<w*.65;x+=3) c.push(D[y*w+x]); c.sort((a,b)=>a-b); foc=c[Math.floor(c.length*.4)]||10; }
+  foc=Math.max(1,Math.min(foc,60)); str*=clamp(14/foc,.2,1); const im=DOFMX.createImageData(w,h), px=im.data; let any=0;
+  for(let i=0;i<w*h;i++){ const d=D[i], r=Math.log(d/foc); let c; if(r<0) c=Math.min(.8,clamp((-r-.14)*1.1)); else c=Math.min(.12,clamp((r-.3)*.4)); c*=str; px[i*4]=px[i*4+1]=px[i*4+2]=0; px[i*4+3]=Math.round(c*255); if(c>.05) any=1; }
+  if(!any) return; DOFMX.putImageData(im,0,0); DOFON=1; }
+let DOFMAT=null;
+function dofApply(X){ if(!DOFON) return; // soft layer
+  DOFAX.clearRect(0,0,W,H); DOFAX.filter='blur(2.2px)'; DOFAX.drawImage(cv,0,0); DOFAX.filter='none'; DOFAX.globalCompositeOperation='destination-in'; DOFAX.drawImage(DOFM,0,0,W,H); DOFAX.globalCompositeOperation='source-over';
+  // strong layer only where the mask is high (foreground)
+  DOFBX.clearRect(0,0,W,H); DOFBX.filter='blur(7px)'; DOFBX.drawImage(cv,0,0); DOFBX.filter='none'; DOFBX.globalCompositeOperation='destination-in'; DOFBX.drawImage(DOFM,0,0,W,H); DOFBX.drawImage(DOFM,0,0,W,H); DOFBX.globalCompositeOperation='source-over';
+  X.save(); X.setTransform(1,0,0,1,0,0); X.globalAlpha=1; X.drawImage(DOFA,0,0); X.drawImage(DOFB,0,0); X.restore(); }
 let EXB=1; const expAt=(s,u)=>{ const e=window.EXPT&&EXPT[s]; if(!e||!e.length) return 1; if(u<=e[0][0]) return e[0][1]; for(let i=0;i<e.length-1;i++) if(u<=e[i+1][0]) return lerp(e[i][1],e[i+1][1],(u-e[i][0])/(e[i+1][0]-e[i][0])); return e[e.length-1][1]; };
-function frame3(c,lt,len,t){ TT=t; CURSHOT=c.s; CURU=lt/len; GR.toneMappingExposure=EXB; const o=SC[c.s](lt,len,t,c)||{}; EXB=GR.toneMappingExposure; const ex=expAt(c.s,lt/len); GR.toneMappingExposure=EXB*ex; if(ex>1) JL.intensity*=Math.pow(ex,-.75); if(typeof JES!=='undefined') dimJes(ex>1?Math.max(.2,Math.pow(ex,-.8)):1); GR.render(GS,GC); return o; }
+function frame3(c,lt,len,t){ TT=t; CURSHOT=c.s; CURU=lt/len; GR.toneMappingExposure=EXB; const o=SC[c.s](lt,len,t,c)||{}; shadowFollow(); EXB=GR.toneMappingExposure; const ex=expAt(c.s,lt/len); GR.toneMappingExposure=EXB*ex; if(ex>1) JL.intensity*=Math.pow(ex,-.75); if(typeof JES!=='undefined') dimJes(ex>1?Math.max(.2,Math.pow(ex,-.8)):1); GR.render(GS,GC); dofPass((o.dof??.9)*(window.DOFK??1)); return o; }
 window.__meter=()=>{ const c=mkc(96,54), x=c.getContext('2d'); x.drawImage(cv,0,0,96,54); const d=x.getImageData(0,0,96,54).data, L=[]; let s=0; for(let i=0;i<d.length;i+=4){ const y=.2126*d[i]+.7152*d[i+1]+.0722*d[i+2]; L.push(y); s+=y; } L.sort((p,q)=>p-q); const n=L.length; return [s/n,L[Math.floor(n*.98)],L[Math.floor(n*.1)]]; };
 window.renderAt=function(t){
   const fr=(((t-PH)%PER)+PER)%PER; BP=Math.exp(-6*fr); BI=Math.floor((t-PH)/PER); TT=t;
