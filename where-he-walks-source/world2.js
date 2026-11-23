@@ -7,7 +7,22 @@ const CAL={};
   const terrain=new THREE.Mesh(tg,M(0x1c1814,{r:.95}));
   const cross=(par,x,z,hh,sc=1)=>{ const y=CAL.h(x,z); const g=grp([x,y,z],par); const cm=M2(0x0b0907,{r:.9}); box(.38*sc,hh,.38*sc,cm,[0,hh/2,0],g); box(2.1*sc,.34*sc,.34*sc,cm,[0,hh*.78,0],g); g.userData.cm=cm; return g; };
   CAL.crosses=[];
-  const rock=(par)=>{ const g=grp([60,0,-24],par); const rm=M(0x4a4036,{r:.95}); box(26,13,14,rm,[0,6.5,-3],g); box(8,6,2,M(0x050403),[0,3.2,4.1],g); box(1.2,6.6,1.6,rm,[-4.6,3.3,4.2],g); box(1.2,6.6,1.6,rm,[4.6,3.3,4.2],g); box(10.4,1.4,1.8,rm,[0,7,4.2],g); const stone=cyl(3.1,3.1,1.1,M(0x3a342d,{r:.9}),[9.6,3.1,6.6],g,m=>{ m.rotation.x=Math.PI/2; m.rotation.z=.2; },24); CAL.stone=stone; const gm=M2(0xffe6b0,{e:0xffe6b0,ei:0,fog:false}); const glow=box(7,5.6,.6,gm,[0,3.2,3.3],g); CAL.tombGlow=gm; CAL.tombHalo=halo(0xffd9a0,40,[60,4,-18],par,0); CAL.tombG=g;
+  const rock=(par)=>{ const g=grp([60,0,-24],par);
+    const rm=M(0x5e5246,{r:.96,f:true}), rm2=M(0x7a6c56,{r:.95,f:true}), stoneM=M(0x8a7b64,{r:.9,f:true}), rimM=M(0x4e443a,{r:.95,f:true});
+    // faceted limestone hill with the tomb carved into its face
+    const hg=new THREE.IcosahedronGeometry(1,3), hp=hg.attributes.position; for(let i=0;i<hp.count;i++){ const x=hp.getX(i), y=hp.getY(i), z=hp.getZ(i); const k=1+Math.sin(x*3.1+z*2.3)*.07+Math.sin(y*5.2+x*2.1)*.05+Math.sin(z*4.3-y*3.3)*.05; hp.setXYZ(i,x*k,y*k,z*k); } hg.computeVertexNormals();
+    mesh(hg,rm,[0,1.0,-12],g,m=>m.scale.set(23,12,13.5));
+    for(const [x,z,s,c] of [[-15,-2,5,rm],[16,-4,4.6,rm],[-9,2.5,2.6,rm2],[10.5,1.5,2.4,rm2],[-19,4,2.2,rm2],[20,3,2.6,rm]]) mesh(new THREE.IcosahedronGeometry(1,1),c,[x,s*.4,z],g,m=>{ m.scale.set(s*1.25,s*.85,s); m.rotation.y=x; });
+    const sh=new THREE.Shape(); sh.moveTo(-6.6,0); sh.lineTo(6.6,0); sh.lineTo(6.4,7.1); sh.lineTo(3.2,7.6); sh.lineTo(-2.2,7.4); sh.lineTo(-6.5,7.8); sh.closePath();
+    const ho=new THREE.Path(); ho.moveTo(-2.3,.35); ho.lineTo(2.3,.35); ho.lineTo(2.3,3.7); ho.absarc(0,3.7,2.3,0,Math.PI,false); ho.lineTo(-2.3,.35); sh.holes.push(ho);
+    mesh(new THREE.ExtrudeGeometry(sh,{depth:1.7,bevelEnabled:false}),rm2,[0,0,2.9],g);
+    box(9,.3,2.6,rimM,[0,.15,5.4],g); box(6.2,.2,1.6,rm2,[0,.1,6.6],g);
+    // the rolled-away stone: a lighter weathered disc in its groove
+    const stone=cyl(2.95,2.95,1.1,stoneM,[9.4,2.95,6.2],g,m=>{ m.rotation.x=Math.PI/2; m.rotation.z=.2; },28); CAL.stone=stone; cyl(3.1,3.1,.8,rimM,[9.4,3.0,5.95],g,m=>{ m.rotation.x=Math.PI/2; m.rotation.z=.2; },28); box(10,.4,1.5,rimM,[6,.2,6.0],g);
+    // light pouring out of the opening
+    const gt=ctex(256,256,(x,w,h)=>{ const gr=x.createRadialGradient(128,150,4,128,150,150); gr.addColorStop(0,'#ffffff'); gr.addColorStop(.35,'#ffe8b8'); gr.addColorStop(1,'#a8743a'); x.fillStyle=gr; x.fillRect(0,0,w,h); });
+    const gm=M2(0xffe6b0,{e:0xffe6b0,ei:0,fog:false}); gm.emissiveMap=gt; pln(4.6,7.4,gm,[0,3.7,3.3],g); CAL.tombGlow=gm; CAL.tombHalo=halo(0xffd9a0,40,[60,4,-18],par,0); CAL.tombG=g;
+    for(const sd of [-1,1]) cyl(.02,1.05,8.5,M(0x0e1a10,{r:1}),[sd*11.5,4.25,8.5],g,null,8);
     for(let i=0;i<7;i++){ const x=30+R()*60-10, z=-4+R()*30; const t=grp([x+(i%2?25:-25),0,z],par); cyl(.35,.55,3,M(0x14100c),[0,1.5,0],t,null,6); sph(2.4,M(0x0d1710,{r:1}),[0,3.7,0],t,m=>m.scale.y=.75); } };
   CAL.rays=[];
   const wo=world('calvary',o=>{ o.r.add(terrain); for(const x of [-6,0,6]){ CAL.crosses.push(cross(o.r,x,40,x===0?9:7.4,x===0?1.2:1)); } rock(o.r); for(let i=0;i<40;i++){ const x=(R()-.5)*160, z=-40+R()*120; const rr=new THREE.Mesh(new THREE.IcosahedronGeometry(1,0),M(0x1a1612,{r:.95,f:true})); rr.position.set(x,CAL.h(x,z)+.2,z); rr.scale.set(.4+R()*1.4,.3+R()*.8,.4+R()*1.4); rr.rotation.set(R()*3,R()*3,R()*3); o.r.add(rr); }

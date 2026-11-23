@@ -116,7 +116,20 @@ function setPose(R,p,t=0){
     for(let i=0;i<n;i++){ const bx=b[i*3], by=b[i*3+1], bz=b[i*3+2], d=clamp((h/2-by)/h); const sw=Math.sin(wk*1+by*3.1+t*1.7)*amp*d*d, sw2=Math.cos(wk*.5+by*2.3+t*1.1)*amp*.6*d*d; pa.array[i*3]=bx*(1+sw*.8)+sw2*.5; pa.array[i*3+2]=bz*(1+sw*.8)-sw*.6-(wa?amp*d*d*.8:0); }
     pa.needsUpdate=true; }
 }
-class Donkey{ constructor(){ const mk=(par)=>{ const g=grp(null,par); const c=M(0x5a5048,{r:.9}); caps(.27,.7,c,[0,.95,0],g,m=>m.rotation.x=Math.PI/2); box(.78,.07,1.0,M(0x7a3a30,{r:.9}),[0,1.2,.0],g); box(.06,.5,1.0,M(0x7a3a30,{r:.9}),[-.37,1.0,0],g); box(.06,.5,1.0,M(0x7a3a30,{r:.9}),[.37,1.0,0],g); caps(.2,.3,c,[0,.98,-.55],g,m=>m.scale.set(1.15,1,1)); caps(.12,.38,c,[0,1.2,.62],g,m=>m.rotation.x=.75); caps(.1,.24,c,[0,1.42,.93],g,m=>m.rotation.x=1.25); for(const sd of [-1,1]) caps(.03,.18,c,[sd*.07,1.62,.84],g,m=>{ m.rotation.x=.2; m.rotation.z=sd*-.15; }); caps(.025,.45,c,[0,.85,-.62],g,m=>m.rotation.x=-.35); const L=[]; for(const [sx,sz] of [[-1,1],[1,1],[-1,-1],[1,-1]]){ const lg=grp([sx*.17,.76,sz*.42],g); caps(.066,.55,c,[0,-.35,0],lg); caps(.05,.1,M(0x2a2622,{r:.8}),[0,-.78,0],lg); L.push(lg); } g.userData.L=L; return g; }; this.r=mk(GS); this.m=mk(MIRG); this.show(false); ACTORS.push(this); }
+class Donkey{ constructor(){ const mk=(par)=>{ const g=grp(null,par);
+    const hide=M(0x74685e,{r:.92}), belly=M(0xb4a999,{r:.92}), dark=M(0x37312c,{r:.9}), hoof=M(0x201d1a,{r:.8}), cloth=M(0x8c3a2e,{r:.9}), trim=M(0xd0a24a,{r:.8});
+    const S=(r,c,p,sx,sy,sz,rx=0,rz=0)=>sph(r,c,p,g,m=>{ m.scale.set(sx,sy,sz); m.rotation.x=rx; m.rotation.z=rz; },22,16);
+    S(.3,hide,[0,.97,.02],.92,.98,2.1); S(.31,hide,[0,.99,.44],1,1.02,1.08); S(.3,hide,[0,.99,-.45],1,1.04,1.02); S(.22,belly,[0,.8,.02],1.05,.62,2.1);
+    box(.06,.025,1.2,dark,[0,1.285,0],g); box(.5,.025,.06,dark,[0,1.27,.4],g);
+    caps(.135,.36,hide,[0,1.3,.72],g,m=>m.rotation.x=.82);
+    S(.17,hide,[0,1.52,1.02],.92,.95,1.55,.42); S(.105,belly,[0,1.43,1.26],.95,.85,1.3,.6); S(.03,dark,[0,1.4,1.37],1.2,.8,.9);
+    for(const sd of [-1,1]){ cyl(.012,.052,.34,hide,[sd*.082,1.74,.94],g,m=>{ m.rotation.x=-.12; m.rotation.z=sd*-.3; },8); cyl(.006,.03,.26,dark,[sd*.082,1.72,.955],g,m=>{ m.rotation.x=-.12; m.rotation.z=sd*-.3; },8); sph(.022,dark,[sd*.125,1.54,1.05],g); }
+    for(let i=0;i<7;i++) box(.035,.11,.05,dark,[0,1.62-i*.065,.86-i*.1],g,m=>m.rotation.x=.78);
+    caps(.026,.46,dark,[0,.86,-.74],g,m=>m.rotation.x=-.28); sph(.055,dark,[0,.58,-.84],g,m=>m.scale.set(1,1.6,1));
+    // saddle blanket draped over the back
+    box(.66,.045,.7,cloth,[0,1.3,.02],g); for(const sd of [-1,1]){ box(.045,.4,.7,cloth,[sd*.325,1.12,.02],g,m=>m.rotation.z=sd*.2); box(.05,.06,.72,trim,[sd*.355,.93,.02],g,m=>m.rotation.z=sd*.2); }
+    box(.68,.05,.05,trim,[0,1.3,.38],g); box(.68,.05,.05,trim,[0,1.3,-.34],g);
+    const L=[]; for(const [sx,sz] of [[-1,1],[1,1],[-1,-1],[1,-1]]){ const lg=grp([sx*.17,.85,sz*.43],g); cyl(.095,.06,.44,hide,[0,-.2,0],lg); cyl(.052,.04,.42,hide,[0,-.58,0],lg); cyl(.056,.062,.075,hoof,[0,-.82,0],lg); L.push(lg); } g.userData.L=L; return g; }; this.r=mk(GS); this.m=mk(MIRG); this.show(false); ACTORS.push(this); }
   show(v){ this.r.visible=this.m.visible=v; }
   set(x,y,z,ry,t,amt=1){ this.show(true); for(const g of [this.r,this.m]){ g.position.set(x,y,z); g.rotation.y=ry; const w=WKd(t); g.userData.L.forEach((l,i)=>{ l.rotation.x=Math.sin(w+(i===0||i===3?0:Math.PI))*.4*amt; }); } } }
 const WKd=t=>t*TAU/(PER*2);
