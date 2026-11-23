@@ -3,7 +3,20 @@ const SHORE_X=-5.4;
 function galilee(o={}){ stage('sea'); base({hemi:o.hemi??.5,moon:o.moon??.7,fog:0x0a1420,fd:o.fd??.007,mc:0x7f9bd0}); DOME.show(true); DOME.set(o.top??'#03060c',o.mid??'#0a1420',o.hor??'#1c2e40',o.stars??.5,o.moonOp??.8,[160,75,-110]); MOON.position.set(160,60,-90); MOON.intensity=o.moon??1.1; MOON.color.set(0xa8c0f0); GLIT.visible=(o.moonOp??.8)>.2; GLIT.material.opacity=.5*(o.moonOp??.8); }
 const GLIT=(()=>{ const m=halo(0xbcd0ff,1,[150,1.5,-95],GS,.5); m.scale.set(26,70,1); m.center.set(.5,1); hide(m); return m; })();
 const SKYG=(()=>{ const a=[[-60,80,-120,0x4a5aa8,260],[40,120,-160,0x7a4aa8,300],[0,50,-200,0x3a8ac8,320]].map(([x,y,z,c,s])=>halo(c,s,[x,y,z],GS,0)); hide(...a); return a; })();
-const JZ3=t=>20-JV*(t-57.5);
+
+// deep star volume for the constellation shot: stars at many depths (parallax when the camera pushes in), a Milky Way band, shooting stars
+const STARV=(()=>{ const R=rng(901); const G=new THREE.Group(); G.frustumCulled=false; GS.add(G);
+  const mk=(n,gen,size,op)=>{ const p=new Float32Array(n*3), c=new Float32Array(n*3); for(let i=0;i<n;i++){ gen(i,p,c); } const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.BufferAttribute(p,3)); g.setAttribute('color',new THREE.BufferAttribute(c,3)); const m=new THREE.Points(g,new THREE.PointsMaterial({map:GT,size,sizeAttenuation:true,vertexColors:true,transparent:true,opacity:op,blending:THREE.AdditiveBlending,depthWrite:false,fog:false})); m.frustumCulled=false; G.add(m); return m; };
+  // camera looks from (0,1.8,0) toward (2.6,16,-46): keep stars inside that view cone at every depth
+  const ax=z=>2.6*(-z)/46, ay=z=>1.8+(14.2/46)*(-z);
+  const near=mk(1500,(i,p,c)=>{ const z=-16-Math.pow(R(),.8)*200, d=-z; p[i*3]=ax(z)+(R()-.5)*1.9*d*.78; p[i*3+1]=ay(z)+(R()-.5)*1.9*d*.46; p[i*3+2]=z; const w=.45+.55*R(), k=R(); c[i*3]=w*(k<.18?1:.82); c[i*3+1]=w*(.86+.1*k); c[i*3+2]=w*(k>.6?1:.9); },.5,.95);
+  const mw=mk(5200,(i,p,c)=>{ const z=-150-R()*120, d=-z; const a=(R()-.5)*2.6, g=(R()+R()+R()-1.5)*.16; const cx=ax(z)+a*d*.55, cy=ay(z)+a*d*.24*(-1)+g*d; p[i*3]=cx; p[i*3+1]=cy; p[i*3+2]=z; const w=(.18+.5*R())*(1-Math.min(1,Math.abs(g)*3)); c[i*3]=w*.78; c[i*3+1]=w*.8; c[i*3+2]=w; },.55,.55);
+  const sh=[]; for(let i=0;i<4;i++){ const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(6),3)); const l=new THREE.Line(g,new THREE.LineBasicMaterial({color:0xcfe0ff,transparent:true,opacity:0,blending:THREE.AdditiveBlending,fog:false,depthWrite:false})); l.frustumCulled=false; G.add(l); sh.push(l); }
+  const o={G,near,mw,sh,
+    update(t,u){ near.material.opacity=.95*sm(0,.12,u); mw.material.opacity=.5*sm(0,.2,u);
+      sh.forEach((l,i)=>{ const T=(t*.21+i*.47)%1, W=sm(0,.05,T)*(1-sm(.12,.2,T)); const a=i<2?W:0, k=clamp(T/.2); const hx=-34+i*40+k*70, hy=70+i*16-k*38, hz=-130-i*20; const p=l.geometry.attributes.position.array; p[0]=hx; p[1]=hy; p[2]=hz; p[3]=hx-26*Math.min(1,k*3); p[4]=hy+14*Math.min(1,k*3); p[5]=hz; l.geometry.attributes.position.needsUpdate=true; l.material.opacity=a*.9*(i%2?.7:1); }); },
+    show(v){ G.visible=v; } };
+  hide(G); return o; })();const JZ3=t=>20-JV*(t-57.5);
 SC.v1a=function(lt,len,t){ galilee({}); const u=lt/len, jz=JZ3(t); SEA.update(t,.3); SEA.boatSet(55,-24,t,.3); jes(SHORE_X,jz,Math.PI,t); jlight(SHORE_X,1.5,jz-.5,28); footprints(t,57.5,SHORE_X,20,JV,-1,3); rain(t,.5,-8,jz,[[SHORE_X,1.4,jz,5,[1,.78,.42],1.2]]);
   camMove(u,[-16,2.2,jz+14,-5,1.5,jz-6,42],[-12,1.7,jz+8,-5,1.5,jz-8,38],'lin'); return {bloom:.6,warm:.12,rays:[W*.55,H*.55,.3]}; };
 SC.v1b=function(lt,len,t){ galilee({stars:.7}); const u=lt/len, jz=JZ3(t); SEA.update(t,.25); SEA.boatSet(52,jz-30,t,.25); jes(SHORE_X,jz,Math.PI,t); jlight(SHORE_X+.6,1.4,jz-.2,28); footprints(t,57.5,SHORE_X,20,JV,-1,3); rain(t,.25,-6,jz,[[SHORE_X,1.4,jz,5,[1,.78,.42],1.2]]);
@@ -20,8 +33,8 @@ SC.v1e1=function(lt,len,t){ voidBase({hemi:.18}); const u=lt/len; VOID.crown.vis
   camMove(u,[.5,.32,3.6,0,.6,-.4,38],[-.3,.34,3.4,.1,.65,-.3,36]); rain(t,0,0,0,null); return {bloom:.8,warm:.15,rays:[W*.6,H*.5,.2]}; };
 SC.v1e2=function(lt,len,t){ galilee({stars:.2+.8*(lt/len),top:'#02040c',mid:'#0a1630',hor:'#1c3050',moonOp:.9}); const u=lt/len, jz=-8-1.5*lt; SEA.update(t,.12); SEA.boatSet(52,-26,t,.12); jes(SHORE_X,jz,Math.PI,t); jlight(SHORE_X,1.5,jz-.5,24); SKYG.forEach((h,i)=>{ h.visible=true; h.material.opacity=.32*sm(0,.8,u); }); rain(t,.15*(1-u),-8,jz,null);
   camMove(u,[-12,1.2,jz+7,-5,1.4,jz-2,40],[-12,1.2,jz+7,-5,28,jz-26,50]); return {bloom:.7,warm:.2,rays:[W*.5,H*.4,.2]}; };
-SC.v1f=function(lt,len,t){ voidBase({}); DOME.show(true); DOME.set('#000206','#050a18','#0a1430',1,0); const u=lt/len; VOID.lion.visible=true; VOID.lion.position.set(0,20,-46); VOID.lion.scale.setScalar(5); VOID.lion.rotation.y=0; VOID.lionSet(clamp(u*1.15)); SKYG.forEach(h=>{ h.visible=true; h.material.opacity=.2; });
-  camMove(u,[0,1.8,0,2.6,16,-46,46],[0,1.8,0,2.8,17,-46,40],'lin'); const roar=sm(.82,.95,u); return {bloom:.8+roar,warm:.1+.4*roar,flare:[W*.5,H*.48,.6*roar],grain:.09}; };
+SC.v1f=function(lt,len,t){ voidBase({}); DOME.show(true); DOME.set('#000206','#050a18','#0a1430',1,0); const u=lt/len; VOID.lion.visible=true; VOID.lion.position.set(0,20,-46); VOID.lion.scale.setScalar(5); VOID.lion.rotation.y=0; VOID.lionSet(clamp(u*1.15)); SKYG.forEach(h=>{ h.visible=true; h.material.opacity=.3; });
+  STARV.show(true); STARV.update(t,u); camMove(u,[0,1.8,0,2.6,21,-46,46],[1.1,3.2,-15,3.2,20.5,-46,40],'lin'); const roar=sm(.82,.95,u); return {bloom:.8+roar,warm:.1+.4*roar,flare:[W*.5,H*.48,.6*roar],grain:.09}; };
 // ---------- chorus 2 : the village ----------
 const JZ2=t=>22-JV*(t-87.45);
 const PEEP={ widow:new Actor({style:'robe',cloth:0x2a2a30,robe:0x2a2a30,wrap:0x3a3640}), blind:new Actor({style:'robe',cloth:0x3a3228,robe:0x3a3228,wrap:0x4a4236,staff:true}), child:new Actor({style:'robe',cloth:0x4a3a30,robe:0x4a3a30,wrap:0x4a3a30,scale:.55}), lame:new Actor({style:'robe',cloth:0x2e3430,robe:0x2e3430,wrap:0x3a4034,crutch:true}) };
