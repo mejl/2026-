@@ -20,8 +20,8 @@ SC.v2d2=function(lt,len,t){ stage('calvary'); base({hemi:.3,moon:.2,fog:0x1a0c14
   camMove(u,[-3,CAL.h(-3,78)+1.2,100,0,CAL.h(0,40)+9,40,34],[-1,CAL.h(-1,80)+1.4,92,0,CAL.h(0,40)+9.5,40,30]); return {bloom:.7,warm:.1,grain:.14}; };
 SC.v2e=function(lt,len,t){ stage('void'); base({}); DOME.show(true); DOME.set('#000','#000106','#000206',1,0); GS.fog.density=0; const u=lt/len; GLOBE.g.visible=true; GLOBE.set(lt/len*2.9,sm(.1,1,u),t,lerp(30,-70,ease(u)),lerp(32,22,u)); GLOBE.halo.visible=true; const d=lerp(17,13.5,u); cam([0,0,d],[0,0,0],30); return {bloom:.9,warm:sm(.1,1,u),rays:[W*.5,H*.5,0],grain:.08}; };
 SC.v2f=function(lt,len,t){ stage('calvary'); base({hemi:.65,moon:.2,fog:0x8a6a72,fd:.005,hc:0xc09a88,gc:0x2a2030}); DOME.show(true); const d=sm(0,5,lt); DOME.set('#101a44','#6a4a7a','#ffb87a',0,0); const g=sm(.2,2.5,lt);
-  CAL.tombGlow.emissiveIntensity=3*g; CAL.tombHalo.material.opacity=.9*g; CAL.setRays(.7*g,t,GC.position); const u=lt/len, em=sm(2.2,5,lt); const jz=lerp(-19,-7,em); JES.set(60,CAL.h(60,jz),jz,0,{walk:WK(t),wa:1-sm(4.6,5.2,lt),aL:[0,.06+.9*sm(5,6,lt),.15],aR:[0,.06+.9*sm(5,6,lt),.15]},t); JES.show(lt>2.2); jlight(60,3,jz+.8,10*em);
-  camMove(u,[60,2.0,12,60,3.6,-19,36],[60,2.6,2,60,4.2,-19,32]); return {bloom:.9,warm:.8,rays:[W*.5,H*.58,.9*g],flare:[W*.5,H*.58,.5*g]}; };
+  CAL.tombGlow.emissiveIntensity=1.9*g; CAL.tombHalo.material.opacity=.55*g; CAL.setRays(.42*g,t,GC.position); const u=lt/len, em=sm(2.2,5,lt); const jz=lerp(-19,-7,em); JES.set(60,CAL.h(60,jz),jz,0,{walk:WK(t),wa:1-sm(4.6,5.2,lt),aL:[0,.06+.9*sm(5,6,lt),.15],aR:[0,.06+.9*sm(5,6,lt),.15]},t); JES.show(lt>2.2); jlight(60,3,jz+.8,10*em);
+  camMove(u,[60,2.0,12,60,3.6,-19,36],[60,2.6,2,60,4.2,-19,32]); return {bloom:.55,warm:.8,rays:[W*.5,H*.58,.35*g],flare:[W*.5,H*.58,.2*g]}; };
 // ---------- bridge: the city again, at the first light ----------
 function cityDawn(o){ stage('city'); base({hemi:o.hemi??.5,moon:o.moon??.5,fd:o.fd??.012,rim:o.rim??0,rc:0xffa070,fog:o.fog??0x0a0e1c}); }
 const JZB=t=>-66+JV*(t-154.43)*.5;   // far Jesus approaching in b1
