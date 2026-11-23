@@ -50,7 +50,7 @@ function ancCrowd(t,jz,follow=1,t0pass=0){ crowdShow('anc',true); CROWD.anc.each
     if(follow&&passed>=1){ const age=(a.z-jz-4)/JV; const k=clamp(age/2.5); x=lerp(a.x,a.s*1.3+(hash(i*7)-.5)*1.2,sm(0,1,k)); z=jz+4+(hash(i*5)*6)*1+k*0+ (a.z-jz-4)*0; ry=lerp(ry,Math.PI,sm(0,1,k)); bob=Math.abs(Math.sin(t*TAU/(PER*2)+i))*.04*k; z=Math.min(a.z,jz+4+(i%11)*1.1); }
     CROWD.anc.set(it,x,bob,z,ry,[up*.95,arm],up*.5); }); }
 function ANCZ0(i,jz,t){ return 0; }
-function village(o={}){ stage('ancient'); base({hemi:.3,moon:.25,fog:0x0a0c14,fd:.014,mc:0x7f8cb0}); DOME.show(true); DOME.set('#03050b','#0a1020','#16192a',.5,.5,[-120,80,-150]); }
+function village(o={}){ stage('ancient'); base({hemi:window.VH??2.2,moon:window.VM??2.2,fog:0x0a0c14,fd:.012,mc:0x9db0dc,hc:0x6a7ca8}); DOME.show(true); DOME.set('#03050b','#0a1020','#16192a',.5,.5,[-120,80,-150]); }
 SC.c2a=function(lt,len,t){ village(); const jz=JZ2(t), u=lt/len; jes(.6,jz,Math.PI,t); jlight(.6,1.5,jz-.5,20); peeps(t); ancCrowd(t,jz,0); ancLight({jz,dir:-1,trail:1,palms:0},t); litRain(t,.45,.6,jz); footprints(t,87.45,.6,22,JV);
   camMove(u,[-1.6,2.6,jz+13,.6,1.4,jz-7,40],[-.4,2.0,jz+9,.6,1.4,jz-7,36],'lin'); return {bloom:.6,warm:.15,rays:[W*.52,H*.5,.4]}; };
 function c2cam(zp,side,u,a,b){ const jz=JZ2(TT); return [a,b]; }
