@@ -79,10 +79,10 @@ const CHURCH=(function(){
     const cm=M2(0xffd9a0,{e:0xffd9a0,ei:0,r:.4}); C.crossM=cm; box(.35,2.8,.35,cm,[-13,37,-93],p); box(1.7,.35,.35,cm,[-13,37.8,-93],p); box(.3,2.4,.3,cm,[0,19.2,-91.5],p); box(1.4,.3,.3,cm,[0,19.8,-91.5],p);
   });
   C.haze=halo(0x7a4aa8,150,[0,14,-130],par[0],.5); C.halo=halo(0xffc070,26,[-13,36,-92],par[0],0); C.halo2=halo(0xffb060,16,[0,12.2,-90],par[0],0);
-  C.draw=function(prog,t){ const x=sign.x, w=1024, h=384, txt=sign.text; x.clearRect(0,0,w,h); x.fillStyle='rgba(5,7,14,.82)'; x.beginPath(); (x.roundRect?x.roundRect(14,10,w-28,h-20,46):x.rect(14,10,w-28,h-20)); x.fill(); x.lineJoin='round'; x.textAlign='center'; x.textBaseline='middle'; const tot=txt.join('').length; let idx=0;
+  C.draw=function(prog,t){ const x=sign.x, w=1024, h=384, txt=sign.text; x.clearRect(0,0,w,h); x.fillStyle='rgba(5,7,14,.82)'; x.beginPath(); (x.roundRect?x.roundRect(14,10,w-28,h-20,46):x.rect(14,10,w-28,h-20)); x.fill(); x.lineJoin='round'; x.textAlign='center'; x.textBaseline='middle'; const tot=txt.join('').length; let idx=0; let lk=1; try{ const e=expAt(CURSHOT,CURU); if(e>1) lk=Math.pow(e,-(window.SIGNK??.8)); }catch(_){}
     txt.forEach((line,li)=>{ x.font=`900 ${li?150:132}px "Inter Display","Inter"`; x.letterSpacing='8px'; const y=li?285:104; let cx=w/2-x.measureText(line).width/2; for(let ch=0;ch<line.length;ch++){ const c=line[ch], cw=x.measureText(c).width; const on=clamp(prog*(tot+2)-idx); const fl=on>0&&on<1?(Math.sin(on*40)>-.1?1:.15):on>=1?1:0; const col=li?'#ff4f9a':'#ffb347';
         x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.strokeStyle='#262b3a'; x.lineWidth=15; x.strokeText(c,0,0); x.restore();
-        if(on>0){ x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.globalAlpha=Math.min(1,fl*(.8+.2*Math.sin(t*30+idx))); x.shadowColor=col; x.shadowBlur=42; x.strokeStyle=col; x.lineWidth=15; x.strokeText(c,0,0); x.shadowBlur=10; x.strokeStyle=li?'#ffd0e6':'#ffe7b8'; x.lineWidth=4; x.strokeText(c,0,0); x.restore(); }
+        if(on>0){ x.save(); x.translate(cx+cw/2,y); x.textAlign='center'; x.globalAlpha=Math.min(1,fl*(.8+.2*Math.sin(t*30+idx)))*lk; x.shadowColor=col; x.shadowBlur=42; x.strokeStyle=col; x.lineWidth=15; x.strokeText(c,0,0); x.shadowBlur=10; x.strokeStyle=li?'#ffd0e6':'#ffe7b8'; x.lineWidth=4; x.strokeText(c,0,0); x.restore(); }
         cx+=cw; idx++; } }); sign.tex.needsUpdate=true; };
   C.draw(0,0); return C; })();
 WORLDS.city.x.push(CHURCH.par[0],CHURCH.par[1]);
