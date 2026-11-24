@@ -1,5 +1,5 @@
 // ===== people: sculpted figures (lofted smooth limbs, hands, faces, hair, cloth), posable rig, baked crowds, Jesus =====
-const SKINC=0xb98a66, LITE=0xffe3b0;
+const SKINC=0xa4744c, LITE=0xffe3b0;
 const ROBET=ctex(64,128,(x,w,h)=>{ const g=x.createLinearGradient(0,0,0,h); g.addColorStop(0,'#f1dcae'); g.addColorStop(.5,'#e0b576'); g.addColorStop(1,'#b98040'); x.fillStyle=g; x.fillRect(0,0,w,h); for(let i=0;i<w;i++){ const a=.12+.12*Math.sin(i*1.7)*Math.sin(i*.43); x.fillStyle=`rgba(80,40,0,${Math.max(0,a)*.8})`; x.fillRect(i,0,1,h); } });
 // loft: stack of elliptical rings (top -> bottom) skinned into one smooth mesh. s:{y,rx,rz,cx,cz,gap|a0,a1}
 function loft(S,o={}){ const seg=o.seg||12, sc=o.scale||1, ns=S.length, fn=o.fn, full=!S.some(s=>s.a0!==undefined||s.gap);
@@ -22,7 +22,7 @@ function mkRig(o){
   const cloth=o.cloth??0x1c2333, cloth2=o.cloth2??0x141a28, skin=o.skin??SKINC, hair=o.hair??0x14100e;
   const em=o.em||null; const mc=(c,extra={})=>M(c,Object.assign({r:.88},em?{e:em[0],ei:em[1]}:{},extra));
   const DS=THREE.DoubleSide;
-  const mats={cloth:jes?M(0xf3ead6,{r:.85,e:0xffe2b0,ei:.1}):mc(cloth), cloth2:jes?M(0xe0c690,{r:.85,e:0xffd08a,ei:.09}):mc(cloth2), skin:jes?M(0xc99468,{r:.7,e:0xffc890,ei:.05}):mc(skin,{r:.72}), hair:mc(hair,{r:.8,side:DS}), pants:mc(o.pants??0x0e121b), shoe:mc(0x0a0b10,{r:.6}), eye:M(0x120d0b,{r:.4}), lip:M(0x7a3a34,{r:.6})};
+  const mats={cloth:jes?M(0xe9dcbc,{r:.85,e:0xffe2b0,ei:.1}):mc(cloth), cloth2:jes?M(0xe0c690,{r:.85,e:0xffd08a,ei:.09}):mc(cloth2), skin:jes?M(0xa5724a,{r:.6,e:0xe0a064,ei:.13}):mc(skin,{r:.72}), hair:jes?M(0x2b1a10,{r:.6,side:DS}):mc(hair,{r:.8,side:DS}), pants:mc(o.pants??0x0e121b), shoe:mc(0x0a0b10,{r:.6}), eye:M(0x120d0b,{r:.4}), lip:jes?M(0x8a4a3e,{r:.55}):M(0x77443a,{r:.65}), sclera:M(0xd6cfc2,{r:.35}), beard:jes?M(0x3a2315,{r:.62,side:DS}):mc(hair,{r:.8,side:DS}), iris:M(0x2a170c,{r:.3}), catch:M(0xffffff,{e:0xffffff,ei:.9}), lid:M(jes?0x6e4630:new THREE.Color(skin).multiplyScalar(.72).getHex(),{r:.7}), nost:M(0x2a140c,{r:.8}), mouth:M(0x55261f,{r:.7})};
   const root=new THREE.Group(); const hips=grp([0,.93*sc,0],root); const R={root,hips,st,sc,mats,o}; const k=x=>x*sc;
   const L=(n,S,opt,mat,p,par,cb)=>mesh(GEO(`${n}|${st}|${sc}|${seg}`,()=>loft(S,Object.assign({seg,scale:sc},opt))),mat,p?[k(p[0]),k(p[1]),k(p[2])]:null,par,cb);
   // ---- torso (chest, waist, shoulders slope) ----
@@ -36,26 +36,52 @@ function mkRig(o){
   // pelvis (trousered styles)
   if(!robe) L('pelvis',[{y:.07,rx:.15,rz:.1},{y:-.02,rx:.17,rz:.11},{y:-.1,rx:.165,rz:.11},{y:-.16,rx:.12,rz:.09},{y:-.185,rx:.004,rz:.004}],{},mats.pants,[0,0,0],hips);
   if(jes){ L('sash',[{y:.075,rx:.163,rz:.108},{y:.068,rx:.178,rz:.12},{y:-.02,rx:.18,rz:.122},{y:-.027,rx:.163,rz:.108}],{},M(0x8a5a2a,{r:.6,e:0x8a5a2a,ei:.35}),[0,0,0],torso); }
+  if(jes){ const sw=M(0xf6f1e4,{r:.92,e:0xffe8c0,ei:.08,side:DS}), bl=M(0x1c3d86,{r:.7,e:0x4a78d8,ei:.12,side:DS}); mats.shawl=sw; mats.blue=bl;
+    const wv=(a,y)=>1+.02*Math.sin(a*9+y*14);
+    const SW=[[.584,.074,.068,.95],[.572,.092,.078,.9],[.55,.146,.097,.85],[.525,.207,.114,.8],[.495,.214,.128,.85],[.42,.205,.138,1.0],[.3,.192,.132,1.15],[.18,.178,.12,1.3],[.08,.18,.122,1.45],[.06,.18,.122,1.48]];
+    L('shawl',SW.map(([y,rx,rz,g])=>({y,rx,rz,gap:g})),{fn:wv},sw,[0,0,0],torso);
+    for(const [y0,y1] of [[.09,.108],[.066,.079]]) L('shb'+y0,[{y:y1,rx:.1815,rz:.1235,gap:1.46},{y:y0,rx:.1815,rz:.1235,gap:1.47}],{fn:wv},bl,[0,0,0],torso);
+    for(const sd of [1,-1]) L('she'+sd,SW.map(([y,rx,rz,g])=>sd>0?{y,rx:rx+.002,rz:rz+.002,a0:g-.015,a1:g+.05}:{y,rx:rx+.002,rz:rz+.002,a0:TAU-g-.05,a1:TAU-g+.015}),{fn:wv},bl,[0,0,0],torso);
+    for(const sd of [-1,1]){ const tg=grp([k(sd*.18),k(.06),k(.012)],torso); for(let i=0;i<5;i++) cyl(.0016*sc,.0016*sc,.1*sc,sw,[(i-2)*.004*sc,-.05*sc,(i%2?.003:-.003)*sc],tg,m=>{ m.rotation.z=(i-2)*.05; },4); sph(.0065*sc,sw,[0,.002*sc,0],tg); } }
   // ---- neck + head ----
   L('neck',limbSecs(.16,[[0,.05,.05],[1,.054,.054]],false,false),{},mats.skin,[0,.68,0],torso);
-  const head=grp([0,k(.62),0],torso); head.scale.setScalar(1.1); R.head=head;
-  L('head',[{y:.275,rx:.002,rz:.002,cz:-.012},{y:.258,rx:.046,rz:.06,cz:-.014},{y:.232,rx:.072,rz:.09,cz:-.012},{y:.192,rx:.085,rz:.1,cz:-.008},{y:.15,rx:.088,rz:.103,cz:-.004},{y:.11,rx:.08,rz:.097,cz:0},{y:.072,rx:.062,rz:.08,cz:.008},{y:.042,rx:.04,rz:.057,cz:.018},{y:.022,rx:.02,rz:.036,cz:.025},{y:.012,rx:.002,rz:.003,cz:.027}],{},mats.skin,[0,0,0],head);
+  const head=grp([0,k(.6),0],torso); head.scale.setScalar(1.04); R.head=head;
+  L('head',[{y:.272,rx:.002,rz:.002,cz:-.012},{y:.262,rx:.05,rz:.062,cz:-.014},{y:.24,rx:.08,rz:.092,cz:-.012},{y:.21,rx:.094,rz:.104,cz:-.01},{y:.18,rx:.1,rz:.108,cz:-.006},{y:.15,rx:.098,rz:.106,cz:-.002},{y:.12,rx:.088,rz:.099,cz:.002},{y:.09,rx:.072,rz:.09,cz:.006},{y:.062,rx:.054,rz:.076,cz:.012},{y:.038,rx:.038,rz:.056,cz:.02},{y:.02,rx:.02,rz:.036,cz:.026},{y:.012,rx:.002,rz:.003,cz:.028}],{},mats.skin,[0,0,0],head);
   const dot=(r,m,p,s,ws=8,hs=6)=>mesh(GEO(`d${r}|${ws}|${sc}`,()=>new THREE.SphereGeometry(r*sc,ws,hs)),m,[k(p[0]),k(p[1]),k(p[2])],head,mm=>mm.scale.set(s[0],s[1],s[2]));
-  dot(.017,mats.skin,[0,.12,.097],[.8,1.35,1.0]);                                                      // nose
-  for(const sd of [-1,1]) dot(.0115,mats.eye,[sd*.033,.158,.087],[1.25,.85,.7],lo?5:8,lo?4:6);
-  if(!lo){ for(const sd of [-1,1]){ dot(.014,mats.skin,[sd*.088,.138,-.008],[.5,1.9,1.3]);
-      const br=box(k(.034),k(.0065),k(.008),jes?mats.hair:mats.hair,[k(sd*.034),k(.178),k(.093)],head,m=>{ m.rotation.z=sd*-.12; }); }
-    box(k(.034),k(.005),k(.007),mats.lip,[0,k(.078),k(.092)],head); }
+  // ---- face: nose, eyes (sclera + iris + lids), brows, ears, lips ----
+  { const nose=(x,y,z,r,sv)=>dot(r,mats.skin,[x,y,z],sv);
+    nose(0,.146,.098,.0122,[.7,1.9,1.1]); nose(0,.114,.1035,.0108,[.9,.9,1.0]);
+    for(const sd of [-1,1]){ nose(sd*.0095,.111,.0975,.0066,[1,.8,.9]); }
+    if(lo){ for(const sd of [-1,1]) dot(.0115,mats.eye,[sd*.034,.166,.092],[1.25,.85,.7],5,4); }
+    else { for(const sd of [-1,1]){
+        dot(.0128,mats.sclera,[sd*.034,.166,.0905],[1.3,.78,.62],10,8);
+        dot(.0072,mats.iris,[sd*.034,.166,.0985],[1,1,.45],10,8);
+        dot(.0026,mats.catch,[sd*.0316,.1685,.1008],[1,1,.6],6,4);
+        box(k(.031),k(.0042),k(.0075),mats.lid,[k(sd*.034),k(.1755),k(.0945)],head,m=>{ m.rotation.z=sd*-.06; });
+        box(k(.036),k(.006),k(.0085),mats.hair,[k(sd*.037),k(.1925),k(.097)],head,m=>{ m.rotation.z=sd*-.17; });
+        dot(.014,mats.skin,[sd*.099,.138,-.008],[.6,1.8,1.25]); }
+      dot(.0105,mats.lip,[0,.0745,.0885],[1.9,.48,.7]); dot(.0115,mats.lip,[0,.0585,.083],[1.75,.55,.75]);
+      box(k(.032),k(.0028),k(.005),mats.mouth,[0,k(.066),k(.0925)],head); } }
   const CAP=e=>[{y:.288+e,rx:.002,rz:.002,cz:-.012},{y:.272+e,rx:.052+e,rz:.068+e,cz:-.016},{y:.246+e,rx:.082+e,rz:.1+e,cz:-.016},{y:.215+e,rx:.094+e,rz:.114+e,cz:-.014,gap:.5},{y:.186+e,rx:.098+e,rz:.113+e,cz:-.017,gap:1.15},{y:.15,rx:.1+e,rz:.108+e,cz:-.022,gap:1.95}];
   if(jes){
-    L('hair',CAP(.008),{},mats.hair,[0,0,0],head);
-    L('hairback',[{y:.21,rx:.098,rz:.108,cz:-.012,gap:1.6},{y:.12,rx:.104,rz:.116,cz:-.034,gap:1.75},{y:.02,rx:.115,rz:.108,cz:-.062,gap:1.85},{y:-.07,rx:.128,rz:.094,cz:-.078,gap:1.9},{y:-.15,rx:.118,rz:.07,cz:-.086,gap:1.95},{y:-.18,rx:.05,rz:.03,cz:-.09,gap:2.2}],{},mats.hair,[0,0,0],head);
-    L('beard',[{y:.1,rx:.07,rz:.092,cz:-.004,a0:-1.55,a1:-.55},{y:.1,rx:.07,rz:.092,cz:-.004,a0:.55,a1:1.55}].slice(0,0).concat([{y:.098,rx:.074,rz:.094,cz:-.004,a0:-1.5,a1:1.5},{y:.066,rx:.066,rz:.094,cz:.006,a0:-1.4,a1:1.4},{y:.03,rx:.054,rz:.094,cz:.016,a0:-1.25,a1:1.25},{y:-.025,rx:.04,rz:.084,cz:.03,a0:-1.0,a1:1.0},{y:-.075,rx:.02,rz:.052,cz:.04,a0:-.8,a1:.8},{y:-.098,rx:.003,rz:.01,cz:.046,a0:-.3,a1:.3}]),{},mats.hair,[0,0,0],head);
+    // long, wavy, centre-parted dark-brown hair (two halves) + trimmed full beard and moustache
+    const hw=(a,y)=>1+.06*Math.sin(y*30+a*2.5)*clamp((.2-y)/.3)+.04*Math.sin(a*8-y*14);
+    const HS=[[.29,.002,.002,-.012,0],[.276,.058,.072,-.014,.12],[.25,.088,.1,-.016,.26],[.22,.102,.114,-.014,.55],[.19,.107,.119,-.014,1.0],[.16,.108,.118,-.02,1.4],[.12,.112,.122,-.03,1.62],[.075,.118,.124,-.045,1.75],[.025,.126,.122,-.06,1.85],[-.03,.138,.124,-.07,1.95],[-.09,.148,.118,-.076,2.1],[-.15,.156,.108,-.068,2.3],[-.21,.158,.096,-.05,2.55],[-.255,.148,.078,-.03,2.85],[-.285,.11,.05,-.01,3.05],[-.3,.05,.02,0,3.1]];
+    for(const sd of [1,-1]) L('hair'+(sd>0?'R':'L'),HS.map(([y,rx,rz,cz,a0])=>sd>0?{y,rx,rz,cz,a0,a1:Math.PI}:{y,rx,rz,cz,a0:-Math.PI,a1:-a0}),{fn:hw},mats.hair,[0,0,0],head);
+    const hb=y=>{ let i=0; while(i<HS.length-2&&y<HS[i+1][0]) i++; const A=HS[i], B=HS[i+1], t=clamp((A[0]-y)/(A[0]-B[0])); return {rx:lerp(A[1],B[1],t),rz:lerp(A[2],B[2],t),cz:lerp(A[3],B[3],t)}; };
+    const lock=(nm,sd,y0,y1,a0,a1,off,ph,flare)=>{ const S=[]; const n=7; for(let i=0;i<=n;i++){ const t=i/n, y=lerp(y0,y1,t), q=hb(y), e=1-Math.pow(Math.max(0,(t-.78)/.22),2)*.6; S.push({y,rx:(q.rx+off)*e+flare*t*t*.02,rz:(q.rz+off)*e+flare*t*t*.012,cz:q.cz+(flare?t*t*.025:0),a0:sd>0?a0:-a1,a1:sd>0?a1:-a0}); } L(nm+sd,S,{fn:(a,y)=>1+.05*Math.sin(y*26+a*3+ph)+.035*Math.sin(a*10+ph)},mats.hair,[0,0,0],head); };
+    for(const sd of [1,-1]){ lock('lkA',sd,.16,-.27,1.5,2.35,.014,0,1); lock('lkB',sd,.12,-.3,2.3,3.1,.012,2,1); lock('lkC',sd,.2,-.2,1.05,1.7,.01,4,0); }
+    const BS=[[.13,.096,.106,0,.95,2.15],[.1,.09,.102,.004,.8,2.0],[.085,.082,.098,.006,.36,1.95],[.06,.07,.09,.012,.34,1.85],[.04,.056,.078,.02,0,1.75],[.015,.05,.07,.028,0,1.65],[-.01,.045,.062,.036,0,1.5],[-.03,.036,.052,.042,0,1.25],[-.044,.025,.038,.046,0,.9],[-.052,.014,.022,.048,0,.5],[-.056,.004,.008,.048,0,.15]];
+    for(const sd of [1,-1]) L('beard'+(sd>0?'R':'L'),BS.map(([y,rx,rz,cz,g,e])=>sd>0?{y,rx,rz,cz,a0:g,a1:e}:{y,rx,rz,cz,a0:-e,a1:-g}),{seg:26,fn:(a,y)=>1+.035*Math.sin(a*11+y*40)+.02*Math.sin(a*4.3-y*25)},mats.beard,[0,0,0],head);
+    for(const sd of [-1,1]) dot(.0098,mats.beard,[sd*.0145,.0845,.0945],[2.0,.6,.8],8,6).rotation.z=sd*.2;
   } else if(hoodie&&o.hood!==false){
     L('hood',[{y:.315,rx:.002,rz:.002,cz:-.03},{y:.3,rx:.075,rz:.088,cz:-.03},{y:.262,rx:.116,rz:.138,cz:-.03,gap:.3},{y:.2,rx:.134,rz:.154,cz:-.036,gap:.85},{y:.12,rx:.13,rz:.15,cz:-.032,gap:1.0},{y:.04,rx:.122,rz:.13,cz:-.03,gap:.8},{y:-.03,rx:.124,rz:.108,cz:-.02,gap:.25}],{},mc(cloth,{side:DS}),[0,0,0],head);
-  } else if(hoodie||coat){ L('hair',CAP(.008),{},mats.hair,[0,0,0],head); L('hairback',[{y:.2,rx:.098,rz:.108,cz:-.012,gap:1.7},{y:.1,rx:.102,rz:.112,cz:-.024,gap:1.8},{y:.03,rx:.088,rz:.092,cz:-.03,gap:2.0},{y:.0,rx:.03,rz:.03,cz:-.03,gap:2.4}],{},mats.hair,[0,0,0],head); }
-  else if(robe){ const wm=M(o.wrap??0x2b2a33,{r:.9,side:DS}); L('wrap',CAP(.016).map((s,i)=>i>=3?Object.assign({},s,{gap:s.gap-.15}):s),{},wm,[0,0,0],head);
-    L('wrapback',[{y:.22,rx:.112,rz:.124,cz:-.014,gap:1.4},{y:.12,rx:.12,rz:.132,cz:-.034,gap:1.5},{y:.0,rx:.14,rz:.12,cz:-.06,gap:1.6},{y:-.1,rx:.17,rz:.11,cz:-.075,gap:1.7},{y:-.2,rx:.2,rz:.1,cz:-.08,gap:1.75},{y:-.27,rx:.17,rz:.06,cz:-.075,gap:1.9}],{},wm,[0,0,0],head); }
+  } else if(hoodie||coat){ const hf=(a,y)=>1+.05*Math.sin(a*9+y*30)*clamp((y-.1)/.2)+.02*Math.sin(a*5-y*22);
+    L('hair',CAP(.013),{fn:hf},mats.hair,[0,0,0],head);
+    L('hairback',[{y:.2,rx:.106,rz:.116,cz:-.014,gap:1.55},{y:.12,rx:.11,rz:.12,cz:-.03,gap:1.75},{y:.05,rx:.1,rz:.104,cz:-.04,gap:1.95},{y:0,rx:.07,rz:.06,cz:-.04,gap:2.2},{y:-.02,rx:.02,rz:.02,cz:-.04,gap:2.6}],{fn:hf},mats.hair,[0,0,0],head); }
+  else if(robe){ const wm=M(o.wrap??0x2b2a33,{r:.9,side:DS}); const wf=(a,y)=>1+.07*Math.sin(a*6+y*22)*clamp((.25-y)/.3)+.035*Math.sin(a*11-y*15);
+    L('wrap',CAP(.018).map((s,i)=>i>=3?Object.assign({},s,{gap:s.gap-.12}):s),{fn:wf},wm,[0,0,0],head);
+    L('wrapback',[{y:.21,rx:.118,rz:.13,cz:-.016,gap:1.42},{y:.12,rx:.128,rz:.138,cz:-.03,gap:1.5},{y:.03,rx:.148,rz:.134,cz:-.05,gap:1.62},{y:-.05,rx:.17,rz:.118,cz:-.06,gap:1.85},{y:-.11,rx:.188,rz:.1,cz:-.055,gap:2.15},{y:-.15,rx:.17,rz:.07,cz:-.04,gap:2.55},{y:-.165,rx:.08,rz:.035,cz:-.03,gap:2.9}],{fn:wf},wm,[0,0,0],head); }
   // ---- arms ----
   R.sh=[]; R.el=[]; R.hd=[]; const sl=jes?1.04:robe?1.0:1;
   for(const sd of [-1,1]){ const sh=grp([sd*k(jes?.205:.2),k(.485),0],torso);
@@ -147,4 +173,4 @@ class Crowd{ constructor(geo,specs,par,mpar,tints){ this.items=[]; for(const s o
   set(it,x,y,z,ry,infl,em,sc=1){ for(const m of [it.a,it.b]){ if(!m) continue; m.position.set(x,y,z); m.rotation.y=ry; m.scale.setScalar(sc); } for(let j=0;j<infl.length;j++) it.a.morphTargetInfluences[j]=infl[j]; it.mat.emissiveIntensity=(em||0)*.1; } }
 
 // keep Jesus from clipping to white when the shot's exposure is pushed high
-function dimJes(k){ for(const R of [JES.r,JES.m]){ const ms=[R.mats.cloth,R.mats.cloth2,R.mats.skin,R.mats.hair,R.robe&&R.robe.material]; for(const m of ms){ if(!m) continue; const b=m.userData.jb||(m.userData.jb={c:m.color.clone(),e:m.emissiveIntensity}); m.color.copy(b.c).multiplyScalar(k); m.emissiveIntensity=b.e*k; } } }
+function dimJes(k){ for(const R of [JES.r,JES.m]){ const ms=[R.mats.cloth,R.mats.cloth2,R.mats.skin,R.mats.hair,R.mats.shawl,R.mats.blue,R.mats.lip,R.mats.sclera,R.robe&&R.robe.material]; for(const m of ms){ if(!m) continue; const b=m.userData.jb||(m.userData.jb={c:m.color.clone(),e:m.emissiveIntensity}); m.color.copy(b.c).multiplyScalar(k); m.emissiveIntensity=b.e*k; } } }
