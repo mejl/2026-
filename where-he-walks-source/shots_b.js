@@ -37,7 +37,7 @@ SC.v1f=function(lt,len,t){ voidBase({}); DOME.show(true); DOME.set('#000206','#0
   STARV.show(true); STARV.update(t,u); camMove(u,[0,1.8,0,2.6,21,-46,46],[1.1,3.2,-15,3.2,20.5,-46,40],'lin'); const roar=sm(.82,.95,u); return {bloom:.8+roar,warm:.1+.4*roar,flare:[W*.5,H*.48,.6*roar],grain:.09}; };
 // ---------- chorus 2 : the village ----------
 const JZ2=t=>22-JV*(t-87.45);
-const PEEP={ widow:new Actor({style:'robe',cloth:0x2a2a30,robe:0x2a2a30,wrap:0x3a3640}), blind:new Actor({style:'robe',cloth:0x3a3228,robe:0x3a3228,wrap:0x4a4236,staff:true}), child:new Actor({style:'robe',cloth:0x4a3a30,robe:0x4a3a30,wrap:0x4a3a30,scale:.55}), lame:new Actor({style:'robe',cloth:0x2e3430,robe:0x2e3430,wrap:0x3a4034,crutch:true}) };
+const PEEP={ widow:new Actor({style:'robe',fem:'scarf',cloth:0x2a2a30,robe:0x2a2a30,wrap:0x4a5470,sash:0x40342f}), blind:new Actor({style:'robe',cloth:0x3a3228,robe:0x3a3228,wrap:0x4a4236,staff:true}), child:new Actor({style:'robe',cloth:0x4a3a30,robe:0x4a3a30,wrap:0x4a3a30,scale:.55}), lame:new Actor({style:'robe',cloth:0x2e3430,robe:0x2e3430,wrap:0x3a4034,crutch:true}) };
 const PZ={widow:14,blind:8,child:2,lame:-4}, PX={widow:-3.5,blind:3.3,child:-3.3,lame:3.3};
 function peeps(t){ const jz=JZ2(t); const h=k=>sm(0,1.6,(PZ[k]+1.2-jz)/1.5);   // healed progress (after Jesus passed)
   const w=h('widow'), b=h('blind'), c=h('child'), l=h('lame');
