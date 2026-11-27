@@ -92,20 +92,53 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     inkC(X,bp,.02*S,PAL.hairLine);
     const mu=[P(-.25,.735,.86),P(-.12,.695,.92),P(0,.712,.95),P(.12,.695,.92),P(.25,.735,.86)].map(p=>[p[0],p[1]]);
     ink(X,mu,.058*S,PAL.hair,[.4,.4]); ink(X,mu.map(p=>[p[0],p[1]-S*.012]),.02*S,PAL.hairL,[.4,.4]); }
-  // front hair: centre part, two curtains framing the face, clumped tips; drawn over the forehead and sides
-  const clump=(pts,col)=>{ const q=pts.map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; }); fillS(X,q,col); inkC(X,q,.022*S,PAL.hairLine); return q; };
-  for(const sd of [-1,1]){
-    // big curtain from the part over the temple, down past the jaw to the shoulder
-    const c1=[[.04*sd,-1.1,.62],[.5*sd,-1.0,.62],[.92*sd,-.6,.52],[1.08*sd,0,.35],[1.12*sd,.7,.25],[1.18*sd,1.4,.2],[1.3*sd,2.0,.1],[1.02*sd,1.6,.3],[1.0*sd,2.05,.25],[.9*sd,1.3,.42],[.92*sd,.6,.46],[.86*sd,0,.6],[.62*sd,-.5,.78],[.3*sd,-.78,.9]];
-    const q=clump(c1,PAL.hair);
-    inside(X,q,()=>{ const s1=[[.5*sd,-1.06,.62],[.95*sd,-.7,.5],[1.1*sd,-.2,.35],[1.0*sd,-.3,.4],[.8*sd,-.72,.6]].map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; }); fillS(X,s1,PAL.hairL);
-      if(sd===far){ const s2=[[1.3*sd,-1.2,0],[1.4*sd,2.4,0],[.96*sd,2.4,.3],[.98*sd,.2,.5]].map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; }); fillS(X,s2,PAL.hairS); } });
-    // a few strand lines
-    for(let k=0;k<3;k++){ const pts=[[(.2+k*.2)*sd,-1.0,.8],[(.7+k*.12)*sd,-.4,.62],[(.98+k*.06)*sd,.5,.4],[(1.05+k*.08)*sd,1.3,.3]].map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; }); ink(X,pts,.014*S,PAL.hairLine,[.2,.4]); } }
-  // crown with angel-ring shine
-  const cr0=[[-.9,-.62,.5],[-.7,-1.08,.3],[0,-1.3,.25],[.7,-1.08,.3],[.9,-.62,.5],[.5,-1.0,.62],[0,-1.12,.66],[-.5,-1.0,.62]].map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; });
-  fillS(X,cr0,PAL.hair); inside(X,cr0,()=>{ const rg=[[-.7,-.98,.45],[-.3,-1.16,.4],[.2,-1.17,.42],[.6,-1.0,.45],[.45,-.94,.55],[.2,-1.06,.55],[-.2,-1.06,.55],[-.5,-.92,.55]].map(p=>{ const r=v.P(V3(p[0],p[1],p[2])); return [r[0],r[1]]; }); fillS(X,rg,PAL.hairL); });
-  inkC(X,cr0,.022*S,PAL.hairLine);
-  // part line
-  const pa=v.P(V3(0,-1.2,.5)), pb=v.P(V3(0,-.9,.86)); ink(X,[[pa[0],pa[1]],[pb[0],pb[1]]],.016*S,PAL.hairLine,[.2,.2]);
+  drawHairV3(X,v,o,S);
   return v; }
+
+// ---------- hair v3: layered clumps, each with a shadow half, root shade, angel-ring highlight and tapered ink edges ----------
+const HC={ base:'#3b2213', shadow:'#24130b', deep:'#170b06', light:'#7e5130', shine:'#a8774c', line:'#140904', rim:'rgba(150,185,255,.85)' };
+function hairClump(X,v,S,spine,w0,opt={}){
+  const pts=spine.map(p=>{ const q=v.P(V3(p[0],p[1],p[2])); return [q[0],q[1]]; });
+  const sp=cr(pts,false,10), n=sp.length, Lf=[], Rt=[];
+  for(let i=0;i<n;i++){ const a=sp[Math.max(0,i-1)], b=sp[Math.min(n-1,i+1)]; let dx=b[0]-a[0], dy=b[1]-a[1]; const l=Math.hypot(dx,dy)||1; dx/=l; dy/=l; const t=i/(n-1);
+    const w=w0*S*(t<.12?(.7+.3*t/.12):Math.pow(Math.max(0,1-(t-.12)/.88),.8))*.5;
+    Lf.push([sp[i][0]-dy*w,sp[i][1]+dx*w]); Rt.push([sp[i][0]+dy*w,sp[i][1]-dx*w]); }
+  const poly=Lf.concat(Rt.slice().reverse());
+  pathOf(X,poly); X.fillStyle=opt.base||HC.base; X.fill();
+  const mid=Math.floor(n/2), dark=(Lf[mid][0]>Rt[mid][0])?Lf:Rt, lit=dark===Lf?Rt:Lf;     // key light from screen-left: the right-hand half is in shadow
+  X.save(); pathOf(X,poly); X.clip();
+  // shadow half (crisp cel edge slightly off the spine), deeper shade near the scalp
+  pathOf(X,sp.map((p,i)=>[lerp(p[0],dark[i][0],-.15),lerp(p[1],dark[i][1],-.15)]).concat(dark.slice().reverse())); X.fillStyle=opt.shadow||HC.shadow; X.fill();
+  const r0=Math.floor(n*.14); pathOf(X,Lf.slice(0,r0).concat(Rt.slice(0,r0).reverse())); X.fillStyle=HC.deep; X.globalAlpha=.18; X.fill(); X.globalAlpha=1;
+  // a second, thin long highlight streak lower down
+  const st=[]; for(let i=Math.floor(n*.45);i<Math.floor(n*.75);i++) st.push([lerp(sp[i][0],lit[i][0],.55),lerp(sp[i][1],lit[i][1],.55)]);
+  if(st.length>2) ink(X,st,.012*S,'rgba(140,96,60,.8)',[.4,.4]);
+  X.restore();
+  // ink: tapered lines along both edges (thicker on the shadow side), meeting at the tip
+  ink(X,dark,.024*S,HC.line,[.08,.35]); ink(X,lit,.015*S,HC.line,[.08,.35]);
+  if(opt.rim){ X.save(); X.globalCompositeOperation='lighter'; ink(X,dark.slice(Math.floor(n*.2)),.012*S,HC.rim,[.3,.4]); X.restore(); }
+  return poly; }
+function drawHairV3(X,v,o,S){ const far=Math.sign(o.yaw)||1, P=(x,y,z)=>v.P(V3(x,y,z));
+  // scalp base under the clumps
+  const cr0=[[-.92,-.6,.5],[-.72,-1.08,.3],[0,-1.3,.25],[.72,-1.08,.3],[.92,-.6,.5],[.5,-.98,.66],[0,-1.08,.7],[-.5,-.98,.66]].map(p=>{ const r=P(p[0],p[1],p[2]); return [r[0],r[1]]; });
+  fillS(X,cr0,HC.base); inkC(X,cr0,.02*S,HC.line);
+  // clumps from the centre part, back ones first; the near side gets two that fall forward over the shoulder
+  const H=(k)=>.5+.5*Math.sin(k*12.9898)*.5;
+  const order=[]; for(const sd of [far,-far]) for(let k=5;k>=0;k--) order.push([sd,k]);
+  for(const [sd,k] of order){ if(k%2===1&&k<5) continue; const t=k/5;
+    const root=[.04*sd,lerp(-.98,-1.26,t),lerp(.8,.2,t)];
+    const a=[sd*lerp(.5,.62,t),lerp(-1.02,-1.12,t),lerp(.72,.18,t)];
+    const b=[sd*lerp(.92,1.0,t),lerp(-.5,-.55,t),lerp(.56,0,t)];
+    const c=[sd*lerp(1.04,1.12,t),lerp(.35,.3,t),lerp(.42,-.12,t)];
+    const tip=[sd*lerp(1.06,1.3,t)+sd*.06*Math.sin(k*2.1),lerp(1.35,1.75,t)+.18*Math.sin(k*3.7),lerp(.36,-.2,t)];
+    hairClump(X,v,S,[root,a,b,c,tip],lerp(.46,.5,t),{rim:sd===far&&k<3});
+  }
+  // near side: hair over the front of the shoulder
+  const nsd=-far; for(const [dx,ln] of [[0,0],[.16,.25]]){ hairClump(X,v,S,[[nsd*.9,-.6,.6],[nsd*(1.06+dx),.2,.5],[nsd*(1.1+dx),1.1,.62],[nsd*(1.18+dx),1.9+ln,.7],[nsd*(1.12+dx),2.6+ln,.72]],.4,{hiEnd:.25}); }
+  // a few loose strands
+  for(const sd of [-1,1]) ink(X,[P(.3*sd,-1.02,.8),P(.66*sd,-.7,.74),P(.94*sd,.0,.6),P(1.0*sd,.9,.5)].map(p=>[p[0],p[1]]),.01*S,HC.line,[.3,.4]);
+  // angel-ring shine: tapered light strokes following the crown curve, a gap at the part, stronger on the lit side
+  for(let i=0;i<5;i++){ const u0=-1+i*.42+.04, u1=u0+.3; if(Math.abs(u0+.15)<.12) continue; const pts=[]; for(let k=0;k<=6;k++){ const u=lerp(u0,u1,k/6); const ang=u*1.25; const p=P(Math.sin(ang)*.9,-1.04-.06*Math.cos(ang*1.6)+((i%2)?.025:0),Math.cos(ang)*.5); pts.push([p[0],p[1]]); }
+    const litK=(Math.sin(u0*1.25)*far<0)?1:.55; ink(X,pts,.075*S*litK,`rgba(176,128,84,${.95*litK})`,[.45,.45]); }
+  // part line
+  const pa=P(0,-1.22,.45), pb=P(0,-.95,.84); ink(X,[[pa[0],pa[1]],[pb[0],pb[1]]],.014*S,HC.line,[.2,.2]); }
