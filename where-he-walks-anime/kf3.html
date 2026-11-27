@@ -11,7 +11,7 @@ lightLayer(J,{ambient:'#d8c8f0',ambientK:.25,key:[1260,420,300,'rgba(255,220,170
 glow(X,1300,330,160,'rgba(255,236,190,A)',.5); X.drawImage(J,0,0);
 // the young person on the kerb, foreground, head bowed, cool light with a warm rim from His side
 const Y=mkLayer(), YC=Y.getContext('2d'), SY=118;
-drawHead(YC,{cx:430,cy:700,S:SY,yaw:-.42,pitch:.32,hair:'short',chinK:.82,eyeK:1.18,eyeH:1.12,iris:['#101a2e','#2c4a7a','#8fb6e8'],lookX:.3,lookY:1,sad:true,neckK:.8,tear:true,body:(v,P)=>hoodieBody(YC,v,P,SY)});
+drawHead(YC,{cx:430,cy:700,S:SY,yaw:-.42,pitch:-.28,hair:'short',chinK:.82,eyeK:1.18,eyeH:1.12,iris:['#101a2e','#2c4a7a','#8fb6e8'],lookX:.3,lookY:1,sad:true,neckK:.8,tear:true,body:(v,P)=>hoodieBody(YC,v,P,SY)});
 lightLayer(Y,{ambient:'#6f78c8',ambientK:.55,shade:[700,250,'rgba(20,20,70,1)',.5],key:[800,640,560,'rgba(255,200,140,1)',.3],rims:[{dx:-7,dy:1,col:'rgba(255,200,130,1)',a:.9,mask:[[260,0,820,0],[[0,'rgba(0,0,0,0)'],[.5,'rgba(0,0,0,1)'],[1,'rgba(0,0,0,1)']]]}]});
 X.drawImage(Y,0,0);
 fgRain(X,90); [[1180,250,16],[1420,300,12],[1250,180,10]].forEach(s=>star4(X,...s,.85)); grade(X);

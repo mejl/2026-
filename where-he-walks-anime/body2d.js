@@ -34,4 +34,7 @@ function hoodieBody(X,v,P,S,col={base:'#2c3554',shade:'#1c2238',light:'#46527c'}
   // drawstrings with metal tips
   for(const sd of [-1,1]){ const a=pt(.22*sd,2.2,.6), b=pt(.26*sd,2.9,.6), c=pt(.24*sd,3.4,.6); ink(X,[a,b,c],.022*S,'#c9cfe6',[.05,.05]); X.fillStyle='#9aa3c4'; X.fillRect(c[0]-S*.018,c[1],S*.036,S*.1); }
   // centre seam / pocket line
+  // wet fabric: sharp light streaks on the shoulders and hood, a few drops
+  X.save(); X.globalCompositeOperation='lighter'; for(const sd of [-1,1]){ ink(X,[pt(1.25*sd,2.12),pt(1.75*sd,2.28),pt(2.08*sd,2.62)],.03*S,'rgba(170,190,255,.55)',[.3,.3]); ink(X,[pt(.95*sd,1.66),pt(.6*sd,1.55)],.022*S,'rgba(170,190,255,.5)',[.3,.3]); }
+    for(const [x,y] of [[-1.5,2.6],[1.2,2.9],[-.8,3.4],[1.7,3.8],[-1.9,4.3]]){ const d=pt(x,y); X.fillStyle='rgba(200,220,255,.7)'; X.beginPath(); X.ellipse(d[0],d[1],S*.025,S*.04,0,0,7); X.fill(); } X.restore();
   ink(X,[pt(0,2.5),pt(0,5)],.016*S,'rgba(14,16,32,.6)',[.1,.1]); ink(X,[pt(-1.1,4.2),pt(-.3,4.05),pt(.3,4.05),pt(1.1,4.2)],.02*S,'rgba(14,16,32,.7)',[.1,.1]); }

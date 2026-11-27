@@ -28,6 +28,8 @@ All drawing is done in code (Canvas 2D in headless Chromium): no 3D, no image ge
 
 - 27 Nov, 18:20-18:50 CET: Jesus full figure v2 (`fullbody.js`): sloped shoulders, shawl draped over the upper arms with rounder caps, bell sleeves, a reaching arm whose sleeve connects at the shawl edge and ends in an open hand (palm, four fingers, thumb), a relaxed far arm with its hand in the sleeve opening, A-line robe with a walking step (the front leg lifts the hem, a lit knee ridge, long folds), a hanging sash end, front foot forward. Turnaround test `fig2.png`; key frame re-rendered `kf7c.png`.
 
+- 27 Nov, 19:20-19:50 CET: street background v2 (`bgstreet.js`): each side is now 5 buildings with different heights, colours and window styles (grids with blinds, strip windows, balconies), lit shopfronts with coloured awnings, vertical neon signs (24H, CAFE, MOTEL), rooftop water tanks and antennas, cables strung across the street. The young person's head now bows (pitch sign fixed) and the hoodie has wet highlights and raindrops. Still: `kf7d.png`.
+
 ## Honest quality assessment (kf2b)
 Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet studio quality:
 - hair is flat (needs more clumps, overlapping layers, light/shadow shapes, strands over the shoulder);
@@ -36,7 +38,7 @@ Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet 
 - clothes are simple (folds, shawl drape, tassels).
 
 ## Next
-1. kf7c weak points: the hand is still small and simple, shawl shoulders a bit square, tassels thin; the young person's head should bow more and their hood/shoulders need wet-cloth highlights; buildings are repetitive (vary heights, signs, balconies, AC units, cables).
+1. kf7d weak points: Jesus' hand small/simple, shawl shoulders square, tassels thin; ground-level detail (pavement texture, puddles with sharp reflections, kerb stones, a bench or bus stop where the young person sits); stronger light interaction (His light on the nearby walls, rim on the young person).
 2. Fix the far-side hair bulk of the short style in 3/4 views.
 2. Model sheets for the wanderer (sad young person in a hoodie), villagers (men and women), the widow.
 3. Backgrounds: street (wide), village, Sea of Galilee at night, hillside, tomb at dawn, cross on the hill, city at dawn.
