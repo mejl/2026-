@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#000"><canvas id="c" width="1920" height="1080"></canvas>
+<script src="lib2d.js"></script><script src="char2d.js"></script><script>
+const X=document.getElementById('c').getContext('2d'); X.fillStyle='#e9e4ef'; X.fillRect(0,0,W,H);
+const yaws=[0,.38,-.38]; yaws.forEach((y,i)=>{ const cx=330+i*630, cy=420, S=140;
+  // simple robe/shawl so the neck sits in clothes
+  fillS(X,[[cx-S*2.1,1080],[cx-S*1.9,cy+S*2.3],[cx-S*.9,cy+S*1.75],[cx+S*.9,cy+S*1.75],[cx+S*1.9,cy+S*2.3],[cx+S*2.1,1080]],'#f1e6cc');
+  drawHead(X,{cx,cy,S,yaw:y,beard:true,lookX:y>0?-.6:y<0?.6:0,smile:.3});
+  inkC(X,[[cx-S*2.1,1080],[cx-S*1.9,cy+S*2.3],[cx-S*.9,cy+S*1.75],[cx+S*.9,cy+S*1.75],[cx+S*1.9,cy+S*2.3],[cx+S*2.1,1080]],5,'#3a2a3a'); });
+</script>
