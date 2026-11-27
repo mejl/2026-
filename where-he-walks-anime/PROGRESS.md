@@ -24,6 +24,8 @@ All drawing is done in code (Canvas 2D in headless Chromium): no 3D, no image ge
 
 - 27 Nov, 16:20-16:50 CET: second character, the wanderer (sad young person), on the same rig: new rig options (younger shorter jaw `chinK`, bigger eyes `eyeK/eyeH`, iris colours, slimmer neck, sad brows + mouth, tear), short messy hair (`drawHairShort`: bangs to the brows with pointed tips, side clumps, crown shine, loose strands; back of the hair drawn behind the face), navy hoodie with the hood down rolled around the neck, drawstrings, seam and pocket (`hoodieBody`, slighter build). Model sheet: `sheet_wan3.png`.
 
+- 27 Nov, 17:20-17:50 CET: first two-character key frame (`kf3.html` -> `kf7b.png`): new in-focus street background in one-point perspective (`bgstreet.js`: cel-shaded building faces with window grids, far warehouse with the neon sign, wet road with neon reflections, pavements, lamps, haze); Jesus as a full figure (`fullbody.js`: long robe, sash, shawl to the knees with blue stripes and tassels, one hand reaching out, sandals) lit warm with a soft light pool and reflection; the young person in the foreground framed from the chest up, cool light with a warm rim from His side, a tear.
+
 ## Honest quality assessment (kf2b)
 Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet studio quality:
 - hair is flat (needs more clumps, overlapping layers, light/shadow shapes, strands over the shoulder);
@@ -32,7 +34,8 @@ Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet 
 - clothes are simple (folds, shawl drape, tassels).
 
 ## Next
-1. Two-character key frame: the wanderer sitting in the rain on the kerb, Jesus approaching in warm light (judge scale, staging, lighting together). Fix the far-side hair bulk of the short style in 3/4 views.
+1. kf7b weak points: Jesus' arms are flat paddles and the reaching hand is a blob (needs drawn sleeves with folds and a proper open hand); the robe is a flat tube (needs folds, weight, a step in the walk); the young person's head should bow more and their hood/shoulders need wet-cloth highlights; buildings are repetitive (vary heights, signs, balconies, AC units, cables).
+2. Fix the far-side hair bulk of the short style in 3/4 views.
 2. Model sheets for the wanderer (sad young person in a hoodie), villagers (men and women), the widow.
 3. Backgrounds: street (wide), village, Sea of Galilee at night, hillside, tomb at dawn, cross on the hill, city at dawn.
 4. Animation layer: limited animation (poses held on 2s/3s), blinks, mouth, hair sway, walk cycle, camera pans/zooms, FX (rain, light, sparkles, speed lines).
