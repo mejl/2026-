@@ -67,7 +67,7 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     const sh=[P(.46,-1,.7),P(.62,-.2,.8),P(.6,.2,.78),P(.7,.5,.66),P(.55,.82,.5),P(.3,1.06,.6),P(1.4,1.4,0),P(1.4,-1.2,0)].map(p=>[p[0],p[1]]);
     fillS(X,sh,PAL.skinS);
     // hair shadow across the forehead + under-jaw shadow
-    for(const sd of [-1,1]) fillS(X,[P(.02*sd,-1.08,.7),P(.34*sd,-.82,.86),P(.66*sd,-.5,.76),P(.9*sd,-.02,.58),P(.84*sd,.12,.6),P(.56*sd,-.36,.82),P(.24*sd,-.62,.9),P(0,-.8,.92)].map(p=>[p[0],p[1]]),'rgba(160,98,80,.55)');   // shadow cast by the hair curtains, following their edge
+    for(const sd of [-1,1]) fillS(X,[P(.03*sd,-.98,.8),P(.3*sd,-.72,.92),P(.7*sd,-.36,.8),P(.94*sd,.12,.58),P(.86*sd,.3,.62),P(.62*sd,-.18,.84),P(.26*sd,-.52,.94),P(0,-.7,.95)].map(p=>[p[0],p[1]]),'rgba(160,98,80,.55)');   // shadow cast by the hair curtains, following their edge
     { const ls=(P(.5,0,.8)[0]<P(-.5,0,.8)[0])?1:-1; X.fillStyle='rgba(255,226,196,.32)'; for(const [x,y,rx,ry,r] of [[.32,-.5,.13,.045,-.2],[.56,.3,.1,.035,-.5]]){ const q=P(x*ls,y,.84); X.beginPath(); X.ellipse(q[0],q[1],S*rx,S*ry,r*ls,0,7); X.fill(); }
       const n0=P(.03*ls,.12,.95), n1=P(.03*ls,.42,1.0); ink(X,[[n0[0],n0[1]],[n1[0],n1[1]]],.02*S,'rgba(255,232,206,.85)',[.3,.3]); }
     X.save(); X.filter=`blur(${S*.05}px)`; X.fillStyle='rgba(220,120,105,.1)'; for(const sd of [-1,1]){ const q=P(.5*sd,.5,.78); X.beginPath(); X.ellipse(q[0],q[1],S*.15*(.4+.6*Math.max(.2,Math.cos(o.yaw+sd*.5))),S*.06,0,0,7); X.fill(); } X.restore(); });
@@ -130,11 +130,11 @@ function drawHairV3(X,v,o,S){ const far=Math.sign(o.yaw)||1, P=(x,y,z)=>v.P(V3(x
   const order=[]; for(const sd of [far,-far]) for(let k=5;k>=0;k--) order.push([sd,k]);
   for(const [sd,k] of order){ if(k%2===1&&k<5) continue; const t=k/5;
     const root=[.04*sd,lerp(-.98,-1.26,t),lerp(.8,.2,t)];
-    const a=[sd*lerp(.5,.62,t),lerp(-1.02,-1.12,t),lerp(.72,.18,t)];
-    const b=[sd*lerp(.92,1.0,t),lerp(-.5,-.55,t),lerp(.56,0,t)];
+    const a=k===0?[sd*.36,-.74,.9]:[sd*lerp(.5,.62,t),lerp(-1.02,-1.12,t),lerp(.72,.18,t)];
+    const b=k===0?[sd*.8,-.3,.72]:[sd*lerp(.92,1.0,t),lerp(-.5,-.55,t),lerp(.56,0,t)];
     const c=[sd*lerp(1.04,1.12,t),lerp(.35,.3,t),lerp(.42,-.12,t)];
     const tip=[sd*lerp(1.06,1.3,t)+sd*.06*Math.sin(k*2.1),lerp(1.35,1.75,t)+.18*Math.sin(k*3.7),lerp(.36,-.2,t)];
-    hairClump(X,v,S,[root,a,b,c,tip],lerp(.46,.5,t),{rim:sd===far&&k<3});
+    hairClump(X,v,S,[root,a,b,c,tip],lerp(.46,.5,t)*(k===0?1.12:1),{rim:sd===far&&k<3,base:k>=4?'#2c180e':k>=2?'#341d10':HC.base,shadow:k>=2?'#1c0e07':HC.shadow});
   }
   // near side: hair over the front of the shoulder
   const nsd=-far; for(const [dx,ln] of [[0,0],[.16,.25]]){ hairClump(X,v,S,[[nsd*.9,-.6,.6],[nsd*(1.06+dx),.2,.5],[nsd*(1.1+dx),1.1,.62],[nsd*(1.18+dx),1.9+ln,.7],[nsd*(1.12+dx),2.6+ln,.72]],.4,{hiEnd:.25}); }
@@ -143,5 +143,6 @@ function drawHairV3(X,v,o,S){ const far=Math.sign(o.yaw)||1, P=(x,y,z)=>v.P(V3(x
   // angel-ring shine: tapered light strokes following the crown curve, a gap at the part, stronger on the lit side
   for(let i=0;i<5;i++){ const u0=-1+i*.42+.04, u1=u0+.3; if(Math.abs(u0+.15)<.12) continue; const pts=[]; for(let k=0;k<=6;k++){ const u=lerp(u0,u1,k/6); const ang=u*1.25; const p=P(Math.sin(ang)*.9,-1.04-.06*Math.cos(ang*1.6)+((i%2)?.025:0),Math.cos(ang)*.5); pts.push([p[0],p[1]]); }
     const litK=(Math.sin(u0*1.25)*far<0)?1:.55; ink(X,pts,.075*S*litK,`rgba(176,128,84,${.95*litK})`,[.45,.45]); }
+  for(const sd of [-1,1]){ const st=[P(.03*sd,-.96,.86),P(.14*sd,-.7,.94),P(.2*sd,-.44,.95),P(.16*sd,-.3,.94)].map(p=>[p[0],p[1]]); ink(X,st,.016*S,HC.line,[.15,.5]); }
   // part line
   const pa=P(0,-1.22,.45), pb=P(0,-.95,.84); ink(X,[[pa[0],pa[1]],[pb[0],pb[1]]],.014*S,HC.line,[.2,.2]); }
