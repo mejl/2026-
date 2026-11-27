@@ -16,6 +16,8 @@ All drawing is done in code (Canvas 2D in headless Chromium): no 3D, no image ge
 ## Session log
 - 27 Nov, 12:20-12:45 CET: hair v3 (`hairClump` / `drawHairV3`): broad clumps from the centre part, each with a cel shadow half, soft root shade, tapered ink edges (thicker on the shadow side), a cool neon rim on the far side, hair falling over the near shoulder, loose strands and a single angel-ring shine. Removed the sawtooth highlights and the lump at the temple. Still: `kf3c.png`.
 
+- 27 Nov, 13:20-13:50 CET: face pass: beard now grows from the sideburns along the jaw (trimmed, with strand texture and a lit band) instead of a chin strap; moustache is a shaped mass joining the beard at the mouth corners; kinder arched brows that thin outward; blush toned down for a grown man; subtle key-light highlights on forehead, cheekbone and nose bridge. Still: `kf4.png`.
+
 ## Honest quality assessment (kf2b)
 Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet studio quality:
 - hair is flat (needs more clumps, overlapping layers, light/shadow shapes, strands over the shoulder);
@@ -24,7 +26,7 @@ Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet 
 - clothes are simple (folds, shawl drape, tassels).
 
 ## Next
-1. Face refinement (hairline, jaw, eye expression, silhouette line weight), then a lighting pass on the character (key/rim, tinted shadows, cloth highlights). Hair: more overlap/depth between clumps later.
+1. Lighting pass on the character (warm key / cool rim, tinted shadows, cloth highlights and folds, shawl drape and tassels); then hairline/forehead and more depth between hair clumps.
 2. Model sheets for the wanderer (sad young person in a hoodie), villagers (men and women), the widow.
 3. Backgrounds: street (wide), village, Sea of Galilee at night, hillside, tomb at dawn, cross on the hill, city at dawn.
 4. Animation layer: limited animation (poses held on 2s/3s), blinks, mouth, hair sway, walk cycle, camera pans/zooms, FX (rain, light, sparkles, speed lines).

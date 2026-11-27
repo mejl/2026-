@@ -68,7 +68,9 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     fillS(X,sh,PAL.skinS);
     // hair shadow across the forehead + under-jaw shadow
     for(const sd of [-1,1]) fillS(X,[P(.02*sd,-1.08,.7),P(.34*sd,-.82,.86),P(.66*sd,-.5,.76),P(.9*sd,-.02,.58),P(.84*sd,.12,.6),P(.56*sd,-.36,.82),P(.24*sd,-.62,.9),P(0,-.8,.92)].map(p=>[p[0],p[1]]),'rgba(160,98,80,.55)');   // shadow cast by the hair curtains, following their edge
-    X.save(); X.filter=`blur(${S*.05}px)`; X.fillStyle='rgba(232,120,110,.28)'; for(const sd of [-1,1]){ const q=P(.5*sd,.5,.78); X.beginPath(); X.ellipse(q[0],q[1],S*.15*(.4+.6*Math.max(.2,Math.cos(o.yaw+sd*.5))),S*.06,0,0,7); X.fill(); } X.restore(); });
+    { const ls=(P(.5,0,.8)[0]<P(-.5,0,.8)[0])?1:-1; X.fillStyle='rgba(255,226,196,.32)'; for(const [x,y,rx,ry,r] of [[.32,-.5,.13,.045,-.2],[.56,.3,.1,.035,-.5]]){ const q=P(x*ls,y,.84); X.beginPath(); X.ellipse(q[0],q[1],S*rx,S*ry,r*ls,0,7); X.fill(); }
+      const n0=P(.03*ls,.12,.95), n1=P(.03*ls,.42,1.0); ink(X,[[n0[0],n0[1]],[n1[0],n1[1]]],.02*S,'rgba(255,232,206,.85)',[.3,.3]); }
+    X.save(); X.filter=`blur(${S*.05}px)`; X.fillStyle='rgba(220,120,105,.1)'; for(const sd of [-1,1]){ const q=P(.5*sd,.5,.78); X.beginPath(); X.ellipse(q[0],q[1],S*.15*(.4+.6*Math.max(.2,Math.cos(o.yaw+sd*.5))),S*.06,0,0,7); X.fill(); } X.restore(); });
   // silhouette ink on the far side + chin (anime leaves the light side mostly open)
   const sil=F.filter((p,i)=>true); ink(X,F.slice(0,15),.026*S,PAL.line,[.08,.08]);
   // near ear
@@ -76,7 +78,7 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     const ear=[e0,[e1[0]+earSide*S*.03,e1[1]],e2,[lerp(e0[0],e2[0],.5)-earSide*S*.02,e1[1]]].map(p=>[p[0],p[1]]); fillS(X,ear,PAL.skinS); inkC(X,ear,.02*S,PAL.line); }
   // eyes, brows
   for(const sd of [-1,1]) drawEye(X,v,sd,{open:o.blink?0:1,lookX:o.lookX||0,lookY:o.lookY||0});
-  for(const sd of [-1,1]){ const n=rotY(V3(.35*sd,0,.94),o.yaw); if(n.z<.1) continue; const a=P(.14*sd,-.14+(o.sad?-.03:0),.9), b=P(.42*sd,-.2,.88), c=P(.7*sd,-.12,.74); ink(X,sd*far<0?[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]]:[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]],.06*S*(.5+.5*n.z),'#26120a',[.1,.5]); }
+  for(const sd of [-1,1]){ const n=rotY(V3(.35*sd,0,.94),o.yaw); if(n.z<.1) continue; const a=P(.12*sd,-.17+(o.sad?-.03:0),.9), b=P(.42*sd,-.26,.88), c=P(.72*sd,-.17,.74); ink(X,sd*far<0?[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]]:[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]],.05*S*(.5+.5*n.z),'#2a160c',[.06,.7]); }
   // nose: bridge shadow on the shadow side, small tip line, nostril
   { const t=P(0,.5,1.0), b0=P(.05*far,.15,.92); fillS(X,[[b0[0],b0[1]],[t[0]+far*S*.05,t[1]-S*.04],[t[0]+far*S*.02,t[1]+S*.04],[t[0]-far*S*.03,t[1]+S*.04],[t[0]+far*S*.02,t[1]-S*.06]],PAL.skinS);
     ink(X,[[t[0]-far*S*.07,t[1]+S*.045],[t[0],t[1]+S*.065],[t[0]+far*S*.05,t[1]+S*.05]],.022*S,PAL.line,[.3,.3]);
@@ -86,12 +88,13 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     ink(X,[[ml[0],ml[1]-sm*S*.02],[m[0],m[1]+S*.02+sm*S*.02],[mr[0],mr[1]-sm*S*.02]],.022*S,'#4c2018',[.25,.25]);
     if(o.open){ fillS(X,[[ml[0]+S*.05,ml[1]+S*.01],[m[0],m[1]+S*.1*o.open],[mr[0]-S*.05,mr[1]+S*.01]],'#5a1e1a'); } }
   // beard + moustache (short, shaped, follows the jaw)
-  if(o.beard){ const bd=[[.9,.3,.42],[.86,.6,.38],[.7,.86,.46],[.56,.96,.5],[.48,1.08,.56],[.3,1.12,.6],[.2,1.26,.64],[.06,1.2,.66],[-.06,1.28,.66],[-.2,1.2,.64],[-.32,1.14,.6],[-.48,1.08,.56],[-.58,.98,.5],[-.7,.86,.46],[-.86,.6,.38],[-.9,.3,.42],[-.72,.62,.6],[-.46,.88,.76],[-.2,.98,.82],[0,.99,.84],[.2,.98,.82],[.46,.88,.76],[.72,.62,.6]].map(p=>P(p[0],p[1],p[2])).filter(p=>true);
+  if(o.beard){ const bd=[[.94,.12,.36],[.94,.4,.36],[.86,.66,.38],[.7,.9,.46],[.54,1.04,.52],[.36,1.14,.58],[.22,1.24,.63],[.08,1.2,.65],[-.06,1.28,.66],[-.2,1.22,.64],[-.36,1.14,.58],[-.54,1.04,.52],[-.7,.9,.46],[-.86,.66,.38],[-.94,.4,.36],[-.94,.12,.36],[-.86,.2,.46],[-.8,.52,.56],[-.6,.78,.7],[-.36,.9,.82],[-.18,.95,.86],[0,.96,.87],[.18,.95,.86],[.36,.9,.82],[.6,.78,.7],[.8,.52,.56],[.86,.2,.46]].map(p=>P(p[0],p[1],p[2])).filter(p=>true);
     const bp=bd.map(p=>[p[0],p[1]]); fillS(X,bp,PAL.hair);
-    inside(X,bp,()=>{ fillS(X,[P(.1*far,.5,.9),P(1.3*far,.4,.4),P(1.3*far,1.5,.3),P(.1*far,1.4,.6)].map(p=>[p[0],p[1]]),PAL.hairS); for(let i=-2;i<=2;i++){ const a=P(i*.16,1.06,.78), b=P(i*.19,1.2,.68); ink(X,[[a[0],a[1]],[b[0],b[1]]],.016*S,'rgba(140,90,56,.75)',[.3,.3]); } });
+    inside(X,bp,()=>{ fillS(X,[P(.1*far,.5,.9),P(1.3*far,.4,.4),P(1.3*far,1.5,.3),P(.1*far,1.4,.6)].map(p=>[p[0],p[1]]),PAL.hairS); for(let i=-5;i<=5;i++){ const a=P(i*.13,.98+Math.abs(i)*.005,.8), b=P(i*.15,1.16-Math.abs(i)*.03,.66); ink(X,[[a[0],a[1]],[b[0],b[1]]],.013*S,'rgba(150,100,64,.6)',[.35,.35]); }
+      { const ls=(P(.5,0,.8)[0]<P(-.5,0,.8)[0])?1:-1; const hb=[P(.78*ls,.5,.56),P(.6*ls,.86,.66),P(.4*ls,1.0,.74),P(.46*ls,.92,.72),P(.66*ls,.74,.62)].map(p=>[p[0],p[1]]); fillS(X,hb,'rgba(122,78,48,.75)'); } });
     inkC(X,bp,.02*S,PAL.hairLine);
-    const mu=[P(-.25,.735,.86),P(-.12,.695,.92),P(0,.712,.95),P(.12,.695,.92),P(.25,.735,.86)].map(p=>[p[0],p[1]]);
-    ink(X,mu,.058*S,PAL.hair,[.4,.4]); ink(X,mu.map(p=>[p[0],p[1]-S*.012]),.02*S,PAL.hairL,[.4,.4]); }
+    const mu=[P(-.32,.8,.83),P(-.22,.735,.89),P(-.09,.69,.94),P(0,.712,.95),P(.09,.69,.94),P(.22,.735,.89),P(.32,.8,.83),P(.19,.77,.9),P(0,.758,.95),P(-.19,.77,.9)].map(p=>[p[0],p[1]]);
+    fillS(X,mu,PAL.hair); inside(X,mu,()=>fillS(X,[P(.02*far,.6,.95),P(.5*far,.6,.8),P(.5*far,.9,.8),P(.02*far,.9,.95)].map(p=>[p[0],p[1]]),PAL.hairS)); inkC(X,mu,.016*S,PAL.hairLine); }
   drawHairV3(X,v,o,S);
   return v; }
 
