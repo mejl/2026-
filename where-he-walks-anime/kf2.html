@@ -1,8 +1,15 @@
 <!doctype html><meta charset="utf-8"><body style="margin:0;background:#000"><canvas id="c" width="1920" height="1080"></canvas>
-<script src="lib2d.js"></script><script src="char2d.js"></script><script src="body2d.js"></script><script src="bgneon.js"></script><script>
+<script src="lib2d.js"></script><script src="char2d.js"></script><script src="body2d.js"></script><script src="bgneon.js"></script><script src="light2d.js"></script><script>
 const X=document.getElementById('c').getContext('2d');
 bgNeon(X); glow(X,1180,420,560,'rgba(255,196,120,A)',.5); glow(X,1160,380,280,'rgba(255,232,180,A)',.3);
-const S=150; drawHead(X,{cx:1180,cy:400,S,yaw:.34,beard:true,lookX:-.55,lookY:.15,smile:.45,body:(v,P)=>jesusBody(X,v,P,S)});
+const S=150, CH=mkLayer(), C=CH.getContext('2d');
+drawHead(C,{cx:1180,cy:400,S,yaw:.34,beard:true,lookX:-.55,lookY:.15,smile:.45,body:(v,P)=>jesusBody(C,v,P,S)});
+lightLayer(CH,{ ambient:'#a49ce0', ambientK:.55,
+  shade:[1150,1560,'rgba(40,30,110,1)',.45],
+  key:[1110,420,560,'rgba(255,210,150,1)',.58],
+  rims:[ {dx:7,dy:2,col:'rgba(150,190,255,1)',a:.85,mask:[[1180,0,1500,0],[[0,'rgba(0,0,0,0)'],[.25,'rgba(0,0,0,1)'],[1,'rgba(0,0,0,1)']]]},
+         {dx:-6,dy:1,col:'rgba(255,200,140,1)',a:.6,mask:[[800,0,1180,0],[[0,'rgba(0,0,0,1)'],[.8,'rgba(0,0,0,1)'],[1,'rgba(0,0,0,0)']]]} ] });
+X.drawImage(CH,0,0);
 // rim lights: warm key on the light side, cool neon on the far edge
 fgRain(X); [[930,300,18],[1440,420,14],[1360,220,22],[880,640,12],[1500,660,16]].forEach(s=>star4(X,...s,.9)); grade(X);
 </script>

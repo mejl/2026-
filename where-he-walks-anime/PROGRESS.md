@@ -18,6 +18,8 @@ All drawing is done in code (Canvas 2D in headless Chromium): no 3D, no image ge
 
 - 27 Nov, 13:20-13:50 CET: face pass: beard now grows from the sideburns along the jaw (trimmed, with strand texture and a lit band) instead of a chin strap; moustache is a shaped mass joining the beard at the mouth corners; kinder arched brows that thin outward; blush toned down for a grown man; subtle key-light highlights on forehead, cheekbone and nose bridge. Still: `kf4.png`.
 
+- 27 Nov, 14:20-14:50 CET: lighting pass. New `light2d.js`: the character is drawn on its own layer and lit to sit in the night scene (night-colour ambient multiply, cool shade gradient on the side away from the light, warm key-light pool on the face, rim lights cut from the figure's own silhouette: cool neon on the far edge, warm on the near edge). Shawl got form shadows along the outer edges, inner-edge thickness at the neck opening and soft fold shadows falling from the shoulders. Still: `kf5.png`.
+
 ## Honest quality assessment (kf2b)
 Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet studio quality:
 - hair is flat (needs more clumps, overlapping layers, light/shadow shapes, strands over the shoulder);
@@ -26,7 +28,8 @@ Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet 
 - clothes are simple (folds, shawl drape, tassels).
 
 ## Next
-1. Lighting pass on the character (warm key / cool rim, tinted shadows, cloth highlights and folds, shawl drape and tassels); then hairline/forehead and more depth between hair clumps.
+1. Hairline/forehead and depth between hair clumps (overlaps, a few clumps in front of others, inner shadow under the curtains); arms/shoulder anatomy under the shawl.
+2. Then: the second character (the sad young person in a hoodie) on the same rig, so a two-character key frame can be judged.
 2. Model sheets for the wanderer (sad young person in a hoodie), villagers (men and women), the widow.
 3. Backgrounds: street (wide), village, Sea of Galilee at night, hillside, tomb at dawn, cross on the hill, city at dawn.
 4. Animation layer: limited animation (poses held on 2s/3s), blinks, mouth, hair sway, walk cycle, camera pans/zooms, FX (rain, light, sparkles, speed lines).

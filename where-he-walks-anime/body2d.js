@@ -10,6 +10,10 @@ function jesusBody(X,v,P,S){ const pt=(x,y,z=0)=>{ const p=P(x,y-.26,z); return 
     inside(X,SH,()=>{ for(const o of [.12,.3]){ const st=[pt((.42+o)*sd,2.2,.5),pt((.52+o)*sd,2.0,.45),pt((.66+o)*sd,5,.4),pt((.56+o)*sd,5,.4)]; X.save(); pathOf(X,st); X.fillStyle=sd<0?'#2d62dc':'#2552bd'; X.fill(); X.restore(); }
       const st2=[pt(2.0*sd,2.45,.15),pt(2.12*sd,2.55,.12),pt(2.5*sd,5,.0),pt(2.36*sd,5,.0)]; pathOf(X,st2); X.fillStyle=sd<0?'#2d62dc':'#2552bd'; X.fill();
       if(sd>0) fillS(X,[pt(1.0,1.9,.4),pt(3,2,0),pt(3,5.2,0),pt(1.5,5.2,.2)],'rgba(120,110,170,.35)'); });
-    [[pt(1.4*sd,2.5),pt(1.3*sd,3.4),pt(1.36*sd,4.6)],[pt(.95*sd,2.9),pt(.9*sd,3.8),pt(.96*sd,4.8)]].forEach(f=>ink(X,f,.022*S,'rgba(70,56,80,.8)',[.25,.25]));
+    inside(X,SH,()=>{ fillS(X,[pt(2.5*sd,2.8,.1),pt(1.9*sd,2.3,.2),pt(1.7*sd,2.9,.2),pt(1.95*sd,3.8,.1),pt(2.2*sd,5,.0),pt(2.8*sd,5,0)],sd<0?'rgba(150,140,185,.55)':'rgba(110,100,160,.6)');
+      fillS(X,[pt(.62*sd,1.9,.42),pt(.42*sd,2.5,.5),pt(.5*sd,3.4,.45),pt(.6*sd,5,.4),pt(.72*sd,5,.4),pt(.6*sd,3.4,.45),pt(.53*sd,2.5,.5),pt(.72*sd,1.95,.42)],'rgba(120,110,165,.55)');
+      // fold shadows: long soft V shapes falling from the shoulder
+      for(const [x0,x1,y0] of [[1.35,1.15,2.35],[.98,.86,2.7]]) fillS(X,[pt(x0*sd,y0,.2),pt((x0+.08)*sd,y0+1.2,.2),pt((x1+.12)*sd,5,.2),pt((x1-.05)*sd,5,.2),pt((x0-.06)*sd,y0+1.1,.2)],'rgba(120,110,170,.4)'); });
+    [[pt(1.4*sd,2.5),pt(1.3*sd,3.4),pt(1.36*sd,4.6)],[pt(.95*sd,2.9),pt(.9*sd,3.8),pt(.96*sd,4.8)]].forEach(f=>ink(X,f,.02*S,'rgba(70,56,80,.7)',[.25,.25]));
     inkC(X,SH,.026*S,'#3a2a3a'); }
   inkC(X,TUN,.026*S,'#3a2a3a'); }
