@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#000"><canvas id="c" width="1920" height="1080"></canvas>
+<script src="lib2d.js"></script><script src="char2d.js"></script><script src="body2d.js"></script><script src="fullbody.js"></script><script>
+const X=document.getElementById('c').getContext('2d'); X.fillStyle='#e9e4ef'; X.fillRect(0,0,W,H);
+const S=50; drawHead(X,{cx:960,cy:90,S,yaw:.3,beard:true,lookX:-.6,lookY:.4,smile:.5,body:(v,P)=>jesusFull(X,v,P,S,{reach:.8,reachSide:-1})});
+</script>
