@@ -22,6 +22,8 @@ All drawing is done in code (Canvas 2D in headless Chromium): no 3D, no image ge
 
 - 27 Nov, 15:20-15:45 CET: hairline + depth: the front curtains now sweep lower across the forehead (narrow centre-part V that frames the face), clumps further back are darker for depth, two stray strands across the forehead, forehead shadow follows the new curtain edge. Shoulders: rounded shoulder caps with arms going down, an arm crease and arm-side shading under the shawl. Still: `kf6.png`.
 
+- 27 Nov, 16:20-16:50 CET: second character, the wanderer (sad young person), on the same rig: new rig options (younger shorter jaw `chinK`, bigger eyes `eyeK/eyeH`, iris colours, slimmer neck, sad brows + mouth, tear), short messy hair (`drawHairShort`: bangs to the brows with pointed tips, side clumps, crown shine, loose strands; back of the hair drawn behind the face), navy hoodie with the hood down rolled around the neck, drawstrings, seam and pocket (`hoodieBody`, slighter build). Model sheet: `sheet_wan3.png`.
+
 ## Honest quality assessment (kf2b)
 Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet studio quality:
 - hair is flat (needs more clumps, overlapping layers, light/shadow shapes, strands over the shoulder);
@@ -30,7 +32,7 @@ Reads as an anime-style illustration (webcomic / light TV-anime level). Not yet 
 - clothes are simple (folds, shawl drape, tassels).
 
 ## Next
-1. The second character (the sad young person in a hoodie) on the same rig, so a two-character key frame can be judged.
+1. Two-character key frame: the wanderer sitting in the rain on the kerb, Jesus approaching in warm light (judge scale, staging, lighting together). Fix the far-side hair bulk of the short style in 3/4 views.
 2. Model sheets for the wanderer (sad young person in a hoodie), villagers (men and women), the widow.
 3. Backgrounds: street (wide), village, Sea of Galilee at night, hillside, tomb at dawn, cross on the hill, city at dawn.
 4. Animation layer: limited animation (poses held on 2s/3s), blinks, mouth, hair sway, walk cycle, camera pans/zooms, FX (rain, light, sparkles, speed lines).

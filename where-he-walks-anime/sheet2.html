@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#000"><canvas id="c" width="1920" height="1080"></canvas>
+<script src="lib2d.js"></script><script src="char2d.js"></script><script src="body2d.js"></script><script>
+const X=document.getElementById('c').getContext('2d'); X.fillStyle='#e9e4ef'; X.fillRect(0,0,W,H);
+[0,.38,-.38].forEach((y,i)=>{ const cx=330+i*630, cy=430, S=150;
+  drawHead(X,{cx,cy,S,yaw:y,hair:'short',chinK:.82,eyeK:1.18,eyeH:1.12,iris:['#101a2e','#2c4a7a','#8fb6e8'],lookX:y>0?-.4:y<0?.4:0,lookY:.35,tear:i===1,sad:true,neckK:.8,body:(v,P)=>hoodieBody(X,v,P,S)}); });
+</script>

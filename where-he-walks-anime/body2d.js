@@ -19,3 +19,19 @@ function jesusBody(X,v,P,S){ const pt=(x,y,z=0)=>{ const p=P(x,y-.26,z); return 
     [[pt(1.4*sd,2.5),pt(1.3*sd,3.4),pt(1.36*sd,4.6)],[pt(.95*sd,2.9),pt(.9*sd,3.8),pt(.96*sd,4.8)]].forEach(f=>ink(X,f,.02*S,'rgba(70,56,80,.7)',[.25,.25]));
     inkC(X,SH,.026*S,'#3a2a3a'); }
   inkC(X,TUN,.026*S,'#3a2a3a'); }
+// ===== the wanderer: navy hoodie, hood down rolled around the neck, drawstrings =====
+function hoodieBody(X,v,P,S,col={base:'#2c3554',shade:'#1c2238',light:'#46527c'},k=.86){ const pt=(x,y,z=0)=>{ const p=P(x*k,(y-.2-1.8)*k+1.8,z); return [p[0],p[1]]; };   // k: slighter build for a young person
+  const BD=[pt(-2.3,5),pt(-2.32,3.4),pt(-2.24,2.8),pt(-1.96,2.3),pt(-1.48,2.06),pt(-.6,1.92),pt(.6,1.92),pt(1.48,2.06),pt(1.96,2.3),pt(2.24,2.8),pt(2.32,3.4),pt(2.3,5)];
+  fillS(X,BD,col.base);
+  inside(X,BD,()=>{ fillS(X,[pt(.5,1.9),pt(2.6,2),pt(2.6,5.2),pt(1.0,5.2),pt(1.1,3.2)],col.shade);
+    for(const sd of [-1,1]) fillS(X,[pt(1.7*sd,2.9),pt(1.76*sd,5),pt(2.4*sd,5),pt(2.36*sd,3.2)],'rgba(10,12,30,.35)');
+    fillS(X,[pt(-1.9,2.3),pt(-1.5,2.12),pt(-1.2,2.5),pt(-1.6,2.6)],col.light); });
+  inkC(X,BD,.026*S,'#0e1020');
+  // hood (down): a thick rolled collar around the neck, opening at the front
+  const HD=[pt(-1.3,2.05,.2),pt(-1.05,1.62,.1),pt(-.5,1.48,0),pt(.5,1.48,0),pt(1.05,1.62,.1),pt(1.3,2.05,.2),pt(.82,2.3,.4),pt(.3,2.12,.5),pt(0,2.5,.55),pt(-.3,2.12,.5),pt(-.82,2.3,.4)];
+  fillS(X,HD,col.base); inside(X,HD,()=>{ fillS(X,[pt(.1,1.4),pt(1.5,1.6),pt(1.5,2.4),pt(.2,2.6)],col.shade); fillS(X,[pt(-1.2,1.9),pt(-.6,1.62),pt(-.5,1.75),pt(-1.05,2.08)],col.light); });
+  inkC(X,HD,.024*S,'#0e1020'); ink(X,[pt(-.3,2.12),pt(0,2.5),pt(.3,2.12)],.02*S,'#0e1020',[.1,.1]);
+  // drawstrings with metal tips
+  for(const sd of [-1,1]){ const a=pt(.22*sd,2.2,.6), b=pt(.26*sd,2.9,.6), c=pt(.24*sd,3.4,.6); ink(X,[a,b,c],.022*S,'#c9cfe6',[.05,.05]); X.fillStyle='#9aa3c4'; X.fillRect(c[0]-S*.018,c[1],S*.036,S*.1); }
+  // centre seam / pocket line
+  ink(X,[pt(0,2.5),pt(0,5)],.016*S,'rgba(14,16,32,.6)',[.1,.1]); ink(X,[pt(-1.1,4.2),pt(-.3,4.05),pt(.3,4.05),pt(1.1,4.2)],.02*S,'rgba(14,16,32,.7)',[.1,.1]); }

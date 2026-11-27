@@ -5,13 +5,13 @@ function rotY(p,a){ const c=Math.cos(a),s=Math.sin(a); return {x:p.x*c-p.z*s,y:p
 function rotX(p,a){ const c=Math.cos(a),s=Math.sin(a); return {x:p.x,y:p.y*c-p.z*s,z:p.y*s+p.z*c}; }
 function mkView(cx,cy,S,yaw,pitch=0){ return { P:(p)=>{ const q=rotX(rotY(p,yaw),pitch); return [cx+q.x*S,cy+q.y*S,q.z]; }, S,yaw,pitch,cx,cy }; }
 // face outline loop (front of the head), ordered around: right temple -> jaw -> chin -> left jaw -> left temple -> forehead
-function faceLoop(side=1){ const L=[];
+function faceLoop(chin=1){ const L=[]; const J=(x,y)=>[x*(1-(1-chin)*.6*clamp((y-.5)/.6)),y>.5?.5+(y-.5)*chin:y];
   const half=[[.96,-.2,.25],[.97,.1,.32],[.9,.38,.42],[.8,.62,.36],[.62,.86,.42],[.36,1.04,.55],[.12,1.14,.62]];
-  half.forEach(p=>L.push(V3(p[0],p[1],p[2]))); L.push(V3(0,1.16,.63)); [...half].reverse().forEach(p=>L.push(V3(-p[0],p[1],p[2])));
+  half.forEach(p=>{ const q=J(p[0],p[1]); L.push(V3(q[0],q[1],p[2])); }); { const q=J(0,1.16); L.push(V3(0,q[1],.63)); } [...half].reverse().forEach(p=>{ const q=J(p[0],p[1]); L.push(V3(-q[0],q[1],p[2])); });
   [[-.9,-.55,.48],[-.55,-.86,.72],[0,-.96,.86],[.55,-.86,.72],[.9,-.55,.48]].forEach(p=>L.push(V3(p[0],p[1],p[2]))); return L; }
 // visible silhouette of the face for a given view: project the loop; for the side turned away, pull the contour in to the
 // brow / cheekbone / cheek "front" points so the far cheek reads as an anime 3/4 contour (brow bump, cheek dip, cheekbone, jaw)
-function faceShape(v){ const loop=faceLoop(); const pts=loop.map(p=>v.P(p)); 
+function faceShape(v){ const loop=faceLoop(v.chin||1); const pts=loop.map(p=>v.P(p)); 
   const far=Math.sign(v.yaw)||1;              // yaw>0: face turns to screen-left, far side is the face's right (x>0)
   if(Math.abs(v.yaw)>.12){ const k=clamp((Math.abs(v.yaw)-.12)/.6);
     const fr=[[.62,-.12,.82],[.6,.2,.78],[.66,.42,.74],[.6,.68,.62],[.4,.92,.6],[.16,1.1,.64]].map(p=>v.P(V3(p[0]*far,p[1],p[2])));
@@ -24,7 +24,7 @@ function faceShape(v){ const loop=faceLoop(); const pts=loop.map(p=>v.P(p));
 const PAL={ skin:'#e2ac86', skinS:'#b97d66', skinS2:'#9c6152', skinL:'#f6d0ac', line:'#3a1e14', hair:'#3b2213', hairS:'#22120a', hairL:'#7c4e2e', hairLine:'#150a05', eyeW:'#fbf5ee', iris1:'#22120a', iris2:'#6b3f1c', iris3:'#d49a52', lip:'#b86a5e' };
 // ---------- eye: anime construction (thick upper lash, tall iris, two highlights), foreshortened by facing ----------
 function drawEye(X,v,side,o){ const C=V3(.4*side,.12,.82); const c=v.P(C); const n=rotY(V3(.35*side,0,.94),v.yaw); const face=clamp(n.z,.15,1);
-  const S=v.S, w=.40*S*(.35+.65*face), h=.26*S*o.open, cx=c[0], cy=c[1];
+  const S=v.S, ek=v.eyeK||1, w=.40*S*(.35+.65*face)*ek, h=.26*S*o.open*ek*(v.eyeH||1), cx=c[0], cy=c[1];
   if(n.z<.08) return; const inner=-side*Math.sign(Math.cos(v.yaw))||-side;
   const sx=(t)=>cx+t*w/2*(side*(v.yaw>=0?1:1));
   // eye shape: flatter, longer upper lid typical of an adult male anime face
@@ -32,9 +32,9 @@ function drawEye(X,v,side,o){ const C=V3(.4*side,.12,.82); const c=v.P(C); const
   if(side<0) E.forEach(p=>p[0]=cx-(p[0]-cx));
   if(o.open<.12){ ink(X,[[cx-w/2,cy],[cx,cy+h*.1+.01*S],[cx+w/2,cy-.01*S]],.05*S,'#1c0c06',[.15,.15]); return; }
   fillS(X,E,PAL.eyeW);
-  const ix=cx+(o.lookX||0)*w*.22, iy=cy+(o.lookY||0)*h*.2+.01*S, irx=w*.24, iry=.15*S;
+  const ix=cx+(o.lookX||0)*w*.22, iy=cy+(o.lookY||0)*h*.2+.01*S, irx=w*.24, iry=.15*S*ek;
   inside(X,E,()=>{ fillS(X,[[cx-w,cy-h],[cx+w,cy-h],[cx+w,cy-h*.18],[cx-w,cy-h*.1]],'#dcc9c2');
-    const ig=X.createLinearGradient(0,iy-iry,0,iy+iry); ig.addColorStop(0,PAL.iris1); ig.addColorStop(.5,PAL.iris2); ig.addColorStop(.88,PAL.iris3); ig.addColorStop(1,'#f0c07a');
+    const ig=X.createLinearGradient(0,iy-iry,0,iy+iry); const IR=v.iris||[PAL.iris1,PAL.iris2,PAL.iris3]; ig.addColorStop(0,IR[0]); ig.addColorStop(.5,IR[1]); ig.addColorStop(.88,IR[2]); ig.addColorStop(1,'#f0c07a');
     X.fillStyle=ig; X.beginPath(); X.ellipse(ix,iy,irx,iry,0,0,7); X.fill(); X.lineWidth=.012*S; X.strokeStyle='#160903'; X.stroke();
     X.fillStyle='#140803'; X.beginPath(); X.ellipse(ix,iy-.012*S,irx*.42,iry*.45,0,0,7); X.fill();
     X.fillStyle='rgba(255,226,170,.5)'; X.beginPath(); X.ellipse(ix,iy+iry*.6,irx*.72,iry*.22,0,0,7); X.fill();
@@ -45,18 +45,19 @@ function drawEye(X,v,side,o){ const C=V3(.4*side,.12,.82); const c=v.P(C); const
   ink(X,[[E[5][0],E[5][1]],[(E[5][0]+E[4][0])/2,E[4][1]+h*.06],[E[4][0],E[4][1]]],.014*S,'#4a261a',[.3,.3]);
   ink(X,[[E[1][0],E[1][1]-h*.42],[E[2][0],E[2][1]-h*.45],[E[3][0],E[3][1]-h*.3]],.011*S,'rgba(80,40,26,.65)',[.3,.3]); }
 // ---------- the whole head ----------
-function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, far=Math.sign(o.yaw)||1;
+function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, far=Math.sign(o.yaw)||1; v.chin=o.chinK||1; v.eyeK=o.eyeK||1; v.eyeH=o.eyeH||1; v.iris=o.iris||null;
   const P=(x,y,z)=>v.P(V3(x,y,z));
   // back hair mass (behind the head and neck): long, centre-parted, falls to the shoulders
   const backHair=[]; for(let i=0;i<=16;i++){ const a=-Math.PI*.5+i/16*Math.PI*2; backHair.push(v.P(V3(Math.cos(a)*1.12,-.25+Math.sin(a)*1.18,-.2+Math.abs(Math.sin(a))*.1))); }
   // back hair: tapered clumps hanging behind the shoulders (each a leaf from a root on the skull to a pointed tip)
   const leafP=(r0,r1,tip,bend,col)=>{ const a=v.P(V3(...r0)), b=v.P(V3(...r1)), t=v.P(V3(...tip)); const m1=[lerp(a[0],t[0],.55)+bend*S*.12,lerp(a[1],t[1],.55)], m2=[lerp(b[0],t[0],.55)+bend*S*.12,lerp(b[1],t[1],.55)];
     const q=[[a[0],a[1]],m1,[t[0],t[1]],m2,[b[0],b[1]]]; fillS(X,q,col); inkC(X,q,.018*S,PAL.hairLine); };
-  fillS(X,[P(-1.08,-.3,-.2),P(-1.12,.6,-.4),P(-1.0,1.5,-.5),P(-.4,1.6,-.7),P(.4,1.6,-.7),P(1.0,1.5,-.5),P(1.12,.6,-.4),P(1.08,-.3,-.2),P(.6,-1.1,-.3),P(-.6,-1.1,-.3)].map(p=>[p[0],p[1]]),PAL.hairS);
+  if(o.hair==='short') drawHairShortBack(X,v,o);
+  if(o.hair!=='short'){   fillS(X,[P(-1.08,-.3,-.2),P(-1.12,.6,-.4),P(-1.0,1.5,-.5),P(-.4,1.6,-.7),P(.4,1.6,-.7),P(1.0,1.5,-.5),P(1.12,.6,-.4),P(1.08,-.3,-.2),P(.6,-1.1,-.3),P(-.6,-1.1,-.3)].map(p=>[p[0],p[1]]),PAL.hairS);
   const tips=[[-1.28,1.95,-.35,-1],[-.95,2.12,-.5,-.6],[-.5,2.02,-.7,-.3],[0,2.1,-.8,0],[.5,2.02,-.7,.3],[.95,2.12,-.5,.6],[1.28,1.95,-.35,1]];
-  tips.forEach((tp,i)=>{ const x0=tp[0]*.78; leafP([x0-.22,.3,-.45],[x0+.22,.3,-.45],[tp[0],tp[1],tp[2]],tp[3]*.4,i%2?PAL.hairS:'#2a160c'); });
+  tips.forEach((tp,i)=>{ const x0=tp[0]*.78; leafP([x0-.22,.3,-.45],[x0+.22,.3,-.45],[tp[0],tp[1],tp[2]],tp[3]*.4,i%2?PAL.hairS:'#2a160c'); }); }
   // neck
-  const nk=[P(-.42,.9,.05),P(-.46,1.9,0),P(.46,1.9,0),P(.42,.9,.05)].map(p=>[p[0],p[1]]);
+  const nkK=o.neckK||1, nk=[P(-.42*nkK,.9,.05),P(-.46*nkK,1.9,0),P(.46*nkK,1.9,0),P(.42*nkK,.9,.05)].map(p=>[p[0],p[1]]);
   fillS(X,nk,PAL.skin); inside(X,nk,()=>{ fillS(X,[[o.cx-S*2,o.cy+S*.7],[o.cx+S*2,o.cy+S*.7],[o.cx+S*2,o.cy+S*1.32],[o.cx-S*2,o.cy+S*1.2]],PAL.skinS2); });
   if(o.body) o.body(v,P);
   // face
@@ -78,14 +79,14 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     const ear=[e0,[e1[0]+earSide*S*.03,e1[1]],e2,[lerp(e0[0],e2[0],.5)-earSide*S*.02,e1[1]]].map(p=>[p[0],p[1]]); fillS(X,ear,PAL.skinS); inkC(X,ear,.02*S,PAL.line); }
   // eyes, brows
   for(const sd of [-1,1]) drawEye(X,v,sd,{open:o.blink?0:1,lookX:o.lookX||0,lookY:o.lookY||0});
-  for(const sd of [-1,1]){ const n=rotY(V3(.35*sd,0,.94),o.yaw); if(n.z<.1) continue; const a=P(.12*sd,-.17+(o.sad?-.03:0),.9), b=P(.42*sd,-.26,.88), c=P(.72*sd,-.17,.74); ink(X,sd*far<0?[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]]:[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]],.05*S*(.5+.5*n.z),'#2a160c',[.06,.7]); }
+  for(const sd of [-1,1]){ const n=rotY(V3(.35*sd,0,.94),o.yaw); if(n.z<.1) continue; const a=P(.12*sd,-.17+(o.sad?-.08:0),.9), b=P(.42*sd,-.26+(o.sad?-.02:0),.88), c=P(.72*sd,-.17+(o.sad?.05:0),.74); ink(X,sd*far<0?[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]]:[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]],.05*S*(.5+.5*n.z),'#2a160c',[.06,.7]); }
   // nose: bridge shadow on the shadow side, small tip line, nostril
   { const t=P(0,.5,1.0), b0=P(.05*far,.15,.92); fillS(X,[[b0[0],b0[1]],[t[0]+far*S*.05,t[1]-S*.04],[t[0]+far*S*.02,t[1]+S*.04],[t[0]-far*S*.03,t[1]+S*.04],[t[0]+far*S*.02,t[1]-S*.06]],PAL.skinS);
     ink(X,[[t[0]-far*S*.07,t[1]+S*.045],[t[0],t[1]+S*.065],[t[0]+far*S*.05,t[1]+S*.05]],.022*S,PAL.line,[.3,.3]);
     X.fillStyle='rgba(255,240,220,.85)'; X.beginPath(); X.ellipse(t[0]-far*S*.03,t[1]-S*.02,S*.018,S*.035,0,0,7); X.fill(); }
   // mouth
   { const m=P(0,.81,.86), ml=P(-.17,.79,.82), mr=P(.17,.79,.82); const sm=o.smile||0; { const lp=P(0,.86,.84); X.fillStyle='rgba(170,80,66,.45)'; X.beginPath(); X.ellipse(lp[0],lp[1],S*.09*(.5+.5*Math.cos(o.yaw)),S*.022,0,0,7); X.fill(); }
-    ink(X,[[ml[0],ml[1]-sm*S*.02],[m[0],m[1]+S*.02+sm*S*.02],[mr[0],mr[1]-sm*S*.02]],.022*S,'#4c2018',[.25,.25]);
+    const sad=o.sad?1:0; ink(X,[[ml[0],ml[1]-sm*S*.02+sad*S*.018],[m[0],m[1]+S*.02+sm*S*.02-sad*S*.03],[mr[0],mr[1]-sm*S*.02+sad*S*.018]],.022*S,'#4c2018',[.25,.25]);
     if(o.open){ fillS(X,[[ml[0]+S*.05,ml[1]+S*.01],[m[0],m[1]+S*.1*o.open],[mr[0]-S*.05,mr[1]+S*.01]],'#5a1e1a'); } }
   // beard + moustache (short, shaped, follows the jaw)
   if(o.beard){ const bd=[[.94,.12,.36],[.94,.4,.36],[.86,.66,.38],[.7,.9,.46],[.54,1.04,.52],[.36,1.14,.58],[.22,1.24,.63],[.08,1.2,.65],[-.06,1.28,.66],[-.2,1.22,.64],[-.36,1.14,.58],[-.54,1.04,.52],[-.7,.9,.46],[-.86,.66,.38],[-.94,.4,.36],[-.94,.12,.36],[-.86,.2,.46],[-.8,.52,.56],[-.6,.78,.7],[-.36,.9,.82],[-.18,.95,.86],[0,.96,.87],[.18,.95,.86],[.36,.9,.82],[.6,.78,.7],[.8,.52,.56],[.86,.2,.46]].map(p=>P(p[0],p[1],p[2])).filter(p=>true);
@@ -95,7 +96,8 @@ function drawHead(X,o){ const v=mkView(o.cx,o.cy,o.S,o.yaw,o.pitch||0), S=o.S, f
     inkC(X,bp,.02*S,PAL.hairLine);
     const mu=[P(-.32,.8,.83),P(-.22,.735,.89),P(-.09,.69,.94),P(0,.712,.95),P(.09,.69,.94),P(.22,.735,.89),P(.32,.8,.83),P(.19,.77,.9),P(0,.758,.95),P(-.19,.77,.9)].map(p=>[p[0],p[1]]);
     fillS(X,mu,PAL.hair); inside(X,mu,()=>fillS(X,[P(.02*far,.6,.95),P(.5*far,.6,.8),P(.5*far,.9,.8),P(.02*far,.9,.95)].map(p=>[p[0],p[1]]),PAL.hairS)); inkC(X,mu,.016*S,PAL.hairLine); }
-  drawHairV3(X,v,o,S);
+  if(o.hair==='short') drawHairShort(X,v,o,S); else drawHairV3(X,v,o,S);
+  if(o.tear){ const sd=-far, a=P(.42*sd,.27,.84), b=P(.46*sd,.5,.8), c=P(.44*sd,.66,.78); ink(X,[[a[0],a[1]],[b[0],b[1]],[c[0],c[1]]],.035*S,'rgba(190,225,255,.85)',[.1,.4]); X.fillStyle='#fff'; X.beginPath(); X.arc(b[0]-S*.006,b[1],S*.008,0,7); X.fill(); }
   return v; }
 
 // ---------- hair v3: layered clumps, each with a shadow half, root shade, angel-ring highlight and tapered ink edges ----------
@@ -146,3 +148,22 @@ function drawHairV3(X,v,o,S){ const far=Math.sign(o.yaw)||1, P=(x,y,z)=>v.P(V3(x
   for(const sd of [-1,1]){ const st=[P(.03*sd,-.96,.86),P(.14*sd,-.7,.94),P(.2*sd,-.44,.95),P(.16*sd,-.3,.94)].map(p=>[p[0],p[1]]); ink(X,st,.016*S,HC.line,[.15,.5]); }
   // part line
   const pa=P(0,-1.22,.45), pb=P(0,-.95,.84); ink(X,[[pa[0],pa[1]],[pb[0],pb[1]]],.014*S,HC.line,[.2,.2]); }
+
+// ---------- short, messy anime hair (young character): bangs to the brows, side clumps over the ears ----------
+function drawHairShort(X,v,o,S){ const far=Math.sign(o.yaw)||1, P=(x,y,z)=>v.P(V3(x,y,z)); const C=o.hairCol||{base:'#22263c',shadow:'#141626',light:'#4b5585'};
+  // back of the head
+  const cr0=[[-.96,-.5,.5],[-.74,-1.12,.3],[0,-1.32,.25],[.74,-1.12,.3],[.96,-.5,.5],[.5,-1.0,.68],[0,-1.08,.72],[-.5,-1.0,.68]].map(p=>{ const r=P(p[0],p[1],p[2]); return [r[0],r[1]]; });
+  fillS(X,cr0,C.base);
+  // side clumps (over the ears, to the jaw)
+  for(const sd of [far,-far]) for(const [dz,ty] of [[-.25,.42],[0,.3],[.22,.16]]) hairClump(X,v,S,[[.62*sd,-1.12,.4+dz],[.98*sd,-.6,.38+dz],[1.06*sd,-.05,.28+dz],[1.02*sd,ty,.3+dz]],.42,{base:C.base,shadow:C.shadow,rim:sd===far});
+  // bangs: five clumps from the crown, pointed tips at brow height, slightly irregular
+  const bx=[-.62,-.32,-.02,.28,.58], tipY=[-.24,-.14,-.2,-.1,-.26];
+  bx.forEach((x,i)=>{ const j=.05*Math.sin(i*2.3); hairClump(X,v,S,[[x*.6,-1.18,.5],[x*.95,-.92,.86],[x*1.06+j,-.56,.96],[x*1.1+j*1.5+.04*(i-2),tipY[i],.97]],.4,{base:C.base,shadow:C.shadow}); });
+  // shine
+  for(let i=0;i<4;i++){ const u0=-.9+i*.48, pts=[]; for(let k=0;k<=5;k++){ const u=u0+k*.05; const p=P(Math.sin(u)*.86,-1.02-.05*Math.cos(u*1.5),Math.cos(u)*.55); pts.push([p[0],p[1]]); } ink(X,pts,.06*S,C.light,[.45,.45]); }
+  // a couple of loose strands sticking out (messy)
+  for(const sd of [-1,1]){ const q=[P(.2*sd,-1.28,.3),P(.34*sd,-1.42,.2),P(.5*sd,-1.4,.15)].map(p=>[p[0],p[1]]); ink(X,q,.03*S,C.base,[.2,.6]); ink(X,q,.01*S,'#0c0d16',[.2,.6]); } }
+
+function drawHairShortBack(X,v,o){ const P=(x,y,z)=>v.P(V3(x,y,z)); const C=o.hairCol||{shadow:'#141626'};
+  const bk=[[-.96,-.3,-.1],[-.96,.3,-.3],[-.58,.62,-.6],[0,.7,-.7],[.58,.62,-.6],[.96,.3,-.3],[.96,-.3,-.1],[.72,-1.12,-.2],[0,-1.34,-.1],[-.72,-1.12,-.2]].map(p=>{ const r=P(p[0],p[1],p[2]); return [r[0],r[1]]; });
+  fillS(X,bk,C.shadow); inkC(X,bk,.02*v.S,'#0c0d16'); }
